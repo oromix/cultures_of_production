@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<trainSystem>
+
+    <spline index="0" splineYOffset="0.155" />
+
+    <railroadObjects>
+        <railroadObject className="RailroadCrossing" index="1" startDistance="125" endDistance="125" >
+            <gate index="1|0|0" startRot="0 0 0" endRot="90 0 0" duration="3" closingOffset="1.5" />
+            <gate index="1|1|0" startRot="0 0 0" endRot="90 0 0" duration="3" closingOffset="1.5"/>
+            <signals index="1|0|1" alternatingLights="true" />
+            <signals index="1|1|1" alternatingLights="true" />
+            <crossingSound file="data/maps/sounds/trainCrossingBell.wav" radius="50" innerRadius="20" />
+        </railroadObject>
+        <railroadObject className="RailroadCrossing" index="2" startDistance="125" endDistance="125" >
+            <gate index="2|0|0" startRot="0 0 0" endRot="90 0 0" duration="3" closingOffset="1.5" />
+            <gate index="2|1|0" startRot="0 0 0" endRot="90 0 0" duration="3" closingOffset="1.5"/>
+            <signals index="2|0|1" alternatingLights="true" />
+            <signals index="2|1|1" alternatingLights="true" />
+            <crossingSound file="data/maps/sounds/trainCrossingBell.wav" radius="50" innerRadius="20" />
+        </railroadObject>
+    </railroadObjects>
+
+    <train>
+        <vehicle xmlFile="$data/vehicles/train/locomotive.xml" />
+        <vehicle xmlFile="$data/vehicles/train/wagonTimber.xml" />
+        <vehicle xmlFile="$data/vehicles/train/wagonTimber.xml" />
+        <vehicle xmlFile="$data/vehicles/train/wagonWoodChips.xml" />
+        <vehicle xmlFile="$data/vehicles/train/wagonGrain.xml" />
+        <vehicle xmlFile="$data/vehicles/train/wagonSugarbeets.xml" />
+    </train>
+
+</trainSystem>

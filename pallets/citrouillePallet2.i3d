@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="woolPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="pallet_diffuse.dds" relativePath="true"/>
+    <File fileId="3" filename="pallet_normal.dds" relativePath="true"/>
+    <File fileId="4" filename="pallet_specular.dds" relativePath="true"/>
+    <File fileId="6" filename="pumpkinbox_diffuse.dds" relativePath="true"/>
+    <File fileId="8" filename="pumpkindiffuse.dds" relativePath="true"/>
+    <File fileId="7" filename="pumpkinstalk.dds" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="14 - Default" materialId="9" ambientColor="0.588 0.588 0.588">
+      <Texture fileId="7"/>
+    </Material>
+    <Material name="12 - Default" materialId="10" ambientColor="0.756863 0.360784 0.0274509">
+      <Texture fileId="8"/>
+    </Material>
+    <Material name="lambert2" materialId="7" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="acmat_0" materialId="11" ambientColor="1 1 1">
+      <Texture fileId="6"/>
+    </Material>
+    <Material name="gray_mat" materialId="6" diffuseColor="1 1 1 1" ambientColor="0.588235 0.588235 0.588235">
+    </Material>
+    <Material name="lambert1" materialId="8" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="citrouillePallet2.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="fillablePallet" dynamic="true" compound="true" collisionMask="16789512" density="0.04" clipDistance="200" nodeId="30" materialIds="6" nonRenderable="true">
+      <Shape shapeId="2" name="boardPallet_vis" scale="1 1 1.3" nodeId="31" materialIds="7" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="3" name="dummyTensionBeltNode" translation="0.01 0.707904 0" scale="2.798 0.975 1.008" visibility="false" clipDistance="100" nodeId="32" materialIds="8" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+      <Shape shapeId="4" name="palletAttacherTrigger" translation="0 0.175 0" kinematic="true" trigger="true" collisionMask="8192" nodeId="33" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="fillPalett" translation="-0.02338 -0.0801687 -0.0155181" rotation="0 0.822361 0" nodeId="34">
+        <Shape shapeId="5" name="box" translation="-0.368066 0.269596 -0.285422" rotation="-180 -0.695019 -180" scale="1 1 1.1" nodeId="35" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="pumpkin" translation="-0.245167 0.0914974 0.073796" rotation="-5.31829 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="36">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="37" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="38" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.0208462 0.0914974 -0.0955422" rotation="9.81211 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="39">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="40" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="41" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.26183 0.0914974 0.102324" rotation="6.67011e-08 2.13443e-07 14.3758" scale="0.1 0.1 0.1" clipDistance="200" nodeId="42">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="43" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="44" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.396735 0.251464 0.331813" rotation="-180 -0.695019 -180" scale="1 1.1 1.1" nodeId="45" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="pumpkin" translation="-0.245167 0.0914974 0.073796" rotation="-5.31829 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="46">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="47" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="48" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.0208462 0.0914974 -0.0955422" rotation="9.81211 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="49">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="50" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="51" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.26183 0.0914974 0.102324" rotation="6.67011e-08 2.13443e-07 14.3758" scale="0.1 0.1 0.1" clipDistance="200" nodeId="52">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="53" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="54" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.428037 0.260775 -0.29398" rotation="-180 -0.695019 -180" scale="1 1.1 1.1" nodeId="55" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="pumpkin" translation="-0.245167 0.0914974 0.073796" rotation="-5.31829 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="56">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="57" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="58" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.0208462 0.0914974 -0.0955422" rotation="9.81211 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="59">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="60" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="61" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.26183 0.0914974 0.102324" rotation="6.67011e-08 2.13443e-07 14.3758" scale="0.1 0.1 0.1" clipDistance="200" nodeId="62">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="63" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="64" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.427592 0.256576 0.337586" rotation="-180 -0.695019 -180" scale="1 1.1 1.1" nodeId="65" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="pumpkin" translation="-0.245167 0.0914974 0.073796" rotation="-5.31829 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="66">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="67" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="68" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.0208462 0.0914974 -0.0955422" rotation="9.81211 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="69">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="70" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="71" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.26183 0.0914974 0.102324" rotation="6.67011e-08 2.13443e-07 14.3758" scale="0.1 0.1 0.1" clipDistance="200" nodeId="72">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="73" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="74" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.427797 0.553014 0.331627" rotation="-180 -0.695019 -180" scale="1 1.1 1.1" nodeId="75" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="pumpkin" translation="-0.245167 0.0914974 0.073796" rotation="-5.31829 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="76">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="77" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="78" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.0208462 0.0914974 -0.0955422" rotation="9.81211 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="79">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="80" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="81" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.26183 0.0914974 0.102324" rotation="6.67011e-08 2.13443e-07 14.3758" scale="0.1 0.1 0.1" clipDistance="200" nodeId="82">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="83" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="84" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.434321 0.552479 -0.295947" rotation="-180 -0.695019 -180" scale="1 1.1 1.1" nodeId="85" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="pumpkin" translation="-0.245167 0.0914974 0.073796" rotation="-5.31829 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="86">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="87" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="88" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.0208462 0.0914974 -0.0955422" rotation="9.81211 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="89">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="90" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="91" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.26183 0.0914974 0.102324" rotation="6.67011e-08 2.13443e-07 14.3758" scale="0.1 0.1 0.1" clipDistance="200" nodeId="92">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="93" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="94" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.371741 0.527074 -0.284904" rotation="-180 -0.695019 -180" scale="1 1.1 1.1" nodeId="95" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="pumpkin" translation="-0.245167 0.0914974 0.073796" rotation="-5.31829 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="96">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="97" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="98" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.0208462 0.0914974 -0.0955422" rotation="9.81211 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="99">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="100" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="101" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.26183 0.0914974 0.102324" rotation="6.67011e-08 2.13443e-07 14.3758" scale="0.1 0.1 0.1" clipDistance="200" nodeId="102">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="103" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="104" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.397227 0.560128 0.330199" rotation="-180 -0.695019 -180" scale="1 1.1 1.1" nodeId="105" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="pumpkin" translation="-0.245167 0.0914974 0.073796" rotation="-5.31829 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="106">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="107" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="108" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.0208462 0.0914974 -0.0955422" rotation="9.81211 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="109">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="110" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="111" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.26183 0.0914974 0.102324" rotation="6.67011e-08 2.13443e-07 14.3758" scale="0.1 0.1 0.1" clipDistance="200" nodeId="112">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="113" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="114" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.396617 0.849228 0.338091" rotation="-180 -0.695019 -180" scale="1 1.1 1.1" nodeId="115" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="pumpkin" translation="-0.245167 0.0914974 0.073796" rotation="-5.31829 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="116">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="117" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="118" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.0208462 0.0914974 -0.0955422" rotation="9.81211 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="119">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="120" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="121" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.26183 0.0914974 0.102324" rotation="6.67011e-08 2.13443e-07 14.3758" scale="0.1 0.1 0.1" clipDistance="200" nodeId="122">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="123" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="124" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.369847 0.812388 -0.289974" rotation="-180 -0.695019 -180" scale="1 1.1 1.1" nodeId="125" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="pumpkin" translation="-0.245167 0.0914974 0.073796" rotation="-5.31829 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="126">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="127" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="128" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.0208462 0.0914974 -0.0955422" rotation="9.81211 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="129">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="130" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="131" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.26183 0.0914974 0.102324" rotation="6.67011e-08 2.13443e-07 14.3758" scale="0.1 0.1 0.1" clipDistance="200" nodeId="132">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="133" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="134" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.431834 0.84775 -0.297293" rotation="-180 -0.695019 -180" scale="1 1.1 1.1" nodeId="135" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="pumpkin" translation="-0.245167 0.0914974 0.073796" rotation="-5.31829 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="136">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="137" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="138" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.0208462 0.0914974 -0.0955422" rotation="9.81211 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="139">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="140" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="141" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.26183 0.0914974 0.102324" rotation="6.67011e-08 2.13443e-07 14.3758" scale="0.1 0.1 0.1" clipDistance="200" nodeId="142">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="143" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="144" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.428048 0.846628 0.33021" rotation="-180 -0.695019 -180" scale="1 1.1 1.1" nodeId="145" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="pumpkin" translation="-0.245167 0.0914974 0.073796" rotation="-5.31829 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="146">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="147" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="148" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.0208462 0.0914974 -0.0955422" rotation="9.81211 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="149">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="150" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="151" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.26183 0.0914974 0.102324" rotation="6.67011e-08 2.13443e-07 14.3758" scale="0.1 0.1 0.1" clipDistance="200" nodeId="152">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="153" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="154" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.428028 1.14514 0.328625" rotation="-180 -0.695019 -180" scale="1 1.1 1.1" nodeId="155" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="pumpkin" translation="-0.245167 0.0914974 0.073796" rotation="-5.31829 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="156">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="157" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="158" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.0208462 0.0914974 -0.0955422" rotation="9.81211 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="159">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="160" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="161" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.26183 0.0914974 0.102324" rotation="6.67011e-08 2.13443e-07 14.3758" scale="0.1 0.1 0.1" clipDistance="200" nodeId="162">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="163" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="164" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.433903 1.14424 -0.297516" rotation="-180 -0.695019 -180" scale="1 1.1 1.1" nodeId="165" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="pumpkin" translation="-0.245167 0.0914974 0.073796" rotation="-5.31829 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="166">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="167" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="168" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.0208462 0.0914974 -0.0955422" rotation="9.81211 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="169">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="170" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="171" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.26183 0.0914974 0.102324" rotation="6.67011e-08 2.13443e-07 14.3758" scale="0.1 0.1 0.1" clipDistance="200" nodeId="172">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="173" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="174" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.381945 1.10677 -0.292011" rotation="-180 -0.695019 -180" scale="1 1.1 1.1" nodeId="175" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="pumpkin" translation="-0.245167 0.0914974 0.073796" rotation="-5.31829 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="176">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="177" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="178" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.0208462 0.0914974 -0.0955422" rotation="9.81211 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="179">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="180" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="181" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.26183 0.0914974 0.102324" rotation="6.67011e-08 2.13443e-07 14.3758" scale="0.1 0.1 0.1" clipDistance="200" nodeId="182">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="183" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="184" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.386362 1.15087 0.333889" rotation="-180 -0.695019 -180" scale="1 1.1 1.1" nodeId="185" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="pumpkin" translation="-0.245167 0.0914974 0.073796" rotation="-5.31829 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="186">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="187" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="188" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.0208462 0.0914974 -0.0955422" rotation="9.81211 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="189">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="190" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="191" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.26183 0.0914974 0.102324" rotation="6.67011e-08 2.13443e-07 14.3758" scale="0.1 0.1 0.1" clipDistance="200" nodeId="192">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="193" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="194" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.38633 1.44432 0.336502" rotation="-180 -0.695019 -180" scale="1 1.1 1.1" nodeId="195" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="pumpkin" translation="-0.245167 0.0914974 0.073796" rotation="-5.31829 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="196">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="197" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="198" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.0208462 0.0914974 -0.0955422" rotation="9.81211 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="199">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="200" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="201" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.26183 0.0914974 0.102324" rotation="6.67011e-08 2.13443e-07 14.3758" scale="0.1 0.1 0.1" clipDistance="200" nodeId="202">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="203" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="204" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.429907 1.44165 0.326114" rotation="-180 -0.695019 -180" scale="1 1.1 1.1" nodeId="205" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="pumpkin" translation="-0.245167 0.0914974 0.073796" rotation="-5.31829 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="206">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="207" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="208" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.0208462 0.0914974 -0.0955422" rotation="9.81211 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="209">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="210" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="211" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.26183 0.0914974 0.102324" rotation="6.67011e-08 2.13443e-07 14.3758" scale="0.1 0.1 0.1" clipDistance="200" nodeId="212">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="213" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="214" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.433086 1.43919 -0.300019" rotation="-180 -0.695019 -180" scale="1 1.1 1.1" nodeId="215" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="pumpkin" translation="-0.245167 0.0914974 0.073796" rotation="-5.31829 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="216">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="217" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="218" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.0208462 0.0914974 -0.0955422" rotation="9.81211 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="219">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="220" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="221" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.26183 0.0914974 0.102324" rotation="6.67011e-08 2.13443e-07 14.3758" scale="0.1 0.1 0.1" clipDistance="200" nodeId="222">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="223" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="224" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.376677 1.39673 -0.298307" rotation="-180 -0.695019 -180" scale="1 1.1 1.1" nodeId="225" materialIds="11" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="pumpkin" translation="-0.245167 0.0914974 0.073796" rotation="-5.31829 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="226">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="227" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="228" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.0208462 0.0914974 -0.0955422" rotation="9.81211 2.66804e-07 1.65389e-13" scale="0.1 0.1 0.1" clipDistance="200" nodeId="229">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="230" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="231" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="pumpkin" translation="0.26183 0.0914974 0.102324" rotation="6.67011e-08 2.13443e-07 14.3758" scale="0.1 0.1 0.1" clipDistance="200" nodeId="232">
+            <Shape shapeId="6" name="Cylinder001" translation="-0.0047214 1.23029 0.0083451" nodeId="233" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Sphere001" translation="0 0.23213 0" nodeId="234" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </Shape>
+      </TransformGroup>
+      <Shape shapeId="8" name="transportPallet_col8" translation="0.0019251 0.156 0.000948154" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="235" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="9" name="transportPallet_col7" translation="0.624121 0.156 0.000948154" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="236" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="10" name="transportPallet_col6" translation="-0.622301 0.156 0.000948154" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="237" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="11" name="transportPallet_col5" translation="0.00271691 0.156 -0.564682" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="238" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="12" name="transportPallet_col4" translation="0.00271691 0.156 0.562657" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="239" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="13" name="transportPallet_col3" translation="0.622586 0.156 0.564194" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="240" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="14" name="transportPallet_col2" translation="0.622586 0.156 -0.565392" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="241" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="15" name="transportPallet_col1" translation="-0.622301 0.156 0.563359" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="242" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="16" name="transportPallet_col" translation="-0.622301 0.156 -0.565176" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="243" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="17" name="solidColi" translation="0 0.256457 0" visibility="false" compoundChild="true" collisionMask="16781314" density="0.7" nodeId="244" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="30">
+      <Attribute name="capacity" type="float" value="4000"/>
+      <Attribute name="deleteIfEmpty" type="boolean" value="true"/>
+      <Attribute name="dynamicMountForceLimitScale" type="float" value="1"/>
+      <Attribute name="dynamicMountTriggerIndex" type="string" value="0>1"/>
+      <Attribute name="fillType" type="string" value="citrouille"/>
+      <Attribute name="meshNodes" type="string" value="0 0|0"/>
+      <Attribute name="startFillLevel" type="integer" value="0"/>
+      <Attribute name="startScale" type="float" value="0.1"/>
+      <Attribute name="useRandomRot" type="boolean" value="false"/>
+      <Attribute name="visibilityNodesAdditive" type="boolean" value="true"/>
+      <Attribute name="visibilityNodesIndex" type="string" value="0>2"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

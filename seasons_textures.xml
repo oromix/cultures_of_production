@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<textures materialHolder="seasons/MaterialHolder.i3d">
+    <seasons>
+        <spring>
+		<texture shapeName="peuplier40m2" secondaryNodeName="attachments" to="ssTr_treeBranch2_spring" />
+		<texture shapeName="peuplier40m2" secondaryNodeName="peuplier40m2" to="ssTr_treeLOD_diffuse_spring" />
+		<texture shapeName="arbreverteau" secondaryNodeName="attachments" to="ssTr_treeBranch2_spring" />
+		<texture shapeName="arbreverteau" secondaryNodeName="arbreverteau" to="ssTr_treeLOD_diffuse_spring" />
+		<texture shapeName="birch0" secondaryNodeName="attachments" to="ssTr_treeBranch2_spring" />
+		<texture shapeName="birch0" secondaryNodeName="birch0" to="ssTr_treeLOD_diffuse_spring" />
+		<texture shapeName="birch1" secondaryNodeName="attachments" to="ssTr_treeBranch2_spring" />
+		<texture shapeName="birch1" secondaryNodeName="birch1" to="ssTr_treeLOD_diffuse_spring" />
+		<texture shapeName="birch2" secondaryNodeName="attachments" to="ssTr_treeBranch2_spring" />
+		<texture shapeName="birch2" secondaryNodeName="birch2" to="ssTr_treeLOD_diffuse_spring" />
+		<texture shapeName="bouleau_stage5" secondaryNodeName="attachments" to="ssTr_treeBranch2_spring" />
+		<texture shapeName="bouleau_stage5" secondaryNodeName="bouleau_stage5" to="ssTr_treeLOD_diffuse_spring" />
+		<texture shapeName="chenevertfoncer" secondaryNodeName="attachments" to="ssTr_treeBranch2_spring" />
+		<texture shapeName="chenevertfoncer" secondaryNodeName="chenevertfoncer" to="ssTr_treeLOD_diffuse_spring" />		
+        </spring>
+				
+        <summer>		
+        </summer>		
+		
+        <autumn>		
+		<texture shapeName="peuplier40m2" secondaryNodeName="attachments" to="ssTr_treeBranch2_autumn" />
+		<texture shapeName="peuplier40m2" secondaryNodeName="peuplier40m2" to="ssTr_treeLOD_diffuse_autumn" />
+		<texture shapeName="arbreverteau" secondaryNodeName="attachments" to="ssTr_treeBranch2_autumn" />
+		<texture shapeName="arbreverteau" secondaryNodeName="arbreverteau" to="ssTr_treeLOD_diffuse_autumn" />
+		<texture shapeName="birch0" secondaryNodeName="attachments" to="ssTr_treeBranch2_autumn" />
+		<texture shapeName="birch0" secondaryNodeName="birch0" to="ssTr_treeLOD_diffuse_autumn" />
+		<texture shapeName="birch1" secondaryNodeName="attachments" to="ssTr_treeBranch2_autumn" />
+		<texture shapeName="birch1" secondaryNodeName="birch1" to="ssTr_treeLOD_diffuse_autumn" />
+		<texture shapeName="birch2" secondaryNodeName="attachments" to="ssTr_treeBranch2_autumn" />
+		<texture shapeName="birch2" secondaryNodeName="birch2" to="ssTr_treeLOD_diffuse_autumn" />
+		<texture shapeName="bouleau_stage5" secondaryNodeName="attachments" to="ssTr_treeBranch2_autumn" />
+		<texture shapeName="bouleau_stage5" secondaryNodeName="bouleau_stage5" to="ssTr_treeLOD_diffuse_autumn" />
+		<texture shapeName="chenevertfoncer" secondaryNodeName="attachments" to="ssTr_treeBranch2_autumn" />
+		<texture shapeName="chenevertfoncer" secondaryNodeName="chenevertfoncer" to="ssTr_treeLOD_diffuse_autumn" />		
+        </autumn>
+				
+        <winter>
+		<texture shapeName="peuplier40m2" secondaryNodeName="attachments" to="ssTr_treeBranch2_winter" />
+		<texture shapeName="peuplier40m2" secondaryNodeName="peuplier40m2" to="ssTr_treeLOD_diffuse_winter" />
+		<texture shapeName="arbreverteau" secondaryNodeName="attachments" to="ssTr_treeBranch2_winter" />
+		<texture shapeName="arbreverteau" secondaryNodeName="arbreverteau" to="ssTr_treeLOD_diffuse_winter" />
+		<texture shapeName="birch0" secondaryNodeName="attachments" to="ssTr_treeBranch2_winter" />
+		<texture shapeName="birch0" secondaryNodeName="birch0" to="ssTr_treeLOD_diffuse_winter" />
+		<texture shapeName="birch1" secondaryNodeName="attachments" to="ssTr_treeBranch2_winter" />
+		<texture shapeName="birch1" secondaryNodeName="birch1" to="ssTr_treeLOD_diffuse_winter" />
+		<texture shapeName="birch2" secondaryNodeName="attachments" to="ssTr_treeBranch2_winter" />
+		<texture shapeName="birch2" secondaryNodeName="birch2" to="ssTr_treeLOD_diffuse_winter" />
+		<texture shapeName="bouleau_stage5" secondaryNodeName="attachments" to="ssTr_treeBranch2_winter" />
+		<texture shapeName="bouleau_stage5" secondaryNodeName="bouleau_stage5" to="ssTr_treeLOD_diffuse_winter" />
+		<texture shapeName="chenevertfoncer" secondaryNodeName="attachments" to="ssTr_treeBranch2_winter" />
+		<texture shapeName="chenevertfoncer" secondaryNodeName="chenevertfoncer" to="ssTr_treeLOD_diffuse_winter" />		
+        </winter>
+		
+    </seasons>
+	
+	
+</textures>

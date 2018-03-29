@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<sound>
+    <ambient indoorFlag="1">
+        <!--
+            state:  out-/indoor
+            bit:    1
+            dec.:   1
+
+                    night/day
+                    2
+                    2
+
+                    hail    rain
+                    3       4
+                    4       8
+
+
+            -> worldStateFlags && mask == flags
+
+        -->
+        <!-- BASIS -->
+
+        <!-- any conditions -->
+        <sample type="basis" file="sounds/ambient/mapAmbient01.wav"     volume="0.50"  indoorVolumeFactor="0.25"  flags="0" mask="0" />
+
+        <!-- anytime AND ... -->
+        <sample type="basis" file="sounds/rain.wav"                     volume="0.50" flags="8" mask="8" indoorVolumeFactor="1.1" />
+        <sample type="basis" file="sounds/hail.wav"                     volume="0.50" flags="4" mask="4" indoorVolumeFactor="1.1" />
+
+        <!-- LAYER -->
+        
+        <!-- day AND sun -->
+        <sample type="layer" file="sounds/ambient/birdsChirping01.wav"  volume="0.25" indoorVolumeFactor="0.0" flags="2" mask="14" minPlay="1" maxPlay="30" minDelay="3" maxDelay="30" />
+        <sample type="layer" file="sounds/ambient/birdsChirping02.wav"  volume="0.25" indoorVolumeFactor="0.0" flags="2" mask="14" minPlay="1" maxPlay="30" minDelay="3" maxDelay="30" />
+		<sample type="layer" file="sounds/ambient/woodpecker.wav"       volume="0.35" indoorVolumeFactor="0.0" flags="2" mask="14" minPlay="1" maxPlay="1" minDelay="20" maxDelay="60" />
+		<sample type="layer" file="sounds/ambient/birdBlueJay.wav"      volume="0.35" indoorVolumeFactor="0.0" flags="2" mask="14" minPlay="3" maxPlay="6" minDelay="20" maxDelay="40" />
+		<sample type="layer" file="sounds/ambient/nature2.wav"      volume="0.35" indoorVolumeFactor="0.0" flags="2" mask="14" minPlay="3" maxPlay="6" minDelay="20" maxDelay="40" />
+		
+        <!-- night AND sun -->
+        <sample type="layer" file="sounds/ambient/crickets.wav"         volume="0.25" indoorVolumeFactor="0.25" flags="0" mask="14" minPlay="3" maxPlay="30" minDelay="3" maxDelay="30" />
+        <sample type="layer" file="sounds/ambient/singleCricket.wav"    volume="0.25" indoorVolumeFactor="0.25" flags="0" mask="14" minPlay="1" maxPlay="30" minDelay="3" maxDelay="30" />
+		<sample type="layer" file="sounds/ambient/howlyWind.wav"        volume="0.15" indoorVolumeFactor="0.15" flags="0" mask="14" minPlay="3" maxPlay="5" minDelay="30" maxDelay="60" />
+		<sample type="layer" file="sounds/ambient/tawny3.wav"        volume="0.15" indoorVolumeFactor="0.15" flags="0" mask="14" minPlay="3" maxPlay="5" minDelay="30" maxDelay="60" />
+		
+		
+        <!-- anytime AND bad weather -->
+        <sample type="layer" file="sounds/ambient/howlyWind.wav"        volume="0.25" indoorVolumeFactor="0.45" flags="4" mask="12" minPlay="1" maxPlay="30" minDelay="3" maxDelay="30" />
+        <sample type="layer" file="sounds/ambient/heavyWind.wav"        volume="0.25" indoorVolumeFactor="0.45" flags="8" mask="12" minPlay="1" maxPlay="30" minDelay="3" maxDelay="30" />
+
+    </ambient>
+    <surface>
+        <!--
+            materialId      layer name
+            1               dirt
+            2               grass
+            3               beachSand
+            4
+            5               leaves
+            6               gravel
+            7               rock, asphalt, plate (also used for 'on object')
+
+            Note:
+        -->
+        <material type="wheel" file="$data/sounds/surface/field.wav"     materialId="0"  name="field"     volume="1.14"   indoorVolumeFactor="0.45" pitchOffset="1.00" indoorLowpassGain="0.75" pitchScale="0.01" />
+        <material type="wheel" file="$data/sounds/surface/dirt.wav"      materialId="1"  name="dirt"      volume="1.00"   indoorVolumeFactor="0.20" pitchOffset="0.85" indoorLowpassGain="0.75" pitchScale="0.05" />
+        <material type="wheel" file="$data/sounds/surface/grass.wav"     materialId="2"  name="grass"     volume="1.18"   indoorVolumeFactor="0.45" pitchOffset="1.00" indoorLowpassGain="0.75" pitchScale="0.01" />
+        <material type="wheel" file="$data/sounds/surface/leaves.wav"    materialId="5"  name="leaves"    volume="0.75"   indoorVolumeFactor="0.50" pitchOffset="1.00" indoorLowpassGain="0.75" pitchScale="0.01" />
+        <material type="wheel" file="$data/sounds/surface/asphalt.wav"   materialId="7"  name="asphalt"   volume="1.00"   indoorVolumeFactor="1.00" pitchOffset="1.00" indoorLowpassGain="0.75" pitchScale="0.01" />
+    </surface>
+</sound>

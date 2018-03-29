@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.1.0"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="UnnamedMaterial" materialId="19995" diffuseColor="1 1 1 1" ambientColor="1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="pigSplinesHusbandry.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="pigSplinesHusbandry" visibility="false" nodeId="20085">
+      <Shape shapeId="1" name="pig4" translation="152.613 92.7519 -35.3706" rotation="-6.0112e-09 -24.4933 7.12392e-09" nodeId="20086"/>
+      <Shape shapeId="2" name="pig3" translation="144.404 92.9325 -34.8499" rotation="-180 -57.459 180" static="true" nodeId="20087"/>
+      <Shape shapeId="3" name="ferkel03_1" translation="125.319 92.9325 -33.8179" rotation="180 -73.5199 -180" static="true" nodeId="20088"/>
+      <Shape shapeId="4" name="ferkel03_2" translation="125.8 92.9325 -35.7577" rotation="1.35633e-06 -73.4643 -1.2969e-06" static="true" nodeId="20089"/>
+      <Shape shapeId="5" name="ferkel03_4" translation="128.367 92.9325 -37.0134" rotation="3.94015e-07 11.5556 8.22696e-08" static="true" nodeId="20090"/>
+      <Shape shapeId="6" name="pig3" translation="129.088 92.9325 -35.1075" rotation="1.51276e-06 -36.4906 -8.66455e-07" static="true" nodeId="20091"/>
+      <Shape shapeId="7" name="ferkel03_1" translation="145.265 92.9325 -32.4402" rotation="2.33551e-16 -71.6712 -1.68014e-09" static="true" nodeId="20092"/>
+      <Shape shapeId="8" name="ferkel03_2" translation="144.459 92.9325 -33.6719" rotation="3.87412e-06 -84.2814 -3.8515e-06" static="true" nodeId="20093"/>
+      <Shape shapeId="9" name="ferkel03_4" translation="144.833 92.9325 -35.3173" rotation="1.30542e-06 -72.7999 -1.2437e-06" static="true" nodeId="20094"/>
+      <Shape shapeId="10" name="ferkel05_1" translation="132.138 92.9325 -36.4492" rotation="-2.27469e-06 -82.4104 2.25274e-06" static="true" nodeId="20095"/>
+      <Shape shapeId="11" name="ferkel05_2" translation="134.62 92.9325 -33.3262" rotation="1.07569e-06 -68.9695 -1.0007e-06" static="true" nodeId="20096"/>
+      <Shape shapeId="12" name="ferkel05_4" translation="134.847 92.9325 -37.7093" rotation="4.15465e-07 21.6977 1.56942e-07" static="true" nodeId="20097"/>
+      <Shape shapeId="13" name="pig3" translation="140.998 92.9325 -34.4301" rotation="-1.37575e-06 -65.7925 1.24763e-06" static="true" nodeId="20098"/>
+      <Shape shapeId="14" name="ferkel03_1" translation="144.163 93.2304 -36.4025" rotation="0.689 9.13632 5.32187" static="true" nodeId="20099"/>
+      <Shape shapeId="15" name="ferkel03_2" translation="144.19 93.2304 -36.193" rotation="0.689 9.13632 5.32187" static="true" nodeId="20100"/>
+      <Shape shapeId="16" name="ferkel03_4" translation="144.299 93.2429 -36.4021" rotation="0.715022 17.9395 5.43271" static="true" nodeId="20101"/>
+      <Shape shapeId="17" name="ferkel03_3" translation="144.348 93.2466 -36.3391" rotation="0.726528 20.5581 5.46759" static="true" nodeId="20102"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="20086">
+      <Attribute name="clips" type="string" value="pig_grazingSource pig_idleSource pig_walkLeftSource"/>
+      <Attribute name="i3dFilename" type="string" value="maps/character/pig/pig4.i3d"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.AnimalPedestrian"/>
+      <Attribute name="playClipDistance" type="float" value="50"/>
+      <Attribute name="soundFile" type="string" value="maps/character/pig/pigOink02.wav"/>
+      <Attribute name="walkClips" type="string" value="0 0 5"/>
+    </UserAttribute>
+    <UserAttribute nodeId="20087">
+      <Attribute name="clips" type="string" value="pig_idleSource pig_grazingSource"/>
+      <Attribute name="i3dFilename" type="string" value="maps/character/pig/pig3.i3d"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.AnimalPedestrian"/>
+      <Attribute name="playClipDistance" type="float" value="50"/>
+      <Attribute name="soundFile" type="string" value="maps/character/pig/pigOink03.wav"/>
+      <Attribute name="walkClips" type="string" value="0 0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="20088">
+      <Attribute name="clips" type="string" value="pig_idleSource pig_grazingSource"/>
+      <Attribute name="i3dFilename" type="string" value="maps/character/pig/ferkel03_01.i3d"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.AnimalPedestrian"/>
+      <Attribute name="playClipDistance" type="float" value="50"/>
+      <Attribute name="soundFile" type="string" value="maps/character/pig/pigOink03.wav"/>
+      <Attribute name="walkClips" type="string" value="0 0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="20089">
+      <Attribute name="clips" type="string" value="pig_idleSource pig_grazingSource"/>
+      <Attribute name="i3dFilename" type="string" value="maps/character/pig/ferkel03_02.i3d"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.AnimalPedestrian"/>
+      <Attribute name="playClipDistance" type="float" value="50"/>
+      <Attribute name="soundFile" type="string" value="maps/character/pig/pigOink03.wav"/>
+      <Attribute name="walkClips" type="string" value="0 0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="20090">
+      <Attribute name="clips" type="string" value="pig_idleSource pig_walkLeftSource"/>
+      <Attribute name="i3dFilename" type="string" value="maps/character/pig/ferkel03_04.i3d"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.AnimalPedestrian"/>
+      <Attribute name="playClipDistance" type="float" value="50"/>
+      <Attribute name="soundFile" type="string" value="maps/character/pig/pigOink03.wav"/>
+      <Attribute name="walkClips" type="string" value="0 3"/>
+    </UserAttribute>
+    <UserAttribute nodeId="20091">
+      <Attribute name="clips" type="string" value="pig_idleSource pig_grazingSource"/>
+      <Attribute name="i3dFilename" type="string" value="maps/character/pig/pig2.i3d"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.AnimalPedestrian"/>
+      <Attribute name="playClipDistance" type="float" value="50"/>
+      <Attribute name="soundFile" type="string" value="maps/character/pig/pigOink03.wav"/>
+      <Attribute name="walkClips" type="string" value="0 0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="20092">
+      <Attribute name="clips" type="string" value="pig_idleSource pig_grazingSource"/>
+      <Attribute name="i3dFilename" type="string" value="maps/character/pig/ferkel03_01.i3d"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.AnimalPedestrian"/>
+      <Attribute name="playClipDistance" type="float" value="50"/>
+      <Attribute name="soundFile" type="string" value="maps/character/pig/pigOink03.wav"/>
+      <Attribute name="walkClips" type="string" value="0 0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="20093">
+      <Attribute name="clips" type="string" value="pig_idleSource pig_grazingSource"/>
+      <Attribute name="i3dFilename" type="string" value="maps/character/pig/ferkel03_02.i3d"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.AnimalPedestrian"/>
+      <Attribute name="playClipDistance" type="float" value="50"/>
+      <Attribute name="soundFile" type="string" value="maps/character/pig/pigOink03.wav"/>
+      <Attribute name="walkClips" type="string" value="0 0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="20094">
+      <Attribute name="clips" type="string" value="pig_idleSource pig_walkLeftSource"/>
+      <Attribute name="i3dFilename" type="string" value="maps/character/pig/ferkel03_04.i3d"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.AnimalPedestrian"/>
+      <Attribute name="playClipDistance" type="float" value="50"/>
+      <Attribute name="soundFile" type="string" value="maps/character/pig/pigOink03.wav"/>
+      <Attribute name="walkClips" type="string" value="0 3"/>
+    </UserAttribute>
+    <UserAttribute nodeId="20095">
+      <Attribute name="clips" type="string" value="pig_idleSource pig_grazingSource"/>
+      <Attribute name="i3dFilename" type="string" value="maps/character/pig/ferkel05_01.i3d"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.AnimalPedestrian"/>
+      <Attribute name="playClipDistance" type="float" value="50"/>
+      <Attribute name="soundFile" type="string" value="maps/character/pig/pigOink03.wav"/>
+      <Attribute name="walkClips" type="string" value="0 0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="20096">
+      <Attribute name="clips" type="string" value="pig_idleSource pig_grazingSource"/>
+      <Attribute name="i3dFilename" type="string" value="maps/character/pig/ferkel05_02.i3d"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.AnimalPedestrian"/>
+      <Attribute name="playClipDistance" type="float" value="50"/>
+      <Attribute name="soundFile" type="string" value="maps/character/pig/pigOink03.wav"/>
+      <Attribute name="walkClips" type="string" value="0 0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="20097">
+      <Attribute name="clips" type="string" value="pig_idleSource pig_walkLeftSource"/>
+      <Attribute name="i3dFilename" type="string" value="maps/character/pig/ferkel05_04.i3d"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.AnimalPedestrian"/>
+      <Attribute name="playClipDistance" type="float" value="50"/>
+      <Attribute name="soundFile" type="string" value="maps/character/pig/pigOink03.wav"/>
+      <Attribute name="walkClips" type="string" value="0 3"/>
+    </UserAttribute>
+    <UserAttribute nodeId="20098">
+      <Attribute name="clips" type="string" value="pig_sleepSource"/>
+      <Attribute name="i3dFilename" type="string" value="maps/character/pig/pig3.i3d"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.AnimalPedestrian"/>
+      <Attribute name="playClipDistance" type="float" value="50"/>
+      <Attribute name="soundFile" type="string" value="maps/character/pig/pigOink03.wav"/>
+      <Attribute name="walkClips" type="string" value="0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="20099">
+      <Attribute name="clips" type="string" value="pig_grazingSource"/>
+      <Attribute name="i3dFilename" type="string" value="maps/character/pig/ferkel03_01.i3d"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.AnimalPedestrian"/>
+      <Attribute name="playClipDistance" type="float" value="50"/>
+      <Attribute name="soundFile" type="string" value="maps/character/pig/pigOink03.wav"/>
+      <Attribute name="walkClips" type="string" value="0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="20100">
+      <Attribute name="clips" type="string" value="pig_grazingSource"/>
+      <Attribute name="i3dFilename" type="string" value="maps/character/pig/ferkel03_02.i3d"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.AnimalPedestrian"/>
+      <Attribute name="playClipDistance" type="float" value="50"/>
+      <Attribute name="soundFile" type="string" value="maps/character/pig/pigOink03.wav"/>
+      <Attribute name="walkClips" type="string" value="0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="20101">
+      <Attribute name="clips" type="string" value="pig_grazingSource"/>
+      <Attribute name="i3dFilename" type="string" value="maps/character/pig/ferkel03_04.i3d"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.AnimalPedestrian"/>
+      <Attribute name="playClipDistance" type="float" value="50"/>
+      <Attribute name="soundFile" type="string" value="maps/character/pig/pigOink03.wav"/>
+      <Attribute name="walkClips" type="string" value="0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="20102">
+      <Attribute name="clips" type="string" value="pig_grazingSource"/>
+      <Attribute name="i3dFilename" type="string" value="maps/character/pig/ferkel03_03.i3d"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.AnimalPedestrian"/>
+      <Attribute name="playClipDistance" type="float" value="50"/>
+      <Attribute name="soundFile" type="string" value="maps/character/pig/pigOink03.wav"/>
+      <Attribute name="walkClips" type="string" value="0"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

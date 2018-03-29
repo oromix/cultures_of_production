@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="palletPotato" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="7" filename="substralBags_diffuse.dds" relativePath="true"/>
+    <File fileId="2" filename="pallet_diffuse.dds" relativePath="true"/>
+    <File fileId="3" filename="pallet_normal.dds" relativePath="true"/>
+    <File fileId="4" filename="pallet_specular.dds" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="ac3dmat1" materialId="7" ambientColor="1 1 1" cosPower="80" specularColor="1 1 1">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="ac3dmat1" materialId="8" ambientColor="1 1 1" cosPower="200" specularColor="1 1 1">
+      <Texture fileId="7"/>
+    </Material>
+    <Material name="acmat_0" materialId="6" diffuseColor="0.627451 0.74902 0.87451 1" ambientColor="0.2 0.2 0.2" emissiveColor="0 0 0 1" cosPower="128" specularColor="0.2 0.2 0.2">
+    </Material>
+    <Material name="lambert1" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="substralPallet.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="fillablePallet" dynamic="true" compound="true" collisionMask="25178120" density="0.15" clipDistance="300" nodeId="25" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true">
+      <TransformGroup name="vis" nodeId="26">
+        <Shape shapeId="2" name="box" translation="2.99532e-05 -0.0315615 1.4513e-06" visibility="false" nodeId="27" materialIds="7" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="3" name="pallet" nodeId="28" materialIds="7" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="4" name="dummyTensionBeltNode" visibility="false" clipDistance="100" nodeId="29" materialIds="6" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+      </TransformGroup>
+      <Shape shapeId="5" name="palletAttacherTrigger" translation="0 0.159051 0" kinematic="true" trigger="true" collisionMask="8192" nodeId="30" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="fillObjects" rotation="0 180 0" nodeId="31">
+        <Shape shapeId="6" name="compostBag1" translation="0.604678 0.309741 0.204586" rotation="88.1988 -0.945258 -178.433" scale="0.316382 0.316382 0.316382" nodeId="32" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="0.312219 0.309741 0.204586" rotation="88.1988 -0.945258 -178.433" scale="0.316382 0.316382 0.316382" nodeId="33" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="0.0132764 0.309741 0.204586" rotation="88.1988 -0.945258 -178.433" scale="0.316382 0.316382 0.316382" nodeId="34" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="-0.297789 0.309741 0.204586" rotation="88.1988 -0.945258 -178.433" scale="0.316382 0.316382 0.316382" nodeId="35" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="-0.601894 0.309741 0.204586" rotation="88.1988 -0.945258 -178.433" scale="0.316382 0.316382 0.316382" nodeId="36" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="0.604678 0.309741 -0.261192" rotation="88.1988 -0.945258 -178.433" scale="0.316382 0.316382 0.316382" nodeId="37" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="0.312219 0.309741 -0.261192" rotation="88.1988 -0.945258 -178.433" scale="0.316382 0.316382 0.316382" nodeId="38" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="0.0132764 0.309741 -0.261192" rotation="88.1988 -0.945258 -178.433" scale="0.316382 0.316382 0.316382" nodeId="39" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="-0.297789 0.309741 -0.261192" rotation="88.1988 -0.945258 -178.433" scale="0.316382 0.316382 0.316382" nodeId="40" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="-0.601894 0.309741 -0.261192" rotation="88.1988 -0.945258 -178.433" scale="0.316382 0.316382 0.316382" nodeId="41" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="0.447524 0.53306 0.263319" rotation="-90 0 180" scale="0.316382 0.316382 0.316382" nodeId="42" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="0.135329 0.53306 0.263319" rotation="-90 0 180" scale="0.316382 0.316382 0.316382" nodeId="43" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="-0.181071 0.53306 0.263319" rotation="-90 0 180" scale="0.316382 0.316382 0.316382" nodeId="44" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="-0.492101 0.53306 0.263319" rotation="-90 0 180" scale="0.316382 0.316382 0.316382" nodeId="45" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="0.447524 0.53306 -0.183988" rotation="-90 0 180" scale="0.316382 0.316382 0.316382" nodeId="46" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="0.135329 0.53306 -0.183988" rotation="-90 0 180" scale="0.316382 0.316382 0.316382" nodeId="47" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="-0.181071 0.53306 -0.183988" rotation="-90 0 180" scale="0.316382 0.316382 0.316382" nodeId="48" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="-0.492101 0.53306 -0.183988" rotation="-90 0 180" scale="0.316382 0.316382 0.316382" nodeId="49" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="0.32429 0.605588 0.204586" rotation="88.1988 -0.945258 -178.433" scale="0.316382 0.316382 0.316382" nodeId="50" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="-0.00202389 0.605588 0.204586" rotation="88.1988 -0.945258 -178.433" scale="0.316382 0.316382 0.316382" nodeId="51" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="-0.307577 0.605588 0.204586" rotation="88.1988 -0.945258 -178.433" scale="0.316382 0.316382 0.316382" nodeId="52" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="0.281349 0.605588 -0.220627" rotation="88.1988 -0.945258 -178.433" scale="0.316382 0.316382 0.316382" nodeId="53" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="-0.0343838 0.605588 -0.220627" rotation="88.1988 -0.945258 -178.433" scale="0.316382 0.316382 0.316382" nodeId="54" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="-0.345072 0.605588 -0.220627" rotation="88.1988 -0.945258 -178.433" scale="0.316382 0.316382 0.316382" nodeId="55" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="0.174151 0.829295 0.230627" rotation="-90 0 180" scale="0.316382 0.316382 0.316382" nodeId="56" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="-0.146056 0.829295 0.230627" rotation="-90 0 180" scale="0.316382 0.316382 0.316382" nodeId="57" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="-0.152522 0.829295 -0.174319" rotation="-90 0 180" scale="0.316382 0.316382 0.316382" nodeId="58" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+        <Shape shapeId="6" name="compostBag1" translation="0.163596 0.829295 -0.174319" rotation="-90 0 180" scale="0.316382 0.316382 0.316382" nodeId="59" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false"/>
+      </TransformGroup>
+      <Shape shapeId="7" name="transportPallet_col8" translation="0.00644878 0.182 0.000948154" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="60" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="7" name="transportPallet_col7" translation="0.650362 0.181872 0.000948154" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="61" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="8" name="transportPallet_col6" translation="-0.648366 0.181872 0.000948154" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="62" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="9" name="transportPallet_col5" translation="0.00271691 0.181872 -0.433009" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="63" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="10" name="transportPallet_col4" translation="0.00406633 0.181872 0.431963" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="64" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="10" name="transportPallet_col3" translation="0.653297 0.181872 0.434665" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="65" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="11" name="transportPallet_col2" translation="0.650296 0.181872 -0.433009" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="66" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="12" name="transportPallet_col1" translation="-0.650544 0.181872 0.434665" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="67" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="13" name="transportPallet_col" translation="-0.649813 0.181872 -0.43026" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="68" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="14" name="solidColi" translation="0 0.175 0" compoundChild="true" collisionMask="16781314" density="0.7" nodeId="69" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="25">
+      <Attribute name="capacity" type="integer" value="5000"/>
+      <Attribute name="deleteIfEmpty" type="boolean" value="true"/>
+      <Attribute name="dynamicMountForceLimitScale" type="float" value="1"/>
+      <Attribute name="dynamicMountTriggerIndex" type="string" value="0>1"/>
+      <Attribute name="fillType" type="string" value="substral"/>
+      <Attribute name="fillablePalletUnloadSpeed" type="float" value="2500"/>
+      <Attribute name="meshNodes" type="string" value="0 0|2"/>
+      <Attribute name="startFillLevel" type="integer" value="0"/>
+      <Attribute name="startScale" type="float" value="0.1"/>
+      <Attribute name="useRandomRot" type="boolean" value="true"/>
+      <Attribute name="visibilityNodesAdditive" type="boolean" value="true"/>
+      <Attribute name="visibilityNodesIndex" type="string" value="0>2"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

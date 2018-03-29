@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Snake3" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="snake_diffuse.dds" relativePath="true"/>
+    <File fileId="2" filename="snake_normal.dds" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="default" materialId="6" ambientColor="0.588 0.588 0.588">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="snake.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="Dummy001" translation="0.0004678 0.0430286 -0.0403553" rotation="90 -90 0" nodeId="9">
+      <TransformGroup name="Bone001" translation="-0.0289058 0 -0.0154455" rotation="-179.846 2.73122 -176.351" nodeId="10">
+        <TransformGroup name="Bone002" translation="0.178117 0 0" rotation="-0.0464722 1.19438 -2.07522" nodeId="11">
+          <TransformGroup name="Bone003" translation="0.211879 0 0" rotation="0.0785387 1.53728 3.07431" nodeId="12">
+            <TransformGroup name="Bone004" translation="0.203331 0 0" rotation="0.156403 0.981652 8.61398" nodeId="13">
+              <TransformGroup name="Bone005" translation="0.169466 0 0" rotation="0.324807 1.96065 9.43544" nodeId="14">
+                <TransformGroup name="Bone006" translation="0.166834 0 0" rotation="-0.353199 -3.80217 5.2654" nodeId="15">
+                  <TransformGroup name="Bone007" translation="0.158175 0 0" rotation="-0.0916588 0.993797 -4.48006" nodeId="16">
+                    <TransformGroup name="Bone008" translation="0.163792 0 0" rotation="0.296445 -1.11255 -16.2916" nodeId="17">
+                      <TransformGroup name="Bone009" translation="0.169466 0 0" rotation="-0.311327 0.491172 -24.3953" nodeId="18">
+                        <TransformGroup name="Bone010" translation="0.163794 0 0" rotation="0.0825694 -0.390698 -23.0954" nodeId="19">
+                          <TransformGroup name="Bone011" translation="0.166619 0 0" rotation="0.0312934 -0.281901 -14.4998" nodeId="20">
+                            <TransformGroup name="Bone012" translation="0.166619 0 0" rotation="-0.0380167 -0.750601 2.57285" nodeId="21">
+                              <TransformGroup name="Bone013" translation="0.183585 0 0" rotation="1.19245 2.70926 24.7505" nodeId="22">
+                                <TransformGroup name="Bone014" translation="0.175178 0 0" rotation="-2.18798 -2.17699 39.209" nodeId="23">
+                                  <TransformGroup name="Bone015" translation="0.152595 0 0" rotation="1.32528 1.8643 36.7908" nodeId="24">
+                                    <TransformGroup name="Bone016" translation="0.14685 0 0" rotation="1.24047 1.9847 28.1674" nodeId="25">
+                                      <TransformGroup name="Bone017" translation="0.164013 0 0" rotation="-1.16127 -2.42206 20.83" nodeId="26">
+                                        <TransformGroup name="Bone018" translation="0.172273 0 0" rotation="0.455158 1.77059 14.3843" nodeId="27">
+                                          <TransformGroup name="Bone019" translation="0.172307 0 0" rotation="0.0038993 0.0071548 8.26469" nodeId="28">
+                                            <TransformGroup name="Bone020" translation="0.163795 0 0" rotation="-0.0002596 -0.099732 1.31033" nodeId="29">
+                                              <TransformGroup name="Bone021" translation="0.16949 0 0" rotation="0.13074 -0.791485 -8.26369" nodeId="30">
+                                                <TransformGroup name="Bone022" translation="0.206156 0 0" rotation="0.0639583 -0.287497 -19.2025" nodeId="31">
+                                                  <TransformGroup name="Bone023" translation="0.180739 0 0" rotation="0.168306 -0.651485 -28.6512" nodeId="32">
+                                                    <TransformGroup name="Bone024" translation="0.175091 0 0" rotation="0 1.70994 0" nodeId="33"/>
+                                                  </TransformGroup>
+                                                </TransformGroup>
+                                              </TransformGroup>
+                                            </TransformGroup>
+                                          </TransformGroup>
+                                        </TransformGroup>
+                                      </TransformGroup>
+                                    </TransformGroup>
+                                  </TransformGroup>
+                                </TransformGroup>
+                              </TransformGroup>
+                            </TransformGroup>
+                          </TransformGroup>
+                        </TransformGroup>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+    <Shape shapeId="1" name="Snake" clipDistance="73" nodeId="34" materialIds="6" castsShadows="true" receiveShadows="true" skinBindNodeIds="33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10"/>
+  </Scene>
+
+
+  <Animation externalAnimFile="snake.i3d.anim" />
+</i3D>

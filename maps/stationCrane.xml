@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle>
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <components count="5">
+        <!--component1 index="0>"        centerOfMass="0 0 0" solverIterationCount="10" /--> <!-- very first component is not synced in MP, but added to the components table by script -->
+        <component1 index="0>1"       centerOfMass="0 0 0" solverIterationCount="10" />
+        <component2 index="0>1|1"     centerOfMass="0 0 0" solverIterationCount="10" />
+        <component3 index="0>1|1|1"   centerOfMass="0 0 0" solverIterationCount="10" />
+        <component4 index="0>1|1|1|2" centerOfMass="0 0 0" solverIterationCount="10" />
+        <component5 index="0>1|1|1|3" centerOfMass="0 0 0" solverIterationCount="10" />
+
+        <collisionPair component1="4" component2="5" enabled="false" />
+    </components>
+
+    <componentJoints>
+        <componentJoint component1="0" component2="1" index="0>0" />
+        <componentJoint component1="1" component2="2" index="0>1|0" />
+        <componentJoint component1="2" component2="3" index="0>1|1|0" transMinLimit="0 0 0" transLimit="0 0.1 0" transLimitSpring="0 1000 0" transLimitDamping="0 100 0" transDriveVelocity="0 0 0" transDriveSpring="0 1000 0" transDriveDamping="0 100 0"/>
+        <componentJoint component1="3" component2="4" index="0>1|1|1|0" rotLimit="0 0 0" transLimit="0 0 0" rotLimitSpring="1000 1000 60" rotLimitDamping="100 100 10" />
+        <componentJoint component1="3" component2="5" index="0>1|1|1|1" rotLimit="0 0 0" transLimit="0 0 0" rotLimitSpring="1000 1000 60" rotLimitDamping="100 100 10" />
+    </componentJoints>
+
+    <specializations>
+        <specialization name="lights"/>
+        <specialization name="steerable"/>
+        <specialization name="honk"/>
+
+        <specialization name="animatedVehicle"/>
+        <specialization name="cylindered"/>
+
+        <specialization name="ropes"/>
+
+        <specialization name="nonTabbable"/>
+    </specializations>
+
+    <enterReferenceNode index="2" />
+    <exitPoint index="2" />
+
+    <cameras count="2">
+        <camera1 index="0>1|3|0|0" rotatable="true" rotateNode="0>1|3|0" limit="true" useWorldXZRotation="true" rotMinX="-1.4" rotMaxX="1" transMin="4" transMax="35" >
+        </camera1>
+        <camera2 index="0>1|3|1" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" />
+    </cameras>
+
+    <lights>
+        <low>
+            <light                       decoration="0>1|2|0|0"   lightTypes="0" />
+            <light realLight="0>1|2|0|1"                          lightTypes="0" />
+        </low>
+        <high>
+            <light                       decoration="0>1|2|0|0"   lightTypes="0" />
+            <light realLight="0>1|2|0|2"                          lightTypes="0" />
+        </high>
+        <states>
+            <state lightTypes="0" />
+        </states>
+    </lights>
+
+    <characterNode index="1|4|0" cameraMinDistance="1.5" filename="$dataS2/character/player/player.xml" spineRotation="180 0 100" >
+        <target ikChain="rightFoot" targetNode="1|4|1" />
+        <target ikChain="leftFoot"  targetNode="1|4|2" />
+        <target ikChain="rightArm"  targetNode="1|4|3" />
+        <target ikChain="leftArm"   targetNode="1|4|4" />
+    </characterNode>
+
+    <animations>
+        <animation name="adjustComponentJoint">
+            <part componentJointIndex="2" startTime="0" endTime="10" startTransLimit="0 0.1 0" endTransLimit="0 11 0" />
+            <!--part componentJointIndex="2" startTime="0" endTime="10" startTransMinLimit="0 0 0" startTransMaxLimit="0 0.1 0" endTransMinLimit="0 0 0" endTransMaxLimit="0 11 0" /-->
+        </animation>
+    </animations>
+
+    <movingTools>
+        <movingTool index="0>0" playSound="true">
+            <controls axis="AXIS_FRONTLOADER_TOOL" invertAxis="true" mouseSpeedFactor="-1.0" iconFilename="$dataS2/menu/moveControls/frontloader_arm.png" />
+            <translation translationAxis="3" transSpeed="2.5" transAcceleration="8" transMax="20" transMin="-20" startTrans="-14.531" />
+            <componentJoint index="0" />
+        </movingTool>
+        <movingTool index="0>1|0" playSound="true" >
+            <controls axis="AXIS_FRONTLOADER_ARM" invertAxis="true" mouseSpeedFactor="1.0" iconFilename="$dataS2/menu/moveControls/frontloader_arm.png" />
+            <translation translationAxis="1" transSpeed="2" transAcceleration="10" transMax="6.079" transMin="-6.079" startTrans="0.415" />
+            <componentJoint index="1" />
+        </movingTool>
+        <movingTool index="0>1|1|0" playSound="true" >
+            <controls axis="AXIS_FRONTLOADER_ARM2" invertAxis="false" mouseSpeedFactor="-1.0" iconFilename="$dataS2/menu/moveControls/frontloader_arm.png" />
+            <animation animSpeed="0.15" animAcceleration="3.0" animName="adjustComponentJoint" />
+            <componentJoint index="2" />
+        </movingTool>
+
+        <movingTool index="0>1|1|1|0" playSound="true" >
+            <controls axis="AXIS_CRANE_TOOL" invertAxis="true" mouseSpeedFactor="1.0" iconFilename="$dataS2/menu/moveControls/grab_openClose.png" />
+            <rotation rotationAxis="3" rotSpeed="80" rotAcceleration="640" rotMax="0" rotMin="-100" />
+            <componentJoint index="3" />
+        </movingTool>
+        <movingTool index="0>1|1|1|1" playSound="true" >
+            <controls axis="AXIS_CRANE_TOOL" invertAxis="true" mouseSpeedFactor="1.0" />
+            <rotation rotationAxis="3" rotSpeed="-80" rotAcceleration="640" rotMax="100" rotMin="0" />
+            <componentJoint index="4" />
+        </movingTool>
+    </movingTools>
+
+    <movingParts>
+        <movingPart index="0>1|1|1|4|0|0" referencePoint="0>1|1|1|2|3" referenceFrame="0>1|1|1|4|2" isActiveDirty="true" >
+            <dependentPart index="0>1|1|1|4|0|0|0" />
+            <dependentPart index="0>1|1|1|4|0|0|1" />
+            <dependentPart index="0>1|1|1|4|0|0|2" />
+        </movingPart>
+
+        <movingPart index="0>1|1|1|4|1|0" referencePoint="0>1|1|1|3|3" referenceFrame="0>1|1|1|4|3" isActiveDirty="true" >
+        </movingPart>
+
+        <movingPart index="0>1|1|1|4|0|0|0" referencePoint="0>1|1|1|4|1|0|0" referenceFrame="0>1|1|1|4|4" >
+            <translatingPart index="0>1|1|1|4|0|0|0|0" />
+        </movingPart>
+        <movingPart index="0>1|1|1|4|0|0|1" referencePoint="0>1|1|1|4|1|0|1" referenceFrame="0>1|1|1|4|4" />
+        <movingPart index="0>1|1|1|4|0|0|2" referencePoint="0>1|1|1|4|1|0|2" referenceFrame="0>1|1|1|4|4" />
+    </movingParts>
+
+    <ropes>
+        <rope baseNode="0>1|1|1|6" targetNode="0>1|1|2" baseParameters="0 0 -5 0" targetParameters="0 0 5 0" />
+        <rope baseNode="0>1|1|1|7" targetNode="0>1|1|3" baseParameters="0 0 -5 0" targetParameters="0 0 5 0" />
+    </ropes>
+
+    <stationCrane>
+        <engineSound file="$data/vehicles/train/stationCrane.wav" pitchOffset="1.00" volume="0.55" indoorVolumeFactor="0.50" />
+    </stationCrane>
+
+    <cylinderedHydraulicSound file="$data/sounds/hydraulicUp.wav" pitchOffset="0.7" volume="0.72" indoorVolumeFactor="0.65"/>
+
+</vehicle>
+

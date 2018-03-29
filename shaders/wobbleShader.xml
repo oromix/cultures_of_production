@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CustomShader version="3">
+    <Parameters>
+        <Parameter name="displacementScaleSpeedFrequency" target="displacementScaleSpeedFrequency" type="float4" defaultValue="1 1 1 1" minValue="0.0 0.0 0.0 1.0" maxValue="5 50 50 1.0" />
+    </Parameters>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+			<CodeInjection position="MATERIALINFO">
+				<![CDATA[
+					// manurePitShader
+					//
+					// author: Wopster
+					// history:	v1.0 - # - Initial implementation
+					
+					uniform float4 displacementScaleSpeedFrequency;
+				]]>
+			</CodeInjection>
+			<CodeInjection position="GET_POSITION_VS">
+			<![CDATA[
+				float offset = displacementScaleSpeedFrequency.x * sin(cTime_s * displacementScaleSpeedFrequency.y + ((In.position.x * In.position.x) + (In.position.z * In.position.z)) * displacementScaleSpeedFrequency.z);
+				
+				In.position.y += offset;
+				// we don't have to offset the normals for the light directions?
+				
+				return float4(In.position.xyz, 1.0);					
+			]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

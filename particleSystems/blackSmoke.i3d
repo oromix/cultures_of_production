@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="smokeParticle.png" relativePath="true"/>
+    <File fileId="2" filename="../shaders/psColorShader.xml" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="blackSmokeParticle_mat" materialId="1445" ambientColor="1 1 1" alphaBlending="true" customShaderId="2">
+      <Texture fileId="1"/>
+      <CustomParameter name="psColor" value="0 0 0 1"/>
+    </Material>
+    <Material name="lambert1" materialId="1541" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="blackSmoke.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+    <ParticleSystem name="smokeParticleSystem_emitter1Ref" dynamicId="1" type="sprite" rate="0.006" lifespan="7000" maxCount="80" speed="0.0008" speedRandom="0" tangentSpeed="0.2" normalSpeed="1" spriteScaleX="0.5" spriteScaleY="0.5" spriteScaleXGain="0.0004" spriteScaleYGain="0.0004" blendFactor="0.9" blendInFactor="0.05" blendOutFactor="0.5" randomInitRotation="true" deltaRotateMax="0.000261799" textureAtlasSizeX="4">
+      <Gravity force="0 0 0"/>
+    </ParticleSystem>
+  </Dynamics>
+
+  <Scene>
+    <Dynamic dynamicId="1" emitterShapeNodeId="12516" name="blackSmokeParticleSystem_emitter" translation="289.124 91.5905 -306.964" rotation="23.5658 -0 0" clipDistance="150" nodeId="12515" materialIds="1445" distanceBlending="false">
+      <Shape shapeId="2" name="blackSmokeParticleSystemAreaShape" scale="0.5 0.5 0.5" nodeId="12516" materialIds="1541" nonRenderable="true"/>
+    </Dynamic>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="12515">
+      <Attribute name="onCreate" type="scriptCallback" value="SimParticleSystem.onCreate"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

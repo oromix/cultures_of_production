@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="3">
+    <Parameters>
+        <Parameter name="bumpSpeedScale" target="bumpSpeedScale" type="float3" />
+        <Parameter name="reflectionAmount" target="reflectionAmount" type="float3" />
+        <Parameter name="underwaterFogColor" target="underwaterFogColor" type="float3" />
+    </Parameters>
+    <LodLevel startDistance="0" subsequentPassForceMode="ignore">
+        <CodeInjections>
+            <CodeInjection position="LIB_FUNCTION_FS">
+<![CDATA[
+
+float getWaterDepth(FS_INPUT In, FS_GLOBALS globals)
+{
+    float screenDepth = In.vs.screenPosZ / In.vs.screenPosW * 0.5 + 0.5;
+    float screenDepthLinear = convertDepthToEyeZ(screenDepth);
+    float sceneDepthLinear = convertDepthToEyeZ(getSceneDepth(In, globals));
+    return (sceneDepthLinear - screenDepthLinear);
+}
+
+float getNormalizedWaterDepth(FS_INPUT In, FS_GLOBALS globals, float depthScale)
+{
+    return saturate(getWaterDepth(In, globals)*depthScale);
+}
+
+float calcFogExpFactor(float fogDensity, float distance)
+{    
+    // calculate exponential fog factor
+    float fogFactor = (fogDensity * distance);
+    fogFactor = saturate(exp(-fogFactor)); // e^-(dist*density) or e^-(dist*density)^2    
+    return fogFactor;
+}
+]]>
+            </CodeInjection>
+            <CodeInjection position="NUM_TEXCOORDS">
+<![CDATA[
+// only allow directional lights, specular only
+#define NUM_DIFFUSE_LIGHTS 0
+#define NUM_POINT_LIGHTS 0
+#define NUM_SPOT_LIGHTS 0
+
+#if defined(DIFFUSE)
+#undef DIFFUSE
+#endif
+
+// for low spec no lights at all
+//#ifdef LOWSPEC
+//#define NUM_DIRECTIONAL_LIGHTS 0
+//#endif
+
+#if (defined(REFLECTION_MAP_2D) || defined(REFLECTION_MAP_CUBE)) && defined(REFRACTION_MAP) && defined(NORMAL_MAP)
+#define WATER_RENDERING
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="CONFIG_DEFINES">
+<![CDATA[
+#if defined(WATER_RENDERING)
+#undef _NO_TANGENTSPACE
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="VS_OUTPUT">
+<![CDATA[
+float2 normalMapTexCoord0  : TEXCOORDn;
+float2 normalMapTexCoord1  : TEXCOORDn;
+float2 normalMapTexCoord2  : TEXCOORDn;
+]]>
+            </CodeInjection>
+            <CodeInjection position="MATERIALINFO">
+<![CDATA[
+#if defined(WATER_RENDERING)
+    uniform float4 bumpSpeedScale;
+    uniform float4 reflectionAmount;
+    uniform float4 underwaterFogColor;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_SET_TEXCOORDS_VS">
+<![CDATA[
+#if defined(WATER_RENDERING)
+float textureScale = bumpSpeedScale.z;
+float2 bumpSpeed = bumpSpeedScale.xy*textureScale;
+
+float2 translation=float2(cTime_s*bumpSpeed.x, 0);
+float2 translation2=float2(translation.x, cTime_s*bumpSpeed.y);
+
+float2 texCoords=In.position.xz*textureScale;
+
+Out.normalMapTexCoord0 = texCoords.xy+translation;
+Out.normalMapTexCoord1 = texCoords.xy*2.0+translation*4.0;
+Out.normalMapTexCoord2 = texCoords.xy*4.0-translation2;
+
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_ALBEDO_FS">
+<![CDATA[
+#if defined(WATER_RENDERING)
+albedo = float4(0, 0, 0, 1);
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_UNNORMALIZED_TANGENT_SPACE_NORMAL_FS">
+<![CDATA[
+#if defined(WATER_RENDERING)
+    // sum normal maps
+    // sample from 3 different points so no texture repetition is noticeable
+    float3 t0 = tex2D(normalMap, In.vs.normalMapTexCoord0).xyz;
+    float3 t1 = tex2D(normalMap, In.vs.normalMapTexCoord1).xyz;
+    float3 t2 = tex2D(normalMap, In.vs.normalMapTexCoord2).xyz;
+    float3 mResult = (t0.xyz + t1.xyz + t2.xyz) - 1.5;    
+    mResult = lerp( float3( 0,0,1 ) , mResult, cShared0 );
+    return mResult;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_REFRACTION_COLOR_TEX_FS">
+<![CDATA[
+#if defined(WATER_RENDERING)
+    float depth = getNormalizedWaterDepth(In, globals, 1.0/2.0);
+    float2 finalCoord2 = In.vs.screenPos.xy/In.vs.screenPosW;
+    finalCoord2 += tangentSpaceNormal.xy*cRefractionBumpScale*depth;
+#if defined(FLIP_TEXCOORD_Y)
+	finalCoord2.y = 1-finalCoord2.y;
+#endif
+
+    return tex2D(refractionMap, finalCoord2).xyz;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_REFLECTION_REFRACTION_FACTOR_FS">
+<![CDATA[
+#if defined(WATER_RENDERING)
+{
+    float fresnel = getFresnel(facing, cReflectionCoeff, 5.0);
+    fresnel = saturate(fresnel * reflectionAmount.x);
+    reflectionFactor = fresnel;
+    refractionFactor = 1-fresnel;
+}
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_REFRACTION_COLOR_FS">
+<![CDATA[
+#if defined(WATER_RENDERING)
+
+    float softIntersect =  getNormalizedWaterDepth(In, globals, 1.0/2.0);
+    float fogDepth = calcFogExpFactor(0.5, getWaterDepth(In, globals));
+    
+    float3 refractionColor = getRefractionColorTex(In, globals, normal, tangentSpaceNormal, viewDir);
+    refractionColor = lerp(underwaterFogColor.xyz, refractionColor, fogDepth);
+
+    return lerp(refractionColor, oColor.xyz + refractionColor*refractionFactor, softIntersect);
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_REFLECTION_COLOR_TEX_FS">
+<![CDATA[
+#if defined(WATER_RENDERING)
+    float2 finalCoord2 = In.vs.screenPos.xy/In.vs.screenPosW;
+    finalCoord2 += tangentSpaceNormal.xy*cReflectionBumpScale;
+    return tex2D(reflectionMap, finalCoord2).xyz;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="FINAL_POS_FS">
+<![CDATA[
+#if defined(WATER_RENDERING)
+    //float screenDepth = In.vs.screenPosZ / In.vs.screenPosW;   
+   // float2 screenCoord = In.vs.screenPos.xy/In.vs.screenPosW;
+   // screenCoord.y = 1-screenCoord.y;
+   // float sceneDepth = tex2D(sceneDepthMap, screenCoord).x;
+   /*oColor.xyz = 0;
+   
+    float screenDepth = In.vs.screenPosZ / In.vs.screenPosW * 0.5 + 0.5;
+    float screenDepthLinear = 1.0 / (1-screenDepth);
+    float sceneDepthLinear = 1.0 / (1-WATER_DEPTH);
+   
+   oColor.xyz += (sceneDepthLinear - screenDepthLinear)*0.1; //abs(screenDepth-WATER_DEPTH);*/
+#endif
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<animatedObjects>
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+<!-- Warenausgang -->
+<animatedObject index="warenausgang">
+
+<controls posKey="ANIMATED_OBJECT_OPEN_DOOR" negKey="ANIMATED_OBJECT_CLOSE_DOOR" triggerNode="0" posText="input_warenausgang" negText="input_warenausgang_neg" /> 
+
+<openingHours startTime="7" endTime="19" disableIfClosed="true" /> 
+<animation initialTime="0" duration="2"> 
+<part node="1|0"> 
+<keyFrame time="0.05" translation="0.944 2.451 -2.714" rotation="0 0 0" />
+<keyFrame time="1.00" translation="0.944 2.451 -2.714" rotation="0 160 0" /> 
+</part>
+<part node="1|1"> 
+<keyFrame time="0.05" translation="0.939 2.451 2.278" rotation="0 0 0" />
+<keyFrame time="1.00" translation="0.939 2.451 2.278" rotation="0 -178 0" /> 
+</part>
+<part node="1|2"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="1|3"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="2|0"> 
+<keyFrame time="0.05" translation="0.944 2.451 -2.714" rotation="0 0 0" />
+<keyFrame time="1.00" translation="0.944 2.451 -2.714" rotation="0 160 0" /> 
+</part>
+<part node="2|1"> 
+<keyFrame time="0.05" translation="0.939 2.451 2.278" rotation="0 0 0" />
+<keyFrame time="1.00" translation="0.939 2.451 2.278" rotation="0 -178 0" /> 
+</part>
+<part node="2|2"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="2|3"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="3|0"> 
+<keyFrame time="0.05" translation="0.944 2.451 -2.714" rotation="0 0 0" />
+<keyFrame time="1.00" translation="0.944 2.451 -2.714" rotation="0 160 0" /> 
+</part>
+<part node="3|1"> 
+<keyFrame time="0.05" translation="0.939 2.451 2.278" rotation="0 0 0" />
+<keyFrame time="1.00" translation="0.939 2.451 2.278" rotation="0 -178 0" /> 
+</part>
+<part node="3|2"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="3|3"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="4"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="0.1" visibility="false" /> 
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="5"> 
+<keyFrame time="0.00" visibility="false" />
+<keyFrame time="0.1" visibility="true" /> 
+<keyFrame time="1" visibility="true" />  
+</part>
+</animation>
+</animatedObject>
+
+
+<!-- Wareneingang -->
+<animatedObject index="wareneingang">
+
+<controls posKey="ANIMATED_OBJECT_OPEN_DOOR" negKey="ANIMATED_OBJECT_CLOSE_DOOR" triggerNode="0" posText="input_wareneingang" negText="input_wareneingang_neg" /> 
+
+<openingHours startTime="0" endTime="12" disableIfClosed="true" /> 
+<animation initialTime="0" duration="2"> 
+<part node="1|0"> 
+<keyFrame time="0.05" translation="0.944 2.623 -0.402" rotation="0 0 0" />
+<keyFrame time="1.00" translation="0.944 2.623 -0.402" rotation="0 160 0" /> 
+</part>
+<part node="1|1"> 
+<keyFrame time="0.05" translation="0.939 2.623 2.688" rotation="0 0 0" />
+<keyFrame time="1.00" translation="0.939 2.623 2.688" rotation="0 -178 0" /> 
+</part>
+<part node="1|2"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="1|3"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="2|0"> 
+<keyFrame time="0.05" translation="0.944 4.357 -4.266" rotation="0 0 0" />
+<keyFrame time="1.00" translation="0.944 4.357 -4.266" rotation="0 160 0" /> 
+</part>
+<part node="2|1"> 
+<keyFrame time="0.05" translation="0.939 4.357 4.054" rotation="0 0 0" />
+<keyFrame time="1.00" translation="0.939 4.357 4.054" rotation="0 -178 0" /> 
+</part>
+<part node="2|2"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="2|3"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="3|0"> 
+<keyFrame time="0.05" translation="0.944 2.451 -2.714" rotation="0 0 0" />
+<keyFrame time="1.00" translation="0.944 2.451 -2.714" rotation="0 160 0" /> 
+</part>
+<part node="3|1"> 
+<keyFrame time="0.05" translation="0.939 2.451 2.278" rotation="0 0 0" />
+<keyFrame time="1.00" translation="0.939 2.451 2.278" rotation="0 -178 0" /> 
+</part>
+<part node="3|2"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="3|3"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="4"> 
+<keyFrame time="0.00" visibility="false" />
+<keyFrame time="0.1" visibility="true" /> 
+<keyFrame time="1" visibility="true" /> 
+</part>
+<part node="5"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="0.1" visibility="false" /> 
+<keyFrame time="1" visibility="false" /> 
+</part>
+</animation>
+</animatedObject>
+
+<!-- Deckel Milch-->
+<animatedObject index="deckel">
+<controls posKey="LIGHTSWITCH_CLICK" triggerNode="0" posText="input_deckel" negText="input_deckel_neg" /> 
+<animation initialTime="0" duration="1"> 
+<part node="1"> 
+<keyFrame time="0.05" translation="3.912 5.26 -14.395" rotation="0 0 0" />
+<keyFrame time="1.00" translation="3.912 5.26 -14.395" rotation="-90 0 0" /> 
+</part>
+</animation>
+</animatedObject>
+
+<!-- Anzeige -->
+<animatedObject index="anzeige">
+<controls posKey="LIGHTSWITCH_CLICK" triggerNode="5|6" posText="input_anzeige" negText="input_anzeige_neg" /> 
+<animation initialTime="0" duration="0.1"> 
+<!-- Rohstoffe -->
+<part node="0|0|1|1"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="0|0|1|2"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="0|0|1|3"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="0|1|1|1"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="0|1|1|2"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="0|1|1|3"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="0|2|1|1"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="0|2|1|2"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<part node="0|2|1|3"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<!-- open close -->
+<part node="5|7|2"> 
+<keyFrame time="0.00" visibility="true" />
+<keyFrame time="1" visibility="false" /> 
+</part>
+<!-- Produkte -->
+<part node="1|0|1|1"> 
+<keyFrame time="0.00" visibility="false" />
+<keyFrame time="1" visibility="true" /> 
+</part>
+<part node="1|0|1|2"> 
+<keyFrame time="0.00" visibility="false" />
+<keyFrame time="1" visibility="true" /> 
+</part>
+<part node="1|0|1|3"> 
+<keyFrame time="0.00" visibility="false" />
+<keyFrame time="1" visibility="true" /> 
+</part>
+<part node="1|1|1|1"> 
+<keyFrame time="0.00" visibility="false" />
+<keyFrame time="1" visibility="true" /> 
+</part>
+<part node="1|1|1|2"> 
+<keyFrame time="0.00" visibility="false" />
+<keyFrame time="1" visibility="true" /> 
+</part>
+<part node="1|1|1|3"> 
+<keyFrame time="0.00" visibility="false" />
+<keyFrame time="1" visibility="true" /> 
+</part>
+<part node="1|2|1|1"> 
+<keyFrame time="0.00" visibility="false" />
+<keyFrame time="1" visibility="true" /> 
+</part>
+<part node="1|2|1|2"> 
+<keyFrame time="0.00" visibility="false" />
+<keyFrame time="1" visibility="true" /> 
+</part>
+<part node="1|2|1|3"> 
+<keyFrame time="0.00" visibility="false" />
+<keyFrame time="1" visibility="true" /> 
+</part>
+<!-- open close -->
+<part node="5|7|1"> 
+<keyFrame time="0.00" visibility="false" />
+<keyFrame time="1" visibility="true" /> 
+</part>
+</animation>
+</animatedObject>
+
+<!-- Soja -->
+<animatedObject index="sojatrigger">
+
+<controls posKey="ANIMATED_OBJECT_OPEN_DOOR" negKey="ANIMATED_OBJECT_CLOSE_DOOR" triggerNode="0|2" posText="input_sojatrigger" negText="input_sojatrigger_neg" /> 
+
+<openingHours startTime="0" endTime="12" disableIfClosed="true" /> 
+<animation initialTime="0" duration="2"> 
+<part node="0|0"> 
+<keyFrame time="0.05" translation="-1.328 0.092 15.791" rotation="0 -90 0" />
+<keyFrame time="1.00" translation="-1.328 0.092 21.873" rotation="0 -90 0" /> 
+</part>
+</animation>
+</animatedObject>
+
+<!-- Schweinfutter -->
+<animatedObject index="sautrigger">
+
+<controls posKey="ANIMATED_OBJECT_OPEN_DOOR" negKey="ANIMATED_OBJECT_CLOSE_DOOR" triggerNode="2|2" posText="input_sautrigger" negText="input_sautrigger" /> 
+
+<openingHours startTime="7" endTime="19" disableIfClosed="true" /> 
+<animation initialTime="0" duration="2"> 
+<part node="2|0"> 
+<keyFrame time="0.05" translation="12.56 0 3.323" rotation="0 0 0" />
+<keyFrame time="1.00" translation="12.56 5.66 3.323" rotation="0 0 0" /> 
+</part>
+</animation>
+</animatedObject>
+  
+</animatedObjects>
+
+

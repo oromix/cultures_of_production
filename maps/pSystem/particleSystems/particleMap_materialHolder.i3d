@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="particle_materialHolder" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="9" filename="fx_carrot4x1_diffuse.png" relativePath="true"/>
+    <File fileId="10" filename="fx_carrot4x1_normal.png" relativePath="true"/>
+    <File fileId="19" filename="fx_chaff4x1_diffuse.png" relativePath="true"/>
+    <File fileId="20" filename="fx_chaff4x1_normal.png" relativePath="true"/>
+    <File fileId="15" filename="fx_compost4x1_diffuse.png" relativePath="true"/>
+    <File fileId="16" filename="fx_compost4x1_normal.png" relativePath="true"/>
+    <File fileId="11" filename="fx_grapes4x1_diffuse.dds" relativePath="true"/>
+    <File fileId="12" filename="fx_grapes4x1_normal.png" relativePath="true"/>
+    <File fileId="13" filename="fx_lavande4x1_diffuse.dds" relativePath="true"/>
+    <File fileId="14" filename="fx_lavande4x1_normal.png" relativePath="true"/>
+    <File fileId="7" filename="fx_onion4x1_diffuse.png" relativePath="true"/>
+    <File fileId="8" filename="fx_onion4x1_normal.png" relativePath="true"/>
+    <File fileId="1" filename="fx_smoke6x6_01_diffuse.png" relativePath="true"/>
+    <File fileId="2" filename="fx_smoke6x6_01_normal.png" relativePath="true"/>
+    <File fileId="17" filename="fx_soil16x4_01_diffuse.png" relativePath="true"/>
+    <File fileId="18" filename="fx_soil16x4_01_normal.png" relativePath="true"/>
+    <File fileId="21" filename="fx_soil4x1_01_diffuse.png" relativePath="true"/>
+    <File fileId="22" filename="fx_soil4x1_01_normal.png" relativePath="true"/>
+    <File fileId="4" filename="fx_wheatWindrow4x1_diffuse.png" relativePath="true"/>
+    <File fileId="5" filename="shaders/psColorShader.xml" relativePath="true"/>
+    <File fileId="3" filename="shaders/psSubUVShader.xml" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="fx_compostSmall_mat" materialId="9" ambientColor="1 1 1" customShaderId="5">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <CustomParameter name="psColor" value="1 1 1 1"/>
+    </Material>
+    <Material name="fx_smoke01_mat" materialId="7" ambientColor="1 1 1" alphaBlending="true" customShaderId="3" customShaderVariation="SUBUV_MOVIE">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="psPlayScale" value="30 60 1 0"/>
+      <CustomParameter name="psColor" value="0.25 0.18 0.08 1"/>
+    </Material>
+    <Material name="fx_chaff_mat" materialId="11" ambientColor="1 1 1" customShaderId="5">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <CustomParameter name="psColor" value="1 1 1 1"/>
+    </Material>
+    <Material name="fx_soil4x1_mat" materialId="16" ambientColor="1 1 1" customShaderId="3" customShaderVariation="SUBUV_MOVIE_HORIZONTAL">
+      <Texture fileId="17"/>
+      <Normalmap fileId="18"/>
+      <CustomParameter name="psPlayScale" value="30 60 1 0"/>
+      <CustomParameter name="psColor" value="1 1 1 1"/>
+    </Material>
+    <Material name="fx_smoke01_mat" materialId="17" ambientColor="1 1 1" alphaBlending="true" customShaderId="3" customShaderVariation="SUBUV_MOVIE">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="psPlayScale" value="30 60 1 0"/>
+      <CustomParameter name="psColor" value="0.5137 0.404 0.2274 1"/>
+    </Material>
+    <Material name="fx_carrot_mat" materialId="13" ambientColor="1 1 1" customShaderId="5">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <CustomParameter name="psColor" value="1 1 1 1"/>
+    </Material>
+    <Material name="fx_soil4x1_mat" materialId="18" ambientColor="1 1 1" customShaderId="5">
+      <Texture fileId="21"/>
+      <Normalmap fileId="22"/>
+      <CustomParameter name="psColor" value="1 1 1 1"/>
+    </Material>
+    <Material name="lambert1" materialId="20" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+    <Material name="fx_onion_mat" materialId="10" ambientColor="1 1 1" customShaderId="5">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <CustomParameter name="psColor" value="1 1 1 1"/>
+    </Material>
+    <Material name="fx_straw4x1_mat" materialId="12" ambientColor="1 1 1" customShaderId="5">
+      <Texture fileId="4"/>
+      <CustomParameter name="psColor" value="1 1 1 1"/>
+    </Material>
+    <Material name="fx_lavande_mat" materialId="14" ambientColor="1 1 1" customShaderId="5">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <CustomParameter name="psColor" value="1 1 1 1"/>
+    </Material>
+    <Material name="fx_carrot_mat" materialId="15" ambientColor="1 1 1" customShaderId="5">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <CustomParameter name="psColor" value="1 1 1 1"/>
+    </Material>
+    <Material name="fx_smoke01_mat" materialId="19" ambientColor="1 1 1" alphaBlending="true" customShaderId="3" customShaderVariation="SUBUV_MOVIE">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="psPlayScale" value="25 50 1 0"/>
+      <CustomParameter name="psColor" value="0.247 0.191 0.145 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="particleMap_materialHolder.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+    <ParticleSystem name="smokeEmitter" dynamicId="1" type="sprite" rate="0.01" lifespan="2500" maxCount="500" speed="0.00075" speedRandom="0.00025" tangentSpeed="0.5" normalSpeed="1" spriteScaleX="1" spriteScaleY="1" spriteScaleXGain="0.0025" spriteScaleYGain="0.0025" blendFactor="0.2" blendInFactor="0.5" blendOutFactor="0.5" depthSort="true" randomInitRotation="true" deltaRotateMin="-0.000349066" deltaRotateMax="0.000349066" textureAtlasSizeX="6" textureAtlasSizeY="6">
+      <Gravity force="0 0 0"/>
+    </ParticleSystem>
+    <ParticleSystem name="oatWindrowEmitter" dynamicId="3" type="sprite" rate="0.2" lifespan="1200" maxCount="500" speed="0.002" speedRandom="0" tangentSpeed="0.1" normalSpeed="1" spriteScaleX="0.7" spriteScaleY="0.7" blendFactor="1" blendInFactor="0" blendOutFactor="0.75" depthSort="true" randomInitRotation="true" deltaRotateMin="-0.00174533" deltaRotateMax="0.00174533" textureAtlasSizeX="4">
+      <Gravity force="0 -0.3 0"/>
+    </ParticleSystem>
+    <ParticleSystem name="carrotEmitter" dynamicId="5" type="sprite" rate="0.5" lifespan="800" maxCount="350" speed="0.002" speedRandom="0" tangentSpeed="0.01" normalSpeed="1" emitterShapeVelocityScale="0.75" spriteScaleX="0.125" spriteScaleY="0.125" blendFactor="1" blendInFactor="0" blendOutFactor="1" randomInitRotation="true" deltaRotateMin="-0.0015708" deltaRotateMax="0.0015708" textureAtlasSizeX="4">
+      <Gravity force="0 -1.5 0"/>
+    </ParticleSystem>
+    <ParticleSystem name="onionEmitter" dynamicId="4" type="sprite" rate="0.4" lifespan="800" maxCount="350" speed="0.002" speedRandom="0" tangentSpeed="0.01" normalSpeed="1" emitterShapeVelocityScale="0.75" spriteScaleX="0.12" spriteScaleY="0.12" blendFactor="1" blendInFactor="0" blendOutFactor="1" randomInitRotation="true" deltaRotateMin="-0.0015708" deltaRotateMax="0.0015708" textureAtlasSizeX="4">
+      <Gravity force="0 -1.5 0"/>
+    </ParticleSystem>
+    <ParticleSystem name="soilEmitter" dynamicId="10" type="sprite" rate="0.1" lifespan="500" maxCount="300" speed="0.003" speedRandom="0.0002" tangentSpeed="0" normalSpeed="1" emitterShapeVelocityScale="0.5" spriteScaleX="0.4" spriteScaleY="0.4" spriteScaleXGain="0.001" spriteScaleYGain="0.001" blendFactor="1" blendInFactor="0" blendOutFactor="0.9" depthSort="true" deltaRotateMin="-0.0010472" deltaRotateMax="0.0010472" textureAtlasSizeX="4">
+      <Gravity force="0 -2 0"/>
+    </ParticleSystem>
+    <ParticleSystem name="soilEmitter" dynamicId="8" type="sprite" rate="0.1" lifespan="550" maxCount="300" speed="0.004" speedRandom="0.0002" tangentSpeed="0" normalSpeed="1" emitterShapeVelocityScale="0.5" spriteScaleX="0.6" spriteScaleY="0.6" blendFactor="1" blendInFactor="0" blendOutFactor="1" depthSort="true" randomInitRotation="true" textureAtlasSizeX="16" textureAtlasSizeY="4">
+      <Gravity force="0 -2 0"/>
+    </ParticleSystem>
+    <ParticleSystem name="chaffEmitter" dynamicId="11" type="sprite" rate="0.075" lifespan="1500" maxCount="350" speed="0" speedRandom="0" tangentSpeed="0.5" normalSpeed="1" emitterShapeVelocityScale="0.5" spriteScaleX="0.4" spriteScaleY="0.4" spriteScaleXGain="0.0004" spriteScaleYGain="0.0004" blendFactor="1" blendInFactor="0.15" blendOutFactor="0.9" randomInitRotation="true" deltaRotateMin="-0.0015708" deltaRotateMax="0.0015708" textureAtlasSizeX="4">
+      <Gravity force="0 -0.3 0"/>
+    </ParticleSystem>
+    <ParticleSystem name="smokeEmitter" dynamicId="12" type="sprite" rate="0.004" lifespan="2000" maxCount="100" speed="0.001" speedRandom="0" tangentSpeed="0.5" normalSpeed="0.7" emitterShapeVelocityScale="0.45" spriteScaleX="1.5" spriteScaleY="1.5" spriteScaleXGain="0.001" spriteScaleYGain="0.001" blendFactor="0.3" blendInFactor="0.1" blendOutFactor="0.8" randomInitRotation="true" deltaRotateMin="-0.000349066" deltaRotateMax="0.000349066" textureAtlasSizeX="6" textureAtlasSizeY="6">
+      <Gravity force="0 -0.01 0"/>
+    </ParticleSystem>
+    <ParticleSystem name="compostEmitter" dynamicId="6" type="sprite" rate="0.25" lifespan="800" maxCount="300" speed="0.005" speedRandom="0.001" tangentSpeed="0" normalSpeed="1" spriteScaleX="1" spriteScaleY="1" spriteScaleXGain="0.001" spriteScaleYGain="0.001" blendFactor="1" blendInFactor="0" blendOutFactor="1" randomInitRotation="true" deltaRotateMin="-0.000349066" deltaRotateMax="0.000349066" textureAtlasSizeX="4">
+      <Gravity force="0 -0.8 0"/>
+    </ParticleSystem>
+    <ParticleSystem name="smokeEmitter" dynamicId="7" type="sprite" rate="0.015" lifespan="1200" maxCount="200" speed="0.003" speedRandom="0.001" tangentSpeed="0" normalSpeed="1" emitterShapeVelocityScale="0.25" damping="0.5" spriteScaleX="1" spriteScaleY="1" spriteScaleXGain="0.003" spriteScaleYGain="0.003" blendFactor="0.4" blendInFactor="0" blendOutFactor="0.5" depthSort="true" randomInitRotation="true" deltaRotateMin="-0.000349066" deltaRotateMax="0.000349066" textureAtlasSizeX="6" textureAtlasSizeY="6">
+      <Gravity force="0 0 0"/>
+    </ParticleSystem>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="smokeParticleSystems" nodeId="44">
+      <TransformGroup name="oat" nodeId="45">
+        <Dynamic dynamicId="1" emitterShapeNodeId="48" name="smokeEmitter" clipDistance="100" nodeId="47" materialIds="17" distanceBlending="false">
+          <Shape shapeId="2" name="emitShape" nodeId="48" materialIds="17" nonRenderable="true"/>
+        </Dynamic>
+      </TransformGroup>
+      <TransformGroup name="millet" nodeId="49">
+        <Dynamic dynamicId="1" emitterShapeNodeId="186" name="smokeEmitter" clipDistance="100" nodeId="51" materialIds="17" distanceBlending="false">
+          <Shape shapeId="2" name="emitShape" nodeId="52" materialIds="17" nonRenderable="true"/>
+        </Dynamic>
+      </TransformGroup>
+      <TransformGroup name="sorghum" nodeId="53">
+        <Dynamic dynamicId="1" emitterShapeNodeId="186" name="smokeEmitter" clipDistance="100" nodeId="55" materialIds="17" distanceBlending="false">
+          <Shape shapeId="2" name="emitShape" nodeId="56" materialIds="17" nonRenderable="true"/>
+        </Dynamic>
+      </TransformGroup>
+      <TransformGroup name="hops" nodeId="57">
+        <Dynamic dynamicId="1" emitterShapeNodeId="60" name="smokeEmitter" clipDistance="100" nodeId="59" materialIds="17" distanceBlending="false">
+          <Shape shapeId="2" name="emitShape" nodeId="60" materialIds="17" nonRenderable="true"/>
+        </Dynamic>
+      </TransformGroup>
+      <TransformGroup name="onion" nodeId="61">
+        <Dynamic dynamicId="1" emitterShapeNodeId="60" name="smokeEmitter" clipDistance="100" nodeId="63" materialIds="17" distanceBlending="false">
+          <Shape shapeId="2" name="emitShape" nodeId="64" materialIds="17" nonRenderable="true"/>
+        </Dynamic>
+      </TransformGroup>
+      <TransformGroup name="carrot" nodeId="65">
+        <Dynamic dynamicId="1" emitterShapeNodeId="60" name="smokeEmitter" clipDistance="100" nodeId="67" materialIds="17" distanceBlending="false">
+          <Shape shapeId="2" name="emitShape" nodeId="68" materialIds="17" nonRenderable="true"/>
+        </Dynamic>
+      </TransformGroup>
+      <TransformGroup name="grapes" nodeId="69">
+        <Dynamic dynamicId="1" emitterShapeNodeId="60" name="smokeEmitter" clipDistance="100" nodeId="71" materialIds="17" distanceBlending="false">
+          <Shape shapeId="2" name="emitShape" nodeId="72" materialIds="17" nonRenderable="true"/>
+        </Dynamic>
+      </TransformGroup>
+      <TransformGroup name="lavande" nodeId="73">
+        <Dynamic dynamicId="1" emitterShapeNodeId="60" name="smokeEmitter" clipDistance="100" nodeId="75" materialIds="17" distanceBlending="false">
+          <Shape shapeId="2" name="emitShape" nodeId="76" materialIds="17" nonRenderable="true"/>
+        </Dynamic>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="strawParticleSystems" nodeId="77"/>
+    <TransformGroup name="chopperParticleSystems" nodeId="78">
+      <TransformGroup name="oat" rotation="0 -0 -14.0549" nodeId="79">
+        <Dynamic dynamicId="3" emitterShapeNodeId="82" name="chopperEmitter" clipDistance="100" nodeId="81" materialIds="12" distanceBlending="false">
+          <Shape shapeId="2" name="emitShape" nodeId="82" materialIds="20" nonRenderable="true"/>
+        </Dynamic>
+      </TransformGroup>
+      <TransformGroup name="millet" nodeId="83">
+        <Dynamic dynamicId="3" emitterShapeNodeId="206" name="chopperEmitter" clipDistance="100" nodeId="85" materialIds="12" distanceBlending="false">
+          <Shape shapeId="2" name="emitShape" nodeId="86" materialIds="20" nonRenderable="true"/>
+        </Dynamic>
+      </TransformGroup>
+      <TransformGroup name="sorghum" nodeId="87">
+        <Dynamic dynamicId="3" emitterShapeNodeId="206" name="chopperEmitter" clipDistance="100" nodeId="89" materialIds="12" distanceBlending="false">
+          <Shape shapeId="2" name="emitShape" nodeId="90" materialIds="20" nonRenderable="true"/>
+        </Dynamic>
+      </TransformGroup>
+      <TransformGroup name="onion" nodeId="91">
+        <Dynamic dynamicId="3" emitterShapeNodeId="206" name="chopperEmitter" clipDistance="100" nodeId="93" materialIds="12" distanceBlending="false">
+          <Shape shapeId="2" name="emitShape" nodeId="94" materialIds="20" nonRenderable="true"/>
+        </Dynamic>
+      </TransformGroup>
+      <TransformGroup name="carrot" nodeId="95">
+        <Dynamic dynamicId="3" emitterShapeNodeId="206" name="chopperEmitter" clipDistance="100" nodeId="97" materialIds="12" distanceBlending="false">
+          <Shape shapeId="2" name="emitShape" nodeId="98" materialIds="20" nonRenderable="true"/>
+        </Dynamic>
+      </TransformGroup>
+      <TransformGroup name="hops" nodeId="99">
+        <Dynamic dynamicId="3" emitterShapeNodeId="206" name="chopperEmitter" clipDistance="100" nodeId="101" materialIds="12" distanceBlending="false">
+          <Shape shapeId="2" name="emitShape" nodeId="102" materialIds="20" nonRenderable="true"/>
+        </Dynamic>
+      </TransformGroup>
+      <TransformGroup name="grapes" nodeId="103">
+        <Dynamic dynamicId="3" emitterShapeNodeId="206" name="chopperEmitter" clipDistance="100" nodeId="105" materialIds="12" distanceBlending="false">
+          <Shape shapeId="2" name="emitShape" nodeId="106" materialIds="20" nonRenderable="true"/>
+        </Dynamic>
+      </TransformGroup>
+      <TransformGroup name="lavande" nodeId="107">
+        <Dynamic dynamicId="3" emitterShapeNodeId="206" name="chopperEmitter" clipDistance="100" nodeId="109" materialIds="12" distanceBlending="false">
+          <Shape shapeId="2" name="emitShape" nodeId="110" materialIds="20" nonRenderable="true"/>
+        </Dynamic>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="unloadingParticles" nodeId="111">
+      <TransformGroup name="onion" nodeId="112">
+        <Dynamic dynamicId="4" emitterShapeNodeId="115" name="onionEmitter" clipDistance="100" nodeId="114" materialIds="10" distanceBlending="false">
+          <Shape shapeId="2" name="emitShape" nodeId="115" materialIds="20" nonRenderable="true"/>
+        </Dynamic>
+      </TransformGroup>
+      <TransformGroup name="carrot" nodeId="116">
+        <Dynamic dynamicId="5" emitterShapeNodeId="119" name="carrotEmitter" clipDistance="100" nodeId="118" materialIds="15" distanceBlending="false">
+          <Shape shapeId="2" name="emitShape" nodeId="119" materialIds="20" nonRenderable="true"/>
+        </Dynamic>
+      </TransformGroup>
+      <TransformGroup name="grapes" nodeId="120">
+        <Dynamic dynamicId="5" emitterShapeNodeId="123" name="carrotEmitter" clipDistance="100" nodeId="122" materialIds="13" distanceBlending="false">
+          <Shape shapeId="2" name="emitShape" nodeId="123" materialIds="20" nonRenderable="true"/>
+        </Dynamic>
+      </TransformGroup>
+      <TransformGroup name="lavande" nodeId="124">
+        <Dynamic dynamicId="5" emitterShapeNodeId="127" name="carrotEmitter" clipDistance="100" nodeId="126" materialIds="14" distanceBlending="false">
+          <Shape shapeId="2" name="emitShape" nodeId="127" materialIds="20" nonRenderable="true"/>
+        </Dynamic>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="spreaderParticles" nodeId="128">
+      <TransformGroup name="compost" nodeId="129">
+        <TransformGroup name="spreader" nodeId="130">
+          <Dynamic dynamicId="6" emitterShapeNodeId="133" name="compostEmitter" clipDistance="150" nodeId="132" materialIds="9" distanceBlending="false">
+            <Shape shapeId="2" name="emitShape" nodeId="133" materialIds="20" nonRenderable="true"/>
+          </Dynamic>
+        </TransformGroup>
+        <TransformGroup name="spreader_smoke" nodeId="134">
+          <Dynamic dynamicId="7" emitterShapeNodeId="137" name="smokeEmitter" clipDistance="100" nodeId="136" materialIds="7" distanceBlending="false">
+            <Shape shapeId="2" name="emitShape" nodeId="137" materialIds="7" nonRenderable="true"/>
+          </Dynamic>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="cutterChopper" nodeId="138"/>
+    <TransformGroup name="soil" nodeId="139"/>
+    <TransformGroup name="windrower" nodeId="140"/>
+    <TransformGroup name="tedder" nodeId="141"/>
+    <TransformGroup name="weeder" nodeId="142"/>
+    <TransformGroup name="forestry" nodeId="143"/>
+    <TransformGroup name="harvesting" nodeId="144">
+      <TransformGroup name="SOIL_HARVESTING" nodeId="145">
+        <TransformGroup name="carrot" nodeId="146">
+          <Dynamic dynamicId="8" emitterShapeNodeId="149" name="soilEmitter" clipDistance="100" nodeId="148" materialIds="16" distanceBlending="false">
+            <Shape shapeId="9" name="emitShape" nodeId="149" materialIds="20" nonRenderable="true"/>
+          </Dynamic>
+        </TransformGroup>
+        <TransformGroup name="onion" nodeId="150">
+          <Dynamic dynamicId="8" emitterShapeNodeId="153" name="soilEmitter" clipDistance="100" nodeId="152" materialIds="16" distanceBlending="false">
+            <Shape shapeId="9" name="emitShape" nodeId="153" materialIds="20" nonRenderable="true"/>
+          </Dynamic>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="PREPARE_FRUIT" nodeId="154">
+        <TransformGroup name="carrot" nodeId="155">
+          <Dynamic dynamicId="10" emitterShapeNodeId="158" name="chaffEmitter" clipDistance="100" nodeId="157" materialIds="11" castsShadows="true" receiveShadows="true" distanceBlending="false">
+            <Shape shapeId="9" name="EmitShape" nodeId="158" materialIds="20" nonRenderable="true"/>
+          </Dynamic>
+        </TransformGroup>
+        <TransformGroup name="onion" nodeId="159">
+          <Dynamic dynamicId="10" emitterShapeNodeId="162" name="chaffEmitter" clipDistance="100" nodeId="161" materialIds="11" castsShadows="true" receiveShadows="true" distanceBlending="false">
+            <Shape shapeId="9" name="EmitShape" nodeId="162" materialIds="20" nonRenderable="true"/>
+          </Dynamic>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="CLEANING_SOIL" nodeId="163">
+        <TransformGroup name="carrot" nodeId="164">
+          <Dynamic dynamicId="11" emitterShapeNodeId="167" name="soilFallingEmitter" clipDistance="100" nodeId="166" materialIds="18" distanceBlending="false">
+            <Shape shapeId="9" name="emitShape" nodeId="167" materialIds="20" nonRenderable="true"/>
+          </Dynamic>
+        </TransformGroup>
+        <TransformGroup name="onion" nodeId="168">
+          <Dynamic dynamicId="11" emitterShapeNodeId="171" name="soilFallingEmitter" clipDistance="100" nodeId="170" materialIds="18" distanceBlending="false">
+            <Shape shapeId="9" name="emitShape" nodeId="171" materialIds="20" nonRenderable="true"/>
+          </Dynamic>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="CLEANING_DUST" nodeId="172">
+        <TransformGroup name="carrot" nodeId="173">
+          <Dynamic dynamicId="12" emitterShapeNodeId="176" name="smokeEmitter" clipDistance="100" nodeId="175" materialIds="19" distanceBlending="false">
+            <Shape shapeId="9" name="emitShape" nodeId="176" materialIds="20" nonRenderable="true"/>
+          </Dynamic>
+        </TransformGroup>
+        <TransformGroup name="onion" nodeId="177">
+          <Dynamic dynamicId="12" emitterShapeNodeId="180" name="smokeEmitter" clipDistance="100" nodeId="179" materialIds="19" distanceBlending="false">
+            <Shape shapeId="9" name="emitShape" nodeId="180" materialIds="20" nonRenderable="true"/>
+          </Dynamic>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+    <TransformGroup name="washer" nodeId="181"/>
+    <TransformGroup name="pickup" nodeId="182"/>
+    <TransformGroup name="rye" visibility="false" nodeId="183">
+      <Dynamic dynamicId="1" emitterShapeNodeId="186" name="smokeEmitter" visibility="false" clipDistance="100" nodeId="185" materialIds="17" distanceBlending="false">
+        <Shape shapeId="2" name="emitShape" visibility="false" nodeId="186" materialIds="17" nonRenderable="true"/>
+      </Dynamic>
+    </TransformGroup>
+    <TransformGroup name="spelt" visibility="false" nodeId="187">
+      <Dynamic dynamicId="1" emitterShapeNodeId="186" name="smokeEmitter" visibility="false" clipDistance="100" nodeId="189" materialIds="17" distanceBlending="false">
+        <Shape shapeId="2" name="emitShape" visibility="false" nodeId="190" materialIds="17" nonRenderable="true"/>
+      </Dynamic>
+    </TransformGroup>
+    <TransformGroup name="triticale" visibility="false" nodeId="191">
+      <Dynamic dynamicId="1" emitterShapeNodeId="194" name="smokeEmitter" visibility="false" clipDistance="100" nodeId="193" materialIds="17" distanceBlending="false">
+        <Shape shapeId="2" name="emitShape" visibility="false" nodeId="194" materialIds="17" nonRenderable="true"/>
+      </Dynamic>
+    </TransformGroup>
+    <TransformGroup name="triticale" rotation="0 -0 -14.0549" visibility="false" nodeId="195">
+      <Dynamic dynamicId="3" emitterShapeNodeId="198" name="chopperEmitter" visibility="false" clipDistance="100" nodeId="197" materialIds="12" distanceBlending="false">
+        <Shape shapeId="2" name="emitShape" visibility="false" nodeId="198" materialIds="20" nonRenderable="true"/>
+      </Dynamic>
+    </TransformGroup>
+    <TransformGroup name="spelt" visibility="false" nodeId="199">
+      <Dynamic dynamicId="3" emitterShapeNodeId="206" name="chopperEmitter" visibility="false" clipDistance="100" nodeId="201" materialIds="12" distanceBlending="false">
+        <Shape shapeId="2" name="emitShape" visibility="false" nodeId="202" materialIds="20" nonRenderable="true"/>
+      </Dynamic>
+    </TransformGroup>
+    <TransformGroup name="rye" visibility="false" nodeId="203">
+      <Dynamic dynamicId="3" emitterShapeNodeId="206" name="chopperEmitter" visibility="false" clipDistance="100" nodeId="205" materialIds="12" distanceBlending="false">
+        <Shape shapeId="2" name="emitShape" visibility="false" nodeId="206" materialIds="20" nonRenderable="true"/>
+      </Dynamic>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="47">
+      <Attribute name="fillType" type="string" value="oat"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="SMOKE"/>
+    </UserAttribute>
+    <UserAttribute nodeId="51">
+      <Attribute name="fillType" type="string" value="millet"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="SMOKE"/>
+    </UserAttribute>
+    <UserAttribute nodeId="55">
+      <Attribute name="fillType" type="string" value="sorghum"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="SMOKE"/>
+    </UserAttribute>
+    <UserAttribute nodeId="59">
+      <Attribute name="fillType" type="string" value="hops"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="SMOKE"/>
+    </UserAttribute>
+    <UserAttribute nodeId="63">
+      <Attribute name="fillType" type="string" value="onion"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="SMOKE"/>
+    </UserAttribute>
+    <UserAttribute nodeId="67">
+      <Attribute name="fillType" type="string" value="carrot"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="SMOKE"/>
+    </UserAttribute>
+    <UserAttribute nodeId="71">
+      <Attribute name="fillType" type="string" value="grapes"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="SMOKE"/>
+    </UserAttribute>
+    <UserAttribute nodeId="75">
+      <Attribute name="fillType" type="string" value="lavande"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="SMOKE"/>
+    </UserAttribute>
+    <UserAttribute nodeId="81">
+      <Attribute name="fillType" type="string" value="oat"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="CHOPPER"/>
+    </UserAttribute>
+    <UserAttribute nodeId="85">
+      <Attribute name="fillType" type="string" value="millet"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="CHOPPER"/>
+    </UserAttribute>
+    <UserAttribute nodeId="89">
+      <Attribute name="fillType" type="string" value="sorghum"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="CHOPPER"/>
+    </UserAttribute>
+    <UserAttribute nodeId="93">
+      <Attribute name="fillType" type="string" value="onion"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="CHOPPER"/>
+    </UserAttribute>
+    <UserAttribute nodeId="97">
+      <Attribute name="fillType" type="string" value="carrot"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="CHOPPER"/>
+    </UserAttribute>
+    <UserAttribute nodeId="101">
+      <Attribute name="fillType" type="string" value="hops"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="CHOPPER"/>
+    </UserAttribute>
+    <UserAttribute nodeId="105">
+      <Attribute name="fillType" type="string" value="grapes"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="CHOPPER"/>
+    </UserAttribute>
+    <UserAttribute nodeId="109">
+      <Attribute name="fillType" type="string" value="lavande"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="CHOPPER"/>
+    </UserAttribute>
+    <UserAttribute nodeId="114">
+      <Attribute name="fillType" type="string" value="onion"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="UNLOADING"/>
+    </UserAttribute>
+    <UserAttribute nodeId="118">
+      <Attribute name="fillType" type="string" value="carrot"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="UNLOADING"/>
+    </UserAttribute>
+    <UserAttribute nodeId="122">
+      <Attribute name="fillType" type="string" value="grapes"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="UNLOADING"/>
+    </UserAttribute>
+    <UserAttribute nodeId="126">
+      <Attribute name="fillType" type="string" value="lavande"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="UNLOADING"/>
+    </UserAttribute>
+    <UserAttribute nodeId="132">
+      <Attribute name="fillType" type="string" value="compost"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="SPREADER"/>
+    </UserAttribute>
+    <UserAttribute nodeId="136">
+      <Attribute name="fillType" type="string" value="compost"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="SPREADER_SMOKE"/>
+    </UserAttribute>
+    <UserAttribute nodeId="148">
+      <Attribute name="fillType" type="string" value="carrot"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="SOIL_HARVESTING"/>
+    </UserAttribute>
+    <UserAttribute nodeId="152">
+      <Attribute name="fillType" type="string" value="onion"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="SOIL_HARVESTING"/>
+    </UserAttribute>
+    <UserAttribute nodeId="157">
+      <Attribute name="fillType" type="string" value="carrot"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="PREPARE_FRUIT"/>
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="161">
+      <Attribute name="fillType" type="string" value="onion"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="PREPARE_FRUIT"/>
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="166">
+      <Attribute name="fillType" type="string" value="carrot"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="CLEANING_SOIL"/>
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="170">
+      <Attribute name="fillType" type="string" value="onion"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="CLEANING_SOIL"/>
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="175">
+      <Attribute name="fillType" type="string" value="carrot"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="CLEANING_DUST"/>
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="179">
+      <Attribute name="fillType" type="string" value="onion"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="CLEANING_DUST"/>
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

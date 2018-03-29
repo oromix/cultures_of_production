@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Chaika2" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="chayika_2.dds" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="default" materialId="6" ambientColor="0.588 0.588 0.588">
+      <Texture fileId="1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Chaika2.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="Bone001" translation="0.0011013 0 0.522108" rotation="-180 89.7147 -180" nodeId="9">
+      <TransformGroup name="Bone002" translation="0.993567 0 0" rotation="0 -0.943604 0" nodeId="10"/>
+      <TransformGroup name="Bone003" translation="0.521226 0.152432 0.178595" rotation="38.2849 -57.0113 56.4927" nodeId="11">
+        <TransformGroup name="Bone004" translation="0.536167 0 0" rotation="0.0088833 -13.3472 -2.44999e-05" nodeId="12">
+          <TransformGroup name="Bone005" translation="0.345091 0 0" rotation="-0.0062723 -34.1553 0.004359" nodeId="13">
+            <TransformGroup name="Bone006" translation="0.265228 0 0" rotation="-0.0022209 -19.3742 0.0035624" nodeId="14">
+              <TransformGroup name="Bone007" translation="0.212589 0 0" nodeId="15"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="Bone008" translation="0.523047 0.152431 -0.187333" rotation="-39.3902 56.4678 55.2697" nodeId="16">
+        <TransformGroup name="Bone009" translation="0.497192 0 0" rotation="0.0033053 10.0568 -0.041524" nodeId="17">
+          <TransformGroup name="Bone010" translation="0.30615 0 0" rotation="-0.0558578 35.0926 -0.119272" nodeId="18">
+            <TransformGroup name="Bone011" translation="0.307177 0 0" rotation="-0.0047947 20.8992 -0.163917" nodeId="19">
+              <TransformGroup name="Bone012" translation="0.218869 0 0" nodeId="20"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+    <Shape shapeId="1" name="1" clipDistance="260" nodeId="21" materialIds="6" castsShadows="true" receiveShadows="true" skinBindNodeIds="9 16 17 18 19 20 11 12 13 14 15 10"/>
+  </Scene>
+
+
+  <Animation externalAnimFile="Chaika2.i3d.anim" />
+</i3D>

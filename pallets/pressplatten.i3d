@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="woolPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="Boardstack2.dds" relativePath="true"/>
+    <File fileId="2" filename="pallet_diffuse.dds" relativePath="true"/>
+    <File fileId="3" filename="pallet_normal.dds" relativePath="true"/>
+    <File fileId="4" filename="pallet_specular.dds" relativePath="true"/>
+    <File fileId="7" filename="eingepackt.dds" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+    <Material name="Material.001" materialId="8" ambientColor="1 1 1" cosPower="50" specularColor="0.044812 0.072765 1">
+      <Texture fileId="7"/>
+    </Material>
+    <Material name="lambert1" materialId="9" ambientColor="1 1 1">
+      <Texture fileId="6"/>
+    </Material>
+    <Material name="gray_mat" materialId="10" diffuseColor="0.584314 0.584314 0.584314 1" ambientColor="0.588235 0.588235 0.588235">
+    </Material>
+    <Material name="lambert2" materialId="6" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="pressplatten.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="fillablePallet" dynamic="true" compound="true" collisionMask="25178120" density="0.04" clipDistance="200" nodeId="33" materialIds="10" nonRenderable="true">
+      <Shape shapeId="2" name="boardPallet_vis" scale="1 1 1.3" nodeId="34" materialIds="6" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="3" name="dummyTensionBeltNode" translation="0.01 0.707904 0" scale="2.798 0.975 1.008" visibility="false" clipDistance="100" nodeId="35" materialIds="7" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+      <Shape shapeId="4" name="palletAttacherTrigger" translation="0 0.175 0" kinematic="true" trigger="true" collisionMask="8192" nodeId="36" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="fillPalett" scale="0.965 1 1.08" nodeId="37">
+        <Shape shapeId="5" name="boardStack" nodeId="38" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="6" name="boardStack" translation="0 0.2 0" nodeId="39" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="7" name="boardStack" translation="0 0.4 0" nodeId="40" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="8" name="boardStack" translation="0 0.6 0" nodeId="41" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="9" name="boardStack" translation="0 0.8 0" nodeId="42" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="boardStack" translation="0 1 0" nodeId="43" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="11" name="verpackung" translation="1.59163 0.839677 -0.00408279" rotation="7.7316e-06 -90 5.93109e-06" scale="0.733 0.6 0.67" kinematic="true" collision="false" nodeId="44" materialIds="8" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <Shape shapeId="12" name="transportPallet_col8" translation="0.0019251 0.156 0.000948154" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="45" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="13" name="transportPallet_col7" translation="0.624121 0.156 0.000948154" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="46" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="14" name="transportPallet_col6" translation="-0.622301 0.156 0.000948154" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="47" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="15" name="transportPallet_col5" translation="0.00271691 0.156 -0.564682" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="48" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="16" name="transportPallet_col4" translation="0.00271691 0.156 0.562657" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="49" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="17" name="transportPallet_col3" translation="0.622586 0.156 0.564194" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="50" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="18" name="transportPallet_col2" translation="0.622586 0.156 -0.565392" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="51" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="19" name="transportPallet_col1" translation="-0.622301 0.156 0.563359" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="52" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="20" name="transportPallet_col" translation="-0.622301 0.156 -0.565176" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="53" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="21" name="solidColi" translation="0 0.256457 0" visibility="false" compoundChild="true" collisionMask="16781314" density="0.7" nodeId="54" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="33">
+      <Attribute name="capacity" type="float" value="8000"/>
+      <Attribute name="deleteIfEmpty" type="boolean" value="true"/>
+      <Attribute name="dynamicMountForceLimitScale" type="float" value="1"/>
+      <Attribute name="dynamicMountTriggerIndex" type="string" value="0>1"/>
+      <Attribute name="fillType" type="string" value="osb"/>
+      <Attribute name="meshNodes" type="string" value="0 0|0"/>
+      <Attribute name="startFillLevel" type="integer" value="0"/>
+      <Attribute name="startScale" type="float" value="0.1"/>
+      <Attribute name="useRandomRot" type="boolean" value="false"/>
+      <Attribute name="visibilityNodesAdditive" type="boolean" value="true"/>
+      <Attribute name="visibilityNodesIndex" type="string" value="0>2"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="fillPlane_materialHolder" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="19" filename="carrot_diffuse.png" relativePath="true"/>
+    <File fileId="20" filename="carrot_normal.png" relativePath="true"/>
+    <File fileId="21" filename="carrot_specular.png" relativePath="true"/>
+    <File fileId="7" filename="compost_diffuse.png" relativePath="true"/>
+    <File fileId="8" filename="compost_normal.png" relativePath="true"/>
+    <File fileId="9" filename="compost_specular.png" relativePath="true"/>
+    <File fileId="27" filename="grapes_diffuse.png" relativePath="true"/>
+    <File fileId="28" filename="grapes_normal.png" relativePath="true"/>
+    <File fileId="29" filename="grapes_specular.png" relativePath="true"/>
+    <File fileId="15" filename="hops_diffuse.dds" relativePath="true"/>
+    <File fileId="16" filename="hops_normal.dds" relativePath="true"/>
+    <File fileId="17" filename="hops_specular.dds" relativePath="true"/>
+    <File fileId="22" filename="hud/fillTypes/hud_fill_carrot.png" relativePath="true"/>
+    <File fileId="10" filename="hud/fillTypes/hud_fill_compost.png" relativePath="true"/>
+    <File fileId="30" filename="hud/fillTypes/hud_fill_grapes.png" relativePath="true"/>
+    <File fileId="18" filename="hud/fillTypes/hud_fill_hops.dds" relativePath="true"/>
+    <File fileId="34" filename="hud/fillTypes/hud_fill_lavande.png" relativePath="true"/>
+    <File fileId="14" filename="hud/fillTypes/hud_fill_millet.dds" relativePath="true"/>
+    <File fileId="5" filename="hud/fillTypes/hud_fill_oat.png" relativePath="true"/>
+    <File fileId="26" filename="hud/fillTypes/hud_fill_onion.png" relativePath="true"/>
+    <File fileId="31" filename="lavande_diffuse.png" relativePath="true"/>
+    <File fileId="32" filename="lavande_normal.png" relativePath="true"/>
+    <File fileId="33" filename="lavande_specular.png" relativePath="true"/>
+    <File fileId="11" filename="millet_diffuse.dds" relativePath="true"/>
+    <File fileId="12" filename="millet_normal.dds" relativePath="true"/>
+    <File fileId="13" filename="millet_specular.dds" relativePath="true"/>
+    <File fileId="1" filename="oat_diffuse.png" relativePath="true"/>
+    <File fileId="2" filename="oat_normal.png" relativePath="true"/>
+    <File fileId="3" filename="oat_specular.png" relativePath="true"/>
+    <File fileId="23" filename="onion_diffuse.png" relativePath="true"/>
+    <File fileId="24" filename="onion_normal.png" relativePath="true"/>
+    <File fileId="25" filename="onion_specular.png" relativePath="true"/>
+    <File fileId="6" filename="shaders/fillIconShader.xml" relativePath="true"/>
+    <File fileId="4" filename="shaders/fillPlaneShader.xml" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="hud_fill_sand_mat" materialId="10" ambientColor="1 1 1" alphaBlending="true" customShaderId="6">
+      <Texture fileId="22"/>
+      <CustomParameter name="iconColor" value="0 0 0 1"/>
+    </Material>
+    <Material name="grapes_mat" materialId="13" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1" customShaderId="4">
+      <Texture fileId="27"/>
+      <Normalmap fileId="28"/>
+      <Glossmap fileId="29"/>
+      <CustomParameter name="uvScale" value="1 1 1 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="hud_fill_grapes_mat" materialId="15" ambientColor="1 1 1" alphaBlending="true" customShaderId="6">
+      <Texture fileId="30"/>
+      <CustomParameter name="iconColor" value="0 0 0 1"/>
+    </Material>
+    <Material name="hud_fill_oat_mat" materialId="16" ambientColor="1 1 1" alphaBlending="true" customShaderId="6">
+      <Texture fileId="5"/>
+      <CustomParameter name="iconColor" value="0 0 0 1"/>
+    </Material>
+    <Material name="hud_fill_oat_mat" materialId="11" ambientColor="1 1 1" alphaBlending="true" customShaderId="6">
+      <Texture fileId="18"/>
+      <CustomParameter name="iconColor" value="0 0 0 1"/>
+    </Material>
+    <Material name="oat_mat" materialId="8" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1" customShaderId="4">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+      <CustomParameter name="uvScale" value="2 2 2 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="hud_fill_sand_mat" materialId="14" ambientColor="1 1 1" alphaBlending="true" customShaderId="6">
+      <Texture fileId="26"/>
+      <CustomParameter name="iconColor" value="0 0 0 1"/>
+    </Material>
+    <Material name="oat_mat" materialId="12" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="uvScale" value="2 2 2 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="millet_mat" materialId="7" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1" customShaderId="4">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+      <CustomParameter name="uvScale" value="2 2 2 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="sand_mat" materialId="25" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1" customShaderId="4">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="25"/>
+      <CustomParameter name="uvScale" value="1 1 1 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="hud_fill_compost_mat" materialId="24" ambientColor="1 1 1" alphaBlending="true" customShaderId="6">
+      <Texture fileId="10"/>
+      <CustomParameter name="iconColor" value="0 0 0 1"/>
+    </Material>
+    <Material name="compost_mat" materialId="22" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1" customShaderId="4">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <CustomParameter name="uvScale" value="1 1 1 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="sand_mat" materialId="23" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1" customShaderId="4">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+      <CustomParameter name="uvScale" value="1 1 1 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="hud_fill_lavande_mat" materialId="18" ambientColor="1 1 1" alphaBlending="true" customShaderId="6">
+      <Texture fileId="34"/>
+      <CustomParameter name="iconColor" value="0 0 0 1"/>
+    </Material>
+    <Material name="lavande_mat" materialId="19" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1" customShaderId="4">
+      <Texture fileId="31"/>
+      <Normalmap fileId="32"/>
+      <Glossmap fileId="33"/>
+      <CustomParameter name="uvScale" value="2 2 2 1"/>
+      <CustomParameter name="uvOffset" value="0 0 0 1"/>
+    </Material>
+    <Material name="hud_fill_millet_mat" materialId="21" ambientColor="1 1 1" alphaBlending="true" customShaderId="6">
+      <Texture fileId="14"/>
+      <CustomParameter name="iconColor" value="0 0 0 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="fillPlane_materialHolder.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="oat" clipDistance="10" nodeId="29">
+      <Shape shapeId="1" name="oat_plane_materialHolder" clipDistance="10" nodeId="30" materialIds="12" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="oat_icon_materialHolder" clipDistance="10" nodeId="31" materialIds="16" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="compost" clipDistance="10" nodeId="32">
+      <Shape shapeId="1" name="compost_materialHolder" clipDistance="10" nodeId="33" materialIds="22" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="compost_icon_materialHolder" clipDistance="10" nodeId="34" materialIds="24" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="millet" clipDistance="10" nodeId="38">
+      <Shape shapeId="2" name="millet_plane_materialHolder" clipDistance="10" nodeId="39" materialIds="7" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="millet_icon_materialHolder" clipDistance="10" nodeId="40" materialIds="21" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="sorghum" clipDistance="10" nodeId="41">
+      <Shape shapeId="2" name="sorghum_plane_materialHolder" clipDistance="10" nodeId="42" materialIds="7" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="sorghum_icon_materialHolder" clipDistance="10" nodeId="43" materialIds="21" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="hops" clipDistance="10" nodeId="44">
+      <Shape shapeId="2" name="hops_plane_materialHolder" clipDistance="10" nodeId="45" materialIds="8" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="hops_icon_materialHolder" clipDistance="10" nodeId="46" materialIds="11" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="carrot" clipDistance="10" nodeId="47">
+      <Shape shapeId="1" name="carrot_materialHolder" clipDistance="10" nodeId="48" materialIds="23" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="carrot_icon_materialHolder" clipDistance="10" nodeId="49" materialIds="10" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="onion" clipDistance="10" nodeId="50">
+      <Shape shapeId="1" name="onion_materialHolder" clipDistance="10" nodeId="51" materialIds="25" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="onion_icon_materialHolder" clipDistance="10" nodeId="52" materialIds="14" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="grapes" clipDistance="10" nodeId="53">
+      <Shape shapeId="1" name="grapes_materialHolder" clipDistance="10" nodeId="54" materialIds="13" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="grapes_icon_materialHolder" clipDistance="10" nodeId="55" materialIds="15" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+    <TransformGroup name="lavande" clipDistance="10" nodeId="56">
+      <Shape shapeId="1" name="lavande_plane_materialHolder" clipDistance="10" nodeId="57" materialIds="19" castsShadows="true" receiveShadows="true"/>
+      <Shape shapeId="2" name="lavande_icon_materialHolder" clipDistance="10" nodeId="58" materialIds="18" castsShadows="true" receiveShadows="true"/>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="30">
+      <Attribute name="fillType" type="string" value="oat"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="31">
+      <Attribute name="fillType" type="string" value="oat"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="33">
+      <Attribute name="fillType" type="string" value="compost"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="34">
+      <Attribute name="fillType" type="string" value="compost"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="39">
+      <Attribute name="fillType" type="string" value="millet"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="40">
+      <Attribute name="fillType" type="string" value="millet"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="42">
+      <Attribute name="fillType" type="string" value="sorghum"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="43">
+      <Attribute name="fillType" type="string" value="sorghum"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="45">
+      <Attribute name="fillType" type="string" value="hops"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="46">
+      <Attribute name="fillType" type="string" value="hops"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="48">
+      <Attribute name="fillType" type="string" value="carrot"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="49">
+      <Attribute name="fillType" type="string" value="carrot"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="51">
+      <Attribute name="fillType" type="string" value="onion"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="52">
+      <Attribute name="fillType" type="string" value="onion"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="54">
+      <Attribute name="fillType" type="string" value="grapes"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="55">
+      <Attribute name="fillType" type="string" value="grapes"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="57">
+      <Attribute name="fillType" type="string" value="lavande"/>
+      <Attribute name="materialType" type="string" value="FILLPLANE"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+    <UserAttribute nodeId="58">
+      <Attribute name="fillType" type="string" value="lavande"/>
+      <Attribute name="materialType" type="string" value="ICON"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateMaterial"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

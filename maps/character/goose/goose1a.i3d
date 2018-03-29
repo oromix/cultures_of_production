@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="americanMap" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="goose_diffuse.dds" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert2" materialId="7" ambientColor="1 1 1">
+      <Texture fileId="1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="goose1a.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="joint1" translation="0 0.392825 0.016937" rotation="-90 -57.926 90" nodeId="12">
+      <TransformGroup name="joint2" translation="0.0990224 1.11022e-17 3.29811e-17" rotation="0 -0 7.64476" nodeId="13">
+        <TransformGroup name="joint3" translation="0.0945416 2.77556e-17 3.40014e-17" rotation="0 -0 13.6742" nodeId="14">
+          <TransformGroup name="joint4" translation="0.0975584 3.33067e-17 3.81454e-17" rotation="180 -0 52.3157" nodeId="15">
+            <TransformGroup name="joint5" translation="0.0743795 -3.60822e-17 -2.28266e-17" rotation="0 -0 6.37364" nodeId="16">
+              <TransformGroup name="joint6" translation="0.0827664 -3.60822e-17 -2.64798e-17" rotation="0 0 -1.41597" nodeId="17">
+                <TransformGroup name="joint7" translation="0.0899624 -1.72085e-16 -2.85515e-17" rotation="0 -0 6.48307" nodeId="18">
+                  <TransformGroup name="joint8" translation="0.0751662 2.01228e-17 -2.46157e-17" rotation="180 -0 21.7935" nodeId="19">
+                    <TransformGroup name="joint9" translation="0.0668742 -1.94289e-17 2.20977e-17" rotation="0 0 -58.6594" nodeId="20">
+                      <TransformGroup name="joint10" translation="0.0702782 -3.33067e-17 1.38686e-18" rotation="0 0 -37.3136" nodeId="21">
+                        <TransformGroup name="joint11" translation="0.0505665 0.0127671 -6.73777e-18" rotation="0 -0 12.6879" nodeId="22">
+                          <TransformGroup name="joint12" translation="0.0428167 1.39646e-16 -2.60434e-18" rotation="0 0 -1.06709" nodeId="23">
+                            <TransformGroup name="joint13" translation="0.059645 -1.47105e-16 -7.80703e-18" rotation="-9.6052 90 0" nodeId="24"/>
+                          </TransformGroup>
+                        </TransformGroup>
+                        <TransformGroup name="joint14" translation="0.0377308 -0.0209298 -1.44722e-17" rotation="0 -0 8.97996" nodeId="25">
+                          <TransformGroup name="joint15" translation="0.12032 5.55111e-18 1.23259e-33" rotation="-14.5186 90 0" nodeId="26"/>
+                        </TransformGroup>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="joint33" translation="-0.0333131 0.0114498 -8.55312e-18" rotation="180 -0 170.513" nodeId="27">
+        <TransformGroup name="joint34" translation="0.0795881 0 -3.08149e-34" rotation="0 -0 0.92616" nodeId="28">
+          <TransformGroup name="joint35" translation="0.0891872 4.82947e-16 1.20038e-19" rotation="21.6612 -90 0" nodeId="29">
+            <TransformGroup name="joint16" translation="5.44428e-19 -0.00891768 -0.0307205" rotation="-90 65.8068 -90" nodeId="30">
+              <TransformGroup name="joint17" translation="0.141074 -1.11022e-17 3.69778e-33" rotation="0 0 -3.43604" nodeId="31">
+                <TransformGroup name="joint18" translation="0.134721 -2.66454e-16 1.56877e-18" rotation="27.6292 -90 0" nodeId="32"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="joint19" translation="-0.0144298 -0.087872 0.0944936" rotation="179.892 2.47135 -78.3762" nodeId="33">
+            <TransformGroup name="joint20" translation="0.117434 -1.38778e-17 -2.46519e-33" rotation="0 0 -2.70831" nodeId="34">
+              <TransformGroup name="joint21" translation="0.0582936 -2.63678e-17 -4.58708e-19" rotation="0 -0 4.38619" nodeId="35">
+                <TransformGroup name="joint22" translation="0.0733354 -1.66534e-17 3.57595e-19" rotation="0 -0 9.29894" nodeId="36">
+                  <TransformGroup name="joint23" translation="0.0259761 -6.9389e-18 8.23704e-19" rotation="0 -0 66.0639" nodeId="37">
+                    <TransformGroup name="joint24" translation="0.147522 -5.55111e-18 2.39416e-17" rotation="-2.89858 90 0" nodeId="38"/>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="joint27" translation="-0.0144298 -0.087872 -0.0944936" rotation="179.892 2.47135 101.624" nodeId="39">
+            <TransformGroup name="joint28" translation="-0.117434 6.89854e-08 -2.47874e-07" rotation="0 0 -2.70831" nodeId="40">
+              <TransformGroup name="joint29" translation="-0.058293 -7.85868e-08 -2.10636e-08" rotation="0 -0 4.38619" nodeId="41">
+                <TransformGroup name="joint30" translation="-0.0733357 5.09601e-08 4.17787e-09" rotation="0 -0 9.29894" nodeId="42">
+                  <TransformGroup name="joint31" translation="-0.0259761 -1.01741e-08 -1.54625e-07" rotation="0 -0 66.0639" nodeId="43">
+                    <TransformGroup name="joint32" translation="-0.147522 6.20299e-09 -3.08198e-07" rotation="-2.89858 90 0" nodeId="44"/>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+    <Shape shapeId="1" name="goose1" nodeId="45" materialIds="7" castsShadows="true" receiveShadows="true" skinBindNodeIds="12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44"/>
+  </Scene>
+
+
+  <Animation externalAnimFile="goose1a.i3d.anim" />
+  <UserAttributes>
+    <UserAttribute nodeId="12">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="13">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="14">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="15">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="16">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="17">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="18">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="19">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="20">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="21">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="22">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="23">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="24">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="25">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="26">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="27">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="28">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="29">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="30">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="31">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="32">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="33">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="34">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="35">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="36">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="37">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="38">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="39">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="40">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="41">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="42">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="43">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="44">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="3">
+  <Parameters>
+    <Parameter name="terrainLayerRepeat0" target="terrainLayerRepeat0" type="float4" />
+    <Parameter name="terrainLayerRepeat1" target="terrainLayerRepeat1" type="float4" />
+    <Parameter name="terrainLayerPlanes0" target="terrainLayerPlanes0" type="float4" />
+    <Parameter name="terrainLayerPlanes1" target="terrainLayerPlanes1" type="float4" />
+    <Parameter name="chunkLayerMappings0" target="chunkLayerMappings0" type="float4" />
+    <Parameter name="chunkLayerMappings1" target="chunkLayerMappings1" type="float4" />
+
+    <Parameter name="terrainLodBlendInfos" target="terrainLodBlendInfos" type="float4" />
+    <Parameter name="terrainSizeInvSizeScaleXZScaleY" target="terrainSizeInvSizeScaleXZScaleY" type="float4" />
+    <Parameter name="terrainStartXZScaleXZ" target="terrainStartXZScaleXZ" type="float4" />
+    <Parameter name="terrainPatchScale" target="terrainPatchScale" type="float" />
+    <Parameter name="scaleramp0102" target="scaleramp0102" type="float4" />
+    <Parameter name="scaleramp0312" target="scaleramp0312" type="float4" />
+    <Parameter name="scaleramp1323" target="scaleramp1323" type="float4" />
+  </Parameters>
+  <Textures>
+    <Texture name="weightsMap" defaultColorProfile="linearRGB"/>
+    <Texture name="lodDiffuseMap" defaultColorProfile="sRGB"/>
+    <Texture name="lodTypeMap" defaultColorProfile="linearRGB"/>
+    <Texture name="lodNormalMap" defaultColorProfile="linearRGB"/>
+    <Texture name="infoLayerMap" defaultColorProfile="linearRGB"/>
+  </Textures>
+  <LodLevel startDistance="0" subsequentPassForceMode="use" alphaForceMode="ignore">
+    <CodeInjections>
+      <CodeInjection position="SHARED_START">
+        <![CDATA[
+#define INTEGER_POSITION
+
+#if defined(NORMAL_MAP)
+#define TERRAIN_NORMAL_MAPPING
+// TODO make this configurable in engine
+#define TERRAIN_NONLINEAR_WEIGHTS
+#endif
+
+// We are going to define our own albedo and normal map handling
+#undef ALBEDO_MAP
+#undef NORMAL_MAP
+]]>
+      </CodeInjection>
+      <CodeInjection position="VS_UNIFORM_INPUT">
+        <![CDATA[
+            uniform float4 terrainLayerRepeat0;
+            uniform float4 terrainLayerRepeat1;
+
+            uniform float4 terrainLayerPlanes0;
+            uniform float4 terrainLayerPlanes1;
+
+            uniform float4 terrainLodBlendInfos;
+            uniform float4 terrainSizeInvSizeScaleXZScaleY;
+            uniform float4 terrainStartXZScaleXZ;
+            uniform float  terrainPatchScale;
+
+#if defined(TERRAIN_NONLINEAR_WEIGHTS)
+            uniform float4 scaleramp0102;
+            uniform float4 scaleramp0312;
+            uniform float4 scaleramp1323;
+#endif
+            uniform float4 chunkLayerMappings0;
+            uniform float4 chunkLayerMappings1;
+]]>
+      </CodeInjection>
+      <CodeInjection position="VS_OUTPUT">
+        <![CDATA[
+#if NUM_TERRAIN_DETAIL_LAYERS > 0
+            float2 terrainLayer0TexCoords    : TEXCOORDn;
+            float2 terrainLayer0FarTexCoords : TEXCOORDn;
+#endif
+#if NUM_TERRAIN_DETAIL_LAYERS > 1
+            float2 terrainLayer1TexCoords    : TEXCOORDn;
+            float2 terrainLayer1FarTexCoords : TEXCOORDn;
+#endif
+#if NUM_TERRAIN_DETAIL_LAYERS > 2
+            float2 terrainLayer2TexCoords    : TEXCOORDn;
+            float2 terrainLayer2FarTexCoords : TEXCOORDn;
+#endif
+#if NUM_TERRAIN_DETAIL_LAYERS > 3
+            float2 terrainLayer3TexCoords    : TEXCOORDn;
+            float2 terrainLayer3FarTexCoords : TEXCOORDn;
+#endif
+#if NUM_TERRAIN_DETAIL_LAYERS > 0
+            float2 terrainBlendWeightsTexCoords : TEXCOORDn;
+#endif
+
+            float2 normalMapTexCoords : TEXCOORDn;
+
+#if (NUM_TERRAIN_DETAIL_LAYERS > 0) && defined(USE_LOD_MAP)
+            float terrainLodMapWeight0 : TEXCOORDn;
+            float terrainLodMapWeight1 : TEXCOORDn;
+#endif
+            float terrainDistanceBlendWeight: TEXCOORDn;
+            float viewDistance : TEXCOORDn;
+]]>
+      </CodeInjection>
+      <CodeInjection position="POST_SET_TEXCOORDS_VS">
+        <![CDATA[
+            float4 inPos = float4(In.position);
+            float2 terrainTexCoords = inPos.xz * terrainSizeInvSizeScaleXZScaleY.y;
+            Out.defaultTexCoords = terrainTexCoords.xy;
+            Out.normalMapTexCoords = terrainTexCoords.xy + 0.5 * terrainSizeInvSizeScaleXZScaleY.yy;
+
+#if NUM_TERRAIN_DETAIL_LAYERS > 0
+            Out.terrainLayer0TexCoords = terrainTexCoords.xy * terrainLayerRepeat0[0];
+            Out.terrainLayer0FarTexCoords = terrainTexCoords.xy * (terrainLayerRepeat0[0] * 0.05);
+#endif
+
+#if NUM_TERRAIN_DETAIL_LAYERS > 1
+            Out.terrainLayer1TexCoords = terrainTexCoords.xy * terrainLayerRepeat0[1];
+            Out.terrainLayer1FarTexCoords = terrainTexCoords.xy * (terrainLayerRepeat0[1] * 0.05);
+#endif
+
+#if NUM_TERRAIN_DETAIL_LAYERS > 2
+            Out.terrainLayer2TexCoords = terrainTexCoords.xy * terrainLayerRepeat0[2];
+            Out.terrainLayer2FarTexCoords = terrainTexCoords.xy * (terrainLayerRepeat0[2] * 0.05);
+#endif
+
+#if NUM_TERRAIN_DETAIL_LAYERS > 3
+            Out.terrainLayer3TexCoords = terrainTexCoords.xy * terrainLayerRepeat0[3];
+            Out.terrainLayer3FarTexCoords = terrainTexCoords.xy * (terrainLayerRepeat0[3] * 0.05);
+#endif
+
+#if NUM_TERRAIN_DETAIL_LAYERS > 0
+            Out.terrainBlendWeightsTexCoords = ((inPos.xz - terrainStartXZScaleXZ.xy) * terrainPatchScale - 0.5) * terrainStartXZScaleXZ.zw + 0.5;
+#endif
+]]>
+      </CodeInjection>
+      <CodeInjection position="GET_POSITION_VS">
+        <![CDATA[
+            float3 inPos = float3(In.position.xyz);
+            float3  pos;
+            pos.xz = (inPos.xz - 0.5 * terrainSizeInvSizeScaleXZScaleY.x) * terrainSizeInvSizeScaleXZScaleY.z;
+            pos.y = (inPos.y + 32768) * terrainSizeInvSizeScaleXZScaleY.w;
+            return pos;
+]]>
+      </CodeInjection>
+      <CodeInjection position="VS_END">
+      <![CDATA[
+            float viewDistance = length(viewDir);
+
+            Out.viewDistance = viewDistance;
+#if (NUM_TERRAIN_DETAIL_LAYERS > 0) && defined(USE_LOD_MAP)
+            Out.terrainLodMapWeight0 = saturate((viewDistance-terrainLodBlendInfos.x)*terrainLodBlendInfos.y);
+            Out.terrainLodMapWeight1 = saturate((viewDistance-terrainLodBlendInfos.z)*terrainLodBlendInfos.w);
+#endif
+            Out.terrainDistanceBlendWeight = saturate((viewDistance-10)/300);
+]]>
+      </CodeInjection>
+      <CodeInjection position="SAMPLERS">
+        <![CDATA[
+
+#ifdef SHOW_TERRAIN_INFO_LAYER
+        sampler2D infoLayerMap;
+#endif
+
+#if defined(TERRAIN_NORMAL_MAPPING)
+        sampler2DArray normalMap;
+#endif
+        sampler2DArray baseMap;
+        sampler2D weightsMap;
+
+        sampler2DArray lodDiffuseMap;
+        sampler2D lodTypeMap;
+
+        sampler2D lodNormalMap;
+
+]]>
+      </CodeInjection>
+      <CodeInjection position="LIB_FUNCTION_FS">
+        <![CDATA[
+
+float3 getNormal(FS_INPUT In)
+{
+    float3 worldNormal;
+    worldNormal.xz = tex2DTwoChannel(lodNormalMap, In.vs.normalMapTexCoords).xy*2-1; // LA8 stores X,Z
+    worldNormal.y = sqrt(max(0, 1 - dot(worldNormal.xz, worldNormal.xz)));
+    return worldNormal;
+}
+
+#if defined(TERRAIN_NORMAL_MAPPING)
+float3 getTangent(float3 n)
+{
+    float3 X = float3(n.y,-n.x,0);  // perpendicular to n and roughly along (1,0,0)
+    float3 Z = float3(0,-n.z,n.y);  // perpendicular to n and roughly along (0,0,1)
+                                    // but X and Z are not perpendicular, because the angle between them is not 90
+                                    // but X + Z is still perpendicular to n, and it is the midpoint of the desired vectors
+    float3 XZ = X+Z;
+    float3 XZp = cross(n, XZ);    // this is perpendicular to n and XZ so it's 45 to the other side of one vector
+                                  // (this also has the same length as XZ because |cross(n,XZ)| = |n||XZ|sin(theta) = |XZ|)
+    return normalize(XZ + XZp);   // so the average is the tangent
+}
+#endif
+
+#if NUM_TERRAIN_DETAIL_LAYERS > 0
+float3 getLerpWeights(FS_INPUT In)
+{
+#if NUM_TERRAIN_DETAIL_LAYERS == 1
+    return float3(0,0,0); // trivial
+#endif
+
+    // get the weights from linear interpolation
+    float4 terrainBlendWeights = tex2D(weightsMap, In.vs.terrainBlendWeightsTexCoords).wzyx;
+
+// normalize, and clear invalid weights to help the optimizer
+#if NUM_TERRAIN_DETAIL_LAYERS == 4
+    terrainBlendWeights /= dot(terrainBlendWeights, float4(1,1,1,1));
+#elif NUM_TERRAIN_DETAIL_LAYERS == 3
+    terrainBlendWeights /= dot(terrainBlendWeights, float4(1,1,1,0));
+    terrainBlendWeights.w = 0;
+#else
+    terrainBlendWeights /= dot(terrainBlendWeights, float4(1,1,0,0));
+    terrainBlendWeights.zw = 0;
+#endif
+
+    // go from blend weights to prioritized blends
+    float3  w;
+    w.z = terrainBlendWeights[3];
+    w.y = (w.z < 1) ? terrainBlendWeights[2] / (1 - w.z) : 0;
+    w.x = ((w.z < 1) && (w.y < 1)) ? terrainBlendWeights[1] / ((1 - w.z) * (1 - w.y)) : 0;
+
+#if !defined(TERRAIN_NONLINEAR_WEIGHTS)
+    return w;
+#else
+    float3  offset = float3(0,0,0);
+    float3  ramp = float3(1,1,1);
+
+    float alpha0 = tex2D(baseMap, float3(In.vs.terrainLayer0TexCoords, chunkLayerMappings0[0])).a;
+    float scale01 = scaleramp0102.x;
+    float ramp01 = scaleramp0102.y;
+    offset.x = alpha0 * scale01;
+    ramp.x = ramp01;
+
+#if NUM_TERRAIN_DETAIL_LAYERS > 2
+
+    float alpha1 = tex2D(baseMap, float3(In.vs.terrainLayer1TexCoords, chunkLayerMappings0[1])).a;
+    float scale02 = scaleramp0102.z;
+    float ramp02 = scaleramp0102.w;
+    float scale12 = scaleramp0312.z;
+    float ramp12 = scaleramp0312.w;
+    float totalWeight2 = dot(terrainBlendWeights, float4(1,1,0,0));
+    if (totalWeight2 > 0) {
+        offset.y = (alpha0 * scale02 * terrainBlendWeights.x + alpha1 * scale12 * terrainBlendWeights.y) / totalWeight2;
+        ramp.y = (ramp02 * terrainBlendWeights.x + ramp12 * terrainBlendWeights.y) / totalWeight2;
+    }
+#endif
+
+#if NUM_TERRAIN_DETAIL_LAYERS > 3
+    float alpha2 = tex2D(baseMap, float3(In.vs.terrainLayer2TexCoords, chunkLayerMappings0[2])).a;
+    float scale03 = scaleramp0312.x;
+    float ramp03 = scaleramp0312.y;
+    float scale13 = scaleramp1323.x;
+    float ramp13 = scaleramp1323.y;
+    float scale23 = scaleramp1323.z;
+    float ramp23 = scaleramp1323.w;
+    float combinedOffset3 = 0;
+    float combinedRamp3 = 1;
+    float totalWeight3 = dot(terrainBlendWeights, float4(1,1,1,0));
+    if (totalWeight3 > 0) {
+        offset.z = (alpha0 * scale03 * terrainBlendWeights.x + alpha1 * scale13 * terrainBlendWeights.y + alpha2 * scale23 * terrainBlendWeights.z) / totalWeight3;
+        ramp.z = (ramp03 * terrainBlendWeights.x + ramp13 * terrainBlendWeights.y + ramp23 * terrainBlendWeights.z) / totalWeight3;
+    }
+#endif
+    // force scale so that if the offset is high it still hits (1,1)
+    ramp = max(ramp, 1 / (1 - offset));
+    return saturate((w - offset) * ramp);
+#endif
+}
+#endif // NUM_TERRAIN_DETAIL_LAYERS
+
+#if NUM_TERRAIN_DETAIL_LAYERS > 0
+float3 getBlendedColor(FS_INPUT In)
+{
+/*#if defined(USE_LOD_MAP)
+    float lodTextureType = tex2D(lodTypeMap, In.vs.defaultTexCoords).x;
+    if (lodTextureType < 1.0) {
+        //return float3(lodTextureType,lodTextureType,lodTextureType);
+        return tex2D(lodDiffuseMap, float3(In.vs.defaultTexCoords,lodTextureType*255)).xyz;
+    }
+#endif*/
+    float3 lerpWeights = getLerpWeights(In);
+    float3 layersColor =  tex2D(baseMap, float3(In.vs.terrainLayer0TexCoords, chunkLayerMappings0[0])).xyz;
+
+    float myLayerMapping[8];
+    for (int i=0; i<NUM_TERRAIN_DETAIL_LAYERS; i++) {
+        myLayerMapping[i] = float(chunkLayerMappings0[i]);
+    }
+#if NUM_TERRAIN_DETAIL_LAYERS > 4
+    for (int i=0; i<NUM_TERRAIN_DETAIL_LAYERS; i++) {
+        myLayerMapping[i+4] = float(chunkLayerMappings1[i]);
+    }
+#endif
+    for (int i=1; i<NUM_TERRAIN_DETAIL_LAYERS; i++) {
+
+        float arrayLayer = myLayerMapping[i];
+
+        if (i == 1) {
+#if NUM_TERRAIN_DETAIL_LAYERS > 1
+            float3 terrainLayerCoord = float3(In.vs.terrainLayer1TexCoords, arrayLayer);
+
+            float3 layer1Color = tex2D(baseMap, terrainLayerCoord).xyz;
+            layersColor = lerp(layersColor, layer1Color, lerpWeights.x);
+#endif
+        } else if (i == 2) {
+#if NUM_TERRAIN_DETAIL_LAYERS > 2
+            float3 terrainLayerCoord = float3(In.vs.terrainLayer2TexCoords, arrayLayer);
+            float3 layer2Color = tex2D(baseMap, terrainLayerCoord).xyz;
+            layersColor = lerp(layersColor, layer2Color, lerpWeights.y);
+#endif
+        } else if (i == 3) {
+#if NUM_TERRAIN_DETAIL_LAYERS > 3
+            float3 terrainLayerCoord = float3(In.vs.terrainLayer3TexCoords, arrayLayer);
+            float3 layer3Color = tex2D(baseMap, terrainLayerCoord).xyz;
+            layersColor = lerp(layersColor, layer3Color, lerpWeights.z);
+#endif
+        }
+    }
+    return layersColor;
+}
+
+#if (NUM_TERRAIN_DETAIL_LAYERS > 0) && defined(TERRAIN_NORMAL_MAPPING)
+float3 getBlendedNormal(FS_INPUT In)
+{
+#if defined(USE_LOD_MAP)
+    /*float lodTextureType = tex2D(lodTypeMap, In.vs.defaultTexCoords).x;
+    if (lodTextureType < 1.0) {
+        return getNormal(In);
+    }*/
+#endif
+    float3 lerpWeights = getLerpWeights(In);
+    float2 layersNormal = tex2D(normalMap, float3(In.vs.terrainLayer0TexCoords, chunkLayerMappings0[0])).xy;
+
+    float myLayerMapping[8];
+    for (int i=0; i<NUM_TERRAIN_DETAIL_LAYERS; i++) {
+        myLayerMapping[i] = float(chunkLayerMappings0[i]);
+    }
+#if NUM_TERRAIN_DETAIL_LAYERS > 4
+    for (int i=0; i<NUM_TERRAIN_DETAIL_LAYERS; i++) {
+        myLayerMapping[i+4] = float(chunkLayerMappings1[i]);
+    }
+#endif
+
+    for (int i=1; i<NUM_TERRAIN_DETAIL_LAYERS; i++) {
+
+        float arrayLayer = myLayerMapping[i];
+
+        if (i == 1) {
+#if NUM_TERRAIN_DETAIL_LAYERS > 1
+            float3 terrainLayerCoord = float3(In.vs.terrainLayer1TexCoords, arrayLayer);
+            float2 layer1Normal = tex2D(normalMap, terrainLayerCoord).xy;
+            layersNormal = lerp(layersNormal, layer1Normal, lerpWeights.x);
+#endif
+        } else if (i == 2) {
+#if NUM_TERRAIN_DETAIL_LAYERS > 2
+            float3 terrainLayerCoord = float3(In.vs.terrainLayer2TexCoords, arrayLayer);
+            float2 layer2Normal = tex2D(normalMap, terrainLayerCoord).xy;
+            layersNormal = lerp(layersNormal, layer2Normal, lerpWeights.y);
+#endif
+        } else if (i == 3) {
+#if NUM_TERRAIN_DETAIL_LAYERS > 3
+            float3 terrainLayerCoord = float3(In.vs.terrainLayer3TexCoords, arrayLayer);
+            float2 layer3Normal = tex2D(normalMap, terrainLayerCoord).xy;
+            layersNormal = lerp(layersNormal, layer3Normal, lerpWeights.z);
+#endif
+        }
+    }
+    layersNormal = layersNormal * 2 - 1;
+
+    float3 tangentSpaceNormal = float3(layersNormal.xy, sqrt(max(0, 1 - dot(layersNormal, layersNormal))));
+    float3 worldNormal = getNormal(In);
+    float3 worldTangent = getTangent(worldNormal);
+    float3 worldBitangent = cross(worldTangent, worldNormal);
+    float3x3 worldToTangentSpaceMat = float3x3(worldTangent, worldBitangent, worldNormal);
+
+    return mul(tangentSpaceNormal, worldToTangentSpaceMat); // translate from tangent space to world space
+}
+#else
+float3 getBlendedNormal(FS_INPUT In)
+{
+    return getNormal(In);
+}
+#endif
+]]>
+      </CodeInjection>
+      <CodeInjection position="POST_ALBEDO_FS">
+        <![CDATA[
+
+#if (NUM_TERRAIN_DETAIL_LAYERS > 0) || defined(USE_LOD_MAP)
+        albedo.xyz = getBlendedColor(In);
+
+#if defined(USE_LOD_MAP)
+
+    float lodTextureSize = TERRAIN_LOD_TEXTURE_SIZE;
+    float lodTexelSize = 1.0 / lodTextureSize;
+
+    // Move tex coord inside lower left texel
+    float2 lodTexCoord = In.vs.defaultTexCoords - 0.5 * lodTexelSize;
+
+    float2 lodPixelOffset = frac(lodTexCoord * lodTextureSize);
+
+    float lodTextureType00 = tex2D(lodTypeMap, lodTexCoord).x;
+    float lodTextureType10 = tex2D(lodTypeMap, lodTexCoord + float2(lodTexelSize, 0.0)).x;
+    float lodTextureType01 = tex2D(lodTypeMap, lodTexCoord + float2(0.0, lodTexelSize)).x;
+    float lodTextureType11 = tex2D(lodTypeMap, lodTexCoord + float2(lodTexelSize , lodTexelSize)).x;
+
+    float3 lodColor00 = tex2D(lodDiffuseMap, float3(In.vs.defaultTexCoords*16,lodTextureType00*255)).xyz;
+    float3 lodColor10 = tex2D(lodDiffuseMap, float3(In.vs.defaultTexCoords*16,lodTextureType10*255)).xyz;
+    float3 lodColor01 = tex2D(lodDiffuseMap, float3(In.vs.defaultTexCoords*16,lodTextureType01*255)).xyz;
+    float3 lodColor11 = tex2D(lodDiffuseMap, float3(In.vs.defaultTexCoords*16,lodTextureType11*255)).xyz;
+
+    float3 lodColor0 = lerp(lodColor00, lodColor10, lodPixelOffset.x);
+    float3 lodColor1 = lerp(lodColor01, lodColor11, lodPixelOffset.x);
+
+    float3 lodColor = lerp(lodColor0, lodColor1, lodPixelOffset.y);
+
+    float lodMapWeight = (lodTextureType00 < (TOTAL_NUM_TERRAIN_DETAIL_LAYERS- 0.5)/255) ? In.vs.terrainLodMapWeight0 : In.vs.terrainLodMapWeight1;
+    albedo.xyz = lerp(albedo.xyz, lodColor, lodMapWeight);
+#endif
+
+#endif
+
+        ]]>
+      </CodeInjection>
+      <CodeInjection position="GET_NORMAL_FS">
+        <![CDATA[
+            return getBlendedNormal(In);
+        ]]>
+      </CodeInjection>
+      <CodeInjection position="FINAL_POS_FS">
+        <![CDATA[
+#ifdef SHOW_TERRAIN_INFO_LAYER
+
+            float infoColor = tex2D(infoLayerMap, In.vs.defaultTexCoords).x;
+            oColor.xyz = lerp(oColor.xyz, infoColor, 0.7);
+
+            //float infoColor = tex2D(infoLayerMap, In.vs.defaultTexCoords).x;
+            //oColor.xyz = lerp(oColor.xyz, infoColor, 0.7);
+            //oColor.xyz = float3(In.vs.terrainLayer0TexCoords, 0);
+            //oColor.xyz = tex2D(baseMap, float3(In.vs.terrainLayer0TexCoords, 0)).xyz;
+            //tex2D(weightsMap, float3(In.vs.terrainBlendWeightsTexCoords, 0)).x
+#endif
+        ]]>
+      </CodeInjection>
+    </CodeInjections>
+  </LodLevel>
+  <LodLevel startDistance="1" copyLastCodeInjections="true" subsequentPassForceMode="use" alphaForceMode="ignore">
+    <LodVariation position="before">
+      <![CDATA[
+            #define USE_LOD_MAP
+      ]]>
+    </LodVariation>
+  </LodLevel>
+  <LodLevel startDistance="2" copyLastCodeInjections="true" subsequentPassForceMode="use" alphaForceMode="ignore">
+    <LodVariation position="after">
+      <![CDATA[
+            #define USE_LOD_MAP
+      ]]>
+    </LodVariation>
+  </LodLevel>
+</CustomShader>

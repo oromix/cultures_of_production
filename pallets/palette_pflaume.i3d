@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="woolPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="pallet_normal.dds" relativePath="true"/>
+    <File fileId="7" filename="pallet_specular.dds" relativePath="true"/>
+    <File fileId="8" filename="box_diffuse_pflaume.dds" relativePath="true"/>
+    <File fileId="10" filename="pflaume_plane.dds" relativePath="true"/>
+    <File fileId="5" filename="pallet_diffuse.dds" relativePath="true"/>
+    <File fileId="11" filename="decal_2.dds" relativePath="true"/>
+    <File fileId="2" filename="pallet_diffuse.dds" relativePath="true"/>
+    <File fileId="3" filename="pallet_normal.dds" relativePath="true"/>
+    <File fileId="4" filename="pallet_specular.dds" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+    <Material name="woolPallet_mat" materialId="7" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="wire_mat" materialId="8" ambientColor="1 1 1" cosPower="255" specularColor="1 1 1" alphaBlending="true">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="lambert2" materialId="9" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="blinn1" materialId="10" ambientColor="1 1 1" cosPower="20" specularColor="0.5 0.5 0.5">
+      <Texture fileId="11"/>
+    </Material>
+    <Material name="acmat_0" materialId="11" ambientColor="1 1 1">
+      <Texture fileId="8"/>
+    </Material>
+    <Material name="adStrip" materialId="12" ambientColor="1 1 1" alphaBlending="true">
+      <Texture fileId="10"/>
+    </Material>
+    <Material name="Default" materialId="13" diffuseColor="1 1 1 1" ambientColor="0 0 0">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="palette_pflaume.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="fillablePallet" dynamic="true" compound="true" collisionMask="25178120" density="0.1" clipDistance="300" nodeId="39" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+      <Shape shapeId="2" name="vis" visibility="false" clipDistance="300" nodeId="40" materialIds="7">
+        <Shape shapeId="3" name="wire" translation="-0.00322998 0.866917 -0.491" clipDistance="75" nodeId="41" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="wire1" translation="0.734754 0.866917 2.38419e-08" visibility="false" clipDistance="75" nodeId="42" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="5" name="wire2" translation="-0.00322998 0.866917 0.491214" visibility="false" clipDistance="75" nodeId="43" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="6" name="wire3" translation="-0.741214 0.866917 2.38419e-08" visibility="false" clipDistance="75" nodeId="44" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="7" name="wire4" translation="-0.00322998 1.45898 2.38419e-08" visibility="false" clipDistance="75" nodeId="45" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="8" name="dummyTensionBeltNode" translation="0 0.722266 0" visibility="false" clipDistance="100" nodeId="46" materialIds="6" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+      <Shape shapeId="9" name="palletAttacherTrigger" translation="0 0.175 0" kinematic="true" trigger="true" collisionMask="8192" nodeId="47" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="fillBags" translation="0 -0.083 0" nodeId="48">
+        <Shape shapeId="10" name="box" translation="-0.351955 0.27 -0.229673" rotation="-180 -1.94064 -180" scale="0.9 0.9 0.9" nodeId="49" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="11" name="Pl" translation="-0.383446 0.313948 0.00548455" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="50" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="11" name="Pl" translation="0.422983 0.313948 0.0232402" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="51" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="12" name="apfel" translation="0.0244839 0.235725 0.0192523" rotation="90 -88.539 180" scale="1.04 3.1 1" nodeId="52" materialIds="13,12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="10" name="box" translation="-0.335 0.27 0.269" rotation="-180 -1.94064 -180" scale="0.9 0.9 0.9" nodeId="53" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="11" name="Pl" translation="-0.383446 0.313948 0.00548455" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="54" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="11" name="Pl" translation="0.422983 0.313948 0.0232402" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="55" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="12" name="apfel" translation="0.0244839 0.235725 0.0192523" rotation="90 -88.539 180" scale="1.04 3.1 1" nodeId="56" materialIds="13,12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="10" name="box" translation="0.403287 0.27 0.261112" rotation="-180 -1.37693 -180" scale="0.9 0.9 0.9" nodeId="57" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="11" name="Pl" translation="-0.383446 0.313948 0.00548455" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="58" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="11" name="Pl" translation="0.422983 0.313948 0.0232402" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="59" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="12" name="apfel" translation="0.0244839 0.235725 0.0192523" rotation="90 -88.539 180" scale="1.04 3.1 1" nodeId="60" materialIds="13,12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="10" name="box" translation="0.386685 0.27 -0.23379" rotation="-180 -1.94064 -180" scale="0.9 0.9 0.9" nodeId="61" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="11" name="Pl" translation="-0.383446 0.313948 0.00548455" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="62" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="11" name="Pl" translation="0.422983 0.313948 0.0232402" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="63" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="12" name="apfel" translation="0.0244839 0.235725 0.0192523" rotation="90 -88.539 180" scale="1.04 3.1 1" nodeId="64" materialIds="13,12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="10" name="box" translation="-0.351955 0.51 -0.229673" rotation="-180 -1.94064 -180" scale="0.9 0.9 0.9" nodeId="65" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="11" name="Pl" translation="-0.383446 0.313948 0.00548455" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="66" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="11" name="Pl" translation="0.422983 0.313948 0.0232402" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="67" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="12" name="apfel" translation="0.0244839 0.235725 0.0192523" rotation="90 -88.539 180" scale="1.04 3.1 1" nodeId="68" materialIds="13,12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="10" name="box" translation="-0.335 0.51 0.269" rotation="-180 -1.94064 -180" scale="0.9 0.9 0.9" nodeId="69" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="11" name="Pl" translation="-0.383446 0.313948 0.00548455" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="70" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="11" name="Pl" translation="0.422983 0.313948 0.0232402" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="71" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="12" name="apfel" translation="0.0244839 0.235725 0.0192523" rotation="90 -88.539 180" scale="1.04 3.1 1" nodeId="72" materialIds="13,12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="10" name="box" translation="0.403287 0.51 0.261112" rotation="-180 -1.37693 -180" scale="0.9 0.9 0.9" nodeId="73" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="11" name="Pl" translation="-0.383446 0.313948 0.00548455" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="74" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="11" name="Pl" translation="0.422983 0.313948 0.0232402" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="75" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="12" name="apfel" translation="0.0244839 0.235725 0.0192523" rotation="90 -88.539 180" scale="1.04 3.1 1" nodeId="76" materialIds="13,12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="10" name="box" translation="0.386685 0.51 -0.23379" rotation="-180 -1.94064 -180" scale="0.9 0.9 0.9" nodeId="77" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="11" name="Pl" translation="-0.383446 0.313948 0.00548455" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="78" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="11" name="Pl" translation="0.422983 0.313948 0.0232402" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="79" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="12" name="apfel" translation="0.0244839 0.235725 0.0192523" rotation="90 -88.539 180" scale="1.04 3.1 1" nodeId="80" materialIds="13,12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="10" name="box" translation="-0.335 0.754 0.269" rotation="-180 -1.94064 -180" scale="0.9 0.9 0.9" nodeId="81" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="11" name="Pl" translation="-0.383446 0.313948 0.00548455" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="82" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="11" name="Pl" translation="0.422983 0.313948 0.0232402" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="83" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="12" name="apfel" translation="0.0244839 0.235725 0.0192523" rotation="90 -88.539 180" scale="1.04 3.1 1" nodeId="84" materialIds="13,12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="10" name="box" translation="0.403287 0.754 0.261112" rotation="-180 -1.37693 -180" scale="0.9 0.9 0.9" nodeId="85" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="11" name="Pl" translation="-0.383446 0.313948 0.00548455" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="86" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="11" name="Pl" translation="0.422983 0.313948 0.0232402" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="87" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="12" name="apfel" translation="0.0244839 0.235725 0.0192523" rotation="90 -88.539 180" scale="1.04 3.1 1" nodeId="88" materialIds="13,12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="10" name="box" translation="-0.351955 0.754 -0.229673" rotation="-180 -1.94064 -180" scale="0.9 0.9 0.9" nodeId="89" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="11" name="Pl" translation="-0.383446 0.313948 0.00548455" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="90" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="11" name="Pl" translation="0.422983 0.313948 0.0232402" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="91" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="12" name="apfel" translation="0.0244839 0.235725 0.0192523" rotation="90 -88.539 180" scale="1.04 3.1 1" nodeId="92" materialIds="13,12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="10" name="box" translation="0.386685 0.754 -0.23379" rotation="-180 -1.94064 -180" scale="0.9 0.9 0.9" nodeId="93" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="11" name="Pl" translation="-0.383446 0.313948 0.00548455" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="94" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="11" name="Pl" translation="0.422983 0.313948 0.0232402" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="95" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="12" name="apfel" translation="0.0244839 0.235725 0.0192523" rotation="90 -88.539 180" scale="1.04 3.1 1" nodeId="96" materialIds="13,12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="10" name="box" translation="0.386685 0.992 -0.23379" rotation="-180 -1.94064 -180" scale="0.9 0.9 0.9" nodeId="97" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="11" name="Pl" translation="-0.383446 0.313948 0.00548455" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="98" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="11" name="Pl" translation="0.422983 0.313948 0.0232402" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="99" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="12" name="apfel" translation="0.0244839 0.235725 0.0192523" rotation="90 -88.539 180" scale="1.04 3.1 1" nodeId="100" materialIds="13,12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="10" name="box" translation="-0.335 0.992 0.269" rotation="-180 -1.94064 -180" scale="0.9 0.9 0.9" nodeId="101" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="11" name="Pl" translation="-0.383446 0.313948 0.00548455" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="102" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="11" name="Pl" translation="0.422983 0.313948 0.0232402" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="103" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="12" name="apfel" translation="0.0244839 0.235725 0.0192523" rotation="90 -88.539 180" scale="1.04 3.1 1" nodeId="104" materialIds="13,12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="10" name="box" translation="-0.351955 0.992 -0.229673" rotation="-180 -1.94064 -180" scale="0.9 0.9 0.9" nodeId="105" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="11" name="Pl" translation="-0.383446 0.313948 0.00548455" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="106" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="11" name="Pl" translation="0.422983 0.313948 0.0232402" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="107" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="12" name="apfel" translation="0.0244839 0.235725 0.0192523" rotation="90 -88.539 180" scale="1.04 3.1 1" nodeId="108" materialIds="13,12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="10" name="box" translation="0.403287 0.992 0.261112" rotation="-180 -1.37693 -180" scale="0.9 0.9 0.9" nodeId="109" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="11" name="Pl" translation="-0.383446 0.313948 0.00548455" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="110" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="11" name="Pl" translation="0.422983 0.313948 0.0232402" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="111" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="12" name="apfel" translation="0.0244839 0.235725 0.0192523" rotation="90 -88.539 180" scale="1.04 3.1 1" nodeId="112" materialIds="13,12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="10" name="box" translation="-0.335 1.234 0.269" rotation="-180 -1.94064 -180" scale="0.9 0.9 0.9" nodeId="113" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="11" name="Pl" translation="-0.383446 0.313948 0.00548455" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="114" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="11" name="Pl" translation="0.422983 0.313948 0.0232402" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="115" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="12" name="apfel" translation="0.0244839 0.235725 0.0192523" rotation="90 -88.539 180" scale="1.04 3.1 1" nodeId="116" materialIds="13,12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="10" name="box" translation="-0.351955 1.234 -0.229673" rotation="-180 -1.94064 -180" scale="0.9 0.9 0.9" nodeId="117" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="11" name="Pl" translation="-0.383446 0.313948 0.00548455" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="118" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="11" name="Pl" translation="0.422983 0.313948 0.0232402" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="119" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="12" name="apfel" translation="0.0244839 0.235725 0.0192523" rotation="90 -88.539 180" scale="1.04 3.1 1" nodeId="120" materialIds="13,12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="10" name="box" translation="0.403287 1.234 0.261112" rotation="-180 -1.37693 -180" scale="0.9 0.9 0.9" nodeId="121" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="11" name="Pl" translation="-0.383446 0.313948 0.00548455" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="122" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="11" name="Pl" translation="0.422983 0.313948 0.0232402" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="123" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="12" name="apfel" translation="0.0244839 0.235725 0.0192523" rotation="90 -88.539 180" scale="1.04 3.1 1" nodeId="124" materialIds="13,12" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="10" name="box" translation="0.386685 1.2312 -0.23379" rotation="-180 -1.94064 -180" scale="0.9 0.9 0.9" nodeId="125" materialIds="11" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="11" name="Pl" translation="-0.383446 0.313948 0.00548455" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="126" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="11" name="Pl" translation="0.422983 0.313948 0.0232402" rotation="2.036e-11 -2 1.32473e-11" scale="0.004 0.05 0.07" nodeId="127" materialIds="11" receiveShadows="true"/>
+          <Shape shapeId="12" name="apfel" translation="0.0244839 0.235725 0.0192523" rotation="90 -88.539 180" scale="1.04 3.1 1" nodeId="128" materialIds="13,12" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="decal_1" translation="-0.257067 -0.344494 0.286486" rotation="90 0 -180" scale="0.08 0.9 1.4" clipDistance="200" nodeId="129" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="decal_1" translation="0.326319 -0.344494 0.300123" rotation="90 0 -180" scale="0.08 0.9 1.4" clipDistance="200" nodeId="130" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="decal_1" translation="0.543541 -0.344494 0.305134" rotation="90 0 -180" scale="0.08 0.9 1.4" clipDistance="200" nodeId="131" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="decal_1" translation="1.14834 -0.339286 0.322947" rotation="90 0 -180" scale="0.08 0.9 1.4" clipDistance="200" nodeId="132" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="decal_1" translation="-0.258632 0.33689 -0.265" scale="0.08 0.9 1.132" clipDistance="200" nodeId="133" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="decal_1" translation="-0.256927 -0.342398 -0.814595" rotation="-90 -1.41808 -6.70145e-06" scale="0.08 0.9 1.4" clipDistance="200" nodeId="134" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="decal_1" translation="-0.258632 0.33689 -0.265" rotation="5.20268e-07 -7.04363e-06 180" scale="0.08 0.9 1.132" clipDistance="200" nodeId="135" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="decal_1" translation="0.324486 0.338559 -0.250363" scale="0.08 0.9 1.132" clipDistance="200" nodeId="136" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="decal_1" translation="0.32721 -0.342398 -0.800134" rotation="-90 -1.41808 0" scale="0.08 0.9 1.4" clipDistance="200" nodeId="137" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="decal_1" translation="0.543333 -0.342398 -0.794784" rotation="-90 -1.41808 -6.70145e-06" scale="0.08 0.9 1.4" clipDistance="200" nodeId="138" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="decal_1" translation="1.14639 -0.342398 -0.778866" rotation="-90 -1.41808 -6.70145e-06" scale="0.08 0.9 1.4" clipDistance="200" nodeId="139" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="decal_1" translation="0.542687 0.338559 -0.243604" scale="0.08 0.9 1.132" clipDistance="200" nodeId="140" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="decal_1" translation="1.14585 0.339473 -0.230451" scale="0.08 0.9 1.132" clipDistance="200" nodeId="141" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="decal_1" translation="0.326937 0.33689 -0.265" rotation="5.20268e-07 -7.04363e-06 180" scale="0.08 0.9 1.132" clipDistance="200" nodeId="142" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="decal_1" translation="0.540236 0.33689 -0.265" rotation="5.20268e-07 -7.04363e-06 180" scale="0.08 0.9 1.132" clipDistance="200" nodeId="143" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="decal_1" translation="1.13614 0.33689 -0.265" rotation="5.20268e-07 -7.04363e-06 180" scale="0.08 0.9 1.132" clipDistance="200" nodeId="144" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <Shape shapeId="14" name="transportPallet_col8" translation="0.00271691 0.181872 0.000948154" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="145" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="15" name="transportPallet_col7" translation="0.622586 0.181872 0.000948154" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="146" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="16" name="transportPallet_col6" translation="-0.622301 0.181872 0.000948154" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="147" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="17" name="transportPallet_col5" translation="0.00271691 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="148" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="18" name="transportPallet_col4" translation="0.00271691 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="149" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="19" name="transportPallet_col3" translation="0.622586 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="150" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="20" name="transportPallet_col2" translation="0.622586 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="151" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="21" name="transportPallet_col1" translation="-0.622301 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="152" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="22" name="transportPallet_col" translation="-0.622301 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="153" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="23" name="solidColi" translation="0 0.175 0" visibility="false" compoundChild="true" collisionMask="16781314" density="0.7" nodeId="154" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="24" name="boardPallet_vis" nodeId="155" materialIds="9" castsShadows="true" receiveShadows="true"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="39">
+      <Attribute name="capacity" type="integer" value="5000"/>
+      <Attribute name="deleteIfEmpty" type="boolean" value="true"/>
+      <Attribute name="dynamicMountForceLimitScale" type="float" value="1"/>
+      <Attribute name="dynamicMountTriggerIndex" type="string" value="0>1"/>
+      <Attribute name="fillType" type="string" value="pflaume"/>
+      <Attribute name="meshNodes" type="string" value="0 0|5"/>
+      <Attribute name="startFillLevel" type="integer" value="0"/>
+      <Attribute name="startScale" type="float" value="0.1"/>
+      <Attribute name="useRandomRot" type="boolean" value="false"/>
+      <Attribute name="visibilityNodesAdditive" type="boolean" value="true"/>
+      <Attribute name="visibilityNodesIndex" type="string" value="0>2"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

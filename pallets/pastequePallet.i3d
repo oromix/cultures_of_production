@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="woolPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="pallet_diffuse.dds" relativePath="true"/>
+    <File fileId="3" filename="pallet_normal.dds" relativePath="true"/>
+    <File fileId="4" filename="pallet_specular.dds" relativePath="true"/>
+    <File fileId="7" filename="pasteque.dds" relativePath="true"/>
+    <File fileId="6" filename="pasteque_box_diffuse.dds" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+    <Material name="Material" materialId="10" ambientColor="1 1 1">
+      <Texture fileId="7"/>
+    </Material>
+    <Material name="lambert2" materialId="6" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="gray_mat" materialId="7" diffuseColor="1 1 1 1" ambientColor="0.588235 0.588235 0.588235">
+    </Material>
+    <Material name="acmat_0" materialId="8" ambientColor="1 1 1">
+      <Texture fileId="6"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="pastequePallet.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="fillablePallet" dynamic="true" compound="true" collisionMask="16789512" density="0.04" clipDistance="200" nodeId="28" materialIds="7" nonRenderable="true">
+      <Shape shapeId="2" name="boardPallet_vis" scale="1 1 1.3" nodeId="29" materialIds="6" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="3" name="dummyTensionBeltNode" translation="0.01 0.707904 0" scale="2.798 0.975 1.008" visibility="false" clipDistance="100" nodeId="30" materialIds="9" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+      <Shape shapeId="4" name="palletAttacherTrigger" translation="0 0.175 0" kinematic="true" trigger="true" collisionMask="8192" nodeId="31" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="fillPalett" translation="0 -0.086 0" scale="0.965 1 1.08" nodeId="32">
+        <Shape shapeId="5" name="box" translation="-0.330891 0.254795 0.304759" rotation="-178.583 -1.91392 180" scale="1 1.1 1.1" nodeId="33" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="body" translation="0.300627 0.162307 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="34" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.104287 0.162648 0.147729" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="35" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.0835364 0.162975 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="36" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.286973 0.163328 0.138333" rotation="0 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="37" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.237115 0.162649 -0.125126" rotation="90 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="38" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.0231508 0.162649 -0.127427" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="39" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.287327 0.162649 -0.110735" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="40" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.164602 0.25204 0.00895988" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="41" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.11888 0.25204 0.00116242" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="42" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.417 0.25545 0.306285" rotation="-178.583 -1.91392 180" scale="1 1.1 1.1" nodeId="43" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="body" translation="0.300627 0.162307 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="44" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.104287 0.162648 0.147729" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="45" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.0835364 0.162975 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="46" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.286973 0.163328 0.138333" rotation="0 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="47" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.237115 0.162649 -0.125126" rotation="90 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="48" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.0231508 0.162649 -0.127427" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="49" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.287327 0.162649 -0.110735" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="50" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.164602 0.25204 0.00895988" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="51" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.11888 0.25204 0.00116242" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="52" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.397515 0.241021 -0.276792" rotation="-178.583 -1.91392 180" scale="1 1.1 1.1" nodeId="53" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="body" translation="0.300627 0.162307 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="54" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.104287 0.162648 0.147729" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="55" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.0835364 0.162975 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="56" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.286973 0.163328 0.138333" rotation="0 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="57" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.237115 0.162649 -0.125126" rotation="90 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="58" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.0231508 0.162649 -0.127427" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="59" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.287327 0.162649 -0.110735" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="60" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.164602 0.25204 0.00895988" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="61" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.11888 0.25204 0.00116242" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="62" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.375489 0.240404 -0.275934" rotation="-178.583 -1.91392 180" scale="1 1.1 1.1" nodeId="63" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="body" translation="0.300627 0.162307 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="64" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.104287 0.162648 0.147729" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="65" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.0835364 0.162975 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="66" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.286973 0.163328 0.138333" rotation="0 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="67" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.237115 0.162649 -0.125126" rotation="90 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="68" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.0231508 0.162649 -0.127427" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="69" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.287327 0.162649 -0.110735" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="70" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.164602 0.25204 0.00895988" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="71" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.11888 0.25204 0.00116242" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="72" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.375721 0.520836 -0.282866" rotation="-178.583 -1.91392 180" scale="1 1.1 1.1" nodeId="73" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="body" translation="0.300627 0.162307 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="74" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.104287 0.162648 0.147729" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="75" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.0835364 0.162975 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="76" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.286973 0.163328 0.138333" rotation="0 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="77" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.237115 0.162649 -0.125126" rotation="90 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="78" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.0231508 0.162649 -0.127427" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="79" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.287327 0.162649 -0.110735" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="80" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.164602 0.25204 0.00895988" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="81" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.11888 0.25204 0.00116242" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="82" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.424719 0.521454 -0.284614" rotation="-178.583 -1.91392 180" scale="1 1.1 1.1" nodeId="83" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="body" translation="0.300627 0.162307 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="84" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.104287 0.162648 0.147729" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="85" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.0835364 0.162975 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="86" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.286973 0.163328 0.138333" rotation="0 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="87" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.237115 0.162649 -0.125126" rotation="90 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="88" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.0231508 0.162649 -0.127427" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="89" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.287327 0.162649 -0.110735" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="90" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.164602 0.25204 0.00895988" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="91" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.11888 0.25204 0.00116242" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="92" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.444169 0.535857 0.297409" rotation="-178.583 -1.91392 180" scale="1 1.1 1.1" nodeId="93" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="body" translation="0.300627 0.162307 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="94" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.104287 0.162648 0.147729" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="95" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.0835364 0.162975 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="96" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.286973 0.163328 0.138333" rotation="0 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="97" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.237115 0.162649 -0.125126" rotation="90 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="98" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.0231508 0.162649 -0.127427" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="99" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.287327 0.162649 -0.110735" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="100" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.164602 0.25204 0.00895988" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="101" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.11888 0.25204 0.00116242" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="102" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.352221 0.535857 0.324021" rotation="-178.583 -1.91392 180" scale="1 1.1 1.1" nodeId="103" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="body" translation="0.300627 0.162307 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="104" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.104287 0.162648 0.147729" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="105" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.0835364 0.162975 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="106" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.286973 0.163328 0.138333" rotation="0 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="107" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.237115 0.162649 -0.125126" rotation="90 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="108" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.0231508 0.162649 -0.127427" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="109" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.287327 0.162649 -0.110735" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="110" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.164602 0.25204 0.00895988" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="111" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.11888 0.25204 0.00116242" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="112" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.352442 0.803693 0.317401" rotation="-178.583 -1.91392 180" scale="1 1.1 1.1" nodeId="113" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="body" translation="0.300627 0.162307 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="114" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.104287 0.162648 0.147729" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="115" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.0835364 0.162975 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="116" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.286973 0.163328 0.138333" rotation="0 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="117" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.237115 0.162649 -0.125126" rotation="90 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="118" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.0231508 0.162649 -0.127427" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="119" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.287327 0.162649 -0.110735" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="120" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.164602 0.25204 0.00895988" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="121" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.11888 0.25204 0.00116242" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="122" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.439786 0.823013 0.305171" rotation="-178.583 -1.91392 180" scale="1 1.1 1.1" nodeId="123" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="body" translation="0.300627 0.162307 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="124" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.104287 0.162648 0.147729" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="125" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.0835364 0.162975 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="126" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.286973 0.163328 0.138333" rotation="0 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="127" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.237115 0.162649 -0.125126" rotation="90 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="128" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.0231508 0.162649 -0.127427" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="129" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.287327 0.162649 -0.110735" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="130" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.164602 0.25204 0.00895988" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="131" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.11888 0.25204 0.00116242" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="132" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.419612 0.808074 -0.298529" rotation="-178.583 -1.91392 180" scale="1 1.1 1.1" nodeId="133" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="body" translation="0.300627 0.162307 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="134" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.104287 0.162648 0.147729" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="135" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.0835364 0.162975 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="136" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.286973 0.163328 0.138333" rotation="0 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="137" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.237115 0.162649 -0.125126" rotation="90 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="138" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.0231508 0.162649 -0.127427" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="139" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.287327 0.162649 -0.110735" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="140" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.164602 0.25204 0.00895988" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="141" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.11888 0.25204 0.00116242" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="142" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.374499 0.807578 -0.29204" rotation="-178.583 -1.91392 180" scale="1 1.1 1.1" nodeId="143" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="body" translation="0.300627 0.162307 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="144" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.104287 0.162648 0.147729" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="145" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.0835364 0.162975 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="146" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.286973 0.163328 0.138333" rotation="0 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="147" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.237115 0.162649 -0.125126" rotation="90 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="148" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.0231508 0.162649 -0.127427" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="149" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.287327 0.162649 -0.110735" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="150" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.164602 0.25204 0.00895988" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="151" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.11888 0.25204 0.00116242" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="152" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.374716 1.06933 -0.298511" rotation="-178.583 -1.91392 180" scale="1 1.1 1.1" nodeId="153" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="body" translation="0.300627 0.162307 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="154" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.104287 0.162648 0.147729" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="155" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.0835364 0.162975 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="156" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.286973 0.163328 0.138333" rotation="0 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="157" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.237115 0.162649 -0.125126" rotation="90 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="158" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.0231508 0.162649 -0.127427" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="159" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.287327 0.162649 -0.110735" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="160" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.164602 0.25204 0.00895988" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="161" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.11888 0.25204 0.00116242" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="162" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.423358 1.0697 -0.31053" rotation="-178.583 -1.91392 180" scale="1 1.1 1.1" nodeId="163" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="body" translation="0.300627 0.162307 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="164" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.104287 0.162648 0.147729" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="165" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.0835364 0.162975 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="166" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.286973 0.163328 0.138333" rotation="0 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="167" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.237115 0.162649 -0.125126" rotation="90 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="168" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.0231508 0.162649 -0.127427" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="169" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.287327 0.162649 -0.110735" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="170" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.164602 0.25204 0.00895988" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="171" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.11888 0.25204 0.00116242" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="172" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.443673 1.08474 0.297398" rotation="-178.583 -1.91392 180" scale="1 1.1 1.1" nodeId="173" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="body" translation="0.300627 0.162307 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="174" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.104287 0.162648 0.147729" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="175" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.0835364 0.162975 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="176" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.286973 0.163328 0.138333" rotation="0 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="177" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.237115 0.162649 -0.125126" rotation="90 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="178" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.0231508 0.162649 -0.127427" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="179" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.287327 0.162649 -0.110735" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="180" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.164602 0.25204 0.00895988" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="181" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.11888 0.25204 0.00116242" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="182" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.365966 1.0844 0.310666" rotation="-178.583 -1.91392 180" scale="1 1.1 1.1" nodeId="183" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="body" translation="0.300627 0.162307 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="184" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.104287 0.162648 0.147729" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="185" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.0835364 0.162975 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="186" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.286973 0.163328 0.138333" rotation="0 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="187" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.237115 0.162649 -0.125126" rotation="90 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="188" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.0231508 0.162649 -0.127427" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="189" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.287327 0.162649 -0.110735" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="190" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.164602 0.25204 0.00895988" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="191" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.11888 0.25204 0.00116242" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="192" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.366194 1.36056 0.30384" rotation="-178.583 -1.91392 180" scale="1 1.1 1.1" nodeId="193" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="body" translation="0.300627 0.162307 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="194" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.104287 0.162648 0.147729" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="195" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.0835364 0.162975 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="196" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.286973 0.163328 0.138333" rotation="0 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="197" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.237115 0.162649 -0.125126" rotation="90 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="198" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.0231508 0.162649 -0.127427" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="199" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.287327 0.162649 -0.110735" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="200" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.164602 0.25204 0.00895988" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="201" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.11888 0.25204 0.00116242" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="202" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.386393 1.3456 -0.300622" rotation="-178.583 -1.91392 180" scale="1 1.1 1.1" nodeId="203" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="body" translation="0.300627 0.162307 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="204" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.104287 0.162648 0.147729" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="205" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.0835364 0.162975 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="206" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.286973 0.163328 0.138333" rotation="0 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="207" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.237115 0.162649 -0.125126" rotation="90 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="208" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.0231508 0.162649 -0.127427" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="209" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.287327 0.162649 -0.110735" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="210" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.164602 0.25204 0.00895988" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="211" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.11888 0.25204 0.00116242" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="212" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.406863 1.3456 -0.32713" rotation="-178.583 -1.91392 180" scale="1 1.1 1.1" nodeId="213" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="body" translation="0.300627 0.162307 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="214" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.104287 0.162648 0.147729" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="215" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.0835364 0.162975 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="216" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.286973 0.163328 0.138333" rotation="0 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="217" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.237115 0.162649 -0.125126" rotation="90 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="218" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.0231508 0.162649 -0.127427" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="219" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.287327 0.162649 -0.110735" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="220" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.164602 0.25204 0.00895988" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="221" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.11888 0.25204 0.00116242" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="222" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.427428 1.36083 0.288299" rotation="-178.583 -1.91392 180" scale="1 1.1 1.1" nodeId="223" materialIds="8" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="body" translation="0.300627 0.162307 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="224" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.104287 0.162648 0.147729" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="225" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.0835364 0.162975 0.138333" rotation="-1.09923e-05 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="226" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.286973 0.163328 0.138333" rotation="0 -3.34756e-07 -90.0996" scale="0.1 0.1 0.1" nodeId="227" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.237115 0.162649 -0.125126" rotation="90 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="228" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.0231508 0.162649 -0.127427" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="229" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.287327 0.162649 -0.110735" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="230" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="0.164602 0.25204 0.00895988" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="231" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="body" translation="-0.11888 0.25204 0.00116242" rotation="93.6154 -3.35207e-07 -90" scale="0.1 0.1 0.1" nodeId="232" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <Shape shapeId="7" name="transportPallet_col8" translation="0.0019251 0.156 0.000948154" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="233" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="8" name="transportPallet_col7" translation="0.624121 0.156 0.000948154" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="234" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="9" name="transportPallet_col6" translation="-0.622301 0.156 0.000948154" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="235" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="10" name="transportPallet_col5" translation="0.00271691 0.156 -0.564682" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="236" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="11" name="transportPallet_col4" translation="0.00271691 0.156 0.562657" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="237" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="12" name="transportPallet_col3" translation="0.622586 0.156 0.564194" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="238" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="13" name="transportPallet_col2" translation="0.622586 0.156 -0.565392" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="239" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="14" name="transportPallet_col1" translation="-0.622301 0.156 0.563359" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="240" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="15" name="transportPallet_col" translation="-0.622301 0.156 -0.565176" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="241" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="16" name="solidColi" translation="0 0.256457 0" visibility="false" compoundChild="true" collisionMask="16781314" density="0.7" nodeId="242" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="28">
+      <Attribute name="capacity" type="float" value="4000"/>
+      <Attribute name="deleteIfEmpty" type="boolean" value="true"/>
+      <Attribute name="dynamicMountForceLimitScale" type="float" value="1"/>
+      <Attribute name="dynamicMountTriggerIndex" type="string" value="0>1"/>
+      <Attribute name="fillType" type="string" value="pasteque"/>
+      <Attribute name="meshNodes" type="string" value="0 0|0"/>
+      <Attribute name="startFillLevel" type="integer" value="0"/>
+      <Attribute name="startScale" type="float" value="0.1"/>
+      <Attribute name="useRandomRot" type="boolean" value="false"/>
+      <Attribute name="visibilityNodesAdditive" type="boolean" value="true"/>
+      <Attribute name="visibilityNodesIndex" type="string" value="0>2"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="kaercherHDS918-4M" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="cubemap02.dds" relativePath="true"/>
+    <File fileId="4" filename="fx_grain_normal.png" relativePath="true"/>
+    <File fileId="1" filename="smokeParticle.dds" relativePath="true"/>
+    <File fileId="2" filename="../shaders/particleSystemShader.xml" relativePath="true"/>
+    <File fileId="6" filename="../shaders/windrowUnloadingShader.xml" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="water_mat" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1" cosPower="255" specularColor="0.01 0.01 0.01" alphaBlending="true" customShaderId="6" customShaderVariation="WATER">
+      <Normalmap fileId="4"/>
+      <Reflectionmap fileId="5" wrap="false" lodDistanceScaling="0.5" viewDistanceScaling="0.5" type="cube" scaling="1" refractiveIndex="1" bumpScale="0.1" shapesObjectMask="4294967295" lightsObjectMask="4294967295"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="4 -4 1 7"/>
+      <CustomParameter name="MaskChannels" value="0.1 0.7 0.1 0"/>
+      <CustomParameter name="ColorAlpha" value="0.85 0.95 1.1 2"/>
+      <CustomParameter name="alphaRemap" value="0 1 0 0"/>
+    </Material>
+    <Material name="smokeParticle_mat" materialId="9" ambientColor="1 1 1" alphaBlending="true" customShaderId="2">
+      <Texture fileId="1"/>
+    </Material>
+    <Material name="lambert1" materialId="10" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="wasser.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+    <ParticleSystem name="smokeParticleSystem_emitter1Ref" dynamicId="1" type="sprite" rate="0.005" lifespan="0" maxCount="0" speed="0.0012" speedRandom="0" tangentSpeed="0.205298" normalSpeed="1" spriteScaleX="0.25" spriteScaleY="0.25" spriteScaleXGain="0.0006" spriteScaleYGain="0.0006" blendFactor="0.75" blendInFactor="-nan(ind)" blendOutFactor="-nan(ind)" randomInitRotation="true" deltaRotateMax="0.000349" textureAtlasSizeX="4">
+      <Gravity force="0 0 0"/>
+    </ParticleSystem>
+  </Dynamics>
+
+  <Scene>
+    <Dynamic dynamicId="1" emitterShapeNodeId="18" name="smokeParticleSystem_emitter1" clipDistance="100" nodeId="17" materialIds="9" distanceBlending="false">
+      <Shape shapeId="2" name="smokeParticleSystemAreaShape" translation="0 0.0327094 -2.48083" scale="0.1 0.1 0.1" nodeId="18" materialIds="10"/>
+      <Shape shapeId="3" name="shader" rotation="0 0 -10" clipDistance="100" nodeId="19" materialIds="7" castsShadows="true" receiveShadows="true"/>
+    </Dynamic>
+  </Scene>
+
+</i3D>

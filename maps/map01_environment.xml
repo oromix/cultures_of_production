@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<environment filename="$data/sky/skyUS_day_night.i3d" dayNightCycle="true" startHour="8" allowRain="true" autoRain="true" sunHeightAngle="-70">
+    <ambientColor>
+        <key values="0.020 0.020 0.032" time="0*60" />
+        <key values="0.020 0.020 0.032" time="3.75*60" />
+		<key values="0.065 0.065 0.075" time="4.01*60" /> <!-- light up ambient to compensate for switch to sunlight -->
+		<key values="0.065 0.065 0.075" time="4.02*60" />
+        <key values="0.040 0.040 0.060" time="4.25*60" /> <!-- back to regular ambient settings -->
+        <key values="0.080 0.080 0.140" time="5*60" />
+        <key values="0.140 0.140 0.120" time="6*60" />
+        <key values="0.200 0.200 0.200" time="9*60" />
+        <key values="0.200 0.200 0.200" time="17*60" />
+        <key values="0.160 0.140 0.160" time="18*60" />
+        <key values="0.020 0.020 0.032" time="21*60" />
+		<key values="0.024 0.024 0.036" time="21.85*60" />
+        <key values="0.072 0.072 0.088" time="22.01*60" /> <!-- light up ambient to compensate for switch to moonlight -->
+        <key values="0.072 0.072 0.088" time="22.02*60" />
+        <key values="0.020 0.020 0.032" time="22.15*60" /> <!-- back to regular ambient settings -->
+        <key values="0.020 0.020 0.032" time="24*60" />
+    </ambientColor>
+    <sunColor>
+        <key values="0.060 0.070 0.150" time="0*60" />
+        <key values="0.060 0.070 0.150" time="3.75*60" />
+        <key values="0.000 0.000 0.000" time="4.01*60" /> <!-- shift to brief complete darkness for switch to sunlight -->
+        <key values="0.000 0.000 0.000" time="4.02*60" />
+        <key values="0.050 0.050 0.030" time="4.25*60" />
+        <key values="0.700 0.450 0.350" time="6*60" />
+        <key values="1.100 0.850 0.600" time="7*60" />
+        <key values="0.750 0.750 0.750" time="9*60" />
+        <key values="0.750 0.750 0.750" time="17*60" />
+        <key values="0.750 0.700 0.650" time="18*60" /> <!-- darken -->
+        <key values="1.000 0.900 0.300" time="19*60" /> <!-- orange sunset -->
+        <key values="0.900 0.400 0.100" time="20*60" /> <!-- shift to red -->
+        <key values="0.300 0.250 0.500" time="21*60" /> <!-- shift to blue -->
+		<key values="0.050 0.060 0.100" time="21.85*60" /> 
+        <key values="0.000 0.000 0.000" time="22.01*60" /> <!-- shift to brief complete darkness for switch to moonlight -->
+        <key values="0.000 0.000 0.000" time="22.02*60" />
+        <key values="0.050 0.060 0.100" time="22.15*60" />
+        <key values="0.060 0.070 0.150" time="24*60" /> <!-- shift to bluish darkness -->
+    </sunColor>
+    <sunRotation>
+        <key value="-15" time="0*60" />
+        <key value="0"   time="1*60" />
+        <key value="45"  time="4*60" />
+        <key value="45"  time="4.01*60" />
+        <key value="-70" time="4.02*60" />
+        <key value="0"   time="12*60" />
+        <key value="70"  time="22.01*60" />
+        <key value="-35" time="22.02*60" />
+        <key value="-15" time="24*60" />
+    </sunRotation>
+    <sky>
+        <key values="0.0 0.0 1.0 0.0" time="0*60" />
+        <key values="0.0 0.0 1.0 0.0" time="4.5*60" />
+        <key values="0.0 0.0 0.5 0.5" time="5.5*60" />
+        <key values="0.0 0.0 0.0 1.0" time="6*60" />
+        <key values="0.5 0.0 0.0 0.5" time="7*60" />
+        <key values="1.0 0.0 0.0 0.0" time="8*60" />
+        <key values="1.0 0.0 0.0 0.0" time="17*60" />
+        <key values="0.0 1.0 0.0 0.0" time="19*60" />
+        <key values="0.0 1.0 0.0 0.0" time="20*60" />
+        <key values="0.0 0.0 1.0 0.0" time="22*60" />
+        <key values="0.0 0.0 1.0 0.0" time="24*60" />
+    </sky>
+    <volumeFog>
+        <key values="0.002 0.002 0.004" time="0*60" />
+        <key values="0.002 0.002 0.004" time="4*60" />
+        <key values="0.006 0.006 0.010" time="5*60" />
+        <key values="0.008 0.007 0.009" time="6*60" />
+        <key values="0.020 0.035 0.045" time="9*60" />
+        <key values="0.020 0.035 0.045" time="17*60" />
+        <key values="0.010 0.012 0.016" time="18*60" />
+        <key values="0.004 0.004 0.009" time="21*60" />
+        <key values="0.002 0.002 0.004" time="24*60" />
+    </volumeFog>
+    <distanceFog>
+		<key values="0 0 0 0.003" time="0*60" />
+        <key values="(010/255)^2.2 (012/255)^2.2 (015/255)^2.2 0.0008" time="5*60" />
+        <key values="(085/255)^2.2 (060/255)^2.2 (055/255)^2.2 0.0006" time="6*60" />
+        <key values="(085/255)^2.2 (070/255)^2.2 (065/255)^2.2 0.0005" time="7*60" />
+        <key values="(105/255)^2.2 (130/255)^2.2 (150/255)^2.2 0.0004" time="8*60" />
+		<key values="(105/255)^2.2 (130/255)^2.2 (150/255)^2.2 0.0003" time="9*60" />
+        <key values="(105/255)^2.2 (130/255)^2.2 (150/255)^2.2 0.0003" time="17*60" />
+        <key values="(070/255)^2.2 (045/255)^2.2 (030/255)^2.2 0.0004" time="19*60" />
+        <key values="(045/255)^2.2 (040/255)^2.2 (050/255)^2.2 0.0006" time="20*60" />
+        <key values="(020/255)^2.2 (020/255)^2.2 (030/255)^2.2 0.0008" time="21*60" />
+        <key values="0 0 0 0.003" time="22*60" />
+    </distanceFog>
+    <dustDensity>
+        <key value="0" time="0*60" />
+        <key value="0" time="5*60" />
+        <key value="1" time="6.75*60" />
+        <key value="0.25" time="8*60" />
+        <key value="0.1" time="9*60" />
+        <key value="0.1" time="18*60" />
+        <key value="0.3" time="19*60" />
+        <key value="0" time="20.5*60" />
+        <key value="0" time="24*60" />
+    </dustDensity>
+</environment>

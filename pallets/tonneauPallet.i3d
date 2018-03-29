@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="transportPalletSoda" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="barrels_diffuse.dds" relativePath="true"/>
+    <File fileId="4" filename="barrels_normal.dds" relativePath="true"/>
+    <File fileId="5" filename="barrels_specular.dds" relativePath="true"/>
+    <File fileId="2" filename="pallet_diffuse2.dds" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="pallet_mat" materialId="7" ambientColor="1 1 1">
+      <Texture fileId="2"/>
+    </Material>
+    <Material name="barrels_mat" materialId="8" ambientColor="1 1 1" cosPower="80" specularColor="1 1 1">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="gray_mat" materialId="9" diffuseColor="0.584314 0.584314 0.584314 1" ambientColor="0.588235 0.588235 0.588235">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="tonneauPallet.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="palletBarrels" dynamic="true" compound="true" collisionMask="25178120" density="0.25" clipDistance="200" nodeId="18" materialIds="9" nonRenderable="true">
+      <Shape shapeId="2" name="palletAttacherTrigger" translation="0 0.065 0" kinematic="true" trigger="true" collisionMask="8192" density="0.25" clipDistance="200" nodeId="19" materialIds="9" nonRenderable="true"/>
+      <Shape shapeId="3" name="transportPallet_col1" compoundChild="true" collisionMask="16789512" density="0.25" clipDistance="200" nodeId="20" materialIds="9" nonRenderable="true"/>
+      <Shape shapeId="4" name="transportPallet_col3" compoundChild="true" collisionMask="16789512" density="0.25" clipDistance="200" nodeId="21" materialIds="9" nonRenderable="true"/>
+      <Shape shapeId="5" name="transportPallet_col4" compoundChild="true" collisionMask="16789512" density="0.25" clipDistance="200" nodeId="22" materialIds="9" nonRenderable="true"/>
+      <Shape shapeId="6" name="transportPallet_vis" clipDistance="200" nodeId="23" materialIds="7" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="7" name="barrelWoodLarge_vis" translation="-0.395009 0.722797 -0.596389" rotation="90 0 89.9999" scale="0.9 1 0.9" clipDistance="77" nodeId="24" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="7" name="barrelWoodLarge_vis" translation="0.382021 0.724884 -0.598122" rotation="90 0 90" scale="0.9 1 0.9" clipDistance="77" nodeId="25" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="7" name="barrelWoodLarge_vis" translation="-0.00903578 1.32716 -0.602359" rotation="90 0 90" scale="0.9 1 0.9" clipDistance="77" nodeId="26" materialIds="8" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="18">
+      <Attribute name="capacity" type="integer" value="5000"/>
+      <Attribute name="dynamicMountForceLimitScale" type="float" value="1"/>
+      <Attribute name="dynamicMountTriggerIndex" type="string" value="0"/>
+      <Attribute name="fillType" type="string" value="tonneau"/>
+      <Attribute name="fillablePalletValueScale" type="float" value="0.87"/>
+      <Attribute name="visibilityNodesAdditive" type="boolean" value="true"/>
+      <Attribute name="visibilityNodesIndex" type="string" value="4"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

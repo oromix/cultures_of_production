@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="39">
+    <author>Dragon500</author>
+    <version>1.0</version>
+    <title>
+        <en>Cultures_et_Production</en>
+        <de>Cultures_et_Production</de>
+		<fr>Cultures_et_Production</fr>		
+    </title>
+    <description>
+        <en>
+<![CDATA[Welcome to culture_et_production, map completely redone from the Goldcrest Valley.
+Three main farm, standard crops plus 11 new and basic animals and fattening animals.
+New reliefs, new landscapes.
+26 Production facility that gives 56 products.
+10 points of sale.
+Many different animations that I let you discover.
+Large field in greenhouses, 3 forest crops grapes and hop that you do not plant but must fertilize.
+  you start with a single field away from your farm to make you discover the landscape ...
+the following mods are required:
+Kotte Universal
+ModPack culture_and _production.
+
+  Good discovery and good game to all]]>
+        </en>
+        <de>
+<![CDATA[Willkommen bei culture_et_production, Map komplett erneuert aus dem Goldcrest Valley.
+Drei Hauptfarm, Standardkulturen plus 11 neue und grundlegende Tiere und Masttiere.
+Neue Reliefs, neue Landschaften.
+26 Produktionsstätte mit 56 Produkten.
+10 Verkaufsstellen
+Viele verschiedene Animationen, die ich dich entdecken lasse.
+Großes Feld in Gewächshäusern, 3 Waldfrüchte Trauben und Hopfen, den man nicht anbaut, sondern düngen muss.
+  Sie beginnen mit einem Feld außerhalb Ihrer Farm, um die Landschaft zu entdecken ...
+Folgende Mods werden benötigt:
+Kotte Universal
+ModPack culture_and_production.
+
+  Gute Entdeckung und gutes Spiel für alle]]>
+        </de>
+		<fr>
+<![CDATA[Bienvenue sur culture_et_production, map entièrement refaite à partir de la Goldcrest Valley.
+Trois ferme principale ,  cultures standard plus 11 nouvelles  et animaux de base et animeaux d'engraissement.
+Nouveaux reliefs, nouveaux paysages.
+26 Installation de production  qui donne  56 produits .
+10 point de ventes .
+Plusieur animations differente  que je vous laisse decouvrir.
+Grand champ sous serres,  3 forets cultures raisin et hop que vous ne planter  pas mais qu il faut fertiliser.
+ vous commencez avec un seul champ eloigner de votre ferme afin de vous faire decouvrir le paysage...
+les mods suivants sont obligatoires:
+Kotte Universal
+ModPack culture_et _production.
+
+ Bonne découverte et bon jeu à tous]]>
+       </fr>
+    </description>
+    <iconFilename>icon.dds</iconFilename>
+    <multiplayer supported="true"/>
+	
+    <maps>
+        <map id="SampleModMap" className="Mission00" filename="$dataS/scripts/missions/mission00.lua" configFilename="maps/map01.xml" defaultVehiclesXMLFilename="defaultVehicles.xml">
+            <title>
+                <en>Cultures_et_Production</en>
+                <de>Cultures_et_Production</de>
+				<fr>Cultures_et_Production</fr>
+            </title>
+            <description>
+				<en>Welcome to the Valley of the Farmers, map completely redone from the Goldcrest Valley. A main farm and two annex farms, new crops and basic animals. New reliefs, new landscapes. Good discovery and good game at all.</en>
+				<de>Willkommen im Valley of the Farmers eine veränderte Version der Goldcrest Valley Map. Ein Haupthof und zwei Neben Farmen, neue Kultur und standart Tiere. Auf dieser Map finden sie über 20 Produktionen.</de>
+				<fr>Bienvenue sur la vallée des fermiers, map entièrement refaite à partir de la Goldcrest Valley. Une ferme principale et deux fermes annexe, nouvelles culture et animaux de base. Nouveaux reliefs, nouveaux paysages. Bonne découverte et bon jeu à tous.</fr>
+            </description>
+            <iconFilename>maps/map01_preview.png</iconFilename>
+        </map>
+    </maps>	
+	
+    <l10n>
+		<text name="oat"> <en>Oat</en> <de>Hafer</de> <fr>Avoine</fr> </text>
+		<text name="oat_windrow"> <en>Oat windrow</en> <de>Haferstroh</de> <fr>Andain d'avoine</fr> </text>	
+		<text name="millet"> <en>Millet</en> <de>Hirse</de> <fr>Millet</fr> </text>
+		<text name="onion"> <en>Onion</en> <de>Zwiebeln</de> <fr>Oignon</fr> </text>
+        <text name="sorghum"> <en>Sorghum</en> <de>Sorghum</de> <fr>sorgo</fr> </text>
+        <text name="compost"> <en>compost</en> <de>compost</de> <fr>compost</fr> </text>		
+		<text name="food"> <en>Foods</en> <de>Lebensmittel</de> <fr>Nourriture</fr> </text>
+		<text name="industry"> <en>Industry</en> <de>Industrie</de> <fr>Industrie</fr> </text>
+		<text name="fatteningFeed"> <en>Fattening feed</en> <de>Mastfutter</de> <fr>Alimentation d'engraissement</fr> </text>
+		<text name="lime"> <en>Lime</en> <de>Kalk</de> <fr>Chaux</fr> </text>
+		<text name="seeds2"> <en>Seeds2</en> <de>Saatgut geb.</de> <fr>Semence artisanal</fr> </text>
+		<text name="sand"> <en>Sand</en> <de>Sand</de> <fr>Sable</fr> </text>
+		<text name="beer"> <en>beer</en> <de>Bier</de> <fr>bieres</fr> </text>
+		<text name="barley"> <en>barley</en> <de>Gerste</de> <fr>orge</fr> </text>
+		<text name="water"> <en>water</en> <de>Wasser</de> <fr>eau</fr> </text>
+		<text name="sugars"> <en>Sugars</en> <de>sugars</de> <fr>sucres</fr> </text>
+		<text name="osb"> <en>osb</en> <de>osb</de> <fr>osb</fr> </text>
+        <text name="grapes"> <en>Grapes</en> <de>Trauben</de> <fr>raisin</fr> </text>
+        <text name="vin"> <en>vin</en> <de>vin</de> <fr>vin</fr> </text>
+        <text name="grapejuice"> <en>grapejuice</en> <de>grapejuice</de> <fr>jus de raisin</fr> </text>
+		<text name="vinpallet"> <en>vin Pallets</en> <de>vin Pallets</de> <fr>palette de vin</fr> </text>		
+        <text name="hops"> <en>Hops</en> <de>Hopfen</de> <fr>houblon</fr> </text>
+        <text name="lavande"> <en>lavande</en> <de>lavande</de> <fr>lavande</fr> </text>
+        <text name="parfum"> <en>parfum</en> <de>parfum</de> <fr>parfum</fr> </text>
+        <text name="parfumPallet"> <en>parfumPallet</en> <de>parfumPallet</de> <fr>parfum</fr> </text>		
+        <text name="substral"> <en>substral</en> <de>substral</de> <fr>substral</fr> </text>
+		<text name="carton"> <en>carton</en> <de>carton</de> <fr>carton</fr> </text>
+		<text name="cartonpallet"> <en>carton Pallets</en> <de>carton Pallets</de> <fr>palette de carton</fr> </text>	
+		<text name="caisse"> <en>caisse</en> <de>caisse</de> <fr>caisse</fr> </text>
+		<text name="caissepallet"> <en>caisse Pallets</en> <de>caisse Pallets</de> <fr>palette de caisse</fr> </text>
+		<text name="tonneau"> <en>tonneau</en> <de>tonneau</de> <fr>tonneau</fr> </text>
+		<text name="tonneaupallet"> <en>tonneau Pallets</en> <de>tonneau Pallets</de> <fr>palette de tonneau</fr> </text>
+		<text name="oeuf"> <en>oeuf</en> <de>oeuf</de> <fr>oeuf</fr> </text>
+		<text name="oeufpallet"> <en>oeuf Pallets</en> <de>oeuf Pallets</de> <fr>palette de oeuf</fr> </text>		
+		
+<!-- Saegewerk -->
+		<text name="leer"> <en>empty</en> <de><![CDATA[leer]]></de> <fr>vide</fr> </text>
+		<text name="voll"> <en>full</en> <de><![CDATA[voll]]></de> <fr>plein</fr> </text>
+		<text name="ERROR"> <en>Info: </en> <de><![CDATA[Info: ]]></de> <fr>Info : </fr> </text>
+		<text name="Rohstoffe"> <en>resources: </en> <de><![CDATA[Rohstoffe: ]]></de> <fr>matières premières : </fr> </text>
+		<text name="Produkte"> <en>products: </en> <de><![CDATA[Produkte: ]]></de> <fr>produit fini : </fr> </text>
+		<text name="boardwood"> <en>boards palette</en> <de>Bretter Palletten</de> <fr>Palette de planches</fr> </text>
+		<text name="Holz"> <en>logs</en> <de><![CDATA[Holzstämme]]></de> <fr>troncs</fr> </text>
+		<text name="Brennstoffe"> <en>fuels</en> <de><![CDATA[Brennstoffe]]></de> <fr>copeaux paille</fr> </text>
+<!-- end Saegewerk -->
+
+<!-- greenhouse -->
+		<text name="emptypallet"> <en>pallets</en> <de><![CDATA[Leerpaletten]]></de> <fr>palettes</fr> </text>
+		<text name="tomato"> <en>tomato</en> <de><![CDATA[Tomaten]]></de> <fr>tomate</fr> </text>
+		<text name="tomatoPallet"> <en>tomato Pallets</en> <de><![CDATA[Tomatenpalette]]></de> <fr>palette de tomates</fr> </text>
+		<text name="lettuce"> <en>lettuce</en> <de><![CDATA[Salat]]></de> <fr>salade</fr> </text>
+		<text name="lettucePallet"> <en>lettuce Pallets</en> <de><![CDATA[Salatpalette]]></de> <fr>palette de salades</fr> </text>
+		<text name="cauliflower"> <en>cauliflower</en> <de><![CDATA[Blumenkohl]]></de> <fr>chou-fleur</fr> </text>
+		<text name="cauliflowerPallet"> <en>cauliflower Pallets</en> <de><![CDATA[Blumenkohlpalette]]></de> <fr>palette de choux-fleurs</fr> </text>
+		<text name="pumpkin"> <en>pumpkin</en> <de><![CDATA[Kürbis]]></de> <fr>citrouille</fr> </text>
+		<text name="pumpkinPallet"> <en>pumpkin Pallets</en> <de><![CDATA[Kürbispalette]]></de> <fr>palette de citrouilles</fr> </text>
+		<text name="redCabbage"> <en>redCabbage</en> <de><![CDATA[Rotkohl]]></de> <fr>chou-rouge</fr> </text>
+		<text name="redCabbagePallet"> <en>redCabbage Pallets</en> <de><![CDATA[Rotkohlpalette]]></de> <fr>palette de choux-rouge</fr> </text>
+		<text name="strawberry"> <en>strawberry</en> <de><![CDATA[Erdbeere]]></de> <fr>fraise</fr> </text>
+		<text name="strawberryPallet"> <en>strawberry Pallets</en> <de><![CDATA[Erdbeernpalette]]></de> <fr>palette de fraises</fr> </text>
+		<text name="raspberry"> <en>raspberry</en> <de><![CDATA[Himbeere]]></de> <fr>framboise</fr> </text>
+		<text name="raspberryPallet"> <en>raspberry Pallets</en> <de><![CDATA[Himbeerenpalette]]></de> <fr>palette de framboises</fr> </text>
+		<text name="greenhouses"> <en>greenhouses</en> <de><![CDATA[Gewaechshaeuser]]></de> <fr>serres</fr> </text>
+		<text name="warehouse"> <en>warehouse</en> <de><![CDATA[Warenhaus]]></de> <fr>entrepôt</fr> </text>
+		<text name="cabbage"> <en>cabbage</en> <de><![CDATA[Rotkohl]]></de> <fr>chou</fr> </text>
+		<text name="cabbagePallet"> <en>cabbage Pallets</en> <de><![CDATA[Rotkohlpalette]]></de> <fr>palette de choux</fr> </text>
+		<text name="groseille"> <en>groseille</en> <de>groseille</de> <fr>groseille</fr> </text>
+		<text name="groseillePallet"> <en>groseille Pallets</en> <de>groseillePallet</de> <fr>palette de groseille</fr> </text>
+		<text name="citron"> <en>citron</en> <de>citron</de> <fr>citron</fr> </text>
+		<text name="citronPallet"> <en>citron Pallets</en> <de>citron Pallets</de> <fr>palette de citron</fr> </text>
+		<text name="pasteque"> <en>pasteque</en> <de>pasteque</de> <fr>pasteque</fr> </text>
+		<text name="pastequePallet"> <en>pasteque Pallets</en> <de>pasteque Pallets</de> <fr>palette de pasteque</fr> </text>
+		<text name="champignon"> <en>champignon</en> <de>champignon</de> <fr>champignon</fr> </text>
+		<text name="champignonPallet"> <en>champignon Pallets</en> <de>champignon Pallets</de> <fr>palette de champignon</fr> </text>
+		<text name="citrouille"> <en>citrouille</en> <de>citrouille</de> <fr>citrouille</fr> </text>
+		<text name="citrouillePallet"> <en>citrouille Pallets</en> <de>citrouille Pallets</de> <fr>palette de citrouille</fr> </text>
+		<text name="mure"> <en>mure</en> <de>mure</de> <fr>mure</fr> </text>
+		<text name="murePallet"> <en>mure Pallets</en> <de>mure Pallets</de> <fr>palette de mure</fr> </text>
+		<text name="sapin"> <en>sapin</en> <de>sapin</de> <fr>sapin</fr> </text>
+		<text name="sapinallet"> <en>sapin Pallets</en> <de>sapin Pallets</de> <fr>palette de sapin</fr> </text>		
+<!-- end greenhouse -->
+		<text name="grass"> <en>grass</en> <de><![CDATA[Gras]]></de> <fr>herbe</fr> </text>
+		<text name="straw"> <en>straw</en> <de><![CDATA[Stroh]]></de> <fr>paille</fr> </text>
+		<text name="MilkSellTrigger_stopFill"> <en>stop fill</en> <de><![CDATA[Verkauf stoppen]]></de> <fr>Arrêter le remplissage</fr> </text>
+		<text name="MilkSellTrigger_startFill"> <en>start fill</en> <de><![CDATA[Verkauf starten]]></de> <fr>Commencer le remplissage</fr> </text>
+<!-- CompostMaster -->
+		<text name="cm_inputWaste"> <en>waste</en> <de><![CDATA[Abfall]]></de> <fr>déchets</fr> </text>
+		<text name="cm_inputFuel"> <en>fuel</en> <de><![CDATA[Diesel]]></de> <fr>carburant</fr> </text>
+		<text name="cm_outputCompost"> <en>compost</en> <de><![CDATA[Kompost]]></de> <fr>compost</fr> </text>
+		<text name="inputTrigger_CM2k17"> <en>resourcen: </en> <de><![CDATA[Rohstoffe: ]]></de> <fr>matières premières : </fr> </text>
+		<text name="outputTrigger_CM2k17"> <en>products: </en> <de><![CDATA[Erzeugnis: ]]></de> <fr>produit fini : </fr> </text>
+<!-- end CompostMaster -->	
+		
+<!-- nouvelles usines -->			
+        <text name="butter"> <en>butter</en> <de>Butter</de> <fr>beurre</fr> </text>
+        <text name="milch"> <en>milk</en> <de>Vollmilch</de> <fr>lait</fr> </text>
+        <text name="sahne"> <en>cream</en> <de>Sahne</de> <fr>créme</fr> </text>
+        <text name="quark"> <en>quark</en> <de>Quark</de> <fr>chantilly</fr> </text>
+        <text name="yogurt"> <en>yogurt</en> <de>Joghurt</de> <fr>yaourt</fr> </text>
+        <text name="papier"> <en>paper</en> <de>Papier</de> <fr>papiers</fr> </text>
+        <text name="palettebutter"> <en>palette butter</en> <de>Palette Butter</de> <fr>palettes de beurre</fr> </text>
+        <text name="palettemilch"> <en>palette milk</en> <de>Milch Palette</de> <fr>palettes de lait</fr> </text>
+        <text name="palettesahne"> <en>palette cream</en> <de>Sahne Palette</de> <fr>palettes de créme</fr> </text>
+        <text name="palettequark"> <en>palette quark</en> <de>Quark Palette</de> <fr>palettes de chantilly</fr> </text>
+        <text name="paletteyogurt"> <en>palette yogurt</en> <de>Joghurt Palette</de> <fr>palettes de yaourt</fr> </text>
+        <text name="palettepapier"> <en>palette paper</en> <de>Papier Palette</de> <fr>palettes de papier</fr> </text>
+        <text name="brot"> <en>Bread</en> <de>Brot</de> <fr>pain</fr> </text>
+		<text name="brotpalette"> <en>Breadpalette</en> <de>Brot Palette</de> <fr>painpalette</fr> </text>
+        <text name="mehl"> <en>Flour</en> <de>Mehl</de> <fr>farine</fr> </text>	
+        <text name="mehlpalette"> <en>Flour palette</en> <de>Mehl Palette</de> <fr>palettes de farine</fr> </text>	
+        <text name="Tip_mehl"><de>Mehl Palette</de><en>Flour Palette</en> <fr>farine palette</fr> </text>
+        <text name="Tip_RSwheat"><de>Weizen</de><en>Wheat</en> <fr>blé</fr> </text>
+        <text name="Tip_RSbarley"><de>Gerste</de><en>Barley</en> <fr>orge</fr> </text>
+        <text name="Tip_RSrye"><de>Roggen</de><en>Rye</en> <fr>seigle</fr> </text>
+        <text name="Tip_RSsunflower"><de>Sonnenblumen</de><en>sunflower</en> <fr>tournesol</fr> </text>
+		<text name="sunflower"><de>Sonnenblumen</de><en>sunflower</en> <fr>tournesol</fr> </text>		
+		<text name="palettehuile"> <en>palettehuile</en> <de>Öl Palette</de> <fr>palettes huile tournesol</fr> </text>
+		<text name="huile"> <en>huile</en> <de>huile</de> <fr>huile</fr> </text>		
+		<text name="Tip_RSwater"><de>eau</de><en>water</en> <fr>eau</fr> </text>
+		<text name="Tip_RSmilk"><de>Milch</de><en>milk</en> <fr>lait</fr> </text>
+		<text name="cornflake"><de>cornflake</de><en>cornflake</en> <fr>cornflake</fr> </text>
+		<text name="epeautre"><de>epeautre</de><en>epeautre</en> <fr>epeautre</fr> </text>		
+		<text name="oats"><de>oats</de><en>oats</en> <fr>avoine</fr> </text>
+		<text name="whisky"><de>whisky</de><en>whisky</en> <fr>whisky</fr> </text>
+		<text name="wool"> <en>wool</en> <de>Wolle</de> <fr>laine</fr> </text>		
+<!-- end nouvelles usines -->
+
+<!-- poisson -->
+	<text name="fish"> <en>fish</en> <de>Fisch</de> <fr>poissons</fr> </text>
+	<text name="maize"> <en>maize</en><de>Mais</de> <fr>mais</fr> </text>
+	<text name="pigFood"> <en>pigFood</en><de>Schweinefutter</de> <fr>pigFood</fr> </text>
+	<text name="Guelle"> <en>Liquide Manure</en> <de>Gülle</de> <fr>lisier</fr> </text>
+<!-- poisson -->
+		
+<!-- Futtermischer -->
+		<text name="Gras"> <en>grass</en> <de><![CDATA[Gras]]></de> <fr>herbe</fr> </text>
+		<text name="Stroh"> <en>straw</en> <de><![CDATA[Stroh]]></de> <fr>paille</fr> </text>
+		<text name="Silage"> <en>silage</en> <de><![CDATA[Silage]]></de> <fr>ensilage</fr> </text>
+		<text name="Mischfutter"> <en>Forage</en> <de><![CDATA[Mischfutter]]></de> <fr>fourrage</fr> </text>	
+        <text name="Erdfruechten"> <en>Earth fruits</en> <de><![CDATA[Erdfruechte]]></de> <fr>tubercules</fr> </text>
+		<text name="Getreide"> <en>cereals</en> <de><![CDATA[Getreide]]></de> <fr>céréales</fr> </text>
+		<text name="Proteine"> <en>Proteins</en> <de><![CDATA[Proteine]]></de> <fr>protéines</fr> </text>
+		<text name="Schweinefutter"> <en>PigForage</en> <de><![CDATA[Schweinefutter]]></de> <fr>nourriture pour cochons</fr> </text>
+<!-- end Futtermischer -->
+
+<!-- Seeds Fertilizer Production-->	
+		<text name="grain"> <en>grain</en> <de><![CDATA[Getreide]]></de> <fr>céréales</fr> </text>
+		<text name="seeds"> <en>seeds</en> <de><![CDATA[Saatgut]]></de> <fr>semences</fr> </text>
+		<text name="fertilizer"> <en>fertilizer</en> <de><![CDATA[Dünger]]></de> <fr>engrais</fr> </text>
+		<text name="manure"> <en>manure</en> <de><![CDATA[Mist]]></de> <fr>fumier</fr> </text>
+		<text name="liquidManure"> <en>liquidManure</en> <de><![CDATA[Gülle]]></de> <fr>lisier</fr> </text>
+<!-- end Seeds Fertilizer Production-->
+
+<!-- schlachthof -->
+		<text name="Schlachterei"> <en>Butchery</en> <de>Schlachterei</de> <fr>boucherie</fr> </text>
+		<text name="Anlieferung"> <en>Animals unloading:</en>	<de>Tiere beim entladen:</de> <fr>Déchargement Animaux:</fr> </text>
+		<text name="Ausgabe_Wurst"> <en>Goods issue:</en> <de>Waren Ausgabe:</de> <fr>sortie des saucisses</fr> </text>
+		<text name="Wurst"> <en>sausage</en> <de>Wurst</de> <fr>saucisses</fr> </text>
+		<text name="Fleisch"> <en>meat</en> <de>Fleisch</de> <fr>viandes</fr> </text>
+<!-- fin schlachthof -->
+		
+<!-- Schweine zwischenlager -->
+		<text name="Intermediate_storage_pig"> <en>Intermediate storage</en> <de>Zwischenlager (Schweine)</de> <fr>entreposage (porcs)</fr> </text>
+		<text name="in_pigs"> <en>Pigs unloading:</en>	<de>Schweine entladen:</de> <fr>porcs déchargés:</fr> </text>
+		<text name="out_pigs"> <en>Pigs outloading:</en> <de>Schweine beladen:</de> <fr>Porc chargé:</fr> </text>
+		<text name="pigs"> <en>pigs</en> <de>Schweine</de> <fr>porcs</fr> </text>
+<!-- fin Schweine zwischenlager -->
+		
+<!-- Schaf zwischenlager -->
+		<text name="Intermediate_storage_sheep"> <en>Intermediate storage</en> <de>Zwischenlager (Schafe)</de> <fr>entreposage (moutons)</fr> </text>
+		<text name="in_sheep"> <en>Sheep unloading:</en>	<de>Schafe entladen:</de> <fr>Mouton déchargé:</fr> </text>
+		<text name="out_sheep"> <en>Sheep outloading:</en> <de>Schafe beladen:</de> <fr>Mouton chargé:</fr> </text>
+		<text name="scheeps"> <en>sheep</en> <de>mouton</de> </text>
+<!-- fin Schaf zwischenlager -->	
+
+		<text name="sausage"> <en>sausage</en> <de><![CDATA[Wurst]]></de><ru><![CDATA[колбаса]]></ru><fr>saucisse</fr> </text>
+		<text name="meat"> <en>meat</en> <de><![CDATA[Fleisch]]></de><ru><![CDATA[мясо]]></ru><fr>viande</fr> </text>
+		<text name="AdditionalTrigger_startFillST"> <de>Befüllvorgang starten</de> <en>start filling</en> <fr>Commencer le remplissage</fr> </text>
+		<text name="AdditionalTrigger_stopFillST"> <de>Befüllvorgang stoppen</de> <en>stop filling</en> <fr>Arrêter le remplissage</fr> </text>
+		<text name="AdditionalTrigger_automaticFillST"> <de>zu automatischem Befüllen wechseln</de> <en>to automatic filling</en> <fr>à remplissage automatique</fr> </text>
+		<text name="AdditionalTrigger_manualFillST"> <de>zu manuellem Befüllen wechseln</de> <en>to manual filling</en> <fr>à remplissage manuel</fr> </text>
+		<text name="AdditionalTrigger_helpBoxTextInfo"> <de>Info: Aussteigen, um automatisches Aufladen an/aus zu stellen!</de> <en>Info: Get out for set automatic charging!</en> <fr>Info : Sortez pour une charge automatique !</fr> </text>
+		<text name="AdditionalTrigger_helpBoxTextAuto"> <de>Aktuelle Einstellung: automatisches Aufladen</de> <en>Aktual settings: automatic charging</en> <fr>Réglages actuels : charge automatique</fr> </text>
+		<text name="AdditionalTrigger_helpBoxTextManual"> <de>Aktuelle Einstellung: manuelles Aufladen</de> <en>Aktual settings: manual charging</en> <fr>Réglages actuels : charge manuelle</fr> </text>
+<!-- stonegates -->
+		<text name="input_ANIMATED_OBJECT_OPEN_GATE"> <en>Open Gate</en> <de>Tor öffnen</de> <fr>Ouvrir la porte</fr> </text> 
+        <text name="input_ANIMATED_OBJECT_CLOSE_GATE"> <en>Close Gate</en> <de>Tor schließen</de> <fr>Fermer la porte</fr> </text>		
+<!-- end stonegates -->
+		<text name="Hof_Tankstelle"><de>Hof Tankstelle</de><en>Hof Tankstelle</en> <fr>stokage carburant</fr></text>
+		<text name="Input1"><de>Treibstoff</de><en>fuel</en> <fr>carburant</fr> </text>
+		<text name="Output1"><de>Treibstoff</de><en>fuel</en> <fr>carburant</fr> </text>
+		<text name="woodChips"> <en>woodChips</en> <de><![CDATA[Hackschnitzel]]></de> <fr>copeaux</fr></text>		
+        <text name="shopItem_waterPumpStation"> <en>Waterpumpstation</en> <de>Wasserpumpstation</de> </text>
+        <text name="function_waterPumpStation"> <en>You can refill your watertrailer to get water for your animals</en> <de><![CDATA[Hier kannst du deinen Wasseranhänger befüllen.]]></de> </text>
+		
+<!-- pallet production -->
+		<text name="boardwood_palette"> <en>board pallets</en> <de><![CDATA[Bretter-Paletten]]></de> <fr>Palette de planches</fr> </text>
+		<text name="palette"> <en>pallets</en> <de><![CDATA[Palette]]></de> <fr>Palette</fr> </text>
+<!-- end pallet production -->
+		
+<!-- Depart laveuse -->
+		<text name="Kartoffeln"> <en>Potato</en> <de>Kartoffeln</de> <fr><![CDATA[Patates]]></fr> </text>
+		<text name="washedPotato"> <en>potatos washed</en> <de>Kartoffeln gewaschen</de> <fr>Patates lavées</fr> </text>
+        <text name="steamedPotato"> <en>steamed potato</en> <de>Kartoffeln gedaempft</de> <fr><![CDATA[Patates vapeur]]></fr> </text>
+		<text name="carrot"> <en>carrot</en> <de>Karotten</de> <fr><![CDATA[carottes]]></fr> </text>		
+		<text name="washedcarrot"> <en>carrot washed</en> <de>Karotten gewaschen</de> <fr>carottes lavées</fr> </text>
+		<text name="sugarBeet"> <en>sugarBeet</en> <de>Zuckerrüben</de> <fr><![CDATA[bettraves]]></fr> </text>		
+		<text name="washedsugarBeet"> <en>sugarBeet washed</en> <de>Zuckerrüben gewaschen</de> <fr>bettraves lavées</fr> </text>
+		<text name="boxonion"> <en>boxonion</en> <de>Zwiebeln in Kisten</de> <fr>caisse d'oignons</fr> </text>			
+<!-- Fin laveuse -->
+		
+<!-- fermenting silo -->	
+        <text name="Input1_HS"> <en>chaff/grass</en> <de><![CDATA[Spreu/Gras]]></de> <fr>foin/herbe</fr> </text>
+		<text name="Output1_HS"> <en>silage</en> <de><![CDATA[Silofutter]]></de> <fr>ensilage</fr> </text>
+<!-- end fermenting silo -->
+			
+<!-- slow soja -->
+		<text name="slow_soja_soja"> <de>Sojabohnen</de> <en>soybeans</en> <fr>soja</fr> </text>
+		<text name="slow_soja_water"> <de>eau</de> <en>water</en> <fr>eau</fr> </text>
+		<text name="slow_soja_fuel"> <de>Treibstoff</de> <en>fuel</en> <fr>carburant</fr> </text>
+		<text name="AdditionalTrigger_Liquide_water_start"> <de>Wasser abladen</de> <en>unload water</en> <fr>Décharger l'eau</fr> </text>
+		<text name="AdditionalTrigger_Liquide_water_stop"> <de>Wasser stoppen</de> <en>stop water</en> <fr>Arrêter l'eau</fr> </text>
+		<text name="AdditionalTrigger_Liquide_fuel_start"> <de>Treibstoff abladen</de> <en>unload fuel</en> <fr>Décharger le carburant</fr> </text>
+		<text name="AdditionalTrigger_Liquide_fuel_stop"> <de>Treibstoff stoppen</de> <en>stop fuel</en> <fr>Arrêter le carburant</fr> </text>
+		<text name="slow_soja_liquid"> <de><![CDATA[Gülle]]></de> <en>liquid manure</en> <fr>lisier</fr> </text>
+		<text name="AdditionalTrigger_Liquide_manure_start"> <de><![CDATA[Gülle laden]]></de> <en>load liquidmanure</en> <fr>Charger le lisier</fr> </text>
+		<text name="AdditionalTrigger_Liquide_manure_stop"> <de><![CDATA[Gülle stoppen]]></de> <en>stop liquid manure</en> <fr>Arrêter le lisier</fr> </text>
+		<text name="slow_soja_milk"> <de>Milch</de> <en>milk</en> <fr>lait</fr> </text>
+		<text name="AdditionalTrigger_Liquide_milk_start"> <de>Milch laden</de> <en>load milk</en> <fr>Charger le lait</fr> </text>
+		<text name="AdditionalTrigger_Liquide_milk_stop"> <de>Milch stoppen</de> <en>stop milk</en> <fr>Arrêter le lait</fr> </text>
+		<text name="slow_soja_pig"> <de>Schweinefutter</de> <en>pig food</en> <fr>nourriture pour cochons</fr> </text>
+		<text name="startFillST"> <de>Silo start</de> <en>silo start</en> <fr>Démarrer le silo</fr> </text>
+		<text name="stopFillST"> <de>Silo stop</de> <en>silo stop</en> <fr>Arrêter le silo</fr> </text>
+		<text name="AdditionalTrigger_automaticFillST1"> <de>zu automatischem Befüllen wechseln</de> <en>to automatic filling</en> <fr>à remplissage automatique</fr> </text>
+		<text name="AdditionalTrigger_manualFillST1"> <de>zu manuellem Befüllen wechseln</de> <en>to manual filling</en> <fr>à remplissage manuel</fr> </text>
+		<text name="AdditionalTrigger_startFillST1"> <de>Schweinefutter laden</de> <en>load pigfood</en> <fr>Charger la nourriture pour cochons</fr> </text>
+		<text name="AdditionalTrigger_stopFillST1"> <de>Schweinefutter stoppen</de> <en>stop pigfood</en> <fr>Arrêter la nourriture pour cochons</fr> </text>
+<!-- slow_anim -->
+        <text name="input_warenausgang"> <de>WA Tor auf</de> <en>open</en> <fr>Ouvrir</fr> </text>
+		<text name="input_warenausgang_neg"> <de>WA Tor zu</de> <en>close</en> <fr>Fermer</fr> </text>
+		<text name="input_wareneingang"> <de>WE Tor auf</de> <en>open</en> <fr>Ouvrir</fr> </text>
+		<text name="input_wareneingang_neg"> <de>WE Tor auf</de> <en>close</en> <fr>Fermer</fr> </text>
+		<text name="input_deckel"> <de>Deckel auf</de> <en>open</en> <fr>Ouvrir</fr> </text>
+		<text name="input_deckel_neg"> <de>Deckel zu</de> <en>close</en> <fr>Fermer</fr> </text>
+		<text name="input_anzeige"> <de>Warenausgang anzeigen</de> <en>roll out</en> <fr>Afficher</fr> </text>
+		<text name="input_anzeige_neg"> <de>Wareneingang anzeigen</de> <en>roll in</en> <fr>Afficher</fr> </text>
+		<text name="input_sojatrigger"> <de>Soja aktivieren</de> <en>soy activate</en> <fr>activer le soja</fr> </text>
+		<text name="input_sojatrigger_neg"> <de>Soja deaktivieren</de> <en>soy deactivate</en> <fr>désactiver le soja</fr> </text>
+		<text name="input_sautrigger"> <de>Schweinefutter aktivieren</de> <en>pigfood activate</en> <fr>activer la nourriture pour cochons</fr> </text>
+		<text name="input_sautrigger_neg"> <de>Schweinefutter deaktivieren</de> <en>pigfood deactivate</en> <fr>désactiver la nourriture pour cochons</fr> </text>
+		<text name="input_LIGHTSWITCH_CLICK"> <en>Lightswitch on/off</en> <de>Lichtschalter an/aus</de> <fr>Allumer/éteindre la lumière</fr> </text> 
+		<text name="input_ANIMATED_OBJECT_OPEN_DOOR"> <en>Open Gate</en> <de>Tor öffnen</de> <fr>Ouvrir la porte</fr> </text> 
+		<text name="input_ANIMATED_OBJECT_CLOSE_DOOR"> <en>Close Gate</en> <de>Tor schließen</de> <fr>Ouvrir la porte</fr> </text> 		
+<!--  end slow_anim slow soja-->
+		<text name="Fabrik"> <en>Sawmill</en> <de>Sägewerk</de> <fr>Sawmill</fr> </text>
+		<text name="tomatoGreenhouse"> <en>tomatoGreenhouse</en> <de>Tomaten Gewächshaus</de> <fr>serre a tomate</fr> </text>
+		<text name="lettuceGreenhouse"> <en>lettuceGreenhouse</en> <de>Salat Gewächshaus</de> <fr>serre a salade</fr> </text>
+		<text name="redcabbageGreenhouse"> <en>redcabbageGreenhouse</en> <de>Rotkohl Gewächshaus</de> <fr>serre a chou rouge</fr> </text>
+		<text name="cauliflowerGreenhouse"> <en>cauliflowerGreenhouse</en> <de>Blumenkohl Gewächshaus</de> <fr>serre a chou fleur</fr> </text>
+		<text name="raspberryGreenhouse"> <en>raspberryGreenhouse</en> <de>Himbeeren Gewächshaus</de> <fr>serre a framboise</fr> </text>
+		<text name="strawberryGreenhouse"> <en>strawberryGreenhouse</en> <de>Erdbeeren Gewächshaus</de> <fr>serre a fraise</fr> </text>
+		<text name="pallet produce"> <en>pallet produce</en> <de>Paletten Produktion</de> <fr>production de pallette</fr> </text>
+		<text name="slow_soja"> <de>Sojamilch Produktion</de> <en>soymilk</en> <fr>production lait de soja</fr> </text>
+		<text name="compostMaster2k17"> <de>KompostMaster</de> <en>compostMaster2k17</en> <fr>compostMaster2k17</fr> </text>
+		<text name="fermenting_silo"> <de>Fermenting Silo</de> <en>fermenting_silo</en> <fr>silo a fermenter</fr> </text>
+		<text name="Fertilizer"> <de>Dünger  Produktion</de> <en>Fertilizer</en> <fr>engrais</fr> </text>
+		<text name="Seeds"> <de>Saatgut Produktion</de> <en>Seeds</en> <fr>semences</fr> </text>
+		<text name="potatoWasher"> <de>Kartoffelwäscher</de> <en>potatowasher</en> <fr>patate laver</fr> </text>
+		<text name="potatoSteamer"> <de>Kartoffeldämpfer</de> <en>potatosteamer</en> <fr>patate vapeur</fr> </text>
+		<text name="carrotWasher"> <de>Karottenwäscher</de> <en>carrotWasher</en> <fr>carotte laver</fr> </text>
+		<text name="WashersugarBeet"> <de>Zuckerrübenwäscher</de> <en>WashersugarBeet</en> <fr>bettrave laver</fr> </text>
+		<text name="fillingStation_onion"> <de>Zwiebeln Abfüllstation</de> <en>fillingStation_onion</en> <fr>station d onion</fr> </text>
+		<text name="Paletten_Fabrik"> <de>Papier Produktion</de> <en>Papier Produktion</en> <fr>production de papier</fr> </text>
+		<text name="WeizenMehlfabrik"> <de>Weizenmehl Produktion</de> <en>Weizenmehl Produktion</en> <fr>production farine de bles</fr> </text>
+		<text name="GersteMehlfabrik"> <de>Gerstemehl Produktion</de> <en>Gerstemehl Produktion</en> <fr>production farine d orge</fr> </text>
+		<text name="RoggenMehlfabrik"> <de>Roggenmehl Produktion</de> <en>Roggenmehl Produktion</en> <fr>production farine de seigle</fr> </text>
+		<text name="Backerei"> <de>Bäckerei</de> <en>bakery</en> <fr>boulengerie</fr> </text>
+		<text name="tournesol"> <de>SonnenblumenÖl Produktion</de> <en>tournesol</en> <fr>production d huile tournesol</fr> </text>
+		<text name="pisciculture"> <de>Fischzucht</de> <en>fish farming</en> <fr>pisciculture</fr> </text>
+        <text name="apfel"> <en>apple</en> <de>Apfel</de> <fr>pommes</fr> </text>
+        <text name="birne"> <en>pears</en> <de>Birne</de> <fr>poires</fr> </text>
+        <text name="kirsche"> <en>cherry</en> <de>Kirsche</de> <fr>cerises</fr> </text>
+        <text name="pflaume"> <en>plum</en> <de>Pflaume</de> <fr>prunes</fr> </text>	
+        <text name="cidre"> <en>cidre</en> <de>cidre</de> <fr>cidre</fr> </text>
+        <text name="poire"> <en>poire</en> <de>poire</de> <fr>poire</fr> </text>
+        <text name="prune"> <en>prune</en> <de>prune</de> <fr>prune</fr> </text>
+        <text name="cerise"> <en>cerise</en> <de>cerise</de> <fr>cerise</fr> </text>			
+<!-- Raffenerie -->
+		<text name="AdditionalTrigger_automaticFill_RS"><de>Aktivieren Automatisch Füllung</de><en>Activate Automatic Filling</en> <fr>Activer le remplissage automatique</fr> </text>
+		<text name="AdditionalTrigger_manualFill_RS"><de>Aktivieren Handbefüllung</de><en>Activate Manual Filling</en> <fr>Activer le remplissage manuel</fr> </text>
+		<text name="AdditionalTrigger_RSLM_start"><de>Load Biodiesel</de><en>Load fuel</en> <fr>Charger le carburant</fr> </text>
+		<text name="AdditionalTrigger_RSLM_stop"><de>Stop Loading Biodiesel</de><en>Stop Loading fuel</en><fr>Arrêter de charger du carburant</fr></text>
+		<text name="AdditionalTrigger_startFill_RS"><de>Load Eiweißfuttermittel</de><en>Load forage</en><fr>Charger le fourrage</fr></text>
+		<text name="AdditionalTrigger_stopFill_RS"><de>Stop Loading Eiweißfuttermittel</de><en>Stop Loading forage</en><fr>Arrêtez de charger le fourrage</fr></text>
+		<text name="AdditionalTrigger_DSLM_start"><de>Load Gärreste</de><en>Load digestate</en><fr>Charger le digestate</fr></text>
+		<text name="AdditionalTrigger_DSLM_stop"><de>Stop Loading Gärreste</de><en>Stop Loading digestate</en><fr>Arrêtez de charger le digestate</fr></text>
+		<text name="RS_forage"><de>Eiweißfuttermittel</de><en>forage</en><fr>fourrage</fr></text>
+		<text name="DS_digestate"><de>Gärreste</de><en>digestate</en><fr>digestate</fr></text>
+		<text name="RM_Output"><de>Biodiesel</de><en>fuel</en><fr>Carburant</fr></text>
+		<text name="Tip_RS"><de>Raps</de><en>rape</en><fr>rape</fr></text>
+		<text name="FuelSellTrigger_pda"> <en>Fuelsell</en> <de><![CDATA[Dieselverkauf]]></de> <fr>Vente de carburant</fr> </text>
+		<text name="finance_soldFuel"> <en>soldFuel</en> <de><![CDATA[Dieselverkauf Einnahme]]></de> <fr>Le chiffre d'affaires diesel</fr> </text>		
+		<text name="input_ANIMATED_OBJECT_OPEN_ROLLDOOR"><en>Open Rolldoor</en><de>Rolltor öffnen</de> <fr>porte ouverte </fr> </text>
+		<text name="input_ANIMATED_OBJECT_CLOSE_ROLLDOOR"><en>Close Rolldoor</en><de>Rolltor schließen</de> <fr>porte fermer</fr></text>
+		<text name="tissu"> <en>tissu</en> <de>tissu</de> <fr>tissu</fr> </text>
+ <!--Animated Objects-->
+  <text name="input_ANIMATED_OBJECT_OPEN_ELECTRICROLLDOOR">
+   <en>Open rolldoor</en>
+   <es>Abrir puerta corredera</es>
+   <fr>Ouvrir porte coulissante</fr>
+   <de>Rolltor öffnen</de>
+   <nl>Roldeur openen</nl>
+   <pl>Otwórz przesuwane wrota</pl>
+  </text>
+  <text name="input_ANIMATED_OBJECT_CLOSE_ELECTRICROLLDOOR">
+   <en>Close rolldoor</en>
+   <es>Cerrar puerta corredera</es>
+   <fr>Fermer porte coulissante</fr>
+   <de>Rolltor schließen</de>
+   <nl>Rolldeur sluiten</nl>
+   <pl>Zamknij przesuwane wrota</pl>
+  </text>
+  <text name="input_ANIMATED_OBJECT_OPEN_TIPDOOR">
+   <en>Open pit door</en>
+   <es>Abrir fosa</es>
+   <fr>Ouvrir la fosse</fr>
+   <de>Abdeckung öffnen</de>
+   <nl>Luik openen</nl>
+   <pl>Otwórz zsyp</pl>
+  </text>
+  <text name="input_ANIMATED_OBJECT_CLOSE_TIPDOOR">
+   <en>Close pit door</en>
+   <es>Cerrar fosa</es>
+   <fr>Fermer la fosse</fr>
+   <de>Abdeckung schließen</de>
+   <nl>Luik sluiten</nl>
+   <pl>Zamknij zsyp</pl>
+  </text>
+  <text name="input_ANIMATED_OBJECT_OPEN_TIPDOORFERT">
+   <en>Open fertilizer pit door</en>
+   <es>Abrir tapa silo fertilizante</es>
+   <fr>Ouvrir la trappe du fertilisant</fr>
+   <de>Abdeckung Düngersilo öffnen</de>
+   <nl>Luik mestsilo openen</nl>
+   <pl>Otwórz zsyp nawozów</pl>
+  </text>
+  <text name="input_ANIMATED_OBJECT_CLOSE_TIPDOORFERT">
+   <en>Close fertilizer pit door</en>
+   <es>Cerrar tapa silo fertilizante</es>
+   <fr>Fermer la trappe du fertilisant</fr>
+   <de>Abdeckung Düngersilo schließen</de>
+   <nl>Luik mestsilo sluiten</nl>
+   <pl>Zamknij zsyp nawozów</pl>
+  </text>
+  <text name="input_ANIMATED_OBJECT_OPEN_GATEDOOR">
+   <en>Open gate</en>
+   <es>Abrir portón</es>
+   <fr>Ouvrir le portail</fr>
+   <de>Gatter öffnen</de>
+   <nl>Hek openen</nl>
+   <pl>Otwórz barmę</pl>
+  </text>
+  <text name="input_ANIMATED_OBJECT_CLOSE_GATEDOOR">
+   <en>Close gate</en>
+   <es>Cerrar portón</es>
+   <fr>Fermer le portail</fr>
+   <de>Gatter schließen</de>
+   <nl>Hek sluiten</nl>
+   <pl>Zamknij bramę</pl>
+  </text>
+  <text name="input_ANIMATED_OBJECT_OPEN_MANUREPIT">
+   <en>Open manurepit door</en>
+   <es>Abrir puerta estiercol</es>
+   <fr>Ouvrir la fosse à lisier</fr>
+   <de>Güllebecken öffnen</de>
+   <nl>Mestput openen</nl>
+   <pl>Otwórz gnojownik</pl>
+  </text>
+  <text name="input_ANIMATED_OBJECT_CLOSE_MANUREPIT">
+   <en>Close manurepit door</en>
+   <es>Cerrar puerta estiercol</es>
+   <fr>Fermer la fosse à lisier</fr>
+   <de>Güllebecken schließen</de>
+   <nl>Mestput sluiten</nl>
+   <pl>Zamknij gnojownik</pl>
+  </text>
+  <text name="input_SCREEN_CLICK">
+   <en>Toggle display</en>
+   <es>Cambio pantalla</es>
+   <fr>Commuter l'affichage</fr>
+   <de>Bildschirm umschalten</de>
+   <nl>Beeldscherm wisselen</nl>
+   <pl>Przełącz ekran</pl>
+  </text>
+  <text name="input_VENT_CLICK">
+   <en>Ventilation on/off</en>
+   <es>Ventilación on/off</es>
+   <fr>Ventilation ON/OFF</fr>
+   <de>Belüftung an/aus</de>
+   <nl>Ventilatie aan/uit</nl>
+   <pl>Wł/wył wentylację</pl>
+  </text>
+  <text name="input_NET_CLICK">
+   <en>open/close net</en>
+   <es>subir/bajar cortavientos</es>
+   <fr>Lever/baisser filet de pare-vent</fr>
+   <de>Windschutznetz hoch/runter</de>
+   <nl>Windnet ophoog/omlaag</nl>
+   <pl>Podnieś/opuść siatki</pl>
+  </text> 
+  <text name="input_ANIMATED_OBJECT_OPEN_Koppeltor"> <en>Open door</en> <de>Koppeltor öffnen</de> </text>
+  <text name="input_ANIMATED_OBJECT_CLOSE_Koppeltor"> <en>Close door</en> <de>Koppeltor schließen</de>
+  </text>  
+		</l10n>
+		
+	<regFillTypes hudDirectoryFillTypes="hud/fillTypes" textureDirectoryFillPlanes="fillPlanes">
+	    <fillType name="tomato" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="emptypallet" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="lettuce" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+		<fillType name="cauliflower" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="redCabbage" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="strawberry" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="raspberry" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="washedPotato" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="steamedPotato" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="washedcarrot" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="washedsugarBeet" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="boxonion" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="huile" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+ 		<fillType name="fish" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+ 		<fillType name="cornflake" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+ 		<fillType name="epeautre" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+ 		<fillType name="oats" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+ 		<fillType name="whisky" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="tissu" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="cidre" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="poire" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="cerise" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="prune" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="sausage" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="meat" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="apfel" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="birne" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="kirsche" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="pflaume" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="beer" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="sugars" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="mehl" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="brot" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="osb" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="papier" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="yogurt" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="quark" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="sahne" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="butter" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+		<fillType name="milch" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+        <fillType name="cabbage" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="substral" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="groseille" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+		<fillType name="citron" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />
+        <fillType name="pasteque" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="champignon" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="citrouille" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="mure" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="sapin" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="carton" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="tonneau" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="caisse" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="oeuf" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="parfum" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="vin" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+        <fillType name="grapejuice" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
+
+		</regFillTypes>					
+		
+	<extraSourceFiles>
+		<sourceFile filename="scripts/additionalMapTypes.lua" />
+        <sourceFile filename="scripts/FabrikScript.lua" />
+		<sourceFile filename="scripts/PalettenSammler.lua"/>	
+    	<sourceFile filename="scripts/regFillTypes.lua" />
+	    <sourceFile filename="scripts/AdditionalTriggers.lua" />	
+	    <sourceFile filename="scripts/BuyableChickens.lua" />
+	    <sourceFile filename="scripts/MilkFillTrigger.lua" />	
+     	<sourceFile filename="scripts/StopMilkSale.lua" />
+		<sourceFile filename="scripts/CombineStrawFix.lua" />
+		<sourceFile filename="scripts/AnimalPedestrian.lua" />
+		<sourceFile filename="scripts/DigitalStorageAmountMover.lua" />	
+        <sourceFile filename="scripts/FillablePalletFix.lua" />	
+        <sourceFile filename="scripts/PlaceableFillTrigger.lua" />	
+        <sourceFile filename="scripts/mapRotateObject.lua"/>
+        <sourceFile filename="scripts/ShipFS17.lua"/>	
+        <sourceFile filename="scripts/MapAnimations.lua"/>			
+	</extraSourceFiles>
+  	  	  
+	<AdditionalMapTypes hudsDirectory="fruitHuds/" groundTipDirectory="tipOnGround/" baleTypesDirectory="baleTypes/">  
+	  <fruitType name="oat" needsSeeding="true" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" minHarvestingGrowthState="4" maxHarvestingGrowthState="6" cutState="8" allowsPartialGrowthState="false" pricePerLiter="0.44" literPerSqm="1.05" seedUsagePerSqm="0.03" showOnPriceTable="true" shownOnMap="true" massPerLiter="460" maxPhysicalSurfaceAngle="22.5" useForFieldJob="true" minForageGrowthState="3" witheringNumGrowthStates="8" numGrowthStates="7" growthStateTime="28800000" resetsSpray="true" groundTypeChangeGrowthState="-1" groundTypeChanged="0" isEarthfruit="false" preparedHaulm="oat_haulm" minPreparingGrowthState="1" maxPreparingGrowthState="7" preparedGrowthState="6" hasWindrow="true" windrowPricePerLiter="0.05" windrowLiterPerSqm="5" windrowShowOnPriceTable="false" windrowMassPerLiter="250" windrowMaxPhysicalSurfaceAngle="50" hasStraw="true" strawName="straw" strawFactor="7.0" hasFill="true" hasMaterials="true" hasParticles="true" useHeap="true" toFillCategorys="true" fillTypeCategorys="bulk combine forageHarvester forageWagon fork trainWagon augerWagon" toFruitGroups="true" fruitTypeGroups="sowingmachine grainHeader directCutter" useAsCowBasefeed="false" useAsCowGrass="false" useAsCowPower="false" useAsSheepGrass="false" useAsPigBasefeed="false" useAsPigGrain="false" useAsPigProtein="false" useAsPigEarthfruit="false" fillTypeConversion="true" convertType="chaff" conversionFactor="4" windrowConversionFactor="1" hasBale="false" baleTypeName="oat_windrow" hasSquareBale="false" hasRoundBale="false" forageWagonConversion="wheat" />
+	  <fruitType name="millet" needsSeeding="true" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" minHarvestingGrowthState="4" maxHarvestingGrowthState="6" cutState="8" allowsPartialGrowthState="false" pricePerLiter="0.43" literPerSqm="1.02" seedUsagePerSqm="0.03" showOnPriceTable="true" shownOnMap="true" massPerLiter="460" maxPhysicalSurfaceAngle="22.5" useForFieldJob="true" minForageGrowthState="3" witheringNumGrowthStates="8" numGrowthStates="7" growthStateTime="28800000" resetsSpray="true" groundTypeChangeGrowthState="-1" groundTypeChanged="0" isEarthfruit="false" preparedHaulm="millet_haulm" minPreparingGrowthState="1" maxPreparingGrowthState="7" preparedGrowthState="6" hasWindrow="true" windrowPricePerLiter="0.05" windrowLiterPerSqm="5" windrowShowOnPriceTable="false" windrowMassPerLiter="250" windrowMaxPhysicalSurfaceAngle="50" hasStraw="true" strawName="straw" strawFactor="7.0" hasFill="true" hasMaterials="true" hasParticles="true" useHeap="true" toFillCategorys="true" fillTypeCategorys="bulk combine forageHarvester forageWagon fork trainWagon augerWagon" toFruitGroups="true" fruitTypeGroups="sowingmachine grainHeader directCutter" useAsCowBasefeed="false" useAsCowGrass="false" useAsCowPower="false" useAsSheepGrass="false" useAsPigBasefeed="false" useAsPigGrain="false" useAsPigProtein="false" useAsPigEarthfruit="false" fillTypeConversion="true" convertType="chaff" conversionFactor="4" windrowConversionFactor="1" hasBale="false" baleTypeName="millet_windrow" hasSquareBale="false" hasRoundBale="false" forageWagonConversion="wheat" />
+	  <fruitType name="sorghum" needsSeeding="true" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" minHarvestingGrowthState="4" maxHarvestingGrowthState="6" cutState="8" allowsPartialGrowthState="false" pricePerLiter="0.44" literPerSqm="1.02" seedUsagePerSqm="0.03" showOnPriceTable="true" shownOnMap="true" massPerLiter="460" maxPhysicalSurfaceAngle="22.5" useForFieldJob="true" minForageGrowthState="3" witheringNumGrowthStates="8" numGrowthStates="7" growthStateTime="28800000" resetsSpray="true" groundTypeChangeGrowthState="-1" groundTypeChanged="0" isEarthfruit="false" preparedHaulm="millet_haulm" minPreparingGrowthState="1" maxPreparingGrowthState="7" preparedGrowthState="6" hasWindrow="false" windrowPricePerLiter="0.05" windrowLiterPerSqm="5" windrowShowOnPriceTable="false" windrowMassPerLiter="250" windrowMaxPhysicalSurfaceAngle="50" hasStraw="false" strawName="straw" strawFactor="7.0" hasFill="true" hasMaterials="true" hasParticles="true" useHeap="true" toFillCategorys="true" fillTypeCategorys="bulk combine forageHarvester forageWagon fork trainWagon augerWagon" toFruitGroups="true" fruitTypeGroups="sowingmachine grainHeader directCutter" useAsCowBasefeed="true" useAsCowGrass="false" useAsCowPower="false" useAsSheepGrass="true" useAsPigBasefeed="false" useAsPigGrain="false" useAsPigProtein="false" useAsPigEarthfruit="false" fillTypeConversion="true" convertType="chaff" conversionFactor="4" windrowConversionFactor="1" hasBale="false" baleTypeName="millet_windrow" hasSquareBale="false" hasRoundBale="false" forageWagonConversion="wheat" />	 
+	  <fruitType name="carrot" needsSeeding="true" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" minHarvestingGrowthState="4" maxHarvestingGrowthState="6" cutState="8" allowsPartialGrowthState="false" pricePerLiter="0.44" literPerSqm="1.02" seedUsagePerSqm="0.03" showOnPriceTable="true" shownOnMap="true" massPerLiter="460" maxPhysicalSurfaceAngle="22.5" useForFieldJob="true" minForageGrowthState="3" witheringNumGrowthStates="8" numGrowthStates="7" growthStateTime="28800000" resetsSpray="true" groundTypeChangeGrowthState="-1" groundTypeChanged="0" isEarthfruit="false" preparedHaulm="millet_haulm" minPreparingGrowthState="1" maxPreparingGrowthState="7" preparedGrowthState="6" hasWindrow="false" windrowPricePerLiter="0.05" windrowLiterPerSqm="5" windrowShowOnPriceTable="false" windrowMassPerLiter="250" windrowMaxPhysicalSurfaceAngle="50" hasStraw="false" strawName="straw" strawFactor="7.0" hasFill="true" hasMaterials="true" hasParticles="true" useHeap="true" toFillCategorys="true" fillTypeCategorys="bulk combine forageHarvester forageWagon fork trainWagon augerWagon" toFruitGroups="true" fruitTypeGroups="planter sowingmachine grainHeader directCutter" useAsCowBasefeed="false" useAsCowGrass="false" useAsCowPower="false" useAsSheepGrass="false" useAsPigBasefeed="false" useAsPigGrain="false" useAsPigProtein="false" useAsPigEarthfruit="true" fillTypeConversion="true" convertType="chaff" conversionFactor="4" windrowConversionFactor="1" hasBale="false" baleTypeName="millet_windrow" hasSquareBale="false" hasRoundBale="false" forageWagonConversion="wheat" />	 
+	  <fruitType name="onion" needsSeeding="true" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" minHarvestingGrowthState="4" maxHarvestingGrowthState="6" cutState="8" allowsPartialGrowthState="false" pricePerLiter="0.44" literPerSqm="1.02" seedUsagePerSqm="0.03" showOnPriceTable="true" shownOnMap="true" massPerLiter="460" maxPhysicalSurfaceAngle="22.5" useForFieldJob="true" minForageGrowthState="3" witheringNumGrowthStates="8" numGrowthStates="7" growthStateTime="28800000" resetsSpray="true" groundTypeChangeGrowthState="-1" groundTypeChanged="0" isEarthfruit="false" preparedHaulm="millet_haulm" minPreparingGrowthState="1" maxPreparingGrowthState="7" preparedGrowthState="6" hasWindrow="false" windrowPricePerLiter="0.05" windrowLiterPerSqm="5" windrowShowOnPriceTable="false" windrowMassPerLiter="250" windrowMaxPhysicalSurfaceAngle="50" hasStraw="false" strawName="straw" strawFactor="7.0" hasFill="true" hasMaterials="true" hasParticles="true" useHeap="true" toFillCategorys="true" fillTypeCategorys="bulk combine forageHarvester forageWagon fork trainWagon augerWagon" toFruitGroups="true" fruitTypeGroups="planter sowingmachine grainHeader directCutter" useAsCowBasefeed="false" useAsCowGrass="false" useAsCowPower="false" useAsSheepGrass="false" useAsPigBasefeed="false" useAsPigGrain="false" useAsPigProtein="false" useAsPigEarthfruit="false" fillTypeConversion="true" convertType="chaff" conversionFactor="4" windrowConversionFactor="1" hasBale="false" baleTypeName="millet_windrow" hasSquareBale="false" hasRoundBale="false" forageWagonConversion="wheat" />	 
+      <fruitType name="grapes" needsSeeding="false" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" minHarvestingGrowthState="4" maxHarvestingGrowthState="6" cutState="1" allowsPartialGrowthState="false" pricePerLiter="0.73" literPerSqm="2.22" seedUsagePerSqm="0.050" showOnPriceTable="true" shownOnMap="true" massPerLiter="460" maxPhysicalSurfaceAngle="22.5" useForFieldJob="false" minForageGrowthState="3" witheringNumGrowthStates="7" numGrowthStates="7" growthStateTime="28800000" resetsSpray="true" groundTypeChangeGrowthState="-1" groundTypeChanged="0" isEarthfruit="false" preparedHaulm="millet_haulm" minPreparingGrowthState="1" maxPreparingGrowthState="7" preparedGrowthState="6" hasWindrow="false" windrowPricePerLiter="0.04" windrowLiterPerSqm="5" windrowShowOnPriceTable="false" windrowMassPerLiter="250" windrowMaxPhysicalSurfaceAngle="50" hasStraw="false" strawName="straw" strawFactor="7.0" hasFill="true" hasMaterials="true" hasParticles="true" useHeap="false" toFillCategorys="true" fillTypeCategorys="bulk combine forageHarvester forageWagon fork trainWagon augerWagon" toFruitGroups="true" fruitTypeGroups="sowingmachine grainHeader directCutter" usegrainHeader="true" useAsCowBasefeed="false" useAsCowGrass="false" useAsCowPower="false" useAsSheepGrass="false" useAsPigBasefeed="false" useAsPigGrain="false" useAsPigProtein="false" useAsPigEarthfruit="false" fillTypeConversion="chaff" conversionFactor="0.7" windrowConversionFactor="0.3" forageWagonConversion="wheat"/>
+      <fruitType name="hops" needsSeeding="false" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" minHarvestingGrowthState="4" maxHarvestingGrowthState="6" cutState="1" allowsPartialGrowthState="false" pricePerLiter="0.73" literPerSqm="2.22" seedUsagePerSqm="0.050" showOnPriceTable="true" shownOnMap="true" massPerLiter="460" maxPhysicalSurfaceAngle="22.5" useForFieldJob="false" minForageGrowthState="3" witheringNumGrowthStates="7" numGrowthStates="7" growthStateTime="28800000" resetsSpray="true" groundTypeChangeGrowthState="-1" groundTypeChanged="0" isEarthfruit="false" preparedHaulm="millet_haulm" minPreparingGrowthState="1" maxPreparingGrowthState="7" preparedGrowthState="6" hasWindrow="false" windrowPricePerLiter="0.04" windrowLiterPerSqm="5" windrowShowOnPriceTable="false" windrowMassPerLiter="250" windrowMaxPhysicalSurfaceAngle="50" hasStraw="false" strawName="straw" strawFactor="7.0" hasFill="true" hasMaterials="true" hasParticles="true" useHeap="false" toFillCategorys="true" fillTypeCategorys="bulk combine forageHarvester forageWagon fork trainWagon augerWagon" toFruitGroups="true" fruitTypeGroups="sowingmachine grainHeader directCutter" usegrainHeader="true" useAsCowBasefeed="false" useAsCowGrass="false" useAsCowPower="false" useAsSheepGrass="false" useAsPigBasefeed="false" useAsPigGrain="false" useAsPigProtein="false" useAsPigEarthfruit="false" fillTypeConversion="chaff" conversionFactor="0.7" windrowConversionFactor="0.3" forageWagonConversion="wheat"/>
+	  <fruitType name="lavande" needsSeeding="true" allowsSeeding="true" useSeedingWidth="false" directionSnapAngle="0" alignsToSun="false" minHarvestingGrowthState="4" maxHarvestingGrowthState="6" cutState="8" allowsPartialGrowthState="false" pricePerLiter="0.31" literPerSqm="2.2" seedUsagePerSqm="0.05" showOnPriceTable="true" shownOnMap="true" massPerLiter="720" maxPhysicalSurfaceAngle="22.5" useForFieldJob="true" minForageGrowthState="3" witheringNumGrowthStates="8" numGrowthStates="7" growthStateTime="28800000" resetsSpray="true" groundTypeChangeGrowthState="-1" groundTypeChanged="0" isEarthfruit="false" preparedHaulm="millet_haulm" minPreparingGrowthState="1" maxPreparingGrowthState="7" preparedGrowthState="6" hasWindrow="false" windrowPricePerLiter="0.04" windrowLiterPerSqm="5" windrowShowOnPriceTable="false" windrowMassPerLiter="250" windrowMaxPhysicalSurfaceAngle="50" hasStraw="false" strawStandard="straw" strawFactor="7.0" hasFill="true" hasMaterials="true" hasParticles="true" useHeap="true" toFillCategorys="true" fillTypeCategorys="bulk combine forageHarvester forageWagon fork trainWagon augerWagon" toFruitGroups="true" fruitTypeGroups="sowingmachine grainHeader directCutter" useAsCowBasefeed="false" useAsCowGrass="false" useAsCowPower="false" useAsSheepGrass="false" useAsPigBasefeed="false" useAsPigGrain="false" useAsPigProtein="false" useAsPigEarthfruit="false" fillTypeConversion="true" convertType="chaff" conversionFactor="4" windrowConversionFactor="1" hasBale="false" baleTypeName="oat_windrow" hasSquareBale="false" hasRoundBale="false" forageWagonConversion="wheat" />
+  
+	  <fillType name="compost" pricePerLiter="0.8" showOnPriceTable="true" litersPerSecond="0.3244" massPerLiter="800" useForSpray="true" sprayerCategorys="manureSpreader" toCategorys="true" fillTypeCategorys="bulk windrow forageWagon fork trainWagon augerWagon" hasMaterials="true" hasParticles="true" useHeap="true" />	  
+	  </AdditionalMapTypes>
+
+      <inputBindings>
+        <input name="ANIMATED_OBJECT_OPEN_GATE"  category="ONFOOT" key1="" key2="" device="0" button="BUTTON_3"  mouse="MOUSE_BUTTON_LEFT" />
+        <input name="ANIMATED_OBJECT_CLOSE_GATE" category="ONFOOT" key1="" key2="" device="0" button="BUTTON_1"  mouse="MOUSE_BUTTON_RIGHT" />
+		<input name="ANIMATED_OBJECT_OPEN_DOOR" category="ONFOOT" key1="" key2="" device="0" button="BUTTON_3" mouse="MOUSE_BUTTON_LEFT" /> 
+		<input name="ANIMATED_OBJECT_CLOSE_DOOR" category="ONFOOT" key1="" key2="" device="0" button="BUTTON_1" mouse="MOUSE_BUTTON_RIGHT" /> 
+		<input name="LIGHTSWITCH_CLICK" category="ONFOOT" key1="" key2="" device="0" button="BUTTON_3" mouse="MOUSE_BUTTON_LEFT" />		
+      </inputBindings>
+
+</modDesc>

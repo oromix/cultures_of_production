@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<AddChoppedStraw globalFertilization="true">
+  <strawType name="lightStraw" allowFertilization="true" >
+    <binding fruitType="wheat" strawOutputFront="false" />
+    <binding fruitType="barley" strawOutputFront="false" />
+	<binding fruitType="soybean" strawOutputFront="false" />
+	<binding fruitType="oat" strawOutputFront="false" />
+	<binding fruitType="rye" strawOutputFront="false" />
+	<binding fruitType="spelt" strawOutputFront="false" />
+	<binding fruitType="millet" strawOutputFront="false" />
+	<binding fruitType="triticale" strawOutputFront="false" />
+	</strawType>
+  <strawType name="darkStraw" allowFertilization="true" >
+    <binding fruitType="rape" strawOutputFront="false" />
+  </strawType>
+  <strawType name="maizeStraw" allowFertilization="true" >
+    <binding fruitType="maize" strawOutputFront="true" />
+    <binding fruitType="sorghum" strawOutputFront="false" />
+	</strawType>
+  <strawType name="sunflowerStraw" allowFertilization="true">
+    <binding fruitType="sunflower" strawOutputFront="true" />
+	</strawType>
+</AddChoppedStraw>

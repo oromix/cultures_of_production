@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="woolPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="9" filename="decal_1.dds" relativePath="true"/>
+    <File fileId="8" filename="decal_2.dds" relativePath="true"/>
+    <File fileId="2" filename="pallet_diffuse.dds" relativePath="true"/>
+    <File fileId="3" filename="pallet_normal.dds" relativePath="true"/>
+    <File fileId="4" filename="pallet_specular.dds" relativePath="true"/>
+    <File fileId="5" filename="papier.dds" relativePath="true"/>
+    <File fileId="6" filename="papier1.dds" relativePath="true"/>
+    <File fileId="7" filename="papier2.dds" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="blinn1" materialId="13" ambientColor="1 1 1" cosPower="20" specularColor="0.5 0.5 0.5">
+      <Texture fileId="8"/>
+    </Material>
+    <Material name="barbedFence_mat" materialId="10" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1">
+      <Texture fileId="5"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="wire_mat" materialId="9" ambientColor="1 1 1" cosPower="255" specularColor="1 1 1" alphaBlending="true">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="barbedFence_mat" materialId="12" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1">
+      <Texture fileId="6"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+    <Material name="woolPallet_mat" materialId="8" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="barbedFence_mat" materialId="11" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1">
+      <Texture fileId="7"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="blinn1" materialId="14" ambientColor="1 1 1" cosPower="20" specularColor="0.5 0.5 0.5">
+      <Texture fileId="9"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="palettepapier.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="fillablePallet" dynamic="true" compound="true" collisionMask="25178120" density="0.1" clipDistance="300" nodeId="39" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+      <Shape shapeId="2" name="vis" visibility="false" clipDistance="300" nodeId="40" materialIds="8">
+        <Shape shapeId="3" name="wire" translation="-0.00322998 0.866917 -0.491" clipDistance="75" nodeId="41" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="wire1" translation="0.734754 0.866917 2.38419e-08" visibility="false" clipDistance="75" nodeId="42" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="5" name="wire2" translation="-0.00322998 0.866917 0.491214" visibility="false" clipDistance="75" nodeId="43" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="6" name="wire3" translation="-0.741214 0.866917 2.38419e-08" visibility="false" clipDistance="75" nodeId="44" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="7" name="wire4" translation="-0.00322998 1.45898 2.38419e-08" visibility="false" clipDistance="75" nodeId="45" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="8" name="dummyTensionBeltNode" translation="0 0.722266 0" visibility="false" clipDistance="100" nodeId="46" materialIds="7" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+      <Shape shapeId="9" name="palletAttacherTrigger" translation="0 0.175 0" kinematic="true" trigger="true" collisionMask="8192" nodeId="47" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="fillBags" translation="0.013656 -0.0827668 0" nodeId="48">
+        <TransformGroup name="transform" translation="0.582281 0.937562 -0.328747" rotation="0 -0 90" scale="1.21 1.5 1.5" nodeId="49">
+          <Shape shapeId="10" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="50" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="51" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="transform" scale="1.01 0.2 0.2" nodeId="52">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="53" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="54" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="transform" scale="1.009 0.23 0.23" nodeId="55">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="56" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="57" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="transform" translation="0.276788 0.937562 -0.328747" rotation="0 -0 90" scale="1.21 1.5 1.5" nodeId="58">
+          <Shape shapeId="10" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="59" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="60" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="transform" scale="1.01 0.2 0.2" nodeId="61">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="62" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="63" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="transform" scale="1.009 0.23 0.23" nodeId="64">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="65" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="66" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="transform" translation="-0.0287917 0.937562 -0.328747" rotation="0 -0 90" scale="1.21 1.5 1.5" nodeId="67">
+          <Shape shapeId="10" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="68" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="69" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="transform" scale="1.01 0.2 0.2" nodeId="70">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="71" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="72" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="transform" scale="1.009 0.23 0.23" nodeId="73">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="74" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="75" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="transform" translation="-0.329659 0.937562 -0.328747" rotation="0 -0 90" scale="1.21 1.5 1.5" nodeId="76">
+          <Shape shapeId="10" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="77" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="78" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="transform" scale="1.01 0.2 0.2" nodeId="79">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="80" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="81" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="transform" scale="1.009 0.23 0.23" nodeId="82">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="83" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="84" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="transform" translation="-0.622321 0.937562 -0.328747" rotation="0 -0 90" scale="1.21 1.5 1.5" nodeId="85">
+          <Shape shapeId="10" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="86" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="87" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="transform" scale="1.01 0.2 0.2" nodeId="88">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="89" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="90" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="transform" scale="1.009 0.23 0.23" nodeId="91">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="92" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="93" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="transform" translation="0.581788 0.937562 0" rotation="0 -0 90" scale="1.21 1.5 1.5" nodeId="94">
+          <Shape shapeId="10" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="95" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="96" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="transform" scale="1.01 0.2 0.2" nodeId="97">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="98" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="99" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="transform" scale="1.009 0.23 0.23" nodeId="100">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="101" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="102" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="transform" translation="0.581788 0.937562 0.312688" rotation="0 -0 90" scale="1.21 1.5 1.5" nodeId="103">
+          <Shape shapeId="10" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="104" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="105" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="transform" scale="1.01 0.2 0.2" nodeId="106">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="107" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="108" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="transform" scale="1.009 0.23 0.23" nodeId="109">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="110" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="111" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="transform" translation="0.260315 0.937562 0" rotation="0 -0 90" scale="1.21 1.5 1.5" nodeId="112">
+          <Shape shapeId="10" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="113" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="114" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="transform" scale="1.01 0.2 0.2" nodeId="115">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="116" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="117" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="transform" scale="1.009 0.23 0.23" nodeId="118">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="119" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="120" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="transform" translation="-0.0375776 0.937562 0" rotation="0 -0 90" scale="1.21 1.5 1.5" nodeId="121">
+          <Shape shapeId="10" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="122" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="123" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="transform" scale="1.01 0.2 0.2" nodeId="124">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="125" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="126" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="transform" scale="1.009 0.23 0.23" nodeId="127">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="128" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="129" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="transform" translation="-0.337056 0.937562 -0.00299113" rotation="-23.5087 -0 90" scale="1.21 1.5 1.5" nodeId="130">
+          <Shape shapeId="10" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="131" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="132" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="transform" scale="1.01 0.2 0.2" nodeId="133">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="134" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="135" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="transform" scale="1.009 0.23 0.23" nodeId="136">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="137" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="138" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="transform" translation="-0.62352 0.937562 -0.00299113" rotation="0 -0 90" scale="1.21 1.5 1.5" nodeId="139">
+          <Shape shapeId="10" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="140" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="141" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="transform" scale="1.01 0.2 0.2" nodeId="142">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="143" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="144" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="transform" scale="1.009 0.23 0.23" nodeId="145">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="146" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="147" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="transform" translation="0.270373 0.937562 0.312688" rotation="0 -0 90" scale="1.21 1.5 1.5" nodeId="148">
+          <Shape shapeId="10" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="149" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="150" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="transform" scale="1.01 0.2 0.2" nodeId="151">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="152" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="153" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="transform" scale="1.009 0.23 0.23" nodeId="154">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="155" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="156" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="transform" translation="-0.0337441 0.937562 0.312688" rotation="0 -0 90" scale="1.21 1.5 1.5" nodeId="157">
+          <Shape shapeId="10" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="158" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="159" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="transform" scale="1.01 0.2 0.2" nodeId="160">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="161" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="162" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="transform" scale="1.009 0.23 0.23" nodeId="163">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="164" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="165" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="transform" translation="-0.336804 0.937562 0.312688" rotation="0 -0 90" scale="1.21 1.5 1.5" nodeId="166">
+          <Shape shapeId="10" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="167" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="168" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="transform" scale="1.01 0.2 0.2" nodeId="169">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="170" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="171" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="transform" scale="1.009 0.23 0.23" nodeId="172">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="173" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="174" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="transform" translation="-0.622 0.937562 0.310404" rotation="0 -0 90" scale="1.21 1.5 1.5" nodeId="175">
+          <Shape shapeId="10" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="176" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="177" materialIds="10" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="transform" scale="1.01 0.2 0.2" nodeId="178">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="179" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="180" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="transform" scale="1.009 0.23 0.23" nodeId="181">
+            <Shape shapeId="11" name="barbedFencePost" rotation="180 -0 90" scale="1 0.1 1" nodeId="182" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="barbedFencePost" rotation="0 -0 90" scale="1 0.1 1" nodeId="183" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <Shape shapeId="12" name="decal_1" translation="0.237261 0.101752 -0.214793" scale="0.08 0.2 0.5" clipDistance="100" nodeId="184" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="0.237261 -0.390832 0.104488" rotation="90 -0 0" scale="0.08 0.2 0.9" clipDistance="100" nodeId="185" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="0.237261 0.07433 0.0657678" rotation="35.2036 -0 7.43388e-07" scale="0.08 0.2 0.1" clipDistance="100" nodeId="186" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="0.237261 0.0878556 -0.476869" rotation="-34.6927 -0 1.14242e-06" scale="0.08 0.2 0.05" clipDistance="200" nodeId="187" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="0.237261 -0.399618 -0.526269" rotation="-90 -0 3.90209e-07" scale="0.08 0.2 0.9" clipDistance="200" nodeId="188" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="0.237261 -0.904009 -0.211068" rotation="-180 -0 1.81287e-09" scale="0.08 0.2 0.5" clipDistance="200" nodeId="189" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="0.237837 -0.889128 -0.475396" rotation="-145.994 -0 0" scale="0.08 0.2 0.054" clipDistance="200" nodeId="190" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="0.237255 0.055128 -0.511329" rotation="-51.067 -0 0.56166" scale="0.08 0.2 0.05" clipDistance="200" nodeId="191" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="0.238028 -0.855609 -0.512105" rotation="-126.554 -0 0" scale="0.08 0.2 0.05" clipDistance="200" nodeId="192" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="0.237 -0.891186 0.054097" rotation="150.496 -0 0.0026112" scale="0.08 0.2 0.055" clipDistance="200" nodeId="193" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="0.237237 -0.852688 0.0903046" rotation="118.498 -0 2.78667e-09" scale="0.08 0.2 0.06" clipDistance="200" nodeId="194" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="-0.3 0.101752 -0.214793" scale="0.08 0.2 0.5" clipDistance="200" nodeId="195" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="-0.3 -0.390832 0.104488" rotation="90 -0 0" scale="0.08 0.2 0.9" clipDistance="200" nodeId="196" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="-0.3 0.07433 0.0657678" rotation="35.2036 -0 7.43388e-07" scale="0.08 0.2 0.1" clipDistance="200" nodeId="197" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="-0.3 0.0878556 -0.476869" rotation="-34.6927 -0 1.14242e-06" scale="0.08 0.2 0.05" clipDistance="200" nodeId="198" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="-0.3 -0.399618 -0.526269" rotation="-90 -0 3.90209e-07" scale="0.08 0.2 0.9" clipDistance="200" nodeId="199" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="-0.3 -0.889128 -0.475396" rotation="-145.994 -0 0" scale="0.08 0.2 0.054" clipDistance="200" nodeId="200" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="-0.3 -0.904009 -0.211068" rotation="-180 -0 1.81287e-09" scale="0.08 0.2 0.5" clipDistance="200" nodeId="201" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="-0.3 0.055128 -0.511329" rotation="-51.067 -0 0.56166" scale="0.08 0.2 0.05" clipDistance="200" nodeId="202" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="-0.3 -0.855609 -0.512105" rotation="-126.554 -0 0" scale="0.08 0.2 0.05" clipDistance="200" nodeId="203" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="-0.3 -0.852688 0.0903046" rotation="118.498 -0 2.78667e-09" scale="0.08 0.2 0.06" clipDistance="200" nodeId="204" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="-0.3 -0.891 0.054097" rotation="150.496 -0 0.0026112" scale="0.08 0.2 0.055" clipDistance="200" nodeId="205" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="decal_1" translation="0.512322 0.00337206 -0.19161" rotation="-90 -90 0" scale="0.08 1 0.1" clipDistance="50" nodeId="206" materialIds="14" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape shapeId="13" name="transportPallet_col8" translation="0.00271691 0.181872 0.000948154" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="207" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="14" name="transportPallet_col7" translation="0.622586 0.181872 0.000948154" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="208" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="15" name="transportPallet_col6" translation="-0.622301 0.181872 0.000948154" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="209" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="16" name="transportPallet_col5" translation="0.00271691 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="210" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="17" name="transportPallet_col4" translation="0.00271691 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="211" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="18" name="transportPallet_col3" translation="0.622586 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="212" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="19" name="transportPallet_col2" translation="0.622586 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="213" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="20" name="transportPallet_col1" translation="-0.622301 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="214" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="21" name="transportPallet_col" translation="-0.622301 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="215" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="22" name="solidColi" translation="0 0.175 0" visibility="false" compoundChild="true" collisionMask="16781314" density="0.7" nodeId="216" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="23" name="boardPallet_vis" nodeId="217" materialIds="8" castsShadows="true" receiveShadows="true"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="39">
+      <Attribute name="capacity" type="integer" value="5000"/>
+      <Attribute name="deleteIfEmpty" type="boolean" value="true"/>
+      <Attribute name="dynamicMountForceLimitScale" type="float" value="1"/>
+      <Attribute name="dynamicMountTriggerIndex" type="string" value="0>1"/>
+      <Attribute name="fillType" type="string" value="papier"/>
+      <Attribute name="meshNodes" type="string" value="0 0|5"/>
+      <Attribute name="startFillLevel" type="integer" value="0"/>
+      <Attribute name="startScale" type="float" value="0.1"/>
+      <Attribute name="useRandomRot" type="boolean" value="false"/>
+      <Attribute name="visibilityNodesAdditive" type="boolean" value="true"/>
+      <Attribute name="visibilityNodesIndex" type="string" value="0>2"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

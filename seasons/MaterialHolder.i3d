@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!--
+
+Do not ever open and save this file in Giants editor, you will loose data and mess ut then file.
+
+It references textures in the game directory that the editor will not find and thus remove.
+
+/MrBear
+
+-->
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.0.5"/>
+  </Asset>
+
+  <Files>
+    <!-- Autumn -->	
+    <File fileId="1" filename="textures/autumn/treeBranch2_diffuse.png" relativePath="true"/>
+	<File fileId="2" filename="textures/autumn/treeBranch_normal.png" relativePath="true"/>
+	<File fileId="3" filename="textures/autumn/treeLOD_diffuse.png" relativePath="true"/>
+    <File fileId="4" filename="textures/autumn/treeLOD_normal.png" relativePath="true"/>	
+    <!-- Winter  -->
+    <File fileId="5" filename="textures/winter/treeBranch2_diffuse.png" relativePath="true"/>
+	<File fileId="6" filename="textures/winter/treeBranch_normal.png" relativePath="true"/>
+	<File fileId="7" filename="textures/winter/treeLOD_diffuse.png" relativePath="true"/>
+    <File fileId="8" filename="textures/winter/treeLOD_normal.png" relativePath="true"/>
+    <!-- Spring -->
+	<File fileId="9" filename="textures/spring/treeBranch2_diffuse.png" relativePath="true"/>
+	<File fileId="10" filename="textures/spring/treeBranch_normal.png" relativePath="true"/>
+	<File fileId="11" filename="textures/spring/treeLOD_diffuse.png" relativePath="true"/>
+    <File fileId="12" filename="textures/spring/treeLOD_normal.png" relativePath="true"/>	
+	
+	<File fileId="13" filename="data/shaders/treeBillboardShader.xml" relativePath="false"/>		
+  </Files>
+   
+  <Materials>
+    <!-- Autumn -->	
+    <Material name="treeBranch_mat" materialId="100" ambientColor="1 1 1">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+	<Material name="treeLOD_mat" materialId="101" ambientColor="1 1 1" customShaderId="13">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+    </Material>
+    <!-- Winter -->
+    <Material name="treeBranch_mat" materialId="102" ambientColor="1 1 1">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+    </Material>
+	<Material name="treeLOD_mat" materialId="103" ambientColor="1 1 1" customShaderId="13">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+    </Material>
+    <!-- Spring -->
+    <Material name="treeBranch_mat" materialId="104" ambientColor="1 1 1">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+    </Material>
+	<Material name="treeLOD_mat" materialId="105" ambientColor="1 1 1" customShaderId="13">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <CustomParameter name="windScale" value="1 0 0 0"/>
+    </Material>
+  </Materials>
+
+  <Shapes externalShapesFile="MaterialHolder.i3d.shapes">
+  </Shapes>
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <!-- Autumn -->
+    <Shape shapeId="1" name="ssTr_treeBranch2_autumn" visibility="false" nodeId="501" materialIds="100" distanceBlending="false" />
+	<Shape shapeId="1" name="ssTr_treeLOD_diffuse_autumn" visibility="false" nodeId="502" materialIds="101" distanceBlending="false" />
+	
+    <!-- Winter -->
+    <Shape shapeId="1" name="ssTr_treeBranch2_winter" visibility="false" nodeId="601" materialIds="102" distanceBlending="false" />
+	<Shape shapeId="1" name="ssTr_treeLOD_diffuse_winter" visibility="false" nodeId="602" materialIds="103" distanceBlending="false" />
+
+    <!-- Spring -->
+    <Shape shapeId="1" name="ssTr_treeBranch2_spring" visibility="false" nodeId="701" materialIds="104" distanceBlending="false" />
+	<Shape shapeId="1" name="ssTr_treeLOD_diffuse_spring" visibility="false" nodeId="702" materialIds="105" distanceBlending="false" />
+
+  </Scene>
+</i3D>

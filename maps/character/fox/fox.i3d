@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="RedFox.dds" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="phong1" materialId="7" ambientColor="1 1 1" cosPower="1" specularColor="1 1 1">
+      <Texture fileId="1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="fox.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="Scene_Root" nodeId="11">
+      <TransformGroup name="Quadruped_Skeleton" nodeId="12">
+        <TransformGroup name="Quadruped_Skeleton_GlobalSRT" nodeId="13">
+          <TransformGroup name="Quadruped_Skeleton_UpperBody" translation="-3.73035e-17 0.568253 -0.33402" nodeId="14">
+            <TransformGroup name="Quadruped_Skeleton_SpineRoot" translation="0 0.0287624 0.0238278" rotation="0 -90 0" nodeId="15">
+              <TransformGroup name="Quadruped_Skeleton_Spine1" rotation="-2.44415e-09 5.00896e-06 179.972" nodeId="16">
+                <TransformGroup name="Quadruped_Skeleton_Spine2" translation="-0.130193 2.43571e-08 1.50328e-10" rotation="4.02522e-07 4.40961e-07 -4.84514" nodeId="17">
+                  <TransformGroup name="Quadruped_Skeleton_Spine3" translation="-0.130197 3.88975e-08 1.00473e-09" rotation="3.10453e-07 1.14963e-06 -4.67709" nodeId="18">
+                    <TransformGroup name="Quadruped_Skeleton_Chest" translation="-0.130199 4.56466e-08 2.31421e-09" rotation="1.7029e-07 1.29787e-06 -4.66312" nodeId="19">
+                      <TransformGroup name="Quadruped_Skeleton_ChestEffector" translation="-0.130197 2.9182e-08 -1.22821e-10" rotation="1.70289e-07 4.07111e-13 0" nodeId="20">
+                        <TransformGroup name="Quadruped_Skeleton_RShoulderRoot" translation="-0.00220797 0.00872536 -0.0751079" rotation="75.7786 90 0" nodeId="21">
+                          <TransformGroup name="Quadruped_Skeleton_RShoulder" translation="-6.67572e-09 -1.33439e-08 -5.34076e-08" rotation="0.552487 -57.992 85.0642" nodeId="22">
+                            <TransformGroup name="Quadruped_Skeleton_eff" translation="-0.0893886 -1.04761e-09 2.58742e-09" rotation="4.62921e-06 4.72511e-06 -1.77002e-07" nodeId="23">
+                              <TransformGroup name="Quadruped_Skeleton_RRoot" translation="5.93869e-08 2.35224e-09 5.73357e-09" rotation="35.7562 3.63603 -87.3866" scale="1 1 0.999999" nodeId="24">
+                                <TransformGroup name="Quadruped_Skeleton_RThigh" translation="-6.6691e-09 -5.50063e-08 -2.32295e-08" rotation="-92.5188 -58.0618 92.9664" scale="1 1 0.999999" nodeId="25">
+                                  <TransformGroup name="Quadruped_Skeleton_RShin" translation="-0.109306 1.80794e-08 -3.12769e-09" rotation="-89.8195 0.61789 63.3137" nodeId="26">
+                                    <TransformGroup name="Quadruped_Skeleton_eff7" translation="-0.278162 3.81435e-10 3.85769e-09" rotation="-3.90462e-06 3.49892e-07 -1.99155e-09" nodeId="27">
+                                      <TransformGroup name="Quadruped_Skeleton_RFootRoot" translation="-1.84339e-11 1.33484e-08 2.84479e-10" rotation="-34.8365 89.5122 -124.135" nodeId="28">
+                                        <TransformGroup name="Quadruped_Skeleton_RFootBone1" translation="1.89236e-10 -7.17402e-11 6.67265e-09" rotation="0.00123619 -0.773242 96.4578" scale="0.999999 1 1" nodeId="29">
+                                          <TransformGroup name="Quadruped_Skeleton_RFootBone2" translation="-0.0411483 5.68782e-09 -1.02802e-08" rotation="-0.00194762 0.0525409 -11.8276" nodeId="30">
+                                            <TransformGroup name="Quadruped_Skeleton_RFootBone3" translation="-0.0464395 1.18716e-08 6.56193e-09" rotation="0.760291 -0.321657 43.4318" scale="0.999999 1 1" nodeId="31"/>
+                                          </TransformGroup>
+                                        </TransformGroup>
+                                      </TransformGroup>
+                                    </TransformGroup>
+                                  </TransformGroup>
+                                </TransformGroup>
+                              </TransformGroup>
+                            </TransformGroup>
+                          </TransformGroup>
+                        </TransformGroup>
+                        <TransformGroup name="Quadruped_Skeleton_LShoulderRoot" translation="-0.00220797 0.00872536 0.0751079" rotation="75.7786 90 0" nodeId="32">
+                          <TransformGroup name="Quadruped_Skeleton_LShoulder" translation="-6.67572e-09 -1.33439e-08 -5.34076e-08" rotation="179.954 -60.1384 94.5227" nodeId="33">
+                            <TransformGroup name="Quadruped_Skeleton_eff1" translation="-0.0893886 1.06534e-08 -1.82449e-08" rotation="-4.16387e-06 -1.92541e-06 -1.36117e-07" nodeId="34">
+                              <TransformGroup name="Quadruped_Skeleton_LRoot" translation="-6.27715e-09 -4.14786e-10 9.63046e-08" rotation="-144.244 3.63602 92.6134" nodeId="35">
+                                <TransformGroup name="Quadruped_Skeleton_LThigh" translation="1.34222e-11 -2.69277e-09 -2.65667e-08" rotation="-88.7879 -45.0549 88.2875" nodeId="36">
+                                  <TransformGroup name="Quadruped_Skeleton_LShin" translation="-0.109306 3.10682e-08 -9.39498e-09" rotation="90.0512 -1.04916 59.0283" scale="1 1 0.999999" nodeId="37">
+                                    <TransformGroup name="Quadruped_Skeleton_eff6" translation="-0.278162 -6.97308e-09 1.80797e-08" rotation="1.13327e-06 -1.20577e-06 3.46477e-09" nodeId="38">
+                                      <TransformGroup name="Quadruped_Skeleton_LFootRoot" translation="2.45384e-08 7.02142e-09 1.68653e-08" rotation="-145.161 89.5122 124.141" scale="1 1 0.999999" nodeId="39">
+                                        <TransformGroup name="Quadruped_Skeleton_LFootBone1" translation="-3.12025e-09 1.98882e-08 6.35412e-09" rotation="-6.67596e-05 0.710938 90.774" nodeId="40">
+                                          <TransformGroup name="Quadruped_Skeleton_LFootBone2" translation="-0.0411483 -2.48131e-09 4.60585e-09" rotation="-0.00137467 1.1523 -22.8922" nodeId="41">
+                                            <TransformGroup name="Quadruped_Skeleton_LFootBone3" translation="-0.0464395 -6.26738e-09 6.33982e-09" rotation="178.952 -0.600938 -43.3401" scale="0.999999 1 1" nodeId="42"/>
+                                          </TransformGroup>
+                                        </TransformGroup>
+                                      </TransformGroup>
+                                    </TransformGroup>
+                                  </TransformGroup>
+                                </TransformGroup>
+                              </TransformGroup>
+                            </TransformGroup>
+                          </TransformGroup>
+                        </TransformGroup>
+                        <TransformGroup name="Quadruped_Skeleton_SpineRoot1" translation="5.9293e-06 1.00598e-06 3.96372e-13" rotation="-3.7079e-06 -8.96006e-07 -165.779" nodeId="43">
+                          <TransformGroup name="Quadruped_Skeleton_Spine4" translation="-2.4869e-17 0 0" rotation="-2.09519 0.376214 -154.385" nodeId="44">
+                            <TransformGroup name="Quadruped_Skeleton_Spine5" translation="-0.119202 9.59679e-10 1.29994e-11" rotation="-2.81298e-07 -4.38279e-08 -8.98303" nodeId="45">
+                              <TransformGroup name="Quadruped_Skeleton_Chest1" translation="-0.119066 4.62501e-08 2.18079e-09" rotation="-7.91899e-07 -5.35093e-08 -5.08319" nodeId="46"/>
+                            </TransformGroup>
+                          </TransformGroup>
+                        </TransformGroup>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="Quadruped_Skeleton_BLLegRoot" translation="-0.0766717 -0.0431436 -0.0357418" nodeId="47">
+              <TransformGroup name="Quadruped_Skeleton_BLFemur" translation="0 0 4.9738e-17" rotation="-0.0858116 20.9121 88.1861" nodeId="48">
+                <TransformGroup name="Quadruped_Skeleton_BLTibia" translation="-0.203918 2.80245e-09 3.76736e-08" rotation="8.48941 -48.539 2.20563" nodeId="49">
+                  <TransformGroup name="Quadruped_Skeleton_BLMetarsal" translation="-0.178156 -2.67616e-10 -3.54855e-08" rotation="-81.803 47.8493 -38.0905" scale="1 1 0.999999" nodeId="50">
+                    <TransformGroup name="Quadruped_Skeleton_eff2" translation="-0.0128215 -1.96421e-08 2.13991e-08" rotation="-2.0057e-05 9.04194e-07 -6.5795e-07" nodeId="51">
+                      <TransformGroup name="Quadruped_Skeleton_BLFootRoot" translation="-6.97457e-09 -8.37837e-09 3.42572e-08" rotation="157.846 -63.9102 132.687" scale="1 1 0.999999" nodeId="52">
+                        <TransformGroup name="Quadruped_Skeleton_BLFootBone1" translation="5.28709e-09 -3.72865e-08 -2.8021e-09" rotation="-38.4697 26.9808 85.0321" nodeId="53">
+                          <TransformGroup name="Quadruped_Skeleton_BLFootBone2" translation="-0.113181 -3.614e-09 4.53649e-08" rotation="-0.29546 -3.57334 -1.97124" nodeId="54">
+                            <TransformGroup name="Quadruped_Skeleton_BLFootBone3" translation="-0.0618816 6.07706e-09 3.06076e-08" rotation="134.731 -67.8965 -42.9473" scale="1 1 0.999998" nodeId="55"/>
+                          </TransformGroup>
+                        </TransformGroup>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="Quadruped_Skeleton_BRLegRoot" translation="0.0766717 -0.0431436 -0.0357418" nodeId="56">
+              <TransformGroup name="Quadruped_Skeleton_BRFemur" translation="0 0 4.9738e-17" rotation="2.74809 28.6268 92.0262" nodeId="57">
+                <TransformGroup name="Quadruped_Skeleton_BRTibia" translation="-0.203918 1.07831e-08 3.07324e-08" rotation="-7.37441 -65.0788 1.98821" nodeId="58">
+                  <TransformGroup name="Quadruped_Skeleton_BRMetarsal" translation="-0.178156 -2.7077e-09 -5.06587e-08" rotation="-89.8785 51.2027 32.5453" scale="0.999999 1 1" nodeId="59">
+                    <TransformGroup name="Quadruped_Skeleton_eff4" translation="-0.0128215 -1.77735e-08 -9.23636e-09" rotation="-5.29695e-06 -1.77153e-06 -5.57672e-06" nodeId="60">
+                      <TransformGroup name="Quadruped_Skeleton_BRFootRoot" translation="3.37595e-08 -1.96652e-08 1.73423e-08" rotation="-157.846 63.9101 132.687" nodeId="61">
+                        <TransformGroup name="Quadruped_Skeleton_BRFootBone1" translation="1.32208e-08 5.9386e-10 -1.76552e-09" rotation="14.07 -23.7348 89.8902" nodeId="62">
+                          <TransformGroup name="Quadruped_Skeleton_BRFootBone2" translation="-0.113181 1.22905e-08 -7.15715e-09" rotation="0.948067 3.80442 -1.48378" scale="1 0.999999 1" nodeId="63">
+                            <TransformGroup name="Quadruped_Skeleton_BRFootBone3" translation="-0.0618816 -5.17938e-09 -8.31992e-09" rotation="-118.18 71.9293 -27.3851" nodeId="64"/>
+                          </TransformGroup>
+                        </TransformGroup>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="Quadruped_Skeleton_root3" translation="0 -0.00224122 -0.0905688" nodeId="65">
+              <TransformGroup name="Quadruped_Skeleton_Tail1" rotation="0.00195454 -14.8342 92.0347" nodeId="66">
+                <TransformGroup name="Quadruped_Skeleton_Tail2" translation="-0.1577 2.82732e-09 -4.79562e-08" rotation="0.00263636 -1.2633 -4.36233" nodeId="67"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="root" translation="-0.000895587 0.618556 0.425142" rotation="86.3464 -81.0391 -84.3371" nodeId="68">
+        <TransformGroup name="bone" translation="9.78257e-09 1.09686e-07 -1.06095e-09" rotation="7.0809e-08 -1.18147e-07 163.962" nodeId="69">
+          <TransformGroup name="bone1" translation="-0.154421 -2.72276e-08 1.41403e-09" rotation="-2.06811e-07 -4.69656e-07 1.7032" nodeId="70"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="root1" translation="-0.000876645 0.61847 0.426732" rotation="86.3464 -81.0391 -84.3371" nodeId="71">
+        <TransformGroup name="bone2" translation="9.78257e-09 1.09686e-07 -1.06095e-09" rotation="0.000658725 -31.1931 -99.3486" nodeId="72">
+          <TransformGroup name="bone3" translation="-0.136979 -4.25379e-08 7.94899e-08" rotation="-3.45695e-06 5.7136e-07 11.2935" nodeId="73"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="root2" translation="-0.00091014 0.619142 0.42579" rotation="86.3464 -81.0391 -84.3371" nodeId="74">
+        <TransformGroup name="bone4" translation="5.27218e-08 8.37228e-09 2.61482e-09" rotation="0.00149067 31.6687 -99.0675" nodeId="75">
+          <TransformGroup name="bone5" translation="-0.137918 4.5884e-08 -4.78657e-08" rotation="1.00358e-06 -1.06975e-06 8.64988" nodeId="76"/>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+    <Shape shapeId="1" name="RedFox" nodeId="77" materialIds="7,7" castsShadows="true" receiveShadows="true" skinBindNodeIds="16 17 18 22 25 26 29 30 31 33 36 37 40 41 42 44 45 46 48 49 50 53 54 55 57 58 59 62 63 64 66 67 69 70 72 73 75 76">
+      <Shape shapeId="2" name="RedFoxTRS" nodeId="78" materialIds="7" castsShadows="true" receiveShadows="true" skinBindNodeIds="48 57 66 67"/>
+    </Shape>
+  </Scene>
+
+
+  <Animation externalAnimFile="fox.i3d.anim" />
+</i3D>

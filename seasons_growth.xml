@@ -1,0 +1,309 @@
+<!--------------------------------------------------------------------------------------------------
+-- GROWTH DATA
+----------------------------------------------------------------------------------------------------
+-- Purpose:  Data for new growth system
+-- Authors:  theSeb
+--
+-- Copyright (c) Realismus Modding, 2017
+--------------------------------------------------------------------------------------------------->
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<growth>
+    <defaultFruits>
+		<!--hiver-->
+        <defaultFruit fruitName="barley" 	maxSprayGrowthState="4"/>
+        <defaultFruit fruitName="wheat" 	maxSprayGrowthState="4"/>
+        <defaultFruit fruitName="rape" 		maxSprayGrowthState="4"/>
+		<defaultFruit fruitName="rye" 		maxSprayGrowthState="4"/>
+		<defaultFruit fruitName="lavande" 	maxSprayGrowthState="4"/>		
+		<defaultFruit fruitName="triticale" maxSprayGrowthState="4"/>
+        <defaultFruit fruitName="poplar" 	maxSprayGrowthState="4"/>
+        <defaultFruit fruitName="oilseedRadish" />
+		<!--Été-->
+        <defaultFruit fruitName="maize" 	maxSprayGrowthState="4"/>
+        <defaultFruit fruitName="soybean" 	maxSprayGrowthState="4"/>
+        <defaultFruit fruitName="sunflower" maxSprayGrowthState="4"/>
+		<defaultFruit fruitName="spelt" 	maxSprayGrowthState="4"/>
+		<defaultFruit fruitName="oat" 		maxSprayGrowthState="4"/>
+		<defaultFruit fruitName="sorghum" 	maxSprayGrowthState="4"/>
+		<defaultFruit fruitName="millet" 	maxSprayGrowthState="4"/>
+		<!--Fruit de la terre-->
+        <defaultFruit fruitName="potato" 	maxSprayGrowthState="4"/>
+        <defaultFruit fruitName="sugarBeet" maxSprayGrowthState="4"/>
+		<defaultFruit fruitName="onion" 	maxSprayGrowthState="4"/>
+		<defaultFruit fruitName="carrot" 	maxSprayGrowthState="4"/>
+		<!--Vivace-->
+		<defaultFruit fruitName="hops" 		maxSprayGrowthState="4"/>
+		<defaultFruit fruitName="grapes" 	maxSprayGrowthState="4"/>
+        <defaultFruit fruitName="grass" 	maxSprayGrowthState="4"/>
+        <defaultFruit fruitName="dryGrass" />		
+    </defaultFruits>
+    <growthTransitions>
+        <gt growthTransitionNum="1"> <!--fin de l'hiver au début du printemps-->
+            <fruit fruitName="barley"  			normalGrowthState="1" 	normalGrowthMaxState="2"/>
+            <fruit fruitName="wheat"   			normalGrowthState="1" 	normalGrowthMaxState="2"/>
+            <fruit fruitName="rape"    			normalGrowthState="1" 	normalGrowthMaxState="2"/>
+			<fruit fruitName="rye"  			normalGrowthState="1" 	normalGrowthMaxState="2"/>
+            <fruit fruitName="lavande"  		normalGrowthState="1" 	normalGrowthMaxState="2"/>			
+			<fruit fruitName="triticale"  		normalGrowthState="1" 	normalGrowthMaxState="2"/>
+            <fruit fruitName="poplar" 			normalGrowthState="1" 	normalGrowthMaxState="MAX_STATE"/>
+            <fruit fruitName="oilseedRadish" 	normalGrowthState="1" 	normalGrowthMaxState="MAX_STATE"/>
+            <fruit fruitName="hops"  			normalGrowthState="1"	normalGrowthMaxState="2"/>
+			<fruit fruitName="grapes" 			normalGrowthState="1"	normalGrowthMaxState="2"/>
+        </gt>
+        <gt growthTransitionNum="2"> <!--mi-printemps à la fin du printemps-->
+            <fruit fruitName="barley"  			normalGrowthState="1"  	normalGrowthMaxState="3"/>
+            <fruit fruitName="wheat"   			normalGrowthState="1"  	normalGrowthMaxState="3"/>
+            <fruit fruitName="rape"    			normalGrowthState="1"  	normalGrowthMaxState="3"/>
+            <fruit fruitName="lavande"  		normalGrowthState="1"  	normalGrowthMaxState="3"/>			
+            <fruit fruitName="maize" 			normalGrowthState="1"/>
+            <fruit fruitName="soybean" 																					setGrowthState="1" 		desiredGrowthState="CUT"/>
+            <fruit fruitName="sunflower" 																				setGrowthState="1" 		desiredGrowthState="CUT"/>
+            <fruit fruitName="potato"    		normalGrowthState="1"/>
+            <fruit fruitName="sugarBeet" 		normalGrowthState="1"/>
+			<fruit fruitName="rye"  			normalGrowthState="1"  	normalGrowthMaxState="3"/>
+			<fruit fruitName="spelt"  			normalGrowthState="1"  	normalGrowthMaxState="3"/>
+			<fruit fruitName="triticale"  		normalGrowthState="1"  	normalGrowthMaxState="3"/>
+			<fruit fruitName="oat"  																					setGrowthState="1" 		desiredGrowthState="CUT"/>
+			<fruit fruitName="sorghum"  																				setGrowthState="1" 		desiredGrowthState="CUT"/>
+			<fruit fruitName="millet"  																					setGrowthState="1" 		desiredGrowthState="CUT"/>
+            <fruit fruitName="poplar" 			normalGrowthState="1" 	normalGrowthMaxState="MAX_STATE"/>
+            <fruit fruitName="grass" 			normalGrowthState="1" 													setGrowthState="2" 		desiredGrowthState="3"/>
+            <fruit fruitName="oilseedRadish" 	normalGrowthState="1" 	normalGrowthMaxState="MAX_STATE"/>
+			<fruit fruitName="onion"    		normalGrowthState="1"/>
+			<fruit fruitName="carrot"    		normalGrowthState="1"/>
+			<fruit fruitName="hops" 			normalGrowthState="1"	normalGrowthMaxState="3"/>
+			<fruit fruitName="grapes" 			normalGrowthState="1"	normalGrowthMaxState="3"/>
+        </gt>
+        <gt growthTransitionNum="3"> <!--fin du printemps au début de l'été-->
+            <fruit fruitName="barley"  			normalGrowthState="1" 	normalGrowthMaxState="3"/>
+            <fruit fruitName="wheat"   			normalGrowthState="1" 	normalGrowthMaxState="3"/>
+            <fruit fruitName="rape"    			normalGrowthState="1" 	normalGrowthMaxState="3"/>
+            <fruit fruitName="lavande"  		normalGrowthState="1" 	normalGrowthMaxState="3"/>			
+            <fruit fruitName="maize" 			normalGrowthState="1" 	normalGrowthMaxState="2"/>
+            <fruit fruitName="soybean" 			normalGrowthState="1"/>
+            <fruit fruitName="sunflower" 		normalGrowthState="1"/>
+            <fruit fruitName="potato"    		normalGrowthState="1" 	normalGrowthMaxState="2"/>
+            <fruit fruitName="sugarBeet" 		normalGrowthState="1" 	normalGrowthMaxState="2"/>
+			<fruit fruitName="rye"  			normalGrowthState="1" 	normalGrowthMaxState="3"/>
+			<fruit fruitName="spelt"  			normalGrowthState="1" 	normalGrowthMaxState="3"/>
+			<fruit fruitName="triticale"  		normalGrowthState="1" 	normalGrowthMaxState="3"/>
+			<fruit fruitName="oat"  			normalGrowthState="1"/>
+			<fruit fruitName="sorghum"  		normalGrowthState="1"/>
+			<fruit fruitName="millet"  			normalGrowthState="1"/>
+            <fruit fruitName="oilseedRadish" 	normalGrowthState="1" 	normalGrowthMaxState="MAX_STATE"/>
+			<fruit fruitName="onion"    		normalGrowthState="1" 	normalGrowthMaxState="2"/>
+			<fruit fruitName="carrot"    		normalGrowthState="1" 	normalGrowthMaxState="2"/>
+			<fruit fruitName="lettuce"    		normalGrowthState="1" 	normalGrowthMaxState="2"/>
+			<fruit fruitName="hops" 			normalGrowthState="1" 	normalGrowthMaxState="3"/>
+			<fruit fruitName="grapes" 			normalGrowthState="1" 	normalGrowthMaxState="3"/>
+        </gt>
+        <gt growthTransitionNum="4"> <!--début de l'été au milieu de l'été-->
+            <fruit fruitName="barley"  			normalGrowthState="1" 	normalGrowthMaxState="4"/>
+            <fruit fruitName="wheat"   			normalGrowthState="1" 	normalGrowthMaxState="4"/>
+            <fruit fruitName="rape"    			normalGrowthState="1" 	normalGrowthMaxState="4"/>
+            <fruit fruitName="lavande"  		normalGrowthState="1" 	normalGrowthMaxState="4"/>			
+            <fruit fruitName="maize" 			normalGrowthState="1" 	normalGrowthMaxState="3"/>
+            <fruit fruitName="soybean" 			normalGrowthState="1" 	normalGrowthMaxState="2"/>
+            <fruit fruitName="sunflower" 		normalGrowthState="1" 	normalGrowthMaxState="2"/>
+            <fruit fruitName="potato"    		normalGrowthState="1" 	normalGrowthMaxState="3"/>
+            <fruit fruitName="sugarBeet" 		normalGrowthState="1"	normalGrowthMaxState="3"/>
+			<fruit fruitName="rye"  			normalGrowthState="1" 	normalGrowthMaxState="4"/>
+			<fruit fruitName="spelt"  			normalGrowthState="1" 	normalGrowthMaxState="4"/>
+			<fruit fruitName="triticale"  		normalGrowthState="1" 	normalGrowthMaxState="4"/>
+			<fruit fruitName="oat"  			normalGrowthState="1" 	normalGrowthMaxState="2"/>
+			<fruit fruitName="sorghum"  		normalGrowthState="1" 	normalGrowthMaxState="2"/>
+			<fruit fruitName="millet"  			normalGrowthState="1" 	normalGrowthMaxState="2"/>
+            <fruit fruitName="poplar" 			normalGrowthState="1"  	normalGrowthMaxState="MAX_STATE"/>
+            <fruit fruitName="grass" 			normalGrowthState="1"  	normalGrowthMaxState="MAX_STATE"/>
+            <fruit fruitName="oilseedRadish" 	normalGrowthState="1"  	normalGrowthMaxState="MAX_STATE"/>
+			<fruit fruitName="onion"    		normalGrowthState="1" 	normalGrowthMaxState="3"/>
+			<fruit fruitName="carrot"    		normalGrowthState="1" 	normalGrowthMaxState="3"/>
+			<fruit fruitName="hops" 			normalGrowthState="1" 	normalGrowthMaxState="4"/>
+			<fruit fruitName="grapes" 			normalGrowthState="1" 	normalGrowthMaxState="4"/>
+        </gt>
+        <gt growthTransitionNum="5"> <!--mi été à la fin de l'été-->
+            <fruit fruitName="barley"  			normalGrowthState="2" 	normalGrowthMaxState="5" 	setGrowthState="1"  	desiredGrowthState="CUT"/>
+            <fruit fruitName="wheat"   			normalGrowthState="2" 	normalGrowthMaxState="5" 	setGrowthState="1"  	desiredGrowthState="CUT"/>
+            <fruit fruitName="rape"    			normalGrowthState="2" 	normalGrowthMaxState="5" 	setGrowthState="1"  	desiredGrowthState="CUT"/>
+            <fruit fruitName="lavande"    		normalGrowthState="2" 	normalGrowthMaxState="5" 	setGrowthState="1"  	desiredGrowthState="CUT"/>			
+            <fruit fruitName="maize" 			normalGrowthState="1" 	normalGrowthMaxState="4"/>
+            <fruit fruitName="soybean" 			normalGrowthState="1" 	normalGrowthMaxState="3"/>
+            <fruit fruitName="sunflower" 		normalGrowthState="2" 	normalGrowthMaxState="3" 	setGrowthState="1" 		desiredGrowthState="CUT"/>
+            <fruit fruitName="potato"    		normalGrowthState="2" 	normalGrowthMaxState="4" 	setGrowthState="1" 		desiredGrowthState="CUT"/>
+            <fruit fruitName="sugarBeet" 		normalGrowthState="2" 	normalGrowthMaxState="4" 	setGrowthState="1" 		desiredGrowthState="CUT"/>
+			<fruit fruitName="rye"  			normalGrowthState="2" 	normalGrowthMaxState="5" 	setGrowthState="1"  	desiredGrowthState="CUT"/>
+			<fruit fruitName="spelt"  			normalGrowthState="2" 	normalGrowthMaxState="5" 	setGrowthState="1"  	desiredGrowthState="CUT"/>
+			<fruit fruitName="triticale"  		normalGrowthState="2" 	normalGrowthMaxState="5" 	setGrowthState="1"  	desiredGrowthState="CUT"/>
+			<fruit fruitName="oat"  			normalGrowthState="2" 	normalGrowthMaxState="3" 	setGrowthState="1" 		desiredGrowthState="CUT"/>
+			<fruit fruitName="sorghum"  		normalGrowthState="1" 	normalGrowthMaxState="3"/>
+			<fruit fruitName="millet"  			normalGrowthState="1" 	normalGrowthMaxState="3"/>
+			<fruit fruitName="onion"    		normalGrowthState="2" 	normalGrowthMaxState="4" 	setGrowthState="1" 		desiredGrowthState="CUT"/>
+			<fruit fruitName="carrot"    		normalGrowthState="2" 	normalGrowthMaxState="4" 	setGrowthState="1" 		desiredGrowthState="CUT"/>
+			<fruit fruitName="hops" 			normalGrowthState="2" 	normalGrowthMaxState="5"	setGrowthState="1"  	desiredGrowthState="CUT"/>
+			<fruit fruitName="grapes" 			normalGrowthState="2" 	normalGrowthMaxState="5"	setGrowthState="1"  	desiredGrowthState="CUT"/>
+        </gt>
+        <gt growthTransitionNum="6"> <!--mid summer to late summer-->
+            <fruit fruitName="wheat"   			normalGrowthState="6" 	extraGrowthMinState="3" extraGrowthMaxState="5" extraGrowthFactor="2" 	setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="barley"  			normalGrowthState="6" 	extraGrowthMinState="3" extraGrowthMaxState="5" extraGrowthFactor="2" 	setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="rape"    			normalGrowthState="6" 	extraGrowthMinState="3" extraGrowthMaxState="5" extraGrowthFactor="2" 	setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="lavande"   		normalGrowthState="6" 	extraGrowthMinState="3" extraGrowthMaxState="5" extraGrowthFactor="2" 	setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="maize" 									extraGrowthMinState="2" extraGrowthMaxState="5" extraGrowthFactor="2" 	setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="soybean" 									extraGrowthMinState="2" extraGrowthMaxState="4" extraGrowthFactor="2" 	setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="sunflower" 								extraGrowthMinState="3" extraGrowthMaxState="4" extraGrowthFactor="2" 	setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="potato"    		normalGrowthState="3" 	normalGrowthMaxState="5" 												setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="sugarBeet" 		normalGrowthState="3" 	normalGrowthMaxState="5" 												setGrowthState="1" desiredGrowthState="CUT"/>
+            <fruit fruitName="grass" 			normalGrowthState="2" 	normalGrowthMaxState="MAX_STATE"/>
+			<fruit fruitName="rye"  			normalGrowthState="6" 	extraGrowthMinState="3" extraGrowthMaxState="5" extraGrowthFactor="2" 	setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="spelt"  			normalGrowthState="6" 	extraGrowthMinState="3" extraGrowthMaxState="5" extraGrowthFactor="2" 	setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="triticale"  		normalGrowthState="6" 	extraGrowthMinState="3" extraGrowthMaxState="5" extraGrowthFactor="2" 	setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="oat"  									extraGrowthMinState="3" extraGrowthMaxState="4" extraGrowthFactor="2" 	setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="sorghum"  								extraGrowthMinState="2" extraGrowthMaxState="4" extraGrowthFactor="2" 	setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="millet"  									extraGrowthMinState="2" extraGrowthMaxState="4" extraGrowthFactor="2" 	setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="onion"    		normalGrowthState="3" 	normalGrowthMaxState="5"											  	setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="carrot"    		normalGrowthState="3" 	normalGrowthMaxState="5"											  	setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="hops" 			normalGrowthState="6" 	extraGrowthMinState="3" extraGrowthMaxState="5" extraGrowthFactor="2" 	setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="grapes" 			normalGrowthState="6" 	extraGrowthMinState="3" extraGrowthMaxState="5" extraGrowthFactor="2" 	setGrowthState="1"  desiredGrowthState="CUT"/>
+        </gt>
+        <gt growthTransitionNum="7"> <!--fin de l'été au début de l'automne-->
+            <fruit fruitName="barley"  			normalGrowthState="5" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="wheat"   			normalGrowthState="5" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="rape"    			normalGrowthState="5" normalGrowthMaxState="6" />
+            <fruit fruitName="lavande"  		normalGrowthState="5" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>			
+            <fruit fruitName="maize" 			normalGrowthState="4" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="soybean" 			normalGrowthState="4" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="sunflower" 		normalGrowthState="5" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="potato"    		normalGrowthState="4" normalGrowthMaxState="5" setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="sugarBeet" 		normalGrowthState="4" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="poplar" 			normalGrowthState="1"  normalGrowthMaxState="MAX_STATE"/>
+            <fruit fruitName="grass" 			normalGrowthState="1"  normalGrowthMaxState="MAX_STATE"/>
+            <fruit fruitName="oilseedRadish" 	normalGrowthState="1"  normalGrowthMaxState="MAX_STATE"/>
+			<fruit fruitName="rye"  			normalGrowthState="5" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="spelt"  			normalGrowthState="5" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="triticale"  		normalGrowthState="5" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="oat"  			normalGrowthState="5" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="sorghum"  		normalGrowthState="4" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="millet"  			normalGrowthState="4" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="onion"    		normalGrowthState="4" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="carrot"   		normalGrowthState="4" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="hops" 			normalGrowthState="5" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="grapes" 			normalGrowthState="5" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+        </gt>
+        <gt growthTransitionNum="8"> <!--début de l'automne à la mi-automne-->
+            <fruit fruitName="barley"  			normalGrowthState="1" normalGrowthMaxState="6"/>
+            <fruit fruitName="wheat"   			normalGrowthState="1" normalGrowthMaxState="6"/>
+            <fruit fruitName="rape"    			normalGrowthState="1" normalGrowthMaxState="6"/>
+            <fruit fruitName="lavande"  		normalGrowthState="1" normalGrowthMaxState="6"/>			
+            <fruit fruitName="maize" 			normalGrowthState="5" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="soybean" 			normalGrowthState="5" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="sunflower" 		normalGrowthState="6" 						   setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="potato"    		normalGrowthState="5" 						   setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="sugarBeet" 		normalGrowthState="5" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="oilseedRadish" 	normalGrowthState="1" normalGrowthMaxState="MAX_STATE"/>
+            <fruit fruitName="rye"  			normalGrowthState="1" normalGrowthMaxState="6"/>
+            <fruit fruitName="spelt"  			normalGrowthState="1" normalGrowthMaxState="6"/>
+            <fruit fruitName="triticale"  		normalGrowthState="1" normalGrowthMaxState="6"/>
+            <fruit fruitName="oat"  			normalGrowthState="6" 						   setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="sorghum"  		normalGrowthState="5" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="millet"  			normalGrowthState="5" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="onion"    		normalGrowthState="5" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="carrot"    		normalGrowthState="5" normalGrowthMaxState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="hops" 			normalGrowthState="1" normalGrowthMaxState="6"/>
+			<fruit fruitName="grapes" 			normalGrowthState="1" normalGrowthMaxState="6"/>
+        </gt>
+        <gt growthTransitionNum="9"> <!--mi-automne à la fin de l'automne-->
+            <fruit fruitName="barley"  			normalGrowthState="1" />
+            <fruit fruitName="wheat"   			normalGrowthState="1" />
+            <fruit fruitName="rape"    			normalGrowthState="1" />
+            <fruit fruitName="lavande"  		normalGrowthState="1" />			
+            <fruit fruitName="maize" 			normalGrowthState="6" 							setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="soybean" 			normalGrowthState="6" 							setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="sunflower" 														setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="potato"    														setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="sugarBeet" 		normalGrowthState="6" 							setGrowthState="1"  desiredGrowthState="CUT"/>
+            <fruit fruitName="oilseedRadish" 	normalGrowthState="1" normalGrowthMaxState="MAX_STATE"/>
+			<fruit fruitName="rye"  			normalGrowthState="1" />
+			<fruit fruitName="spelt"  			normalGrowthState="1" />
+			<fruit fruitName="triticale"  		normalGrowthState="1" />
+			<fruit fruitName="oat"  															setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="sorghum"  		normalGrowthState="6" 							setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="millet"  			normalGrowthState="6" 							setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="onion"    		normalGrowthState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="carrot"    		normalGrowthState="6" setGrowthState="1"  desiredGrowthState="CUT"/>
+			<fruit fruitName="hops" 			normalGrowthState="1" />
+			<fruit fruitName="grapes" 			normalGrowthState="1" />
+        </gt>
+        <gt growthTransitionNum="10"> <!--fin de l'automne au début de l'hiver-->
+            <fruit fruitName="barley"  			setGrowthState="4"  setGrowthMaxState="MAX_STATE" desiredGrowthState="WITHERED"/>
+            <fruit fruitName="lavande"  		setGrowthState="4"  setGrowthMaxState="MAX_STATE" desiredGrowthState="WITHERED"/>			
+            <fruit fruitName="wheat"   			setGrowthState="4"  setGrowthMaxState="MAX_STATE" desiredGrowthState="WITHERED"/>
+            <fruit fruitName="rape"    			setGrowthState="4"  setGrowthMaxState="MAX_STATE" desiredGrowthState="WITHERED"/>
+            <fruit fruitName="maize" 			setGrowthState="1"  desiredGrowthState="CUT"  normalGrowthState="7"/>
+            <fruit fruitName="soybean" 			setGrowthState="1"  desiredGrowthState="CUT"  normalGrowthState="7"/>
+            <fruit fruitName="sunflower" 		setGrowthState="1"  desiredGrowthState="CUT"  normalGrowthState="7"/>
+            <fruit fruitName="potato" 			setGrowthState="1"  desiredGrowthState="CUT"  normalGrowthState="6"/>
+            <fruit fruitName="sugarBeet" 		setGrowthState="1"  desiredGrowthState="CUT"  normalGrowthState="7"/>
+            <fruit fruitName="grass" 			setGrowthState="1"  setGrowthMaxState="MAX_STATE" desiredGrowthState="2"/>
+			<fruit fruitName="rye"  			setGrowthState="4"  setGrowthMaxState="MAX_STATE" desiredGrowthState="WITHERED"/>
+			<fruit fruitName="spelt"  			setGrowthState="4"  setGrowthMaxState="MAX_STATE" desiredGrowthState="WITHERED"/>
+			<fruit fruitName="triticale"  		setGrowthState="4"  setGrowthMaxState="MAX_STATE" desiredGrowthState="WITHERED"/>
+			<fruit fruitName="oat"  			setGrowthState="4"  setGrowthMaxState="MAX_STATE" desiredGrowthState="WITHERED"/>
+			<fruit fruitName="sorghum"  		setGrowthState="4"  setGrowthMaxState="MAX_STATE" desiredGrowthState="WITHERED"/>
+			<fruit fruitName="millet"  			setGrowthState="4"  setGrowthMaxState="MAX_STATE" desiredGrowthState="WITHERED"/>
+			<fruit fruitName="onion" 			setGrowthState="1"  desiredGrowthState="CUT"  normalGrowthState="7"/>
+			<fruit fruitName="carrot" 			setGrowthState="1"  desiredGrowthState="CUT"  normalGrowthState="7"/>
+			<fruit fruitName="hops" 			setGrowthState="4"  setGrowthMaxState="MAX_STATE"/>
+			<fruit fruitName="grapes" 			setGrowthState="4"  setGrowthMaxState="MAX_STATE"/>
+        </gt>
+        <gt growthTransitionNum="11"/> <!--début de l'hiver au milieu de l'hiver-->
+        <gt growthTransitionNum="12"/> <!--mi hiver à la fin de l'hiver-->
+        <gt growthTransitionNum="FIRST_LOAD_TRANSITION">
+            <fruit fruitName="barley" 			setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>
+            <fruit fruitName="wheat" 			setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>
+            <fruit fruitName="rape" 			setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>
+            <fruit fruitName="maize" 			setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>
+            <fruit fruitName="lavande" 			setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>			
+            <fruit fruitName="soybean" 			setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>
+            <fruit fruitName="sunflower" 		setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>
+            <fruit fruitName="potato" 			setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>
+            <fruit fruitName="sugarBeet" 		setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>
+            <fruit fruitName="poplar" 			setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>
+            <fruit fruitName="grass" 			setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="2"/>
+            <fruit fruitName="oilseedRadish" 	setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>
+			<fruit fruitName="rye" 				setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>
+			<fruit fruitName="spelt" 			setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>
+			<fruit fruitName="triticale" 		setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>
+			<fruit fruitName="oat" 				setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>
+			<fruit fruitName="sorghum" 			setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>
+			<fruit fruitName="millet" 			setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>
+			<fruit fruitName="onion" 			setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>
+			<fruit fruitName="carrot" 			setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>
+			<fruit fruitName="hops" 			setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>
+			<fruit fruitName="grapes" 			setGrowthState="1" setGrowthMaxState="MAX_STATE" desiredGrowthState="CUT"/>
+        </gt>
+    </growthTransitions>
+    <germination>
+        <fruit fruitName="barley" 			germinateTemp="5" />
+        <fruit fruitName="wheat" 			germinateTemp="5" />
+        <fruit fruitName="rape" 			germinateTemp="5" />
+        <fruit fruitName="lavande" 			germinateTemp="5" />		
+        <fruit fruitName="maize" 			germinateTemp="10" />
+        <fruit fruitName="soybean" 			germinateTemp="10" />
+        <fruit fruitName="sunflower" 		germinateTemp="7" />
+        <fruit fruitName="potato" 			germinateTemp="5" />
+        <fruit fruitName="sugarBeet" 		germinateTemp="5" />
+        <fruit fruitName="grass" 			germinateTemp="1" />
+        <fruit fruitName="oilseedRadish" 	germinateTemp="7" />
+        <fruit fruitName="poplar" 			germinateTemp="5" />
+		<fruit fruitName="rye" 				germinateTemp="5" />
+		<fruit fruitName="spelt" 			germinateTemp="7" />
+		<fruit fruitName="triticale" 		germinateTemp="5" />
+		<fruit fruitName="oat" 				germinateTemp="7" />
+		<fruit fruitName="sorghum" 			germinateTemp="10" />
+		<fruit fruitName="millet" 			germinateTemp="10" />
+		<fruit fruitName="onion" 			germinateTemp="7" />
+		<fruit fruitName="carrot" 			germinateTemp="5" />
+		<fruit fruitName="hops" 			germinateTemp="7" />
+		<fruit fruitName="grapes" 			germinateTemp="7" />
+    </germination>
+</growth>

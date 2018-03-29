@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="woolPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="pallet_diffuse.dds" relativePath="true"/>
+    <File fileId="3" filename="pallet_normal.dds" relativePath="true"/>
+    <File fileId="4" filename="pallet_specular.dds" relativePath="true"/>
+    <File fileId="7" filename="blumenkohl_diffuse.dds" relativePath="true"/>
+    <File fileId="6" filename="califlowerbox_diffuse.dds" relativePath="true"/>
+    <File fileId="8" filename="lettuce_normal.dds" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="acmat_0" materialId="6" ambientColor="1 1 1">
+      <Texture fileId="6"/>
+    </Material>
+    <Material name="gray_mat" materialId="7" diffuseColor="0.584314 0.584314 0.584314 1" ambientColor="0.588235 0.588235 0.588235">
+    </Material>
+    <Material name="acmat_0" materialId="8" ambientColor="1 1 1">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+    </Material>
+    <Material name="lambert2" materialId="9" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="10" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="cauliflowerPallet2.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="fillablePallet" dynamic="true" compound="true" collisionMask="16789512" density="0.04" clipDistance="200" nodeId="28" materialIds="7" nonRenderable="true">
+      <Shape shapeId="2" name="boardPallet_vis" scale="1 1 1.3" nodeId="29" materialIds="9" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="3" name="dummyTensionBeltNode" translation="0.01 0.707904 0" scale="2.798 0.975 1.008" visibility="false" clipDistance="100" nodeId="30" materialIds="10" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+      <Shape shapeId="4" name="palletAttacherTrigger" translation="0 0.175 0" kinematic="true" trigger="true" collisionMask="8192" nodeId="31" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="fillPalett" translation="0 -0.0855013 0" scale="0.965 1 1.08" nodeId="32">
+        <Shape shapeId="5" name="box" translation="-0.389892 0.255711 -0.297243" rotation="-180 -0.695019 -180" scale="1 1.1 1.1" nodeId="33" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="salatkopf" translation="-0.23587 0.0753732 0.0992001" scale="0.5 0.5 0.5" clipDistance="80" nodeId="34" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.224475 0.0753732 -0.094283" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="35" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0744161 0.0753732 -0.106937" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="36" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.0693518 0.0753732 0.122936" rotation="180 -53.9612 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="37" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.242648 0.152491 0.0997229" rotation="169.023 -80.7091 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="38" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.40002 0.255711 -0.330019" rotation="-2.30446e-07 0.973727 -2.73042e-09" scale="1 1.1 1.1" nodeId="39" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="salatkopf" translation="-0.23587 0.0753732 0.0992001" scale="0.5 0.5 0.5" clipDistance="80" nodeId="40" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.224475 0.0753732 -0.094283" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="41" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0744161 0.0753732 -0.106937" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="42" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.0693518 0.0753732 0.122936" rotation="180 -53.9612 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="43" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.242648 0.152491 0.0997229" rotation="169.023 -80.7091 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="44" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.445824 0.257235 0.314781" rotation="0 3.564 0" scale="1 1.1 1.1" nodeId="45" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="salatkopf" translation="-0.23587 0.0753732 0.0992001" scale="0.5 0.5 0.5" clipDistance="80" nodeId="46" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.224475 0.0753732 -0.094283" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="47" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0744161 0.0753732 -0.106937" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="48" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.0693518 0.0753732 0.122936" rotation="180 -53.9612 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="49" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.242648 0.152491 0.0997229" rotation="169.023 -80.7091 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="50" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.44495 0.255711 0.3353" rotation="180 -0.670734 180" scale="1 1.1 1.1" nodeId="51" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="salatkopf" translation="-0.23587 0.0753732 0.0992001" scale="0.5 0.5 0.5" clipDistance="80" nodeId="52" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.224475 0.0753732 -0.094283" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="53" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0744161 0.0753732 -0.106937" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="54" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.0693518 0.0753732 0.122936" rotation="180 -53.9612 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="55" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.242648 0.152491 0.0997229" rotation="169.023 -80.7091 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="56" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.389892 0.558423 -0.297243" rotation="-180 -5.27085 -180" scale="1 1.1 1.1" nodeId="57" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="salatkopf" translation="-0.23587 0.0753732 0.0992001" scale="0.5 0.5 0.5" clipDistance="80" nodeId="58" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.224475 0.0753732 -0.094283" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="59" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0744161 0.0753732 -0.106937" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="60" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.0693518 0.0753732 0.122936" rotation="180 -53.9612 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="61" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.242648 0.152491 0.0997229" rotation="169.023 -80.7091 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="62" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.40002 0.557222 -0.330019" rotation="-2.31067e-07 4.31029 -1.61807e-08" scale="1 1.1 1.1" nodeId="63" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="salatkopf" translation="-0.23587 0.0753732 0.0992001" scale="0.5 0.5 0.5" clipDistance="80" nodeId="64" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.224475 0.0753732 -0.094283" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="65" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0744161 0.0753732 -0.106937" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="66" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.0693518 0.0753732 0.122936" rotation="180 -53.9612 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="67" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.242648 0.152491 0.0997229" rotation="169.023 -80.7091 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="68" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.44495 0.556706 0.3353" rotation="180 -0.670734 180" scale="1 1.1 1.1" nodeId="69" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="salatkopf" translation="-0.23587 0.0753732 0.0992001" scale="0.5 0.5 0.5" clipDistance="80" nodeId="70" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.224475 0.0753732 -0.094283" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="71" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0744161 0.0753732 -0.106937" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="72" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.0693518 0.0753732 0.122936" rotation="180 -53.9612 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="73" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.242648 0.152491 0.0997229" rotation="169.023 -80.7091 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="74" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.445824 0.557692 0.314781" rotation="0 2.10618 0" scale="1 1.1 1.1" nodeId="75" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="salatkopf" translation="-0.23587 0.0753732 0.0992001" scale="0.5 0.5 0.5" clipDistance="80" nodeId="76" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.224475 0.0753732 -0.094283" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="77" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0744161 0.0753732 -0.106937" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="78" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.0693518 0.0753732 0.122936" rotation="180 -53.9612 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="79" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.242648 0.152491 0.0997229" rotation="169.023 -80.7091 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="80" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.389611 0.857311 -0.289221" rotation="-180 -2.00441 -180" scale="1 1.1 1.1" nodeId="81" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="salatkopf" translation="-0.23587 0.0753732 0.0992001" scale="0.5 0.5 0.5" clipDistance="80" nodeId="82" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.224475 0.0753732 -0.094283" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="83" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0744161 0.0753732 -0.106937" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="84" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.0693518 0.0753732 0.122936" rotation="180 -53.9612 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="85" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.242648 0.152491 0.0997229" rotation="169.023 -80.7091 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="86" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.40002 0.854915 -0.330019" rotation="-2.30484e-07 1.42296 -4.5378e-09" scale="1 1.1 1.1" nodeId="87" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="salatkopf" translation="-0.23587 0.0753732 0.0992001" scale="0.5 0.5 0.5" clipDistance="80" nodeId="88" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.224475 0.0753732 -0.094283" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="89" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0744161 0.0753732 -0.106937" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="90" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.0693518 0.0753732 0.122936" rotation="180 -53.9612 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="91" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.242648 0.152491 0.0997229" rotation="169.023 -80.7091 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="92" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.44495 0.85237 0.3353" rotation="180 2.56334 180" scale="1 1.1 1.1" nodeId="93" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="salatkopf" translation="-0.23587 0.0753732 0.0992001" scale="0.5 0.5 0.5" clipDistance="80" nodeId="94" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.224475 0.0753732 -0.094283" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="95" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0744161 0.0753732 -0.106937" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="96" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.0693518 0.0753732 0.122936" rotation="180 -53.9612 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="97" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.242648 0.152491 0.0997229" rotation="169.023 -80.7091 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="98" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.445824 0.855623 0.314781" rotation="0 5.26794 0" scale="1 1.1 1.1" nodeId="99" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="salatkopf" translation="-0.23587 0.0753732 0.0992001" scale="0.5 0.5 0.5" clipDistance="80" nodeId="100" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.224475 0.0753732 -0.094283" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="101" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0744161 0.0753732 -0.106937" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="102" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.0693518 0.0753732 0.122936" rotation="180 -53.9612 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="103" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.242648 0.152491 0.0997229" rotation="169.023 -80.7091 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="104" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.389611 1.15128 -0.289221" rotation="-180 -0.672982 -180" scale="1 1.1 1.1" nodeId="105" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="salatkopf" translation="-0.23587 0.0753732 0.0992001" scale="0.5 0.5 0.5" clipDistance="80" nodeId="106" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.224475 0.0753732 -0.094283" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="107" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0744161 0.0753732 -0.106937" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="108" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.0693518 0.0753732 0.122936" rotation="180 -53.9612 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="109" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.242648 0.152491 0.0997229" rotation="169.023 -80.7091 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="110" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.441793 1.15128 -0.261539" rotation="-180 -0.672982 -180" scale="1 1.1 1.1" nodeId="111" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="salatkopf" translation="-0.23587 0.0753732 0.0992001" scale="0.5 0.5 0.5" clipDistance="80" nodeId="112" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.224475 0.0753732 -0.094283" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="113" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0744161 0.0753732 -0.106937" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="114" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.0693518 0.0753732 0.122936" rotation="180 -53.9612 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="115" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.242648 0.152491 0.0997229" rotation="169.023 -80.7091 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="116" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.445824 1.15345 0.314781" rotation="0 0.19139 0" scale="1 1.1 1.1" nodeId="117" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="salatkopf" translation="-0.23587 0.0753732 0.0992001" scale="0.5 0.5 0.5" clipDistance="80" nodeId="118" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.224475 0.0753732 -0.094283" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="119" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0744161 0.0753732 -0.106937" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="120" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.0693518 0.0753732 0.122936" rotation="180 -53.9612 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="121" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.242648 0.152491 0.0997229" rotation="169.023 -80.7091 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="122" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.446974 1.14241 0.361068" rotation="180 -1.31041 180" scale="1 1.1 1.1" nodeId="123" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="salatkopf" translation="-0.23587 0.0753732 0.0992001" scale="0.5 0.5 0.5" clipDistance="80" nodeId="124" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.224475 0.0753732 -0.094283" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="125" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0744161 0.0753732 -0.106937" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="126" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.0693518 0.0753732 0.122936" rotation="180 -53.9612 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="127" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.242648 0.152491 0.0997229" rotation="169.023 -80.7091 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="128" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.441793 1.43885 -0.261539" rotation="-180 -0.672982 -180" scale="1 1.1 1.1" nodeId="129" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="salatkopf" translation="-0.23587 0.0753732 0.0992001" scale="0.5 0.5 0.5" clipDistance="80" nodeId="130" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.224475 0.0753732 -0.094283" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="131" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0744161 0.0753732 -0.106937" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="132" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.0693518 0.0753732 0.122936" rotation="180 -53.9612 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="133" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.242648 0.152491 0.0997229" rotation="169.023 -80.7091 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="134" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.389611 1.4456 -0.289221" rotation="180 -2.6185 180" scale="1 1.1 1.1" nodeId="135" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="salatkopf" translation="-0.23587 0.0753732 0.0992001" scale="0.5 0.5 0.5" clipDistance="80" nodeId="136" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.224475 0.0753732 -0.094283" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="137" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0744161 0.0753732 -0.106937" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="138" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.0693518 0.0753732 0.122936" rotation="180 -53.9612 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="139" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.242648 0.152491 0.0997229" rotation="169.023 -80.7091 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="140" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="0.446974 1.43885 0.361068" rotation="-180 0.136255 -180" scale="1 1.1 1.1" nodeId="141" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="salatkopf" translation="-0.23587 0.0753732 0.0992001" scale="0.5 0.5 0.5" clipDistance="80" nodeId="142" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.224475 0.0753732 -0.094283" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="143" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0744161 0.0753732 -0.106937" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="144" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.0693518 0.0753732 0.122936" rotation="180 -53.9612 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="145" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.242648 0.152491 0.0997229" rotation="169.023 -80.7091 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="146" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.137395 0.181363 -0.0204096" rotation="-174.413 -88.3691 180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="147" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="box" translation="-0.44594 1.43657 0.309361" rotation="0 1.224 0" scale="1 1.1 1.1" nodeId="148" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="6" name="salatkopf" translation="-0.23587 0.0753732 0.0992001" scale="0.5 0.5 0.5" clipDistance="80" nodeId="149" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.224475 0.0753732 -0.094283" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="150" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0744161 0.0753732 -0.106937" rotation="0 -70.1461 0" scale="0.5 0.5 0.5" clipDistance="80" nodeId="151" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.0693518 0.0753732 0.122936" rotation="180 -53.9612 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="152" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="0.242648 0.152491 0.0997229" rotation="169.023 -80.7091 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="153" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.0524958 0.19633 0.0992001" rotation="0 1.06722e-07 17.974" scale="0.5 0.5 0.5" clipDistance="80" nodeId="154" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="salatkopf" translation="-0.206882 0.0893558 -0.10722" rotation="-180 -75.7369 -180" scale="0.5 0.5 0.5" clipDistance="80" nodeId="155" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+      <Shape shapeId="7" name="transportPallet_col8" translation="0.0019251 0.156 0.000948154" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="156" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="8" name="transportPallet_col7" translation="0.624121 0.156 0.000948154" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="157" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="9" name="transportPallet_col6" translation="-0.622301 0.156 0.000948154" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="158" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="10" name="transportPallet_col5" translation="0.00271691 0.156 -0.564682" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="159" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="11" name="transportPallet_col4" translation="0.00271691 0.156 0.562657" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="160" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="12" name="transportPallet_col3" translation="0.622586 0.156 0.564194" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="161" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="13" name="transportPallet_col2" translation="0.622586 0.156 -0.565392" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="162" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="14" name="transportPallet_col1" translation="-0.622301 0.156 0.563359" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="163" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="15" name="transportPallet_col" translation="-0.622301 0.156 -0.565176" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="164" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="16" name="solidColi" translation="0 0.256457 0" visibility="false" compoundChild="true" collisionMask="16781314" density="0.7" nodeId="165" materialIds="10" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="28">
+      <Attribute name="capacity" type="float" value="4000"/>
+      <Attribute name="deleteIfEmpty" type="boolean" value="true"/>
+      <Attribute name="dynamicMountForceLimitScale" type="float" value="1"/>
+      <Attribute name="dynamicMountTriggerIndex" type="string" value="0>1"/>
+      <Attribute name="fillType" type="string" value="cauliflower"/>
+      <Attribute name="meshNodes" type="string" value="0 0|0"/>
+      <Attribute name="startFillLevel" type="integer" value="0"/>
+      <Attribute name="startScale" type="float" value="0.1"/>
+      <Attribute name="useRandomRot" type="boolean" value="false"/>
+      <Attribute name="visibilityNodesAdditive" type="boolean" value="true"/>
+      <Attribute name="visibilityNodesIndex" type="string" value="0>2"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

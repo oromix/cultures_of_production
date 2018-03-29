@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="3">
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="POST_GET_LIGHTING_FS">
+<![CDATA[
+{
+    float NdotL = clamp(dot(lightDir, normal), 0.7, 1.0);
+    float3 lighting = atten*NdotL * (diffuseShading + specularShading) * lightColor;
+    return lighting;
+}
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

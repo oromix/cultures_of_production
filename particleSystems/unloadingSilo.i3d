@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="unloadingSilo" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor - DEBUG 64bit" version="7.0.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="fx_grain_normal.png" relativePath="true"/>
+    <File fileId="1" filename="fx_soybean_diffuse.png" relativePath="true"/>
+    <File fileId="5" filename="../shaders/grainSmokeShader.xml" relativePath="true"/>
+    <File fileId="3" filename="../shaders/grainUnloadingShader.xml" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="fx_wheat_mat" materialId="118" ambientColor="1 1 1" alphaBlending="true" customShaderId="3">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="5 -2.5 0 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 1"/>
+      <CustomParameter name="vSpeedFrequencyAmplitudeFadescale" value="10 5 0.25 -0.05"/>
+    </Material>
+    <Material name="fx_clouds01_mat" materialId="116" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1" alphaBlending="true" customShaderId="5">
+      <CustomParameter name="fadeProgress" value="1 1 0 0"/>
+      <CustomParameter name="UVScaleSpeed" value="0.75 0.1 -0.3 0"/>
+      <CustomParameter name="ColorAlpha" value="1 1 1 2.5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="unloadingSilo.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="unloadingSilo" nodeId="124">
+      <TransformGroup name="shader" nodeId="125">
+        <Shape shapeId="1" name="grain" clipDistance="100" nodeId="126" materialIds="118" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="smoke" clipDistance="100" nodeId="127" materialIds="116" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+</i3D>

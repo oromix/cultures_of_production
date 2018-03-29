@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="3">
+    <Parameters>
+        <Parameter name="uvCenterSize" target="uvCenterSize" type="float4" defaultValue = "0.5 0.5 1.0 1.0"/>
+        <Parameter name="uvRotspeed"   target="uvRotspeed"   type="float4" defaultValue = "1.0 0.0 0.0 0.0"/>
+    </Parameters>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="MATERIALINFO">
+<![CDATA[
+    uniform float4 uvCenterSize;
+    uniform float4 uvRotspeed;
+#if defined(ALBEDO_MAP) || defined(EMISSIVE_MAP)
+float2 m_getUVRotationSinCos( )
+{
+    float mTime = uvRotspeed.x;    
+    float2 mSinCos; 
+    // compute sin and cos for this angle 
+    sincos( mTime, mSinCos.x, mSinCos.y ); 
+    return mSinCos;
+}
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="CONFIG_DEFINES">
+<![CDATA[
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_SET_TEXCOORDS_VS">
+<![CDATA[
+#if defined(ALBEDO_MAP) || defined(EMISSIVE_MAP)
+    float2 mOutgoingUV = getDefaultTexCoords(In);
+    mOutgoingUV *= uvCenterSize.zw;
+    float2 mRotationCenter = uvCenterSize.xy;
+    mRotationCenter *= uvCenterSize.zw;
+    // compute sin and cos for this angle 
+    float2 mSinCos = m_getUVRotationSinCos();
+    // move the rotation center to the origin 
+    float2 mTmpUV = mOutgoingUV - mRotationCenter; 
+    // rotate the uv 
+    mOutgoingUV.x = dot( mTmpUV, float2( mSinCos.y, - mSinCos.x ) ); 
+    mOutgoingUV.y = dot( mTmpUV, mSinCos.xy );
+    // move the uv's back to the correct place 
+    mOutgoingUV += mRotationCenter;
+    mOutgoingUV /= uvCenterSize.zw;
+    Out.defaultTexCoords = mOutgoingUV;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_TANGENT_VS">
+<![CDATA[
+#if defined(ALBEDO_MAP) || defined(EMISSIVE_MAP)
+    float2 mSinCos = m_getUVRotationSinCos();
+    
+    float3 b = cross( In.normal.xyz, In.tangent.xyz ) * In.tangent.w;
+    float3 t = In.tangent.xyz;
+
+    // Rotate tangent in oposite direction than uvs to compensate changed tangent space
+    return float3(
+        t.x*mSinCos.y - b.x*mSinCos.x,
+        t.y*mSinCos.y - b.y*mSinCos.x,
+        t.z*mSinCos.y - b.z*mSinCos.x);
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_BITANGENT_VS">
+<![CDATA[
+#if defined(ALBEDO_MAP) || defined(EMISSIVE_MAP)
+    return cross(In.normal.xyz, getTangent(In))*In.tangent.w;
+#endif
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

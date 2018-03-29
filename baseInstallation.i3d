@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="8" filename="maps/textures/goldcrestValley/craneClaw_diffuse.png" relativePath="true"/>
+    <File fileId="9" filename="maps/textures/goldcrestValley/craneClaw_normal.png" relativePath="true"/>
+    <File fileId="10" filename="maps/textures/goldcrestValley/craneClaw_specular.png" relativePath="true"/>
+    <File fileId="1" filename="maps/textures/goldcrestValley/railroadCrane_diffuse.png" relativePath="true"/>
+    <File fileId="2" filename="maps/textures/goldcrestValley/railroadCrane_normal.png" relativePath="true"/>
+    <File fileId="3" filename="maps/textures/goldcrestValley/railroadCrane_specular.png" relativePath="true"/>
+    <File fileId="11" filename="maps/textures/goldcrestValley/rope_diffuse.png" relativePath="true"/>
+    <File fileId="5" filename="shaders/buildingShaderUS.xml" relativePath="true"/>
+    <File fileId="14" filename="shaders/emissiveLightsShader.xml" relativePath="true"/>
+    <File fileId="12" filename="shaders/localCatmullRomRopeShader.xml" relativePath="true"/>
+    <File fileId="18" filename="shaders/vehicleShader.xml" relativePath="true"/>
+    <File fileId="19" filename="shared/coronaWhite_diffuse.png" relativePath="true"/>
+    <File fileId="17" filename="shared/default_cube.dds" relativePath="true"/>
+    <File fileId="4" filename="shared/rough_cube.dds" relativePath="true"/>
+    <File fileId="15" filename="shared/window_diffuse.png" relativePath="true"/>
+    <File fileId="16" filename="shared/window_specular.png" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="railroadCrane_mat" materialId="53" ambientColor="1 1 1" cosPower="255" specularColor="1 1 1" customShaderId="5" customShaderVariation="FORCE_GLOSS_SECONDUV">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Reflectionmap fileId="4" wrap="false" lodDistanceScaling="0.5" viewDistanceScaling="0.5" type="cube" scaling="1" refractiveIndex="1" bumpScale="0.1" shapesObjectMask="2147483647" lightsObjectMask="4294967295"/>
+      <CustomParameter name="uvScale" value="60 60 2 2"/>
+      <CustomParameter name="colorScale" value="0.8 0.55 0.055 1"/>
+    </Material>
+    <Material name="coronaWhite_mat" materialId="397" ambientColor="1 1 1" alphaBlending="true" customShaderId="14" customShaderVariation="BILLBOARD">
+      <Emissivemap fileId="19"/>
+      <CustomParameter name="blinkOffset" value="0 0 0 0"/>
+    </Material>
+    <Material name="lampsLit_mat" materialId="414" ambientColor="1 1 1" emissiveColor="1 1 1 0.894118" alphaBlending="true" customShaderId="14" customShaderVariation="STATIC_LIGHT">
+      <CustomParameter name="blinkOffset" value="0 0 0 0"/>
+    </Material>
+    <Material name="catmullRomRope_mat" materialId="544" ambientColor="1 1 1" customShaderId="12">
+      <Texture fileId="11"/>
+      <CustomParameter name="cv0" value="5 0 -5 0"/>
+      <CustomParameter name="cv1" value="0 0 0 0"/>
+      <CustomParameter name="cv2" value="0 0 10 0"/>
+      <CustomParameter name="cv3" value="-5 0 15 0"/>
+      <CustomParameter name="lengthInvLength" value="1 1 0 0"/>
+    </Material>
+    <Material name="window_mat" materialId="790" ambientColor="1 1 1" cosPower="50" specularColor="1 1 1" alphaBlending="true" customShaderId="18" customShaderVariation="Window">
+      <Texture fileId="15"/>
+      <Glossmap fileId="16"/>
+      <Reflectionmap fileId="17" wrap="false" lodDistanceScaling="0.5" viewDistanceScaling="0.5" type="cube" scaling="1" refractiveIndex="1" bumpScale="0.1" shapesObjectMask="2147483647" lightsObjectMask="4294967295"/>
+      <CustomParameter name="RDT" value="1 0.35 25 25"/>
+    </Material>
+    <Material name="lambert1" materialId="1021" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+    <Material name="craneClaw_mat" materialId="1046" ambientColor="1 1 1" cosPower="50" specularColor="1 1 1">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="baseInstallation.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="baseInstallation" translation="-173.551 95.27 335.782" rotation="0 72.917 0" static="true" clipDistance="1000" nodeId="19399" materialIds="53" castsShadows="true" receiveShadows="true">
+      <TransformGroup name="craneMove_joint" translation="0 10.7356 -14.5313" nodeId="19400"/>
+      <Shape shapeId="2" name="craneMove_col" translation="0 12.2561 -14.5513" dynamic="true" compound="true" collisionMask="8194" density="0.1" clipDistance="300" nodeId="19401" materialIds="1021" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <TransformGroup name="craneMove2_joint" translation="0.414581 -0.138331 1.10852" nodeId="19402"/>
+        <Shape shapeId="3" name="craneMove2_col" translation="0.546812 0.18385 1.11203" dynamic="true" compound="true" collisionMask="8194" clipDistance="300" nodeId="19403" materialIds="1021" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <TransformGroup name="grab_joint" translation="-0.130031 -3.09433 -0.00714077" rotation="0 180 0" nodeId="19404"/>
+          <Shape shapeId="4" name="grab_col" translation="-0.130031 -3.09433 -0.00714077" rotation="0 180 0" dynamic="true" compound="true" collisionMask="8194" clipDistance="300" nodeId="19405" materialIds="1021" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="claw1Joint" translation="-0.712052 -0.655541 0.00322925" rotation="3.46044e-12 0 0" nodeId="19406"/>
+            <TransformGroup name="claw2Joint" translation="0.719295 -0.655206 0.00322971" rotation="3.46044e-12 0 0" nodeId="19407"/>
+            <Shape shapeId="5" name="claw1_col" translation="-0.587397 -0.655541 0.00322925" rotation="0 180 0" visibility="false" dynamic="true" compound="true" collisionMask="8194" staticFriction="2" dynamicFriction="2" density="3" clipDistance="77" nodeId="19408" materialIds="1021" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="6" name="colClawPart4" translation="-2.84217e-16 2.27374e-15 0" rotation="-3.18055e-15 -7.06225e-31 -7.06225e-31" compoundChild="true" collisionMask="8194" staticFriction="2" dynamicFriction="2" density="3" nodeId="19409" materialIds="1021" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="7" name="colClawPart5" translation="-2.84217e-16 2.27374e-15 0" rotation="-3.18055e-15 -7.06225e-31 -7.06225e-31" compoundChild="true" collisionMask="8194" staticFriction="2" dynamicFriction="2" density="3" nodeId="19410" materialIds="1021" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="8" name="colClawPart6" translation="-2.84217e-16 2.27374e-15 0" rotation="-3.18055e-15 -7.06225e-31 -7.06225e-31" compoundChild="true" collisionMask="8194" staticFriction="2" dynamicFriction="2" density="3" nodeId="19411" materialIds="1021" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <TransformGroup name="grab1Ref" translation="-1.32093 4.54747e-15 5.11591e-15" rotation="6.07665e-15 -90 0" nodeId="19412"/>
+            </Shape>
+            <Shape shapeId="9" name="claw2_col" translation="0.582519 -0.655521 0.00322925" rotation="0 180 0" visibility="false" dynamic="true" compound="true" collisionMask="8194" staticFriction="2" dynamicFriction="2" density="3" clipDistance="77" nodeId="19413" materialIds="1021" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="10" name="colClawPart1" translation="-1.42109e-16 2.27374e-15 0" rotation="-3.18055e-15 -7.06225e-31 -7.06225e-31" compoundChild="true" collisionMask="8194" staticFriction="2" dynamicFriction="2" density="3" nodeId="19414" materialIds="1021" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="11" name="colClawPart2" translation="-1.42109e-16 2.27374e-15 0" rotation="-3.18055e-15 -7.06225e-31 -7.06225e-31" compoundChild="true" collisionMask="8194" staticFriction="2" dynamicFriction="2" density="3" nodeId="19415" materialIds="1021" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="12" name="colClawPart3" translation="-1.42109e-16 2.27374e-15 0" rotation="-3.18055e-15 -7.06225e-31 -7.06225e-31" compoundChild="true" collisionMask="8194" staticFriction="2" dynamicFriction="2" density="3" nodeId="19416" materialIds="1021" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <TransformGroup name="grab2ref" translation="1.35464 0.000314975 -4.57764e-07" rotation="-6.07665e-15 90 0" nodeId="19417"/>
+            </Shape>
+            <Shape shapeId="13" name="grabVis" rotation="-90 -7.01671e-15 180" clipDistance="300" nodeId="19418" materialIds="1046" castsShadows="true" receiveShadows="true">
+              <TransformGroup name="grab1Rot" translation="0.713441 -0.00373751 0.658799" rotation="-90 -2.31544e-12 90" clipDistance="300" nodeId="19419">
+                <Shape shapeId="14" name="grab1" translation="1.81899e-14 2.72848e-14 -3.69482e-15" rotation="-6.36111e-15 1.27222e-14 -1.90833e-14" clipDistance="300" nodeId="19420" materialIds="1046" castsShadows="true" receiveShadows="true">
+                  <Shape shapeId="15" name="grabHydr" translation="-0.00295976 0.0391336 -0.148852" clipDistance="300" nodeId="19421" materialIds="1046" castsShadows="true" receiveShadows="true">
+                    <Shape shapeId="16" name="grabHydrPunch" translation="0.00181937 0.00880612 1.34007" clipDistance="300" nodeId="19422" materialIds="1046" castsShadows="true" receiveShadows="true"/>
+                  </Shape>
+                  <Shape shapeId="17" name="grab1Arm1" translation="-1.35014e-05 0.0496566 -0.159707" clipDistance="300" nodeId="19423" materialIds="1046" castsShadows="true" receiveShadows="true"/>
+                  <Shape shapeId="18" name="grab1Arm2" translation="-1.35014e-05 0.0496566 -0.159907" clipDistance="300" nodeId="19424" materialIds="1046" castsShadows="true" receiveShadows="true"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="grab2Rot" translation="-0.717906 -0.00373797 0.658463" rotation="-90 2.31544e-12 -90" clipDistance="300" nodeId="19425">
+                <Shape shapeId="19" name="grab2" translation="-2.27374e-14 2.27374e-14 -4.68958e-15" rotation="-6.36111e-15 -1.27222e-14 1.90833e-14" clipDistance="300" nodeId="19426" materialIds="1046" castsShadows="true" receiveShadows="true">
+                  <TransformGroup name="grabHydrRef" translation="0.000616199 0.0501386 -0.145617" clipDistance="300" nodeId="19427"/>
+                  <TransformGroup name="grab1Arm1Ref" translation="1.30436e-05 -0.00447926 0.164254" clipDistance="300" nodeId="19428"/>
+                  <TransformGroup name="grab1Arm2Ref" translation="1.30436e-05 -0.0462793 0.166654" clipDistance="300" nodeId="19429"/>
+                </Shape>
+              </TransformGroup>
+              <TransformGroup name="grab1RefFrame" translation="0.713441 -0.00373751 0.658799" rotation="189.931 1.59028e-15 -90.0048" clipDistance="300" nodeId="19430"/>
+              <TransformGroup name="grab2RefFrame" translation="-0.717906 -0.00373751 0.658799" rotation="-9.85816 7.95139e-16 -90.0048" clipDistance="300" nodeId="19431"/>
+              <TransformGroup name="refrenceFrame" translation="7.10543e-17 -1.13687e-14 1.00974e-30" rotation="-90 -7.01671e-15 -7.01671e-15" nodeId="19432"/>
+            </Shape>
+            <Shape shapeId="20" name="craneHook" translation="-1.2207e-06 0.688486 3.66211e-06" rotation="0 180 0" clipDistance="300" nodeId="19433" materialIds="53" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="21" name="rope1" translation="0.327454 0.686244 0.00450884" rotation="-90 180 0" clipDistance="300" nodeId="19434" materialIds="544" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="22" name="rope2" translation="-0.323543 0.686244 0.00450884" rotation="-90 180 0" clipDistance="300" nodeId="19435" materialIds="544" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <TransformGroup name="rope1Target" translation="-0.309604 -0.344125 -0.0116496" rotation="-90 -1.40334e-14 0" nodeId="19436"/>
+          <TransformGroup name="rope1Target1" translation="0.0455118 -0.344125 -0.0116496" rotation="-90 -1.40334e-14 0" nodeId="19437"/>
+          <Shape shapeId="23" name="craneMove2_vis" translation="-0.132231 -0.322181 -0.00350857" clipDistance="300" nodeId="19438" materialIds="53" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <TransformGroup name="lights" translation="0 -12.2561 14.5513" nodeId="19439">
+          <TransformGroup name="defaultLights" nodeId="19440">
+            <TransformGroup name="coronas" visibility="false" nodeId="19441">
+              <Shape shapeId="24" name="lampsLit" translation="-0.0272029 11.9015 -15.2545" clipDistance="300" nodeId="19442" materialIds="414" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <Light name="frontLightLow" translation="4.53515e-15 11.0877 -15.2562" rotation="-90 180 0" visibility="false" clipDistance="75" nodeId="19443" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" decayRate="1" range="20" coneAngle="120" dropOff="3">
+              <Light name="pointLight3" translation="-3.90637 0.00162999 0.16394" rotation="90 -1.55802e-30 -180" clipDistance="120" nodeId="19444" type="point" color="1 0.95 0.9" emitDiffuse="true" emitSpecular="true" decayRate="1" range="5"/>
+              <Light name="pointLight1" translation="3.96871 0.00162999 0.16394" rotation="90 -1.55802e-30 -180" clipDistance="120" nodeId="19445" type="point" color="1 0.95 0.9" emitDiffuse="true" emitSpecular="true" decayRate="1" range="5"/>
+              <Light name="pointLight2" translation="0.00598482 0.00162999 0.16394" rotation="90 -1.55802e-30 -180" clipDistance="120" nodeId="19446" type="point" color="1 0.95 0.9" emitDiffuse="true" emitSpecular="true" decayRate="1" range="5"/>
+            </Light>
+            <Light name="highBeamLow" translation="4.53515e-15 11.0877 -15.2562" rotation="-90 180 0" visibility="false" clipDistance="75" nodeId="19447" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" decayRate="1" range="30" coneAngle="120" dropOff="2">
+              <Light name="pointLight4" translation="-3.90637 0.00162999 0.16394" rotation="90 0 -180" clipDistance="120" nodeId="19448" type="point" color="1 0.95 0.9" emitDiffuse="true" emitSpecular="true" decayRate="1" range="5"/>
+              <Light name="pointLight5" translation="3.96871 0.00162999 0.16394" rotation="90 0 -180" clipDistance="120" nodeId="19449" type="point" color="1 0.95 0.9" emitDiffuse="true" emitSpecular="true" decayRate="1" range="5"/>
+              <Light name="pointLight6" translation="0.006 0.00162999 0.16394" rotation="90 0 -180" clipDistance="120" nodeId="19450" type="point" color="1 0.95 0.9" emitDiffuse="true" emitSpecular="true" decayRate="1" range="5"/>
+            </Light>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cameras" translation="0 -12.2561 14.5513" nodeId="19451">
+          <TransformGroup name="outdoorCameraTarget" translation="0.382183 3.66896 -14.6758" rotation="-24 180 0" nodeId="19452">
+            <Camera name="outdoorCamera1" translation="0 0 16" nodeId="19453" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
+          </TransformGroup>
+          <Camera name="indoorCamera2" translation="-5.26583 10.0339 -15.247" rotation="-15.7875 -89.7304 0" nodeId="19454" fov="60" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
+        </TransformGroup>
+        <TransformGroup name="character" translation="0 -12.2561 14.5513" nodeId="19455">
+          <TransformGroup name="characterNode" translation="-5.5 9.23 -15.252" rotation="0 90 0" nodeId="19456"/>
+          <TransformGroup name="rightFoot" translation="-5.15 8.695 -15.1305" rotation="0 90 0" nodeId="19457"/>
+          <TransformGroup name="leftFoot" translation="-5.15 8.695 -15.443" rotation="0 90 0" nodeId="19458"/>
+          <TransformGroup name="rightHand" translation="-5.05 9.494 -14.794" rotation="90 64.594 180" nodeId="19459"/>
+          <TransformGroup name="leftHand" translation="-5.061 9.494 -15.706" rotation="-90 75.009 0" nodeId="19460"/>
+        </TransformGroup>
+        <Shape shapeId="25" name="glass" translation="-5.57932 -2.54315 -0.702713" clipDistance="300" nodeId="19461" materialIds="790" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="26" name="craneMove_vis" translation="0 -1.52048 0.0199721" clipDistance="300" nodeId="19462" materialIds="53" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="27" name="craneMove_colPart" translation="-5.76496 -2.01722 -0.708477" visibility="false" compoundChild="true" collisionMask="8194" density="0.001" nodeId="19463" materialIds="1021" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      </Shape>
+      <TransformGroup name="enterReferencePoint" translation="-7.48101 7.72625 -15.7254" rotation="0 180 0" nodeId="19464"/>
+      <TransformGroup name="lighting" translation="0 2.66454e-15 0" visibility="false" clipDistance="129" nodeId="19465">
+        <TransformGroup name="lightBeams" clipDistance="129" nodeId="19466">
+          <TransformGroup name="envLight1" translation="6.9 14.86 25" rotation="0 0 -23.6" clipDistance="129" nodeId="19467">
+            <Shape shapeId="28" name="coronaWhite" translation="4.54747e-15 0.05 2.25948e-09" rotation="90 0 0" scale="2 2 2" clipDistance="129" nodeId="19468" materialIds="397" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="envLight" translation="-6.9 14.86 25" rotation="0 0 23.6" clipDistance="129" nodeId="19469">
+            <Shape shapeId="28" name="coronaWhite" translation="1.99126e-16 0.05 0" rotation="90 0 0" scale="2 2 2" clipDistance="129" nodeId="19470" materialIds="397" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="envLight10" translation="6.9 14.86 15.0223" rotation="0 0 -23.6" clipDistance="129" nodeId="19471">
+            <Shape shapeId="28" name="coronaWhite" translation="1.99126e-16 0.05 0" rotation="90 0 0" scale="2 2 2" clipDistance="129" nodeId="19472" materialIds="397" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="envLight11" translation="-6.9 14.86 15.0223" rotation="0 0 23.6" clipDistance="129" nodeId="19473">
+            <Shape shapeId="28" name="coronaWhite" translation="1.99126e-16 0.05 0" rotation="90 0 0" scale="2 2 2" clipDistance="129" nodeId="19474" materialIds="397" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="envLight12" translation="-6.9 14.86 -4.99714" rotation="0 0 23.6" clipDistance="129" nodeId="19475">
+            <Shape shapeId="28" name="coronaWhite" translation="1.99126e-16 0.05 0" rotation="90 0 0" scale="2 2 2" clipDistance="129" nodeId="19476" materialIds="397" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="envLight13" translation="6.9 14.86 -4.99714" rotation="0 0 -23.6" clipDistance="129" nodeId="19477">
+            <Shape shapeId="28" name="coronaWhite" translation="1.99126e-16 0.05 0" rotation="90 0 0" scale="2 2 2" clipDistance="129" nodeId="19478" materialIds="397" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="envLight14" translation="-6.9 14.86 5.00038" rotation="0 0 23.6" clipDistance="129" nodeId="19479">
+            <Shape shapeId="28" name="coronaWhite" translation="1.99126e-16 0.05 0" rotation="90 0 0" scale="2 2 2" clipDistance="129" nodeId="19480" materialIds="397" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="envLight15" translation="6.9 14.86 5.00038" rotation="0 0 -23.6" clipDistance="129" nodeId="19481">
+            <Shape shapeId="28" name="coronaWhite" translation="1.99126e-16 0.05 0" rotation="90 0 0" scale="2 2 2" clipDistance="129" nodeId="19482" materialIds="397" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="envLight16" translation="-6.9 14.86 -24.9988" rotation="0 0 23.6" clipDistance="129" nodeId="19483">
+            <Shape shapeId="28" name="coronaWhite" translation="1.99126e-16 0.05 0" rotation="90 0 0" scale="2 2 2" clipDistance="129" nodeId="19484" materialIds="397" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="envLight17" translation="6.9 14.86 -24.9988" rotation="0 0 -23.6" clipDistance="129" nodeId="19485">
+            <Shape shapeId="28" name="coronaWhite" translation="1.99126e-16 0.05 0" rotation="90 0 0" scale="2 2 2" clipDistance="129" nodeId="19486" materialIds="397" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="envLight18" translation="-6.9 14.86 -14.9789" rotation="0 0 23.6" clipDistance="129" nodeId="19487">
+            <Shape shapeId="28" name="coronaWhite" translation="1.99126e-16 0.05 0" rotation="90 0 0" scale="2 2 2" clipDistance="129" nodeId="19488" materialIds="397" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="envLight19" translation="6.9 14.86 -14.9789" rotation="0 0 -23.6" clipDistance="129" nodeId="19489">
+            <Shape shapeId="28" name="coronaWhite" translation="1.99126e-16 0.05 0" rotation="90 0 0" scale="2 2 2" clipDistance="129" nodeId="19490" materialIds="397" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="realLights" translation="0 -1.77636e-15 0" clipDistance="129" nodeId="19491">
+          <Light name="envLight" translation="6.94365 14.8955 -25.0157" rotation="-90 -0 -25" clipDistance="120" nodeId="19492" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="256" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="1" range="20" coneAngle="70" dropOff="3"/>
+          <Light name="envLight1" translation="-6.93964 14.8973 -24.9818" rotation="-90 -0 25" clipDistance="120" nodeId="19493" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="256" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="1" range="20" coneAngle="70" dropOff="3"/>
+          <Light name="envLight2" translation="6.92485 14.9037 -14.9966" rotation="-90 -0 -25" clipDistance="120" nodeId="19494" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="256" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="1" range="20" coneAngle="70" dropOff="3"/>
+          <Light name="envLight3" translation="-6.91948 14.906 -14.9904" rotation="-90 -0 25" clipDistance="120" nodeId="19495" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="256" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="1" range="20" coneAngle="70" dropOff="3"/>
+          <Light name="envLight4" translation="6.92465 14.9038 24.9908" rotation="-90 -0 -25" clipDistance="120" nodeId="19496" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="256" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="1" range="20" coneAngle="70" dropOff="3"/>
+          <Light name="envLight5" translation="-6.91086 14.9098 15.0041" rotation="-90 -0 25" clipDistance="120" nodeId="19497" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="256" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="1" range="20" coneAngle="70" dropOff="3"/>
+          <Light name="envLight6" translation="6.90984 14.9103 15.0195" rotation="-90 -0 -25" clipDistance="120" nodeId="19498" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="256" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="1" range="20" coneAngle="70" dropOff="3"/>
+          <Light name="envLight7" translation="-6.93243 14.9004 5.0359" rotation="-90 -0 25" clipDistance="120" nodeId="19499" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="256" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="1" range="20" coneAngle="70" dropOff="3"/>
+          <Light name="envLight8" translation="6.93369 14.8998 5.00267" rotation="-90 -0 -25" clipDistance="120" nodeId="19500" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="256" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="1" range="20" coneAngle="70" dropOff="3"/>
+          <Light name="envLight9" translation="-6.92732 14.9026 -4.98552" rotation="-90 -0 25" clipDistance="120" nodeId="19501" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="256" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="1" range="20" coneAngle="70" dropOff="3"/>
+          <Light name="envLight10" translation="6.92354 14.9043 -5.00365" rotation="-90 -0 -25" clipDistance="120" nodeId="19502" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="256" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="1" range="20" coneAngle="70" dropOff="3"/>
+          <Light name="envLight11" translation="-6.91086 14.9098 25.0157" rotation="-90 -0 25" clipDistance="120" nodeId="19503" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.001" depthMapSlopeScaleBias="0.005" depthMapSlopeClamp="0.02" depthMapResolution="256" shadowFarDistance="80" shadowExtrusionDistance="200" shadowPerspective="false" decayRate="1" range="20" coneAngle="70" dropOff="3"/>
+        </TransformGroup>
+        <Shape shapeId="29" name="lampsLit" translation="0 -1.77636e-15 0" clipDistance="300" nodeId="19504" materialIds="414" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="19399">
+      <Attribute name="onCreate" type="scriptCallback" value="StationCrane.onCreate"/>
+      <Attribute name="xmlFile" type="string" value="$data/vehicles/train/stationCrane.xml"/>
+    </UserAttribute>
+    <UserAttribute nodeId="19401">
+      <Attribute name="mpRemoveRigidBody" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="19465">
+      <Attribute name="onCreate" type="scriptCallback" value="Nightlight2.onCreate"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

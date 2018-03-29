@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="3">
+    <Parameters>
+        <Parameter name="colorTint" target="colorTint" type="float3"/>
+    </Parameters>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="NUM_TEXCOORDS">
+<![CDATA[
+#ifdef ALPHA_TESTED
+#undef ALPHA_TESTED
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="MATERIALINFO">
+<![CDATA[
+uniform float3 colorTint;
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_ALBEDO_FS">
+<![CDATA[
+albedo.xyz = lerp(albedo.xyz, albedo.xyz*colorTint.xyz, albedo.w);
+]]>
+	        </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

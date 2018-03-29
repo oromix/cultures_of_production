@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="map01" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="potatoParticle.dds" relativePath="true"/>
+    <File fileId="2" filename="potatoParticle_NORM.dds" relativePath="true"/>
+    <File fileId="3" filename="psColorShader.xml" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+    <Material name="fx_soil4x1_mat" materialId="8" ambientColor="1 1 1" customShaderId="3">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="psColor" value="1 1 1 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="potatoPS_drum.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+    <ParticleSystem name="soilEmitter" dynamicId="3" type="sprite" rate="0.15" lifespan="600" maxCount="200" speed="0.003" speedRandom="0.0002" tangentSpeed="0" normalSpeed="1.2" spriteScaleX="0.17" spriteScaleY="0.17" blendFactor="1" blendInFactor="0" blendOutFactor="0.9" depthSort="true" deltaRotateMin="-0.0010472" deltaRotateMax="0.0010472" textureAtlasSizeX="4">
+      <Gravity force="0 -1.6 -1"/>
+    </ParticleSystem>
+    <ParticleSystem name="soilEmitter" dynamicId="4" type="sprite" rate="0.15" lifespan="600" maxCount="800" speed="0.003" speedRandom="0.0002" tangentSpeed="0" normalSpeed="1.2" spriteScaleX="0.17" spriteScaleY="0.17" blendFactor="1" blendInFactor="0" blendOutFactor="0.9" depthSort="true" deltaRotateMin="-0.0010472" deltaRotateMax="0.0010472" textureAtlasSizeX="4">
+      <Gravity force="0 -1.6 -0.7"/>
+    </ParticleSystem>
+    <ParticleSystem name="soilEmitter" dynamicId="1" type="sprite" rate="0.15" lifespan="600" maxCount="300" speed="0.003" speedRandom="0.0002" tangentSpeed="0" normalSpeed="1.2" emitterShapeVelocityScale="0.5" spriteScaleX="0.17" spriteScaleY="0.17" blendFactor="1" blendInFactor="0" blendOutFactor="0.9" depthSort="true" deltaRotateMin="-0.0010472" deltaRotateMax="0.0010472" textureAtlasSizeX="4">
+      <Gravity force="0 -1.6 0"/>
+    </ParticleSystem>
+  </Dynamics>
+
+  <Scene>
+    <Dynamic dynamicId="1" emitterShapeNodeId="19" name="EmitterDown" translation="-0.73314 0 0" clipDistance="100" nodeId="18" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false">
+      <Shape shapeId="2" name="EmitShape" scale="2.7 1 1" nodeId="19" materialIds="6" nonRenderable="true"/>
+    </Dynamic>
+    <Dynamic dynamicId="1" emitterShapeNodeId="22" name="EmitterDown" translation="-2.18832 0 0" clipDistance="100" nodeId="21" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false">
+      <Shape shapeId="2" name="EmitShape" scale="2.7 1 1" nodeId="22" materialIds="6" nonRenderable="true"/>
+    </Dynamic>
+    <Dynamic dynamicId="1" emitterShapeNodeId="25" name="EmitterDown" translation="-4.53851 0 0" clipDistance="100" nodeId="24" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false">
+      <Shape shapeId="2" name="EmitShape" scale="2.7 1 1" nodeId="25" materialIds="6" nonRenderable="true"/>
+    </Dynamic>
+    <Dynamic dynamicId="1" emitterShapeNodeId="28" name="EmitterDown" translation="-7.19108 0 0" clipDistance="100" nodeId="27" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false">
+      <Shape shapeId="2" name="EmitShape" scale="2.7 1 1" nodeId="28" materialIds="6" nonRenderable="true"/>
+    </Dynamic>
+    <Dynamic dynamicId="3" emitterShapeNodeId="31" name="EmitterMid1" translation="-7.02715 0.943329 -0.552486" rotation="-56.1677 0.637266 -180" clipDistance="100" nodeId="30" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false">
+      <Shape shapeId="2" name="EmitShape" scale="2.7 1 1" nodeId="31" materialIds="6" nonRenderable="true"/>
+    </Dynamic>
+    <Dynamic dynamicId="3" emitterShapeNodeId="34" name="EmitterMid1" translation="-3.79175 0.943329 -0.516489" rotation="-56.1677 0.637266 -180" clipDistance="100" nodeId="33" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false">
+      <Shape shapeId="2" name="EmitShape" scale="2.7 1 1" nodeId="34" materialIds="6" nonRenderable="true"/>
+    </Dynamic>
+    <Dynamic dynamicId="3" emitterShapeNodeId="37" name="EmitterMid1" translation="-0.690594 0.943329 -0.482001" rotation="-56.1677 0.637266 -180" clipDistance="100" nodeId="36" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false">
+      <Shape shapeId="2" name="EmitShape" scale="2.7 1 1" nodeId="37" materialIds="6" nonRenderable="true"/>
+    </Dynamic>
+    <Dynamic dynamicId="4" emitterShapeNodeId="40" name="EmitterMid2" translation="-3.94011 2.21385 -0.766469" rotation="-130.066 0.637266 180" clipDistance="100" nodeId="39" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false">
+      <Shape shapeId="2" name="EmitShape" scale="9 1 1" nodeId="40" materialIds="6" nonRenderable="true"/>
+    </Dynamic>
+    <Dynamic dynamicId="4" emitterShapeNodeId="43" name="EmitterTop" translation="-4.02304 2.7159 -0.0958627" rotation="177.338 0.637266 180" clipDistance="100" nodeId="42" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false">
+      <Shape shapeId="2" name="EmitShape" scale="9 1 1" nodeId="43" materialIds="6" nonRenderable="true"/>
+    </Dynamic>
+    <Dynamic dynamicId="4" emitterShapeNodeId="46" name="EmitterMid2" translation="-4.07461 2.31151 0.918539" rotation="86.2174 0.637266 -180" clipDistance="100" nodeId="45" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false">
+      <Shape shapeId="2" name="EmitShape" scale="9.3 1 1" nodeId="46" materialIds="6" nonRenderable="true"/>
+    </Dynamic>
+    <Dynamic dynamicId="3" emitterShapeNodeId="49" name="EmitterMid1" translation="-0.482254 1.45037 1.03663" rotation="40.331 0.637266 180" clipDistance="100" nodeId="48" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false">
+      <Shape shapeId="2" name="EmitShape" scale="2.7 1 1" nodeId="49" materialIds="6" nonRenderable="true"/>
+    </Dynamic>
+    <Dynamic dynamicId="3" emitterShapeNodeId="52" name="EmitterMid1" translation="-4.20067 1.45037 0.995268" rotation="40.331 0.637266 180" clipDistance="100" nodeId="51" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false">
+      <Shape shapeId="2" name="EmitShape" scale="2.7 1 1" nodeId="52" materialIds="6" nonRenderable="true"/>
+    </Dynamic>
+    <Dynamic dynamicId="3" emitterShapeNodeId="55" name="EmitterMid1" translation="-7.23011 1.45037 0.961572" rotation="40.331 0.637266 180" clipDistance="100" nodeId="54" materialIds="8" castsShadows="true" receiveShadows="true" distanceBlending="false">
+      <Shape shapeId="2" name="EmitShape" scale="2.7 1 1" nodeId="55" materialIds="6" nonRenderable="true"/>
+    </Dynamic>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="18">
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="21">
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="24">
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="27">
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="30">
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="33">
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="36">
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="39">
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="42">
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="45">
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="48">
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="51">
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="54">
+      <Attribute name="useWorldSpace" type="boolean" value="true"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

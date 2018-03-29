@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="fx_chaff4x1_diffuse.dds" relativePath="true"/>
+    <File fileId="2" filename="../shaders/particleSystemShader.xml" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="wheatParticleSystem_mat" materialId="7" ambientColor="1 1 1" alphaBlending="true" customShaderId="2">
+      <Texture fileId="1"/>
+    </Material>
+    <Material name="lambert1" materialId="8" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="grasPS.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+    <ParticleSystem name="wheatParticleSystem_emitter1Ref" dynamicId="1" type="sprite" rate="0.2" lifespan="600" maxCount="200" speed="0.003" speedRandom="0" tangentSpeed="0.15" normalSpeed="1" spriteScaleX="0.2" spriteScaleY="0.2" spriteScaleXGain="0.001" spriteScaleYGain="0.001" blendFactor="1" blendInFactor="0" blendOutFactor="0.8" randomInitRotation="true" deltaRotateMax="0.000785398">
+      <Gravity force="0 -0.981 0"/>
+    </ParticleSystem>
+  </Dynamics>
+
+  <Scene>
+    <Dynamic dynamicId="1" emitterShapeNodeId="15" name="wheatParticleSystem_emitter1" clipDistance="300" nodeId="14" materialIds="7" distanceBlending="false">
+      <Shape shapeId="2" name="wheatParticleSystemAreaShape" scale="0.2 0.2 0.5" nodeId="15" materialIds="8" nonRenderable="true"/>
+    </Dynamic>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="fx_muckSpreaderEmitShape" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="fx_chaff4x1_normal.png" relativePath="true"/>
+    <File fileId="5" filename="fx_smoke6x6_01_diffuse.png" relativePath="true"/>
+    <File fileId="6" filename="fx_smoke6x6_01_normal.png" relativePath="true"/>
+    <File fileId="1" filename="fx_soil4x1_diffuse.dds" relativePath="true"/>
+    <File fileId="3" filename="psColorShader.xml" relativePath="true"/>
+    <File fileId="7" filename="psSubUVShader.xml" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="fx_straw_mat" materialId="7" ambientColor="1 1 1" customShaderId="3">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="psColor" value="1 1 1 1"/>
+    </Material>
+    <Material name="fx_smoke01_mat" materialId="9" ambientColor="1 1 1" alphaBlending="true" customShaderId="7" customShaderVariation="SUBUV_MOVIE">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <CustomParameter name="psPlayScale" value="30 60 1 0"/>
+      <CustomParameter name="psColor" value="0.1 0.1 0.1 1"/>
+    </Material>
+    <Material name="lambert1" materialId="10" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="unloadingSoilParticles.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+    <ParticleSystem name="chaffEmitter" dynamicId="1" type="sprite" rate="0.15" lifespan="600" maxCount="350" speed="0.001" speedRandom="0.0005" tangentSpeed="0.2" normalSpeed="1" emitterShapeVelocityScale="0.75" damping="0.8" spriteScaleX="0.4" spriteScaleY="0.5" spriteScaleXGain="0.0016129" spriteScaleYGain="-0.00182796" blendFactor="1" blendInFactor="0.15" blendOutFactor="1" randomInitRotation="true" deltaRotateMin="-0.0015708" deltaRotateMax="0.0015708" textureAtlasSizeX="4">
+      <Gravity force="0 -1.5 0"/>
+    </ParticleSystem>
+    <ParticleSystem name="smokeEmitter" dynamicId="3" type="sprite" rate="0.01" lifespan="1000" maxCount="80" speed="0.0015" speedRandom="0.0005" tangentSpeed="0.5" normalSpeed="1" emitterShapeVelocityScale="0.85" damping="0.8" spriteScaleX="1.2" spriteScaleY="1.2" spriteScaleXGain="0.001" spriteScaleYGain="0.001" blendFactor="0.15" blendInFactor="0.2" blendOutFactor="0.8" randomInitRotation="true" deltaRotateMin="-0.000698135" deltaRotateMax="0.000698135" textureAtlasSizeX="6" textureAtlasSizeY="6">
+      <Gravity force="0 -0.002 0"/>
+    </ParticleSystem>
+  </Dynamics>
+
+  <Scene>
+    <Dynamic dynamicId="1" emitterShapeNodeId="20" name="strawEmitter" clipDistance="100" nodeId="19" materialIds="7" distanceBlending="false">
+      <Shape shapeId="2" name="emitShape" scale="4 1 1" nodeId="20" materialIds="10" nonRenderable="true"/>
+    </Dynamic>
+    <Dynamic dynamicId="3" emitterShapeNodeId="23" name="smokeEmitter" translation="-0.501514 -0.203756 -0.0122848" rotation="0 87.5852 0" clipDistance="200" nodeId="22" materialIds="9" distanceBlending="false">
+      <Shape shapeId="4" name="emitShape" translation="0 0.178583 0.42666" rotation="44.8506 -0 0" scale="2 1 0.5" nodeId="23" materialIds="10" nonRenderable="true"/>
+    </Dynamic>
+  </Scene>
+
+</i3D>

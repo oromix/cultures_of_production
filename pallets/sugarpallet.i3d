@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="woolPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="pallet_diffuse.dds" relativePath="true"/>
+    <File fileId="3" filename="pallet_normal.dds" relativePath="true"/>
+    <File fileId="4" filename="pallet_specular.dds" relativePath="true"/>
+    <File fileId="6" filename="sucre.dds" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+    <Material name="Mat_meshok" materialId="8" ambientColor="1 1 1" cosPower="50" specularColor="1 1 1">
+      <Texture fileId="6"/>
+    </Material>
+    <Material name="lambert2" materialId="9" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="gray_mat" materialId="6" diffuseColor="0.584314 0.584314 0.584314 1" ambientColor="0.588235 0.588235 0.588235">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sugarpallet.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="fillablePallet" dynamic="true" compound="true" collisionMask="16789512" density="0.04" clipDistance="200" nodeId="26" materialIds="6" nonRenderable="true">
+      <Shape shapeId="2" name="boardPallet_vis" scale="1 1 1.3" nodeId="27" materialIds="9" castsShadows="true" receiveShadows="true">
+        <Shape shapeId="3" name="dummyTensionBeltNode" translation="0.01 0.707904 0" scale="2.798 0.975 1.008" visibility="false" clipDistance="100" nodeId="28" materialIds="7" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+      <Shape shapeId="4" name="palletAttacherTrigger" translation="0 0.175 0" kinematic="true" trigger="true" collisionMask="8192" nodeId="29" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="fillPalett" scale="0.965 1 1.08" nodeId="30">
+        <TransformGroup name="sloi1" translation="0.024105 0 0.0130525" nodeId="31">
+          <Shape shapeId="5" name="meshok" translation="0.264919 0.353 -0.259" scale="0.46407 0.099396 0.233" nodeId="32" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="meshok" translation="-0.53842 0.353 -0.00476687" rotation="-0 90 0" scale="0.46407 0.099396 0.270904" nodeId="33" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="meshok" translation="0.264919 0.353 0.24238" scale="0.46407 0.099396 0.232905" nodeId="34" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="sloi1" translation="-0.0515896 0.2 0.0130525" rotation="0 180 0" nodeId="35">
+          <Shape shapeId="5" name="meshok" translation="0.264919 0.353 -0.259" scale="0.46407 0.099396 0.233" nodeId="36" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="meshok" translation="-0.53842 0.353 -0.00476687" rotation="-0 90 0" scale="0.46407 0.099396 0.270904" nodeId="37" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="meshok" translation="0.264919 0.353 0.24238" scale="0.46407 0.099396 0.232905" nodeId="38" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="sloi1" translation="0.024105 0.4 0.0130525" nodeId="39">
+          <Shape shapeId="5" name="meshok" translation="0.264919 0.353 -0.259" scale="0.46407 0.099396 0.233" nodeId="40" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="meshok" translation="-0.53842 0.353 -0.00476687" rotation="-0 90 0" scale="0.46407 0.099396 0.270904" nodeId="41" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="meshok" translation="0.264919 0.353 0.24238" scale="0.46407 0.099396 0.232905" nodeId="42" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="sloi1" translation="-0.0523096 0.6 0.0130525" rotation="0 180 0" nodeId="43">
+          <Shape shapeId="5" name="meshok" translation="0.264919 0.353 -0.259" scale="0.46407 0.099396 0.233" nodeId="44" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="meshok" translation="-0.53842 0.353 -0.00476687" rotation="-0 90 0" scale="0.46407 0.099396 0.270904" nodeId="45" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="meshok" translation="0.264919 0.353 0.24238" scale="0.46407 0.099396 0.232905" nodeId="46" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="sloi1" translation="0.024105 0.8 0.0130525" nodeId="47">
+          <Shape shapeId="5" name="meshok" translation="0.264919 0.353 -0.259" scale="0.46407 0.099396 0.233" nodeId="48" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="meshok" translation="-0.53842 0.353 -0.00476687" rotation="-0 90 0" scale="0.46407 0.099396 0.270904" nodeId="49" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="meshok" translation="0.264919 0.353 0.24238" scale="0.46407 0.099396 0.232905" nodeId="50" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="sloi1" translation="-0.0535228 1 0.0130525" rotation="0 180 0" nodeId="51">
+          <Shape shapeId="5" name="meshok" translation="0.264919 0.353 -0.259" scale="0.46407 0.099396 0.233" nodeId="52" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="meshok" translation="-0.53842 0.353 -0.00476687" rotation="-0 90 0" scale="0.46407 0.099396 0.270904" nodeId="53" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="meshok" translation="0.264919 0.353 0.24238" scale="0.46407 0.099396 0.232905" nodeId="54" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="sloi1" translation="0.024105 1.2 0.0130525" nodeId="55">
+          <Shape shapeId="5" name="meshok" translation="0.264919 0.353 -0.259" scale="0.46407 0.099396 0.233" nodeId="56" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="meshok" translation="-0.53842 0.353 -0.00476687" rotation="-0 90 0" scale="0.46407 0.099396 0.270904" nodeId="57" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="meshok" translation="0.264919 0.353 0.24238" scale="0.46407 0.099396 0.232905" nodeId="58" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="sloi1" translation="-0.0472853 1.4 0.0130525" rotation="0 180 0" nodeId="59">
+          <Shape shapeId="5" name="meshok" translation="0.264919 0.353 -0.259" scale="0.46407 0.099396 0.233" nodeId="60" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="meshok" translation="-0.53842 0.353 -0.00476687" rotation="-0 90 0" scale="0.46407 0.099396 0.270904" nodeId="61" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="meshok" translation="0.264919 0.353 0.24238" scale="0.46407 0.099396 0.232905" nodeId="62" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+      <Shape shapeId="6" name="transportPallet_col8" translation="0.0019251 0.156 0.000948154" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="63" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="7" name="transportPallet_col7" translation="0.624121 0.156 0.000948154" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="64" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="8" name="transportPallet_col6" translation="-0.622301 0.156 0.000948154" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="65" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="9" name="transportPallet_col5" translation="0.00271691 0.156 -0.564682" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="66" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="10" name="transportPallet_col4" translation="0.00271691 0.156 0.562657" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="67" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="11" name="transportPallet_col3" translation="0.622586 0.156 0.564194" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="68" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="12" name="transportPallet_col2" translation="0.622586 0.156 -0.565392" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="69" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="13" name="transportPallet_col1" translation="-0.622301 0.156 0.563359" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="70" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="14" name="transportPallet_col" translation="-0.622301 0.156 -0.565176" scale="1 1 1.3" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="71" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="15" name="solidColi" translation="0 0.256457 0" visibility="false" compoundChild="true" collisionMask="16781314" density="0.7" nodeId="72" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="26">
+      <Attribute name="capacity" type="float" value="2000"/>
+      <Attribute name="deleteIfEmpty" type="boolean" value="true"/>
+      <Attribute name="dynamicMountForceLimitScale" type="float" value="1"/>
+      <Attribute name="dynamicMountTriggerIndex" type="string" value="0>1"/>
+      <Attribute name="fillType" type="string" value="sugars"/>
+      <Attribute name="meshNodes" type="string" value="0 0|0"/>
+      <Attribute name="startFillLevel" type="integer" value="0"/>
+      <Attribute name="startScale" type="float" value="0.1"/>
+      <Attribute name="useRandomRot" type="boolean" value="false"/>
+      <Attribute name="visibilityNodesAdditive" type="boolean" value="true"/>
+      <Attribute name="visibilityNodesIndex" type="string" value="0>2"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

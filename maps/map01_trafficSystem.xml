@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<trafficSystem>
+    <vehicles>
+        <vehicle topSpeed="0.0085" accel="0.0000035">
+            <assets filename="$data/vehicles/cars/cormoran/cormoran.i3d" filenameParked="$data/vehicles/cars/cormoran/cormoran.i3d" triggerIndex="7" driverIndex="8">
+                <wheels>
+                    <wheel yRotNode="0" xRotNode="0" radius="0.399" distToRotCenter="3.174" />
+                    <wheel yRotNode="1" xRotNode="1" radius="0.399" distToRotCenter="3.174" />
+                    <wheel yRotNode="2" xRotNode="2" radius="0.399" distToRotCenter="0" />
+                    <wheel yRotNode="3" xRotNode="3" radius="0.399" distToRotCenter="0" />
+                </wheels>
+                <lights>
+                    <light index="4" lowProfile="4|9" highProfile="4|10" />
+                    <brake decoration="6" />
+                    <turnLeft decoration="5|0" />
+                    <turnRight decoration="5|1" />
+                </lights>
+                <colors index="9" indexParked="9" minDirt="0" maxDirt="0.3">
+                    <color rgb="0.97 0.97 0.97" /> <!-- white -->
+                    <color rgb="0.815 0.863 0.863" /> <!-- silver -->
+                    <color rgb="0.070 0.086 0.090" /> <!-- silver -->
+                    <color rgb="0.102 0.159 0.168" /> <!-- silver -->
+                    <color rgb="0.445 0.502 0.450" /> <!-- silver -->
+                    <color rgb="0.270 0.337 0.361" /> <!-- silver -->
+                    <color rgb="0.385 0.01 0.01" /> <!-- red -->
+                    <color rgb="0.010 0.082 0.250" /> <!-- blue -->
+                    <color rgb="0.011 0.018 0.014" /> <!-- black -->
+                </colors>
+                <sounds>
+                    <motor filename="$data/vehicles/cars/carVan_run.wav" volume="1" range="25" innerRange="1" pitchOffset="1" pitchScale="0.022" pitchMin="0.8" pitchMax="1.5" />
+                    <honk filename="$data/sounds/hornCar.wav" volume="1" range="25" innerRange="1" />
+                </sounds>
+            </assets>
+        </vehicle>
+
+        <vehicle topSpeed="0.0085" accel="0.0000035">
+            <assets filename="$data/vehicles/cars/leopard/leopard.i3d" filenameParked="$data/vehicles/cars/leopard/leopard.i3d" triggerIndex="7" driverIndex="8">
+                <wheels>
+                    <wheel yRotNode="0" xRotNode="0" radius="0.330" distToRotCenter="2.943" />
+                    <wheel yRotNode="1" xRotNode="1" radius="0.330" distToRotCenter="2.943" />
+                    <wheel yRotNode="2" xRotNode="2" radius="0.330" distToRotCenter="0" />
+                    <wheel yRotNode="3" xRotNode="3" radius="0.330" distToRotCenter="0" />
+                </wheels>
+                <lights>
+                    <light index="4" lowProfile="4|7" highProfile="4|8" />
+                    <brake decoration="6" />
+                    <turnLeft decoration="5|0" />
+                    <turnRight decoration="5|1" />
+                </lights>
+                <colors index="9" indexParked="9" minDirt="0" maxDirt="0.3">
+                    <color rgb="0.97 0.97 0.97" /> <!-- white -->
+                    <color rgb="0.815 0.863 0.863" /> <!-- silver -->
+                    <color rgb="0.070 0.086 0.090" /> <!-- silver -->
+                    <color rgb="0.102 0.159 0.168" /> <!-- silver -->
+                    <color rgb="0.445 0.502 0.450" /> <!-- silver -->
+                    <color rgb="0.270 0.337 0.361" /> <!-- silver -->
+                    <color rgb="0.385 0.01 0.01" /> <!-- red -->
+                    <color rgb="0.010 0.082 0.250" /> <!-- blue -->
+                    <color rgb="0.011 0.018 0.014" /> <!-- black -->
+                </colors>
+                <sounds>
+                    <motor filename="$data/vehicles/cars/carVan_run.wav" volume="1" range="20" innerRange="1" pitchOffset="1" pitchScale="0.022" pitchMin="0.8" pitchMax="1.5" />
+                    <honk filename="$data/sounds/hornCar.wav" volume="1" range="25" innerRange="1" />
+                </sounds>
+            </assets>
+        </vehicle>
+
+        <vehicle topSpeed="0.0085" accel="0.0000035">
+            <assets filename="$data/vehicles/cars/rancho/rancho.i3d" filenameParked="$data/vehicles/cars/rancho/rancho.i3d" triggerIndex="7" driverIndex="8">
+                <wheels>
+                    <wheel yRotNode="0" xRotNode="0" radius="0.365" distToRotCenter="2.949" />
+                    <wheel yRotNode="1" xRotNode="1" radius="0.365" distToRotCenter="2.949" />
+                    <wheel yRotNode="2" xRotNode="2" radius="0.365" distToRotCenter="0" />
+                    <wheel yRotNode="3" xRotNode="3" radius="0.365" distToRotCenter="0" />
+                </wheels>
+                <lights>
+                    <light index="4" lowProfile="4|5" highProfile="4|6" />
+                    <brake decoration="6" />
+                    <turnLeft decoration="5|0" />
+                    <turnRight decoration="5|1" />
+                </lights>
+                <colors index="9" indexParked="9" minDirt="0" maxDirt="0.3">
+                    <color rgb="0.97 0.97 0.97" /> <!-- white -->
+                    <color rgb="0.815 0.863 0.863" /> <!-- silver -->
+                    <color rgb="0.070 0.086 0.090" /> <!-- silver -->
+                    <color rgb="0.102 0.159 0.168" /> <!-- silver -->
+                    <color rgb="0.445 0.502 0.450" /> <!-- silver -->
+                    <color rgb="0.270 0.337 0.361" /> <!-- silver -->
+                    <color rgb="0.385 0.01 0.01" /> <!-- red -->
+                    <color rgb="0.010 0.082 0.250" /> <!-- blue -->
+                    <color rgb="0.011 0.018 0.014" /> <!-- black -->
+                </colors>
+                <sounds>
+                    <motor filename="$data/vehicles/cars/carVan_run.wav" volume="0.9" range="20" innerRange="1" pitchOffset="1" pitchScale="0.025" pitchMin="0.8" pitchMax="1.5" />
+                    <honk filename="$data/sounds/hornCar.wav" volume="1" range="25" innerRange="1" />
+                </sounds>
+            </assets>
+        </vehicle>
+
+        <vehicle topSpeed="0.0085" accel="0.0000035">
+            <assets filename="$data/vehicles/cars/pickupST/pickupST.i3d" filenameParked="$data/vehicles/cars/pickupST/pickupST.i3d" triggerIndex="7" driverIndex="8">>
+                <wheels>
+                    <wheel yRotNode="0" xRotNode="0" radius="0.365" distToRotCenter="2.949" />
+                    <wheel yRotNode="1" xRotNode="1" radius="0.365" distToRotCenter="2.949" />
+                    <wheel yRotNode="2" xRotNode="2" radius="0.365" distToRotCenter="0" />
+                    <wheel yRotNode="3" xRotNode="3" radius="0.365" distToRotCenter="0" />
+                </wheels>
+                <lights>
+                    <light index="4" lowProfile="4|7" highProfile="4|8" />
+                    <brake decoration="6" />
+                    <turnLeft decoration="5|0" />
+                    <turnRight decoration="5|1" />
+                </lights>
+                <colors index="9" indexParked="9" minDirt="0" maxDirt="0.3">
+                    <color rgb="0.97 0.97 0.97" /> <!-- white -->
+                    <color rgb="0.815 0.863 0.863" /> <!-- silver -->
+                    <color rgb="0.070 0.086 0.090" /> <!-- silver -->
+                    <color rgb="0.102 0.159 0.168" /> <!-- silver -->
+                    <color rgb="0.445 0.502 0.450" /> <!-- silver -->
+                    <color rgb="0.270 0.337 0.361" /> <!-- silver -->
+                    <color rgb="0.385 0.01 0.01" /> <!-- red -->
+                    <color rgb="0.010 0.082 0.250" /> <!-- blue -->
+                    <color rgb="0.011 0.018 0.014" /> <!-- black -->
+                </colors>
+                <sounds>
+                    <motor filename="$data/vehicles/cars/carVan_run.wav" volume="1" range="25" innerRange="1" pitchOffset="1" pitchScale="0.02" pitchMin="0.8" pitchMax="1.5" />
+                    <honk filename="$data/sounds/hornCar.wav" volume="1" range="25" innerRange="1" />
+                </sounds>
+            </assets>
+        </vehicle>
+
+    </vehicles>
+</trafficSystem>

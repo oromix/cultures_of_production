@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="woolPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.1.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="huile.dds" relativePath="true"/>
+    <File fileId="2" filename="pallet_diffuse.dds" relativePath="true"/>
+    <File fileId="3" filename="pallet_normal.dds" relativePath="true"/>
+    <File fileId="4" filename="pallet_specular.dds" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="___Default" materialId="9" ambientColor="1 1 1">
+      <Texture fileId="5"/>
+    </Material>
+    <Material name="wire_mat" materialId="7" ambientColor="1 1 1" cosPower="255" specularColor="1 1 1" alphaBlending="true">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="8" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+    <Material name="woolPallet_mat" materialId="10" ambientColor="1 1 1" cosPower="20" specularColor="1 1 1">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="palettehuile.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="fillablePallet" dynamic="true" compound="true" collisionMask="25178120" density="0.1" clipDistance="300" nodeId="35" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true">
+      <Shape shapeId="2" name="vis" visibility="false" clipDistance="300" nodeId="36" materialIds="10">
+        <Shape shapeId="3" name="wire" translation="-0.00322998 0.866917 -0.491214" clipDistance="75" nodeId="37" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="4" name="wire1" translation="0.734754 0.866917 2.38419e-08" visibility="false" clipDistance="75" nodeId="38" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="5" name="wire2" translation="-0.00322998 0.866917 0.491214" visibility="false" clipDistance="75" nodeId="39" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="6" name="wire3" translation="-0.741214 0.866917 2.38419e-08" visibility="false" clipDistance="75" nodeId="40" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="7" name="wire4" translation="-0.00322998 1.45898 2.38419e-08" visibility="false" clipDistance="75" nodeId="41" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="8" name="dummyTensionBeltNode" translation="0 0.722266 0" visibility="false" clipDistance="100" nodeId="42" materialIds="8" castsShadows="true" receiveShadows="true"/>
+      </Shape>
+      <Shape shapeId="9" name="palletAttacherTrigger" translation="0 0.175 0" kinematic="true" trigger="true" collisionMask="8192" nodeId="43" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <TransformGroup name="fillBags" translation="0 -0.0827668 0" nodeId="44">
+        <Shape shapeId="10" name="BeerKeg" translation="-0.561311 0.334 0.4" rotation="180 0 -180" scale="0.9 1 0.9" clipDistance="100" nodeId="45" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="-0.183288 0.334 0.4" scale="0.9 1 0.9" clipDistance="100" nodeId="46" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="0.190543 0.334 0.4" rotation="-180 -55.3951 -180" scale="0.9 1 0.9" clipDistance="100" nodeId="47" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="0.567738 0.334 0.4" rotation="-2.93849e-06 41.633 1.17753e-05" scale="0.9 1 0.9" clipDistance="100" nodeId="48" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="-0.561311 0.334 0" scale="0.9 1 0.9" clipDistance="100" nodeId="49" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="-0.561311 0.334 -0.4" rotation="180 0 180" scale="0.9 1 0.9" clipDistance="100" nodeId="50" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="-0.183288 0.334 0" scale="0.9 1 0.9" clipDistance="100" nodeId="51" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="0.190543 0.334 0" scale="0.9 1 0.9" clipDistance="100" nodeId="52" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="0.567738 0.334 0" scale="0.9 1 0.9" clipDistance="100" nodeId="53" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="-0.183288 0.334 -0.4" scale="0.9 1 0.9" clipDistance="100" nodeId="54" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="0.190543 0.334 -0.4" scale="0.9 1 0.9" clipDistance="100" nodeId="55" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="0.567738 0.334 -0.4" scale="0.9 1 0.9" clipDistance="100" nodeId="56" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="-0.561311 0.927 0.4" rotation="180 0 -180" scale="0.9 1 0.9" clipDistance="100" nodeId="58" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="-0.183288 0.927 0.4" scale="0.9 1 0.9" clipDistance="100" nodeId="59" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="0.190543 0.927 0.4" rotation="180 -20.2583 -180" scale="0.9 1 0.9" clipDistance="100" nodeId="60" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="0.567738 0.927 0.4" rotation="-2.93849e-06 41.633 1.17753e-05" scale="0.9 1 0.9" clipDistance="100" nodeId="61" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="-0.561311 0.927 0" scale="0.9 1 0.9" clipDistance="100" nodeId="62" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="-0.561311 0.927 -0.4" rotation="180 26.9417 180" scale="0.9 1 0.9" clipDistance="100" nodeId="63" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="-0.183288 0.927 0" rotation="0 -25.363 0" scale="0.9 1 0.9" clipDistance="100" nodeId="64" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="0.190543 0.927 0" rotation="0 52.1144 0" scale="0.9 1 0.9" clipDistance="100" nodeId="65" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="0.567738 0.927 0" rotation="0 -39.8263 0" scale="0.9 1 0.9" clipDistance="100" nodeId="66" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="-0.183288 0.927 -0.4" rotation="0 84.2104 0" scale="0.9 1 0.9" clipDistance="100" nodeId="67" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="0.190543 0.927 -0.4" rotation="0 27.1226 0" scale="0.9 1 0.9" clipDistance="100" nodeId="68" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="BeerKeg" translation="0.567738 0.927 -0.4" scale="0.9 1 0.9" clipDistance="100" nodeId="69" materialIds="9" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <Shape shapeId="11" name="transportPallet_col8" translation="0.00271691 0.181872 0.000948154" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="70" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="12" name="transportPallet_col7" translation="0.622586 0.181872 0.000948154" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="71" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="13" name="transportPallet_col6" translation="-0.622301 0.181872 0.000948154" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="72" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="14" name="transportPallet_col5" translation="0.00271691 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="73" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="15" name="transportPallet_col4" translation="0.00271691 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="74" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="16" name="transportPallet_col3" translation="0.622586 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="75" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="17" name="transportPallet_col2" translation="0.622586 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="76" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="18" name="transportPallet_col1" translation="-0.622301 0.181872 0.434665" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="77" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="19" name="transportPallet_col" translation="-0.622301 0.181872 -0.433009" visibility="false" compoundChild="true" collisionMask="25178120" density="0.02" clipDistance="300" nodeId="78" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="20" name="solidColi" translation="0 0.175 0" visibility="false" compoundChild="true" collisionMask="16781314" density="0.7" nodeId="79" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+      <Shape shapeId="21" name="boardPallet_vis" scale="1 1 1.2" nodeId="80" materialIds="10" castsShadows="true" receiveShadows="true"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="35">
+      <Attribute name="capacity" type="integer" value="5000"/>
+      <Attribute name="deleteIfEmpty" type="boolean" value="true"/>
+      <Attribute name="dynamicMountForceLimitScale" type="float" value="1"/>
+      <Attribute name="dynamicMountTriggerIndex" type="string" value="0>1"/>
+      <Attribute name="fillType" type="string" value="huile"/>
+      <Attribute name="meshNodes" type="string" value="0 0|5"/>
+      <Attribute name="startFillLevel" type="integer" value="0"/>
+      <Attribute name="startScale" type="float" value="0.1"/>
+      <Attribute name="useRandomRot" type="boolean" value="false"/>
+      <Attribute name="visibilityNodesAdditive" type="boolean" value="true"/>
+      <Attribute name="visibilityNodesIndex" type="string" value="0>2"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

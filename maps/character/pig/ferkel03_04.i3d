@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="pig" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="pig_diffuse.dds" relativePath="true"/>
+    <File fileId="2" filename="pig_normal.dds" relativePath="true"/>
+    <File fileId="3" filename="pig_specular.dds" relativePath="true"/>
+    <File fileId="4" filename="../../shaders/tileAndMirrorShader.xml" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="pig_mat" materialId="7" ambientColor="1 1 1" cosPower="255" specularColor="1 1 1" customShaderId="4" customShaderVariation="DIRT_ENABLED">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="mirrorScaleAndOffsetUV" value="0.5 -0.5 1 1"/>
+      <CustomParameter name="atlasInvSizeAndOffsetUV" value="1 1 0 0"/>
+      <CustomParameter name="RDT" value="1 0.5 20 20"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="ferkel03_04.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="pig_root" translation="0 0.297544 -0.25607" nodeId="10">
+      <TransformGroup name="pig_spine_1" translation="3.46851e-33 0.0107422 0.0979326" nodeId="11">
+        <TransformGroup name="pig_spine_2" translation="4.07613e-18 -0.0112257 0.104662" nodeId="12">
+          <TransformGroup name="pig_spine_3" translation="2.64444e-17 -0.0179611 0.110012" nodeId="13">
+            <TransformGroup name="pig_neck" translation="3.12906e-17 -0.0302223 0.070791" rotation="90 6.38393 90" nodeId="14">
+              <TransformGroup name="pig_head" translation="-1.27898e-16 0.0378123 1.93129e-17" rotation="0 -0 42.9183" nodeId="15">
+                <TransformGroup name="pig_nose" translation="-4.34904e-07 0.122744 -4.94526e-16" nodeId="16"/>
+                <TransformGroup name="pig_yaw" translation="-0.0340716 0.0912687 -1.52086e-16" rotation="0 0 -4.52902" nodeId="17"/>
+                <TransformGroup name="pig_ear_left_1" translation="0.0251999 0.0043281 0.0396312" rotation="45.642 21.7332 -56.4387" nodeId="18">
+                  <TransformGroup name="pig_ear_left_2" translation="-4.26327e-17 0.0315858 0" rotation="-0.000278796 5.93874e-05 24.0501" nodeId="19"/>
+                </TransformGroup>
+                <TransformGroup name="pig_ear_right_1" translation="0.0251999 0.00432804 -0.0396312" rotation="45.642 21.7332 123.561" nodeId="20">
+                  <TransformGroup name="pig_ear_right_2" translation="4.24404e-07 -0.0315855 -1.08154e-08" rotation="-0.000278797 5.93874e-05 24.0501" nodeId="21"/>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="pig_front_left_leg_1" translation="0.0706095 -0.0500175 0.00986988" rotation="-97.9201 -76.6206 -90" nodeId="22">
+              <TransformGroup name="pig_front_left_leg_2" translation="3.19743e-17 0.0714456 9.05943e-17" rotation="-0.585948 2.48674 -18.1901" nodeId="23">
+                <TransformGroup name="pig_front_left_leg_3" translation="4.26327e-17 0.0747807 -5.32908e-18" rotation="8.04092 -1.04377 7.34757" nodeId="24">
+                  <TransformGroup name="pig_front_left_leg_4" translation="0 0.0597669 4.26327e-17" rotation="0 0 -35.7153" nodeId="25"/>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="pig_front_right_leg_1" translation="-0.0706095 -0.0500166 0.00986988" rotation="82.0799 76.6206 90" nodeId="26">
+              <TransformGroup name="pig_front_right_leg_2" translation="-9.21909e-08 -0.0714462 -1.83427e-07" rotation="-0.585948 2.48674 -18.1901" nodeId="27">
+                <TransformGroup name="pig_front_right_leg_3" translation="-1.0364e-07 -0.074781 6.31098e-08" rotation="8.04092 -1.04377 7.34757" nodeId="28">
+                  <TransformGroup name="pig_front_right_leg_4" translation="-1.84632e-08 -0.0597669 1.06581e-17" rotation="1.20742e-06 2.03555e-13 -35.7153" nodeId="29"/>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="pig_back_left_leg_1" translation="0.0551889 -0.0349092 -0.0252231" rotation="90 -79.7598 86.763" nodeId="30">
+        <TransformGroup name="pig_back_left_leg_2" translation="0 0.0858042 6.92778e-17" rotation="0 -0 33.8298" nodeId="31">
+          <TransformGroup name="pig_back_left_leg_3" translation="-4.26327e-17 0.0668856 5.32908e-17" rotation="3.00933 -0.000191352 -23.586" nodeId="32">
+            <TransformGroup name="pig_back_left_leg_4" translation="0 0.0805806 1.59872e-17" rotation="-0.00314948 -0.00141353 -24.1749" nodeId="33"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="pig_back_right_leg_1" translation="-0.0551889 -0.0349095 -0.0252226" rotation="-90 79.7598 -86.763" nodeId="34">
+        <TransformGroup name="pig_back_right_leg_2" translation="1.4609e-06 -0.0858033 4.79637e-08" rotation="0 -0 33.8298" nodeId="35">
+          <TransformGroup name="pig_back_right_leg_3" translation="-1.8513e-06 -0.066885 7.26897e-08" rotation="3.00933 -0.000191352 -23.586" nodeId="36">
+            <TransformGroup name="pig_back_right_leg_4" translation="1.18362e-06 -0.0805806 -1.1382e-07" rotation="-0.00314948 -0.00141353 -24.1749" nodeId="37"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="pig_tail_1" translation="0 -0.00759255 -0.0678852" nodeId="38"/>
+    </TransformGroup>
+    <Shape shapeId="1" name="pigMesh" clipDistance="120" nodeId="39" materialIds="7" castsShadows="true" receiveShadows="true" skinBindNodeIds="10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38"/>
+  </Scene>
+
+
+  <Animation externalAnimFile="ferkel03_04.i3d.anim" />
+  <UserAttributes>
+    <UserAttribute nodeId="10">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="11">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="12">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="13">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="14">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="15">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="16">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="17">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="18">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="19">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="20">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="21">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="22">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="23">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="24">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="25">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="26">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="27">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="28">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="29">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="30">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="31">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="32">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="33">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="34">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="35">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="36">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="37">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="38">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

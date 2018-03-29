@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="wheatParticleSystem" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="../shaders/particleSystemShader.xml" relativePath="true"/>
+    <File fileId="1" filename="pigForageParticles.png" relativePath="true"/>
+    <File fileId="2" filename="pigForage_normal.dds" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="8" diffuseColor="1 1 1 1" ambientColor="1 1 1">
+    </Material>
+    <Material name="wheatParticleSystem_mat" materialId="7" ambientColor="1 1 1" alphaBlending="true" customShaderId="3">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="pigForageParticles.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+    <ParticleSystem name="wheatParticleSystem_emitter1Ref" dynamicId="1" type="sprite" rate="0.03" lifespan="1600" maxCount="100" speed="0.002" speedRandom="0" tangentSpeed="0" normalSpeed="0.03" spriteScaleX="0.1" spriteScaleY="0.1" spriteScaleXGain="0.0005" spriteScaleYGain="0.0005" blendFactor="1" blendInFactor="0" blendOutFactor="0.8" randomInitRotation="true" deltaRotateMax="0.000785398">
+      <Gravity force="0 -0.2 0"/>
+    </ParticleSystem>
+  </Dynamics>
+
+  <Scene>
+    <Dynamic dynamicId="1" emitterShapeNodeId="15" name="pigForageParticleSystem" clipDistance="300" nodeId="14" materialIds="7" distanceBlending="false">
+      <Shape shapeId="2" name="wheatParticleSystemAreaShape" scale="0.1 0.1 0.1" nodeId="15" materialIds="8" nonRenderable="true"/>
+    </Dynamic>
+  </Scene>
+
+</i3D>

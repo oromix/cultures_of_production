@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled.blend" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="fx_wasser4x1_diffuse.png" relativePath="true"/>
+    <File fileId="2" filename="fx_woodChips4x1_normal.png" relativePath="true"/>
+    <File fileId="3" filename="psColorShader.xml" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="8" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+    <Material name="fx_woodChips_mat" materialId="10" ambientColor="1 1 1" alphaBlending="true" customShaderId="3">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="psColor" value="1.5 1.5 1 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="wasser.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+    <ParticleSystem name="woodDustEmitter" dynamicId="1" type="sprite" rate="0.1" lifespan="1000" maxCount="1000" speed="0.0015" speedRandom="0.0005" tangentSpeed="0.5" normalSpeed="1.2" emitterShapeVelocityScale="0.25" spriteScaleX="1.93549" spriteScaleY="4.73118" blendFactor="1" blendInFactor="0" blendOutFactor="0" depthSort="true" deltaRotateMin="-0.00139626" deltaRotateMax="0.00139626" textureAtlasSizeX="4">
+      <Gravity force="0 -0.5 0"/>
+    </ParticleSystem>
+  </Dynamics>
+
+  <Scene>
+    <Dynamic dynamicId="1" emitterShapeNodeId="22" name="waterEmitter" clipDistance="50" nodeId="21" materialIds="10" castsShadows="true" receiveShadows="true" distanceBlending="false">
+      <Shape shapeId="2" name="emitShape" nodeId="22" materialIds="8" nonRenderable="true"/>
+    </Dynamic>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="21">
+      <Attribute name="useWorldSpace" type="boolean" value="false"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

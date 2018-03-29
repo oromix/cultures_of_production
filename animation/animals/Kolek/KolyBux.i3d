@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="KolyBux" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="all.dds" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="Ron Update Model_mso" materialId="6" ambientColor="0.588 0.588 0.588">
+      <Texture fileId="1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="KolyBux.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <TransformGroup name="mixamorig:Hips" translation="-0.0451458 0.832015 0.0115513" rotation="98.0778 -16.1442 0.810998" nodeId="9">
+      <TransformGroup name="mixamorig:LeftUpLeg" translation="0.0908026 -0.0016424 0.0563736" rotation="-133.872 14.7145 -178.318" nodeId="10">
+        <TransformGroup name="mixamorig:LeftLeg" translation="0 0 -0.404131" rotation="-28.089 4.27001 6.24349" nodeId="11">
+          <TransformGroup name="mixamorig:LeftFoot" translation="0 0 -0.395935" rotation="64.0133 6.00377 6.23596" nodeId="12">
+            <TransformGroup name="mixamorig:LeftToeBase" translation="0 0 -0.148161" rotation="27.0192 -0.000383131 12.5329" nodeId="13">
+              <TransformGroup name="mixamorig:LeftToe_End" translation="0 0 -0.0678737" nodeId="14"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="mixamorig:RightUpLeg" translation="-0.0908027 -0.00157 0.0563737" rotation="170.666 -9.16264 -173.868" nodeId="15">
+        <TransformGroup name="mixamorig:RightLeg" translation="0 0 -0.404101" rotation="-22.9771 4.93739 9.92938" nodeId="16">
+          <TransformGroup name="mixamorig:RightFoot" translation="0 0 -0.396088" rotation="86.6805 -27.815 2.02305" nodeId="17">
+            <TransformGroup name="mixamorig:RightToeBase" translation="0 0 -0.153308" rotation="45.7259 2.58417 -12.2748" nodeId="18">
+              <TransformGroup name="mixamorig:RightToe_End" translation="0 0 -0.0700802" nodeId="19"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="mixamorig:Spine" translation="0 -0.0017475 -0.101503" rotation="0.173071 -3.56485 -3.26652" nodeId="20">
+        <TransformGroup name="mixamorig:Spine1" translation="0 0 -0.118438" rotation="2.16959 -6.12457 -8.88466" nodeId="21">
+          <TransformGroup name="mixamorig:Spine2" translation="0 0 -0.135358" rotation="2.17664 -6.04513 -8.91873" nodeId="22">
+            <TransformGroup name="mixamorig:LeftShoulder" translation="0.0533085 -0.0002879 -0.132743" rotation="97.4758 -1.22503 -99.3229" nodeId="23">
+              <TransformGroup name="mixamorig:LeftArm" translation="0 0 -0.112506" rotation="50.052 0.0148689 -10.8663" nodeId="24">
+                <TransformGroup name="mixamorig:LeftForeArm" translation="0 0 -0.252828" rotation="1.35665 30.0847 -0.0232989" nodeId="25">
+                  <TransformGroup name="mixamorig:LeftHand" translation="0 0 -0.232603" rotation="17.1082 8.09654 -41.9318" nodeId="26">
+                    <TransformGroup name="mixamorig:LeftHandIndex1" translation="0 -3.64e-05 -0.0936057" rotation="18.2688 1.67221 0.438824" nodeId="27">
+                      <TransformGroup name="mixamorig:LeftHandIndex2" translation="0.0011829 0 -0.0283172" rotation="13.4511 0.142344 0.124402" nodeId="28">
+                        <TransformGroup name="mixamorig:LeftHandIndex3" translation="0.0006071 0 -0.0260315" rotation="7.97259 -5.6668 -0.751152" nodeId="29">
+                          <TransformGroup name="mixamorig:LeftHandIndex4" translation="-0.0017902 0 -0.0224492" nodeId="30"/>
+                        </TransformGroup>
+                      </TransformGroup>
+                    </TransformGroup>
+                    <TransformGroup name="mixamorig:LeftHandThumb1" translation="-0.0236218 0.0148178 -0.0339274" rotation="25.1023 30.2659 -1.92042" nodeId="31">
+                      <TransformGroup name="mixamorig:LeftHandThumb2" translation="-0.0005072 0 -0.0351292" rotation="-1.44005 -0.0246421 0.003879" nodeId="32">
+                        <TransformGroup name="mixamorig:LeftHandThumb3" translation="-2.7e-05 0 -0.0308548" rotation="1.44327 2.00606 0.0943112" nodeId="33">
+                          <TransformGroup name="mixamorig:LeftHandThumb4" translation="0.0005342 0 -0.0256376" nodeId="34"/>
+                        </TransformGroup>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="mixamorig:Neck" translation="0 0 -0.152277" rotation="-2.31981 -0.0442566 1.22592" nodeId="35">
+              <TransformGroup name="mixamorig:Head" translation="0 0.0192695 -0.0655808" rotation="6.34655 9.21462 8.01017" nodeId="36">
+                <TransformGroup name="mixamorig:HeadTop_End" translation="0 0.0605907 -0.20621" nodeId="37"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="mixamorig:RightShoulder" translation="-0.0533086 -0.0003847 -0.132745" rotation="100.571 0.330274 95.2917" nodeId="38">
+              <TransformGroup name="mixamorig:RightArm" translation="0 0 -0.112506" rotation="28.3025 -12.377 -0.308566" nodeId="39">
+                <TransformGroup name="mixamorig:RightForeArm" translation="0 0 -0.252828" rotation="1.77257 -44.5105 -0.464289" nodeId="40">
+                  <TransformGroup name="mixamorig:RightHand" translation="0 0 -0.23312" rotation="11.1547 0.966533 26.4171" nodeId="41">
+                    <TransformGroup name="mixamorig:RightHandIndex1" translation="0 1.16e-05 -0.0934543" rotation="21.4428 -4.31309 -1.36986" nodeId="42">
+                      <TransformGroup name="mixamorig:RightHandIndex2" translation="-0.0014271 0 -0.0284268" rotation="7.12926 1.57151 0.131352" nodeId="43">
+                        <TransformGroup name="mixamorig:RightHandIndex3" translation="-0.0009058 0 -0.026195" rotation="4.8588 8.16087 0.232436" nodeId="44">
+                          <TransformGroup name="mixamorig:RightHandIndex4" translation="0.0023326 0 -0.0208603" nodeId="45"/>
+                        </TransformGroup>
+                      </TransformGroup>
+                    </TransformGroup>
+                    <TransformGroup name="mixamorig:RightHandThumb1" translation="0.0234212 0.0145748 -0.0335097" rotation="24.6716 -29.7404 1.87526" nodeId="46">
+                      <TransformGroup name="mixamorig:RightHandThumb2" translation="0.0009913 0 -0.0347088" rotation="-2.0727 1.25312 -0.0464523" nodeId="47">
+                        <TransformGroup name="mixamorig:RightHandThumb3" translation="0.0015118 0 -0.03083" rotation="2.15097 -7.6734 -0.583617" nodeId="48">
+                          <TransformGroup name="mixamorig:RightHandThumb4" translation="-0.0025033 0 -0.0235511" nodeId="49"/>
+                        </TransformGroup>
+                      </TransformGroup>
+                    </TransformGroup>
+                  </TransformGroup>
+                </TransformGroup>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+    <Shape shapeId="1" name="Ron Update Model" clipDistance="110" nodeId="50" materialIds="6" castsShadows="true" receiveShadows="true" skinBindNodeIds="21 22 38 39 36 35 24 23 18 16 17 13 11 12 10 9 15 20 41 40 46 42 47 25 26 31 32 29 27 28 33 43 44 48"/>
+  </Scene>
+
+
+  <Animation externalAnimFile="KolyBux.i3d.anim" />
+</i3D>

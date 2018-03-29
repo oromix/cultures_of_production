@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="7.0.5"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="particleSystemShader.xml" relativePath="true"/>
+    <File fileId="1" filename="carrotParticle.png" relativePath="true"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="8" diffuseColor="0.494118 0.494118 0.494118 1" ambientColor="1 1 1">
+    </Material>
+    <Material name="carrotParticle_mat" materialId="7" ambientColor="1 1 1" customShaderId="2">
+      <Texture fileId="1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="carrotPS_input.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+    <ParticleSystem name="carrotParticleSystemEmitter1Ref" dynamicId="1" type="sprite" rate="0.06" lifespan="2000" maxCount="500" speed="0.001" speedRandom="0" tangentSpeed="0" normalSpeed="1" spriteScaleX="0.17" spriteScaleY="0.17" blendFactor="1" blendInFactor="0" blendOutFactor="1" randomInitRotation="true" textureAtlasSizeX="4">
+      <Gravity force="0 0 0"/>
+    </ParticleSystem>
+    <ParticleSystem name="carrotParticleSystemEmitter2Ref" dynamicId="3" type="sprite" rate="0.06" lifespan="1000" maxCount="500" speed="0.001" speedRandom="0" tangentSpeed="0" normalSpeed="1" spriteScaleX="0.17" spriteScaleY="0.1" blendFactor="1" blendInFactor="0" blendOutFactor="1" randomInitRotation="true" deltaRotateMax="0.002094" textureAtlasSizeX="4">
+      <Gravity force="0.4 0 0"/>
+    </ParticleSystem>
+  </Dynamics>
+
+  <Scene>
+    <Dynamic dynamicId="1" emitterShapeNodeId="17" name="carrotParticleSystemEmitter1" rotation="0 -0 90" clipDistance="100" nodeId="16" materialIds="7" castsShadows="true" receiveShadows="true" distanceBlending="false">
+      <Shape shapeId="2" name="carrotParticleSystemAreaShape1" scale="1 1 1.5" nodeId="17" materialIds="8" nonRenderable="true"/>
+    </Dynamic>
+    <Dynamic dynamicId="3" emitterShapeNodeId="20" name="carrotParticleSystemEmitter2" translation="-2.01111 -0.0393141 2.54709e-08" rotation="-180 -1.0932e-05 -106.881" clipDistance="100" nodeId="19" materialIds="7" castsShadows="true" receiveShadows="true" distanceBlending="false">
+      <Shape shapeId="2" name="carrotParticleSystemAreaShape2" scale="1 1 1.5" nodeId="20" materialIds="8" nonRenderable="true"/>
+    </Dynamic>
+  </Scene>
+
+</i3D>
