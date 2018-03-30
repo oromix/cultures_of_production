@@ -115,11 +115,14 @@ ModPack culture_et _production.
 		
 <!-- Saegewerk -->
 <text name="Fabrik_planche"> <en>Board Production</en> </text>
+<text name="fabrik_planche"> <en>Board Production</en> </text>
 		<text name="leer"> <en>Empty</en> <de><![CDATA[leer]]></de> <fr>vide</fr> </text>
 		<text name="voll"> <en>Full</en> <de><![CDATA[voll]]></de> <fr>plein</fr> </text>
 		<text name="ERROR"> <en>Info: </en> <de><![CDATA[Info: ]]></de> <fr>Info : </fr> </text>
 		<text name="Rohstoffe"> <en>Resources: </en> <de><![CDATA[Rohstoffe: ]]></de> <fr>matières premières : </fr> </text>
+		<text name="rohstoffe"> <en>Resources: </en> <de><![CDATA[Rohstoffe: ]]></de> <fr>matières premières : </fr> </text>
 		<text name="Produkte"> <en>Products: </en> <de><![CDATA[Produkte: ]]></de> <fr>produit fini : </fr> </text>
+		<text name="produkte"> <en>Products: </en> <de><![CDATA[Produkte: ]]></de> <fr>produit fini : </fr> </text>
 		<text name="boardwood"> <en>Board Pallets</en> <de>Bretter Palletten</de> <fr>Palette de planches</fr> </text>
 		<text name="Holz"> <en>Logs</en> <de><![CDATA[Holzstämme]]></de> <fr>troncs</fr> </text>
 		<text name="Brennstoffe"> <en>Fuel</en> <de><![CDATA[Brennstoffe]]></de> <fr>copeaux paille</fr> </text>
@@ -159,6 +162,7 @@ ModPack culture_et _production.
 		<text name="murePallet"> <en>Blackberry Pallets</en> <de>mure Pallets</de> <fr>palette de mure</fr> </text>
 		<text name="sapin"> <en>Fir</en> <de>sapin</de> <fr>sapin</fr> </text>
 		<text name="sapinallet"> <en>Fir Pallets</en> <de>sapin Pallets</de> <fr>palette de sapin</fr> </text>		
+    <text name="Compost_Lager"> <en>Compost Storage</en> </text>
 <!-- end greenhouse -->
 		<text name="grass"> <en>Grass</en> <de><![CDATA[Gras]]></de> <fr>herbe</fr> </text>
 		<text name="straw"> <en>Straw</en> <de><![CDATA[Stroh]]></de> <fr>paille</fr> </text>
@@ -174,6 +178,7 @@ ModPack culture_et _production.
 <!-- end CompostMaster -->	
 		
 <!-- nouvelles usines -->			
+    <text name="Molkerei"> <en>Dairy</en> </text>
       <text name="butter"> <en>Butter</en> <de>Butter</de> <fr>beurre</fr> </text>
       <text name="lait"> <en>Milk</en> <de>Vollmilch</de> <fr>lait</fr> </text>
       <text name="sahne"> <en>Cream</en> <de>Sahne</de> <fr>créme</fr> </text>
@@ -184,6 +189,7 @@ ModPack culture_et _production.
         <text name="palettemilch"> <en>Milk Pallet</en> <de>Milch Palette</de> <fr>palettes de lait</fr> </text>
         <text name="palettes_creme"> <en>Cream Pallet</en> <de>Sahne Palette</de> <fr>palettes de créme</fr> </text>
         <text name="palette_chantilly"> <en>Quark Pallet</en> <de>Quark Palette</de> <fr>palettes de chantilly</fr> </text>
+        <text name="calette_chantilly"> <en>Quark Pallet</en> <de>Quark Palette</de> <fr>palettes de chantilly</fr> </text>
         <text name="palette_yaourt"> <en>Yogurt Pallet</en> <de>Joghurt Palette</de> <fr>palettes de yaourt</fr> </text>
         <text name="palettepapier"> <en>Paper Pallet</en> <de>Papier Palette</de> <fr>palettes de papier</fr> </text>
         <text name="brot"> <en>Bread</en> <de>Brot</de> <fr>pain</fr> </text>
@@ -230,6 +236,7 @@ ModPack culture_et _production.
 <!-- Seeds Fertilizer Production-->	
 		<text name="grain"> <en>grain</en> <de><![CDATA[Getreide]]></de> <fr>céréales</fr> </text>
 		<text name="seeds"> <en>seeds</en> <de><![CDATA[Saatgut]]></de> <fr>semences</fr> </text>
+		<text name="semences"> <en>seeds</en> <de><![CDATA[Saatgut]]></de> <fr>semences</fr> </text>
 		<text name="fertilizer"> <en>fertilizer</en> <de><![CDATA[Dünger]]></de> <fr>engrais</fr> </text>
 		<text name="fumier"> <en>manure</en> <de><![CDATA[Mist]]></de> <fr>fumier</fr> </text>
 		<text name="liquidManure"> <en>Liquid Manure</en> <de><![CDATA[Gülle]]></de> <fr>lisier</fr> </text>
@@ -237,10 +244,11 @@ ModPack culture_et _production.
 
 <!-- schlachthof -->
 		<text name="Schlachterei"> <en>Butchery</en> <de>Schlachterei</de> <fr>boucherie</fr> </text>
+    <text name="porc_mouton"> <en>Animals</en> </text>
 		<text name="Anlieferung"> <en>Animals unloading:</en>	<de>Tiere beim entladen:</de> <fr>Déchargement Animaux:</fr> </text>
 		<text name="Ausgabe_Wurst"> <en>Goods issue:</en> <de>Waren Ausgabe:</de> <fr>sortie des saucisses</fr> </text>
-		<text name="Wurst"> <en>sausage</en> <de>Wurst</de> <fr>saucisses</fr> </text>
-		<text name="Fleisch"> <en>meat</en> <de>Fleisch</de> <fr>viandes</fr> </text>
+		<text name="saussice"> <en>sausage</en> <de>Wurst</de> <fr>saucisses</fr> </text>
+		<text name="viande"> <en>meat</en> <de>Fleisch</de> <fr>viandes</fr> </text>
 <!-- fin schlachthof -->
 		
 <!-- Schweine zwischenlager -->
@@ -254,7 +262,7 @@ ModPack culture_et _production.
 		<text name="Intermediate_storage_sheep"> <en>Sheep Storage</en> <de>Zwischenlager (Schafe)</de> <fr>entreposage (moutons)</fr> </text>
 		<text name="in_sheep"> <en>Sheep in:</en>	<de>Schafe entladen:</de> <fr>Mouton déchargé:</fr> </text>
 		<text name="out_sheep"> <en>Sheep out:</en> <de>Schafe beladen:</de> <fr>Mouton chargé:</fr> </text>
-		<text name="scheeps"> <en>sheep</en> <de>mouton</de> </text>
+		<text name="mouton"> <en>sheep</en> <de>mouton</de> </text>
 <!-- fin Schaf zwischenlager -->	
 
 		<text name="sausage"> <en>sausage</en> <de><![CDATA[Wurst]]></de><ru><![CDATA[колбаса]]></ru><fr>saucisse</fr> </text>
@@ -341,7 +349,9 @@ ModPack culture_et _production.
 		<text name="input_ANIMATED_OBJECT_CLOSE_DOOR"> <en>Close Gate</en> <de>Tor schließen</de> <fr>Ouvrir la porte</fr> </text> 		
 <!--  end slow_anim slow soja-->
 		<text name="Fabrik"> <en>Sawmill</en> <de>Sägewerk</de> <fr>Sawmill</fr> </text>
+    <text name="engraisliquide"> <en>Liquid Fertilizer</en> </text>
 		<text name="tomatoGreenhouse"> <en>Tomato Greenhouse</en> <de>Tomaten Gewächshaus</de> <fr>serre a tomate</fr> </text>
+    <text name="tomatolettuceGreenhouse"> <en>Tomato / Lettuce Greenhouse</en> <de>Tomaten Gewächshaus</de> <fr>serre a tomate</fr> </text>
 		<text name="lettuceGreenhouse"> <en>Lettuce Greenhouse</en> <de>Salat Gewächshaus</de> <fr>serre a salade</fr> </text>
 		<text name="redcabbageGreenhouse"> <en>Redcabbage Greenhouse</en> <de>Rotkohl Gewächshaus</de> <fr>serre a chou rouge</fr> </text>
 		<text name="cauliflowerGreenhouse"> <en>Cauliflower Greenhouse</en> <de>Blumenkohl Gewächshaus</de> <fr>serre a chou fleur</fr> </text>
@@ -395,6 +405,9 @@ ModPack culture_et _production.
 		<text name="input_ANIMATED_OBJECT_OPEN_ROLLDOOR"><en>Open Rolldoor</en><de>Rolltor öffnen</de> <fr>porte ouverte </fr> </text>
 		<text name="input_ANIMATED_OBJECT_CLOSE_ROLLDOOR"><en>Close Rolldoor</en><de>Rolltor schließen</de> <fr>porte fermer</fr></text>
 		<text name="tissu"> <en>Fabric</en> <de>tissu</de> <fr>tissu</fr> </text>
+
+    <text name="Fabrik_planche_osb"> <en>OSB Production</en> </text>
+    <text name="Papierfabrik"> <en>Paper Factory</en> </text>
  <!--Animated Objects-->
   <text name="input_ANIMATED_OBJECT_OPEN_ELECTRICROLLDOOR">
    <en>Open rolldoor</en>
