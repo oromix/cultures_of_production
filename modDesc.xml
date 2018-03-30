@@ -74,116 +74,122 @@ ModPack culture_et _production.
     </maps>	
 	
     <l10n>
-		<text name="oat"> <en>Oat</en> <de>Hafer</de> <fr>Avoine</fr> </text>
-		<text name="oat_windrow"> <en>Oat windrow</en> <de>Haferstroh</de> <fr>Andain d'avoine</fr> </text>	
-		<text name="millet"> <en>Millet</en> <de>Hirse</de> <fr>Millet</fr> </text>
-		<text name="onion"> <en>Onion</en> <de>Zwiebeln</de> <fr>Oignon</fr> </text>
-		<text name="sorghum"> <en>Sorghum</en> <de>Sorghum</de> <fr>sorgo</fr> </text>
-		<text name="compost"> <en>compost</en> <de>compost</de> <fr>compost</fr> </text>		
-		<text name="food"> <en>Foods</en> <de>Lebensmittel</de> <fr>Nourriture</fr> </text>
-		<text name="industry"> <en>Industry</en> <de>Industrie</de> <fr>Industrie</fr> </text>
-		<text name="fatteningFeed"> <en>Fattening feed</en> <de>Mastfutter</de> <fr>Alimentation d'engraissement</fr> </text>
-		<text name="lime"> <en>Lime</en> <de>Kalk</de> <fr>Chaux</fr> </text>
-		<text name="seeds2"> <en>Seeds2</en> <de>Saatgut geb.</de> <fr>Semence artisanal</fr> </text>
-		<text name="sand"> <en>Sand</en> <de>Sand</de> <fr>Sable</fr> </text>
-		<text name="beer"> <en>beer</en> <de>Bier</de> <fr>bieres</fr> </text>
-		<text name="barley"> <en>barley</en> <de>Gerste</de> <fr>orge</fr> </text>
-		<text name="water"> <en>water</en> <de>Wasser</de> <fr>eau</fr> </text>
-		<text name="sugars"> <en>Sugars</en> <de>sugars</de> <fr>sucres</fr> </text>
-		<text name="osb"> <en>osb</en> <de>osb</de> <fr>osb</fr> </text>
-		<text name="grapes"> <en>Grapes</en> <de>Trauben</de> <fr>raisin</fr> </text>
-		<text name="vin"> <en>Wine</en> <de>vin</de> <fr>vin</fr> </text>
-		<text name="grapejuice"> <en>grapejuice</en> <de>grapejuice</de> <fr>jus de raisin</fr> </text>
-		<text name="vinpallet"> <en>Wine Pallets</en> <de>vin Pallets</de> <fr>palette de vin</fr> </text>		
-		<text name="hops"> <en>Hops</en> <de>Hopfen</de> <fr>houblon</fr> </text>
-        <text name="lavande"> <en>Lavander</en> <de>lavande</de> <fr>lavande</fr> </text>
-        <text name="parfum"> <en>Perfume</en> <de>parfum</de> <fr>parfum</fr> </text>
-        <text name="parfumPallet"> <en>Perfume Pallet</en> <de>parfumPallet</de> <fr>parfum</fr> </text>		
-        <text name="substral"> <en>Substral (fertilizer)</en> <de>substral</de> <fr>substral</fr> </text>
-		<text name="carton"> <en>Carton</en> <de>carton</de> <fr>carton</fr> </text>
-		<text name="cartonpallet"> <en>Carton Pallets</en> <de>carton Pallets</de> <fr>palette de carton</fr> </text>	
-		<text name="caisse"> <en>Crate</en> <de>caisse</de> <fr>caisse</fr> </text>
-		<text name="caissepallet"> <en>Crate Pallets</en> <de>caisse Pallets</de> <fr>palette de caisse</fr> </text>
-		<text name="tonneau"> <en>Barrel</en> <de>tonneau</de> <fr>tonneau</fr> </text>
-		<text name="tonneaupallet"> <en>Barrel Pallets</en> <de>tonneau Pallets</de> <fr>palette de tonneau</fr> </text>
-		<text name="oeuf"> <en>Egg</en> <de>oeuf</de> <fr>oeuf</fr> </text>
-		<text name="oeufpallet"> <en>Egg Pallets</en> <de>oeuf Pallets</de> <fr>palette de oeuf</fr> </text>		
+      <text name="bles"> <en>Wheat</en> <de>Wheat</de> <fr>Bles</fr> </text>
+      <text name="oat"> <en>Oat</en> <de>Hafer</de> <fr>Avoine</fr> </text>
+      <text name="oat_windrow"> <en>Oat windrow</en> <de>Haferstroh</de> <fr>Andain d'avoine</fr> </text>	
+      <text name="millet"> <en>Millet</en> <de>Hirse</de> <fr>Millet</fr> </text>
+      <text name="onion"> <en>Onion</en> <de>Zwiebeln</de> <fr>Oignon</fr> </text>
+      <text name="sorghum"> <en>Sorghum</en> <de>Sorghum</de> <fr>sorgo</fr> </text>
+      <text name="compost"> <en>Compost</en> <de>compost</de> <fr>compost</fr> </text>		
+      <text name="food"> <en>Foods</en> <de>Lebensmittel</de> <fr>Nourriture</fr> </text>
+      <text name="industry"> <en>Industry</en> <de>Industrie</de> <fr>Industrie</fr> </text>
+      <text name="fatteningFeed"> <en>Fattening Feed</en> <de>Mastfutter</de> <fr>Alimentation d'engraissement</fr> </text>
+      <text name="lime"> <en>Lime</en> <de>Kalk</de> <fr>Chaux</fr> </text>
+      <text name="seeds2"> <en>Seeds2</en> <de>Saatgut geb.</de> <fr>Semence artisanal</fr> </text>
+      <text name="sand"> <en>Sand</en> <de>Sand</de> <fr>Sable</fr> </text>
+      <text name="beer"> <en>Beer</en> <de>Bier</de> <fr>bieres</fr> </text>
+      <text name="barley"> <en>Barley</en> <de>Gerste</de> <fr>orge</fr> </text>
+      <text name="water"> <en>Water</en> <de>Wasser</de> <fr>eau</fr> </text>
+      <text name="eau"> <en>Water</en> <de>Wasser</de> <fr>eau</fr> </text>
+      <text name="sugars"> <en>Sugars</en> <de>sugars</de> <fr>sucres</fr> </text>
+      <text name="sucre"> <en>Sugars</en> <de>sugars</de> <fr>sucres</fr> </text>
+      <text name="osb"> <en>OSB</en> <de>osb</de> <fr>osb</fr> </text>
+      <text name="grapes"> <en>Grapes</en> <de>Trauben</de> <fr>raisin</fr> </text>
+      <text name="vin"> <en>Wine</en> <de>vin</de> <fr>vin</fr> </text>
+      <text name="grapejuice"> <en>Grape Juice</en> <de>grapejuice</de> <fr>jus de raisin</fr> </text>
+      <text name="vinpallet"> <en>Wine Pallets</en> <de>vin Pallets</de> <fr>palette de vin</fr> </text>		
+      <text name="hops"> <en>Hops</en> <de>Hopfen</de> <fr>houblon</fr> </text>
+      <text name="lavande"> <en>Lavander</en> <de>lavande</de> <fr>lavande</fr> </text>
+      <text name="parfum"> <en>Perfume</en> <de>parfum</de> <fr>parfum</fr> </text>
+      <text name="parfumPallet"> <en>Perfume Pallet</en> <de>parfumPallet</de> <fr>parfum</fr> </text>		
+      <text name="substral"> <en>Substral (fertilizer)</en> <de>substral</de> <fr>substral</fr> </text>
+      <text name="carton"> <en>Carton</en> <de>carton</de> <fr>carton</fr> </text>
+      <text name="cartonpalette"> <en>Carton Pallets</en> <de>carton Pallets</de> <fr>palette de carton</fr> </text>	
+      <text name="cartonpallette"> <en>Carton Pallets</en> <de>carton Pallets</de> <fr>palette de carton</fr> </text>	
+      <text name="caisse"> <en>Crate</en> <de>caisse</de> <fr>caisse</fr> </text>
+      <text name="caissepallet"> <en>Crate Pallets</en> <de>caisse Pallets</de> <fr>palette de caisse</fr> </text>
+      <text name="tonneau"> <en>Barrel</en> <de>tonneau</de> <fr>tonneau</fr> </text>
+      <text name="tonneaupallet"> <en>Barrel Pallets</en> <de>tonneau Pallets</de> <fr>palette de tonneau</fr> </text>
+      <text name="oeuf"> <en>Egg</en> <de>oeuf</de> <fr>oeuf</fr> </text>
+      <text name="oeufpalette"> <en>Egg Pallets</en> <de>oeuf Pallets</de> <fr>palette de oeuf</fr> </text>		
 		
 <!-- Saegewerk -->
-		<text name="leer"> <en>empty</en> <de><![CDATA[leer]]></de> <fr>vide</fr> </text>
-		<text name="voll"> <en>full</en> <de><![CDATA[voll]]></de> <fr>plein</fr> </text>
+		<text name="leer"> <en>Empty</en> <de><![CDATA[leer]]></de> <fr>vide</fr> </text>
+		<text name="voll"> <en>Full</en> <de><![CDATA[voll]]></de> <fr>plein</fr> </text>
 		<text name="ERROR"> <en>Info: </en> <de><![CDATA[Info: ]]></de> <fr>Info : </fr> </text>
 		<text name="Rohstoffe"> <en>Resources: </en> <de><![CDATA[Rohstoffe: ]]></de> <fr>matières premières : </fr> </text>
 		<text name="Produkte"> <en>Products: </en> <de><![CDATA[Produkte: ]]></de> <fr>produit fini : </fr> </text>
 		<text name="boardwood"> <en>Board Pallets</en> <de>Bretter Palletten</de> <fr>Palette de planches</fr> </text>
-		<text name="Holz"> <en>logs</en> <de><![CDATA[Holzstämme]]></de> <fr>troncs</fr> </text>
+		<text name="Holz"> <en>Logs</en> <de><![CDATA[Holzstämme]]></de> <fr>troncs</fr> </text>
 		<text name="Brennstoffe"> <en>Fuel</en> <de><![CDATA[Brennstoffe]]></de> <fr>copeaux paille</fr> </text>
 <!-- end Saegewerk -->
 
 <!-- greenhouse -->
-		<text name="emptypallet"> <en>Pallets</en> <de><![CDATA[Leerpaletten]]></de> <fr>palettes</fr> </text>
+		<text name="palettes"> <en>Pallets</en> <de><![CDATA[Leerpaletten]]></de> <fr>palettes</fr> </text>
 		<text name="tomato"> <en>Tomato</en> <de><![CDATA[Tomaten]]></de> <fr>tomate</fr> </text>
 		<text name="tomatoPallet"> <en>Tomato Pallets</en> <de><![CDATA[Tomatenpalette]]></de> <fr>palette de tomates</fr> </text>
-		<text name="lettuce"> <en>lettuce</en> <de><![CDATA[Salat]]></de> <fr>salade</fr> </text>
-		<text name="lettucePallet"> <en>lettuce Pallets</en> <de><![CDATA[Salatpalette]]></de> <fr>palette de salades</fr> </text>
-		<text name="cauliflower"> <en>cauliflower</en> <de><![CDATA[Blumenkohl]]></de> <fr>chou-fleur</fr> </text>
-		<text name="cauliflowerPallet"> <en>cauliflower Pallets</en> <de><![CDATA[Blumenkohlpalette]]></de> <fr>palette de choux-fleurs</fr> </text>
-		<text name="pumpkin"> <en>pumpkin</en> <de><![CDATA[Kürbis]]></de> <fr>citrouille</fr> </text>
-		<text name="pumpkinPallet"> <en>pumpkin Pallets</en> <de><![CDATA[Kürbispalette]]></de> <fr>palette de citrouilles</fr> </text>
-		<text name="redCabbage"> <en>redCabbage</en> <de><![CDATA[Rotkohl]]></de> <fr>chou-rouge</fr> </text>
-		<text name="redCabbagePallet"> <en>redCabbage Pallets</en> <de><![CDATA[Rotkohlpalette]]></de> <fr>palette de choux-rouge</fr> </text>
-		<text name="strawberry"> <en>strawberry</en> <de><![CDATA[Erdbeere]]></de> <fr>fraise</fr> </text>
-		<text name="strawberryPallet"> <en>strawberry Pallets</en> <de><![CDATA[Erdbeernpalette]]></de> <fr>palette de fraises</fr> </text>
-		<text name="raspberry"> <en>raspberry</en> <de><![CDATA[Himbeere]]></de> <fr>framboise</fr> </text>
-		<text name="raspberryPallet"> <en>raspberry Pallets</en> <de><![CDATA[Himbeerenpalette]]></de> <fr>palette de framboises</fr> </text>
-		<text name="greenhouses"> <en>greenhouses</en> <de><![CDATA[Gewaechshaeuser]]></de> <fr>serres</fr> </text>
-		<text name="warehouse"> <en>warehouse</en> <de><![CDATA[Warenhaus]]></de> <fr>entrepôt</fr> </text>
-		<text name="cabbage"> <en>cabbage</en> <de><![CDATA[Rotkohl]]></de> <fr>chou</fr> </text>
-		<text name="cabbagePallet"> <en>cabbage Pallets</en> <de><![CDATA[Rotkohlpalette]]></de> <fr>palette de choux</fr> </text>
-		<text name="groseille"> <en>groseille</en> <de>groseille</de> <fr>groseille</fr> </text>
-		<text name="groseillePallet"> <en>groseille Pallets</en> <de>groseillePallet</de> <fr>palette de groseille</fr> </text>
-		<text name="citron"> <en>citron</en> <de>citron</de> <fr>citron</fr> </text>
-		<text name="citronPallet"> <en>citron Pallets</en> <de>citron Pallets</de> <fr>palette de citron</fr> </text>
-		<text name="pasteque"> <en>pasteque</en> <de>pasteque</de> <fr>pasteque</fr> </text>
-		<text name="pastequePallet"> <en>pasteque Pallets</en> <de>pasteque Pallets</de> <fr>palette de pasteque</fr> </text>
-		<text name="champignon"> <en>champignon</en> <de>champignon</de> <fr>champignon</fr> </text>
-		<text name="champignonPallet"> <en>champignon Pallets</en> <de>champignon Pallets</de> <fr>palette de champignon</fr> </text>
-		<text name="citrouille"> <en>citrouille</en> <de>citrouille</de> <fr>citrouille</fr> </text>
-		<text name="citrouillePallet"> <en>citrouille Pallets</en> <de>citrouille Pallets</de> <fr>palette de citrouille</fr> </text>
-		<text name="mure"> <en>mure</en> <de>mure</de> <fr>mure</fr> </text>
-		<text name="murePallet"> <en>mure Pallets</en> <de>mure Pallets</de> <fr>palette de mure</fr> </text>
-		<text name="sapin"> <en>sapin</en> <de>sapin</de> <fr>sapin</fr> </text>
-		<text name="sapinallet"> <en>sapin Pallets</en> <de>sapin Pallets</de> <fr>palette de sapin</fr> </text>		
+		<text name="lettuce"> <en>Lettuce</en> <de><![CDATA[Salat]]></de> <fr>salade</fr> </text>
+		<text name="lettucePallet"> <en>Lettuce Pallets</en> <de><![CDATA[Salatpalette]]></de> <fr>palette de salades</fr> </text>
+		<text name="cauliflower"> <en>Cauliflower</en> <de><![CDATA[Blumenkohl]]></de> <fr>chou-fleur</fr> </text>
+		<text name="cauliflowerPallet"> <en>Cauliflower Pallets</en> <de><![CDATA[Blumenkohlpalette]]></de> <fr>palette de choux-fleurs</fr> </text>
+		<text name="pumpkin"> <en>Pumpkin</en> <de><![CDATA[Kürbis]]></de> <fr>citrouille</fr> </text>
+		<text name="pumpkinPallet"> <en>Pumpkin Pallets</en> <de><![CDATA[Kürbispalette]]></de> <fr>palette de citrouilles</fr> </text>
+		<text name="redCabbage"> <en>Red Cabbage</en> <de><![CDATA[Rotkohl]]></de> <fr>chou-rouge</fr> </text>
+		<text name="redCabbagePallet"> <en>Red Cabbage Pallets</en> <de><![CDATA[Rotkohlpalette]]></de> <fr>palette de choux-rouge</fr> </text>
+		<text name="strawberry"> <en>Strawberry</en> <de><![CDATA[Erdbeere]]></de> <fr>fraise</fr> </text>
+		<text name="strawberryPallet"> <en>Strawberry Pallets</en> <de><![CDATA[Erdbeernpalette]]></de> <fr>palette de fraises</fr> </text>
+		<text name="raspberry"> <en>Raspberry</en> <de><![CDATA[Himbeere]]></de> <fr>framboise</fr> </text>
+		<text name="raspberryPallet"> <en>Raspberry Pallets</en> <de><![CDATA[Himbeerenpalette]]></de> <fr>palette de framboises</fr> </text>
+		<text name="greenhouses"> <en>Greenhouses</en> <de><![CDATA[Gewaechshaeuser]]></de> <fr>serres</fr> </text>
+		<text name="warehouse"> <en>Warehouse</en> <de><![CDATA[Warenhaus]]></de> <fr>entrepôt</fr> </text>
+		<text name="cabbage"> <en>Cabbage</en> <de><![CDATA[Rotkohl]]></de> <fr>chou</fr> </text>
+		<text name="cabbagePallet"> <en>Cabbage Pallets</en> <de><![CDATA[Rotkohlpalette]]></de> <fr>palette de choux</fr> </text>
+		<text name="groseille"> <en>Currant</en> <de>groseille</de> <fr>groseille</fr> </text>
+		<text name="groseillePallet"> <en>Currant Pallets</en> <de>groseillePallet</de> <fr>palette de groseille</fr> </text>
+		<text name="citron"> <en>Lemon</en> <de>citron</de> <fr>citron</fr> </text>
+		<text name="citronPallet"> <en>Lemon Pallets</en> <de>citron Pallets</de> <fr>palette de citron</fr> </text>
+		<text name="pasteque"> <en>Watermelon</en> <de>pasteque</de> <fr>pasteque</fr> </text>
+		<text name="pastequePallet"> <en>Watermelon Pallets</en> <de>pasteque Pallets</de> <fr>palette de pasteque</fr> </text>
+		<text name="champignon"> <en>Mushroom</en> <de>champignon</de> <fr>champignon</fr> </text>
+		<text name="champignonPallet"> <en>Mushroom Pallets</en> <de>champignon Pallets</de> <fr>palette de champignon</fr> </text>
+		<text name="citrouille"> <en>Pumpkin</en> <de>citrouille</de> <fr>citrouille</fr> </text>
+		<text name="citrouillePallet"> <en>Pumpkin Pallets</en> <de>citrouille Pallets</de> <fr>palette de citrouille</fr> </text>
+		<text name="mure"> <en>Blackberry</en> <de>mure</de> <fr>mure</fr> </text>
+		<text name="murePallet"> <en>Blackberry Pallets</en> <de>mure Pallets</de> <fr>palette de mure</fr> </text>
+		<text name="sapin"> <en>Fir</en> <de>sapin</de> <fr>sapin</fr> </text>
+		<text name="sapinallet"> <en>Fir Pallets</en> <de>sapin Pallets</de> <fr>palette de sapin</fr> </text>		
 <!-- end greenhouse -->
-		<text name="grass"> <en>grass</en> <de><![CDATA[Gras]]></de> <fr>herbe</fr> </text>
-		<text name="straw"> <en>straw</en> <de><![CDATA[Stroh]]></de> <fr>paille</fr> </text>
-		<text name="MilkSellTrigger_stopFill"> <en>stop fill</en> <de><![CDATA[Verkauf stoppen]]></de> <fr>Arrêter le remplissage</fr> </text>
-		<text name="MilkSellTrigger_startFill"> <en>start fill</en> <de><![CDATA[Verkauf starten]]></de> <fr>Commencer le remplissage</fr> </text>
+		<text name="grass"> <en>Grass</en> <de><![CDATA[Gras]]></de> <fr>herbe</fr> </text>
+		<text name="straw"> <en>Straw</en> <de><![CDATA[Stroh]]></de> <fr>paille</fr> </text>
+		<text name="paille"> <en>Straw</en> <de><![CDATA[Stroh]]></de> <fr>paille</fr> </text>
+		<text name="MilkSellTrigger_stopFill"> <en>Stop fill</en> <de><![CDATA[Verkauf stoppen]]></de> <fr>Arrêter le remplissage</fr> </text>
+		<text name="MilkSellTrigger_startFill"> <en>Start fill</en> <de><![CDATA[Verkauf starten]]></de> <fr>Commencer le remplissage</fr> </text>
 <!-- CompostMaster -->
-		<text name="cm_inputWaste"> <en>waste</en> <de><![CDATA[Abfall]]></de> <fr>déchets</fr> </text>
-		<text name="cm_inputFuel"> <en>fuel</en> <de><![CDATA[Diesel]]></de> <fr>carburant</fr> </text>
-		<text name="cm_outputCompost"> <en>compost</en> <de><![CDATA[Kompost]]></de> <fr>compost</fr> </text>
-		<text name="inputTrigger_CM2k17"> <en>resources: </en> <de><![CDATA[Rohstoffe: ]]></de> <fr>matières premières : </fr> </text>
-		<text name="outputTrigger_CM2k17"> <en>products: </en> <de><![CDATA[Erzeugnis: ]]></de> <fr>produit fini : </fr> </text>
+		<text name="cm_inputWaste"> <en>Waste</en> <de><![CDATA[Abfall]]></de> <fr>déchets</fr> </text>
+		<text name="cm_inputFuel"> <en>Fuel</en> <de><![CDATA[Diesel]]></de> <fr>carburant</fr> </text>
+		<text name="cm_outputCompost"> <en>Compost</en> <de><![CDATA[Kompost]]></de> <fr>compost</fr> </text>
+		<text name="inputTrigger_CM2k17"> <en>Resources: </en> <de><![CDATA[Rohstoffe: ]]></de> <fr>matières premières : </fr> </text>
+		<text name="outputTrigger_CM2k17"> <en>Products: </en> <de><![CDATA[Erzeugnis: ]]></de> <fr>produit fini : </fr> </text>
 <!-- end CompostMaster -->	
 		
 <!-- nouvelles usines -->			
-        <text name="butter"> <en>butter</en> <de>Butter</de> <fr>beurre</fr> </text>
-        <text name="milch"> <en>milk</en> <de>Vollmilch</de> <fr>lait</fr> </text>
-        <text name="sahne"> <en>cream</en> <de>Sahne</de> <fr>créme</fr> </text>
-        <text name="quark"> <en>quark</en> <de>Quark</de> <fr>chantilly</fr> </text>
-        <text name="yogurt"> <en>yogurt</en> <de>Joghurt</de> <fr>yaourt</fr> </text>
-        <text name="papier"> <en>paper</en> <de>Papier</de> <fr>papiers</fr> </text>
-	<text name="palettebutter"> <en>Butter Pallet</en> <de>Palette Butter</de> <fr>palettes de beurre</fr> </text>
+      <text name="butter"> <en>Butter</en> <de>Butter</de> <fr>beurre</fr> </text>
+      <text name="lait"> <en>Milk</en> <de>Vollmilch</de> <fr>lait</fr> </text>
+      <text name="sahne"> <en>Cream</en> <de>Sahne</de> <fr>créme</fr> </text>
+      <text name="quark"> <en>Quark</en> <de>Quark</de> <fr>chantilly</fr> </text>
+      <text name="yogurt"> <en>Yogurt</en> <de>Joghurt</de> <fr>yaourt</fr> </text>
+      <text name="papier"> <en>Paper</en> <de>Papier</de> <fr>papiers</fr> </text>
+      <text name="palette_beurre"> <en>Butter Pallet</en> <de>Palette Butter</de> <fr>palettes de beurre</fr> </text>
         <text name="palettemilch"> <en>Milk Pallet</en> <de>Milch Palette</de> <fr>palettes de lait</fr> </text>
-        <text name="palettesahne"> <en>Cream Pallet</en> <de>Sahne Palette</de> <fr>palettes de créme</fr> </text>
-        <text name="palettequark"> <en>Quark Pallet</en> <de>Quark Palette</de> <fr>palettes de chantilly</fr> </text>
-        <text name="paletteyogurt"> <en>Yogurt Pallet</en> <de>Joghurt Palette</de> <fr>palettes de yaourt</fr> </text>
+        <text name="palettes_creme"> <en>Cream Pallet</en> <de>Sahne Palette</de> <fr>palettes de créme</fr> </text>
+        <text name="palette_chantilly"> <en>Quark Pallet</en> <de>Quark Palette</de> <fr>palettes de chantilly</fr> </text>
+        <text name="palette_yaourt"> <en>Yogurt Pallet</en> <de>Joghurt Palette</de> <fr>palettes de yaourt</fr> </text>
         <text name="palettepapier"> <en>Paper Pallet</en> <de>Papier Palette</de> <fr>palettes de papier</fr> </text>
         <text name="brot"> <en>Bread</en> <de>Brot</de> <fr>pain</fr> </text>
 		<text name="brotpalette"> <en>Bread Pallet</en> <de>Brot Palette</de> <fr>painpalette</fr> </text>
         <text name="mehl"> <en>Flour</en> <de>Mehl</de> <fr>farine</fr> </text>	
         <text name="mehlpalette"> <en>Flour Pallet</en> <de>Mehl Palette</de> <fr>palettes de farine</fr> </text>	
+        <text name="palettes_farine"> <en>Flour Pallet</en> <de>Mehl Palette</de> <fr>palettes de farine</fr> </text>	
         <text name="Tip_mehl"><de>Mehl Palette</de><en>Flour Pallet</en> <fr>farine palette</fr> </text>
         <text name="Tip_RSwheat"><de>Weizen</de><en>Wheat</en> <fr>blé</fr> </text>
         <text name="Tip_RSbarley"><de>Gerste</de><en>Barley</en> <fr>orge</fr> </text>
@@ -199,6 +205,7 @@ ModPack culture_et _production.
 		<text name="oats"><de>oats</de><en>oats</en> <fr>avoine</fr> </text>
 		<text name="whisky"><de>whisky</de><en>whisky</en> <fr>whisky</fr> </text>
 		<text name="wool"> <en>wool</en> <de>Wolle</de> <fr>laine</fr> </text>		
+		<text name="lain"> <en>wool</en> <de>Wolle</de> <fr>laine</fr> </text>		
 <!-- end nouvelles usines -->
 
 <!-- poisson -->
@@ -223,7 +230,7 @@ ModPack culture_et _production.
 		<text name="grain"> <en>grain</en> <de><![CDATA[Getreide]]></de> <fr>céréales</fr> </text>
 		<text name="seeds"> <en>seeds</en> <de><![CDATA[Saatgut]]></de> <fr>semences</fr> </text>
 		<text name="fertilizer"> <en>fertilizer</en> <de><![CDATA[Dünger]]></de> <fr>engrais</fr> </text>
-		<text name="manure"> <en>manure</en> <de><![CDATA[Mist]]></de> <fr>fumier</fr> </text>
+		<text name="fumier"> <en>manure</en> <de><![CDATA[Mist]]></de> <fr>fumier</fr> </text>
 		<text name="liquidManure"> <en>Liquid Manure</en> <de><![CDATA[Gülle]]></de> <fr>lisier</fr> </text>
 <!-- end Seeds Fertilizer Production-->
 
@@ -265,7 +272,9 @@ ModPack culture_et _production.
 		<text name="Hof_Tankstelle"><de>Hof Tankstelle</de><en>Fuel Storage</en> <fr>stokage carburant</fr></text>
 		<text name="Input1"><de>Treibstoff</de><en>fuel</en> <fr>carburant</fr> </text>
 		<text name="Output1"><de>Treibstoff</de><en>fuel</en> <fr>carburant</fr> </text>
-		<text name="woodChips"> <en>Wood Chips</en> <de><![CDATA[Hackschnitzel]]></de> <fr>copeaux</fr></text>		
+		<text name="copeau"> <en>Wood Chips</en> <de><![CDATA[Hackschnitzel]]></de> <fr>copeaux</fr></text>		
+		<text name="copeaux"> <en>Wood Chips</en> <de><![CDATA[Hackschnitzel]]></de> <fr>copeaux</fr></text>		
+		<text name="bois"> <en>Wood</en> <de><![CDATA[Hackschnitzel]]></de> <fr>copeaux</fr></text>		
         <text name="shopItem_waterPumpStation"> <en>Water pump station</en> <de>Wasserpumpstation</de> </text>
         <text name="function_waterPumpStation"> <en>You can refill your watertrailer to get water for your animals</en> <de><![CDATA[Hier kannst du deinen Wasseranhänger befüllen.]]></de> </text>
 		
@@ -275,13 +284,14 @@ ModPack culture_et _production.
 <!-- end pallet production -->
 		
 <!-- Depart laveuse -->
-		<text name="Kartoffeln"> <en>Potato</en> <de>Kartoffeln</de> <fr><![CDATA[Patates]]></fr> </text>
-		<text name="washedPotato"> <en>Washed Potatoes</en> <de>Kartoffeln gewaschen</de> <fr>Patates lavées</fr> </text>
-        <text name="steamedPotato"> <en>Steamed Potatoes</en> <de>Kartoffeln gedaempft</de> <fr><![CDATA[Patates vapeur]]></fr> </text>
-		<text name="carrot"> <en>carrot</en> <de>Karotten</de> <fr><![CDATA[carottes]]></fr> </text>		
-		<text name="washedcarrot"> <en>Washed Carrot</en> <de>Karotten gewaschen</de> <fr>carottes lavées</fr> </text>
-		<text name="sugarBeet"> <en>Sugar Beet</en> <de>Zuckerrüben</de> <fr><![CDATA[bettraves]]></fr> </text>		
-		<text name="washedsugarBeet"> <en>Washed Sugar Beet</en> <de>Zuckerrüben gewaschen</de> <fr>bettraves lavées</fr> </text>
+		<text name="patates"> <en>Potato</en> <de>Kartoffeln</de> <fr><![CDATA[Patates]]></fr> </text>
+		<text name="patates_laver"> <en>Washed Potatoes</en> <de>Kartoffeln gewaschen</de> <fr>Patates lavées</fr> </text>
+    <text name="patates_vapeur"> <en>Steamed Potatoes</en> <de>Kartoffeln gedaempft</de> <fr><![CDATA[Patates vapeur]]></fr> </text>
+		<text name="carottes"> <en>carrot</en> <de>Karotten</de> <fr><![CDATA[carottes]]></fr> </text>		
+		<text name="carotte_laver"> <en>Washed Carrot</en> <de>Karotten gewaschen</de> <fr>carottes lavées</fr> </text>
+		<text name="bettraves"> <en>Sugar Beet</en> <de>Zuckerrüben</de> <fr><![CDATA[bettraves]]></fr> </text>		
+		<text name="bettraves_laver"> <en>Washed Sugar Beet</en> <de>Zuckerrüben gewaschen</de> <fr>bettraves lavées</fr> </text>
+		<text name="onion"> <en>Onion</en> <de>Zwiebeln</de> <fr>oignons</fr> </text>			
 		<text name="boxonion"> <en>Onion Box</en> <de>Zwiebeln in Kisten</de> <fr>caisse d'oignons</fr> </text>			
 <!-- Fin laveuse -->
 		
@@ -354,10 +364,14 @@ ModPack culture_et _production.
 		<text name="tournesol"> <de>SonnenblumenÖl Produktion</de> <en>Sunflower</en> <fr>production d huile tournesol</fr> </text>
 		<text name="pisciculture"> <de>Fischzucht</de> <en>Fish Farm</en> <fr>pisciculture</fr> </text>
         <text name="apfel"> <en>Apple</en> <de>Apfel</de> <fr>pommes</fr> </text>
+        <text name="pommes"> <en>Apple</en> <de>Apfel</de> <fr>pommes</fr> </text>
         <text name="birne"> <en>Pears</en> <de>Birne</de> <fr>poires</fr> </text>
+        <text name="poires"> <en>Pears</en> <de>Birne</de> <fr>poires</fr> </text>
+        <text name="palettes_poires"> <en>Pear Pallets</en> </text>
         <text name="kirsche"> <en>Cherry</en> <de>Kirsche</de> <fr>cerises</fr> </text>
         <text name="pflaume"> <en>Plum</en> <de>Pflaume</de> <fr>prunes</fr> </text>	
         <text name="cidre"> <en>Cider</en> <de>cidre</de> <fr>cidre</fr> </text>
+        <text name="palettes_cidre"> <en>Cider Pallets</en> </text>
         <text name="poire"> <en>Perry</en> <de>poire</de> <fr>poire</fr> </text>
         <text name="prune"> <en>Prune</en> <de>prune</de> <fr>prune</fr> </text>
         <text name="cerise"> <en>Cherry</en> <de>cerise</de> <fr>cerise</fr> </text>			
