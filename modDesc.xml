@@ -103,6 +103,7 @@ ModPack culture_et _production.
       <text name="parfum"> <en>Perfume</en> <de>parfum</de> <fr>parfum</fr> </text>
       <text name="parfumPallet"> <en>Perfume Pallet</en> <de>parfumPallet</de> <fr>parfum</fr> </text>		
       <text name="substral"> <en>Substral (fertilizer)</en> <de>substral</de> <fr>substral</fr> </text>
+      <text name="substralPallet"> <en>Substral Pallet (fertilizer)</en> <de>substral</de> <fr>substral</fr> </text>
       <text name="carton"> <en>Carton</en> <de>carton</de> <fr>carton</fr> </text>
       <text name="cartonpalette"> <en>Carton Pallets</en> <de>carton Pallets</de> <fr>palette de carton</fr> </text>	
       <text name="cartonpallette"> <en>Carton Pallets</en> <de>carton Pallets</de> <fr>palette de carton</fr> </text>	
@@ -114,6 +115,7 @@ ModPack culture_et _production.
       <text name="oeufpalette"> <en>Egg Pallets</en> <de>oeuf Pallets</de> <fr>palette de oeuf</fr> </text>		
 		
 <!-- Saegewerk -->
+<text name="fabrik_copeaux"> <en>Wood Chips Production</en> </text>
 <text name="Fabrik_planche"> <en>Board Production</en> </text>
 <text name="fabrik_planche"> <en>Board Production</en> </text>
 		<text name="leer"> <en>Empty</en> <de><![CDATA[leer]]></de> <fr>vide</fr> </text>
@@ -179,6 +181,7 @@ ModPack culture_et _production.
 		
 <!-- nouvelles usines -->			
     <text name="Molkerei"> <en>Dairy</en> </text>
+    <text name="verger2"> <en>Dairy</en> </text>
       <text name="butter"> <en>Butter</en> <de>Butter</de> <fr>beurre</fr> </text>
       <text name="lait"> <en>Milk</en> <de>Vollmilch</de> <fr>lait</fr> </text>
       <text name="sahne"> <en>Cream</en> <de>Sahne</de> <fr>créme</fr> </text>
@@ -193,9 +196,11 @@ ModPack culture_et _production.
         <text name="palette_yaourt"> <en>Yogurt Pallet</en> <de>Joghurt Palette</de> <fr>palettes de yaourt</fr> </text>
         <text name="palettepapier"> <en>Paper Pallet</en> <de>Papier Palette</de> <fr>palettes de papier</fr> </text>
         <text name="brot"> <en>Bread</en> <de>Brot</de> <fr>pain</fr> </text>
+        <text name="palettes_pain"> <en>Bread Pallet</en> <de>Brot</de> <fr>pain</fr> </text>
 		<text name="brotpalette"> <en>Bread Pallet</en> <de>Brot Palette</de> <fr>painpalette</fr> </text>
         <text name="mehl"> <en>Flour</en> <de>Mehl</de> <fr>farine</fr> </text>	
         <text name="mehlpalette"> <en>Flour Pallet</en> <de>Mehl Palette</de> <fr>palettes de farine</fr> </text>	
+        <text name="farine"> <en>Flour</en> <de>Mehl</de> <fr>farine</fr> </text>	
         <text name="palettes_farine"> <en>Flour Pallet</en> <de>Mehl Palette</de> <fr>palettes de farine</fr> </text>	
         <text name="Tip_mehl"><de>Mehl Palette</de><en>Flour Pallet</en> <fr>farine palette</fr> </text>
         <text name="Tip_RSwheat"><de>Weizen</de><en>Wheat</en> <fr>blé</fr> </text>
@@ -216,18 +221,19 @@ ModPack culture_et _production.
 <!-- end nouvelles usines -->
 
 <!-- poisson -->
-	<text name="fish"> <en>fish</en> <de>Fisch</de> <fr>poissons</fr> </text>
-	<text name="maize"> <en>Corm</en><de>Mais</de> <fr>mais</fr> </text>
+	<text name="fish"> <en>Fish</en> <de>Fisch</de> <fr>poissons</fr> </text>
+	<text name="mais"> <en>Corn</en><de>Mais</de> <fr>mais</fr> </text>
 	<text name="pigFood"> <en>Pig Food</en><de>Schweinefutter</de> <fr>pigFood</fr> </text>
-	<text name="Guelle"> <en>Liquid Manure</en> <de>Gülle</de> <fr>lisier</fr> </text>
+	<text name="lisier"> <en>Liquid Manure</en> <de>Gülle</de> <fr>lisier</fr> </text>
+  <text name="Pallets_poisson"> <en>Fish Pallets</en> </text>
 <!-- poisson -->
 		
 <!-- Futtermischer -->
-		<text name="Gras"> <en>grass</en> <de><![CDATA[Gras]]></de> <fr>herbe</fr> </text>
+		<text name="herbe"> <en>grass</en> <de><![CDATA[Gras]]></de> <fr>herbe</fr> </text>
 		<text name="Stroh"> <en>straw</en> <de><![CDATA[Stroh]]></de> <fr>paille</fr> </text>
 		<text name="Silage"> <en>silage</en> <de><![CDATA[Silage]]></de> <fr>ensilage</fr> </text>
-		<text name="Mischfutter"> <en>Forage</en> <de><![CDATA[Mischfutter]]></de> <fr>fourrage</fr> </text>	
-        <text name="Erdfruechten"> <en>Earth fruits</en> <de><![CDATA[Erdfruechte]]></de> <fr>tubercules</fr> </text>
+		<text name="melange"> <en>Forage</en> <de><![CDATA[Mischfutter]]></de> <fr>fourrage</fr> </text>	
+    <text name="Erdfruechten"> <en>Earth fruits</en> <de><![CDATA[Erdfruechte]]></de> <fr>tubercules</fr> </text>
 		<text name="Getreide"> <en>cereals</en> <de><![CDATA[Getreide]]></de> <fr>céréales</fr> </text>
 		<text name="Proteine"> <en>Proteins</en> <de><![CDATA[Proteine]]></de> <fr>protéines</fr> </text>
 		<text name="Schweinefutter"> <en>Pig Forage</en> <de><![CDATA[Schweinefutter]]></de> <fr>nourriture pour cochons</fr> </text>
@@ -238,7 +244,7 @@ ModPack culture_et _production.
 		<text name="seeds"> <en>seeds</en> <de><![CDATA[Saatgut]]></de> <fr>semences</fr> </text>
 		<text name="semences"> <en>seeds</en> <de><![CDATA[Saatgut]]></de> <fr>semences</fr> </text>
 		<text name="fertilizer"> <en>fertilizer</en> <de><![CDATA[Dünger]]></de> <fr>engrais</fr> </text>
-		<text name="fumier"> <en>manure</en> <de><![CDATA[Mist]]></de> <fr>fumier</fr> </text>
+		<text name="fumier"> <en>Manure</en> <de><![CDATA[Mist]]></de> <fr>fumier</fr> </text>
 		<text name="liquidManure"> <en>Liquid Manure</en> <de><![CDATA[Gülle]]></de> <fr>lisier</fr> </text>
 <!-- end Seeds Fertilizer Production-->
 
@@ -255,7 +261,7 @@ ModPack culture_et _production.
 		<text name="Intermediate_storage_pig"> <en>Pig Storage</en> <de>Zwischenlager (Schweine)</de> <fr>entreposage (porcs)</fr> </text>
 		<text name="in_pigs"> <en>Pigs in:</en>	<de>Schweine entladen:</de> <fr>porcs déchargés:</fr> </text>
 		<text name="out_pigs"> <en>Pigs out:</en> <de>Schweine beladen:</de> <fr>Porc chargé:</fr> </text>
-		<text name="pigs"> <en>pigs</en> <de>Schweine</de> <fr>porcs</fr> </text>
+		<text name="porc"> <en>Pigs</en> <de>Schweine</de> <fr>porcs</fr> </text>
 <!-- fin Schweine zwischenlager -->
 		
 <!-- Schaf zwischenlager -->
@@ -279,6 +285,7 @@ ModPack culture_et _production.
         <text name="input_ANIMATED_OBJECT_CLOSE_GATE"> <en>Close Gate</en> <de>Tor schließen</de> <fr>Fermer la porte</fr> </text>		
 <!-- end stonegates -->
 		<text name="Hof_Tankstelle"><de>Hof Tankstelle</de><en>Fuel Storage</en> <fr>stokage carburant</fr></text>
+		<text name="Hof_Tankstelle2"><de>Hof Tankstelle</de><en>Fuel Storage</en> <fr>stokage carburant</fr></text>
 		<text name="Input1"><de>Treibstoff</de><en>fuel</en> <fr>carburant</fr> </text>
 		<text name="Output1"><de>Treibstoff</de><en>fuel</en> <fr>carburant</fr> </text>
 		<text name="copeau"> <en>Wood Chips</en> <de><![CDATA[Hackschnitzel]]></de> <fr>copeaux</fr></text>		
@@ -387,7 +394,10 @@ ModPack culture_et _production.
         <text name="poire"> <en>Perry</en> <de>poire</de> <fr>poire</fr> </text>
         <text name="prune"> <en>Prune</en> <de>prune</de> <fr>prune</fr> </text>
         <text name="cerise"> <en>Cherry</en> <de>cerise</de> <fr>cerise</fr> </text>			
+        <text name="cerises"> <en>Cherries</en> <de>cerise</de> <fr>cerise</fr> </text>			
 <!-- Raffenerie -->
+    <text name="Raffenerie"> <en>Refinery</en> </text>
+    <text name="colza.patate.bettraves"> <en>Rape Potato SugarBeet</en> </text>
 		<text name="AdditionalTrigger_automaticFill_RS"><de>Aktivieren Automatisch Füllung</de><en>Activate Automatic Filling</en> <fr>Activer le remplissage automatique</fr> </text>
 		<text name="AdditionalTrigger_manualFill_RS"><de>Aktivieren Handbefüllung</de><en>Activate Manual Filling</en> <fr>Activer le remplissage manuel</fr> </text>
 		<text name="AdditionalTrigger_RSLM_start"><de>Load Biodiesel</de><en>Load fuel</en> <fr>Charger le carburant</fr> </text>
@@ -405,8 +415,10 @@ ModPack culture_et _production.
 		<text name="input_ANIMATED_OBJECT_OPEN_ROLLDOOR"><en>Open Rolldoor</en><de>Rolltor öffnen</de> <fr>porte ouverte </fr> </text>
 		<text name="input_ANIMATED_OBJECT_CLOSE_ROLLDOOR"><en>Close Rolldoor</en><de>Rolltor schließen</de> <fr>porte fermer</fr></text>
 		<text name="tissu"> <en>Fabric</en> <de>tissu</de> <fr>tissu</fr> </text>
+    <text name="gasoil"> <en>Fuel</en> </text>
 
     <text name="Fabrik_planche_osb"> <en>OSB Production</en> </text>
+    <text name="planche_osb"> <en>OSB</en> </text>
     <text name="Papierfabrik"> <en>Paper Factory</en> </text>
  <!--Animated Objects-->
   <text name="input_ANIMATED_OBJECT_OPEN_ELECTRICROLLDOOR">
