@@ -114,6 +114,7 @@ ModPack culture_et _production.
       <text name="oeufpalette"> <en>Egg Pallets</en> <de>oeuf Pallets</de> <fr>palette de oeuf</fr> </text>		
 		
 <!-- Saegewerk -->
+<text name="Fabrik_planche"> <en>Board Production</en> </text>
 		<text name="leer"> <en>Empty</en> <de><![CDATA[leer]]></de> <fr>vide</fr> </text>
 		<text name="voll"> <en>Full</en> <de><![CDATA[voll]]></de> <fr>plein</fr> </text>
 		<text name="ERROR"> <en>Info: </en> <de><![CDATA[Info: ]]></de> <fr>Info : </fr> </text>
@@ -279,7 +280,8 @@ ModPack culture_et _production.
         <text name="function_waterPumpStation"> <en>You can refill your watertrailer to get water for your animals</en> <de><![CDATA[Hier kannst du deinen Wasseranhänger befüllen.]]></de> </text>
 		
 <!-- pallet production -->
-		<text name="boardwood_palette"> <en>Board Pallets</en> <de><![CDATA[Bretter-Paletten]]></de> <fr>Palette de planches</fr> </text>
+    <text name="pallet_production"> <en>Pallet Production</en> </text>
+		<text name="planche"> <en>Board Pallets</en> <de><![CDATA[Bretter-Paletten]]></de> <fr>Palette de planches</fr> </text>
 		<text name="palette"> <en>Pallets</en> <de><![CDATA[Palette]]></de> <fr>Palette</fr> </text>
 <!-- end pallet production -->
 		
