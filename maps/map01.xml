@@ -195,9 +195,9 @@
       <fillType name="emptypallet" priceScale="1.1" supportsGreatDemand="true" disablePriceDrop="false" />
       <fillType name="osb" priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="false" />
       <fillType name="papier" priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
-      <fillType name="caisse" priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="false" />
-      <fillType name="carton" priceScale="1.1" supportsGreatDemand="true" disablePriceDrop="false" />
-      <fillType name="tonneau" priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="caisse" priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="carton" priceScale="0.8" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="tonneau" priceScale="1.1" supportsGreatDemand="true" disablePriceDrop="false" />
     </tipTrigger>
     <tipTrigger index="RUNGIS" stationName="rungis" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="20000" fullPriceRecoverHours="24">
       <fillType name="mehl" priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
