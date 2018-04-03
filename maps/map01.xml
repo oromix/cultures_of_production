@@ -1,411 +1,388 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <map>
-    <filename>maps/map01.i3d</filename>
-    <sounds filename="maps/map01_sound.xml" />
-    <ingameMap filename="maps/pda_map_H.png" width="2048" height="2048" />
-    <environment filename="maps/map01_environment.xml" />
-
-    <culling xzOffset="100" />
-
-    <hotspots> 
-        <hotspot name="Shop"             fullName="$l10n_map_shop"             imageUVs="520 8 240 240"   xMapPos="-19"   zMapPos="-62"  blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_TRIGGERS"/>
-        <hotspot name="Cows"             fullName="$l10n_animals_cowPasture"   imageUVs="520 264 240 240" xMapPos="-520"  zMapPos="-556"  blinking="false" persistent="false" showName="false" hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Sheep"            fullName="$l10n_animals_sheepPasture" imageUVs="264 264 240 240" xMapPos="890"  zMapPos="-755" blinking="false" persistent="false" showName="false" hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Pigs"             fullName="$l10n_animals_pigPasture"   imageUVs="776 264 240 240" xMapPos="312"   zMapPos="446"   blinking="false" persistent="false" showName="false" hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Chickens"         fullName="$l10n_animals_chickenCoop"  imageUVs="8 264 240 240"   xMapPos="-539"  zMapPos="-428"   blinking="false" persistent="false" showName="false" hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="produc_planche"   fullName="Boards"           imageUVs="520 520 240 240" xMapPos="-599"   zMapPos="884" blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Compostmaster"    fullName="Compost"             imageUVs="520 520 240 240" xMapPos="179"  zMapPos="-937" blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Rungis"           fullName="Rungis"                     imageUVs="520 520 240 240" xMapPos="812"   zMapPos="-6"  blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Serres"           fullName="Greenhouses"                imageUVs="520 520 240 240" xMapPos="858"     zMapPos="868"  blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Laveuses"         fullName="Washing Machines"           imageUVs="520 520 240 240" xMapPos="400"  zMapPos="-561"    blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Usine_tournesol"  fullName="Sunflower"          imageUVs="520 520 240 240" xMapPos="794"   zMapPos="119"  blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Usine_farine"     fullName="Flou"              imageUVs="520 520 240 240" xMapPos="967"   zMapPos="377"  blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>       
-        <hotspot name="Cremerie"         fullName="Creamery"                   imageUVs="520 520 240 240" xMapPos="703"  zMapPos="-490"  blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Ferme_1"          fullName="Farm"                       imageUVs="520 520 240 240" xMapPos="-419"  zMapPos="-478"  blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Ferme_2"          fullName="Farm"                       imageUVs="520 520 240 240" xMapPos="904"  zMapPos="-938"  blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Ferme_3"          fullName="Farm"                       imageUVs="520 520 240 240" xMapPos="146"   zMapPos="497" blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Sojamilk"         fullName="Soy Milk"        imageUVs="520 520 240 240" xMapPos="480"  zMapPos="-818" blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Usine_pain"       fullName="Bakery"              imageUVs="520 520 240 240" xMapPos="732"   zMapPos="591"  blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/> 
-        <hotspot name="Abatoir"          fullName="Slaughterhouse"             imageUVs="520 520 240 240" xMapPos="-669"  zMapPos="266"   blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Verger"           fullName="Orchard"                    imageUVs="520 520 240 240" xMapPos="-147"   zMapPos="793"  blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="produc_tissu"     fullName="Fabric"             imageUVs="520 520 240 240" xMapPos="-573"   zMapPos="-180" blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Pressoir"         fullName="Press"                      imageUVs="520 520 240 240" xMapPos="12"  zMapPos="-687" blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="cereale"          fullName="Cereal"             imageUVs="520 520 240 240" xMapPos="838"   zMapPos="-177"  blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="brasserie"        fullName="Brewery"                    imageUVs="520 520 240 240" xMapPos="374"   zMapPos="-718" blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="sucrerie"         fullName="Sugar"              imageUVs="520 520 240 240" xMapPos="-964"  zMapPos="-166" blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="fabrif_osb"       fullName="OSB"                imageUVs="520 520 240 240" xMapPos="-630"  zMapPos="713" blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Poisonnerie"      fullName="Fish Farm"                  imageUVs="520 520 240 240" xMapPos="320"   zMapPos="-297"  blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Produc_oeuf"      fullName="Eggs"                imageUVs="520 520 240 240" xMapPos="499"   zMapPos="-405"  blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Mouton_gras"      fullName="Sheep Fattening"            imageUVs="520 520 240 240" xMapPos="702"   zMapPos="-757"  blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Porc_gras"        fullName="Pig Fattening"              imageUVs="520 520 240 240" xMapPos="189"   zMapPos="408" blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Raffinerie"       fullName="Refinery"                   imageUVs="520 520 240 240" xMapPos="439"  zMapPos="579" blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Produc_copeau"    fullName="Wood Chips"       imageUVs="520 520 240 240" xMapPos="-230"   zMapPos="815"  blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Produc_palette"   fullName="Pallets"          imageUVs="520 520 240 240" xMapPos="-307"   zMapPos="611" blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Produc_papier"    fullName="Paper"           imageUVs="520 520 240 240" xMapPos="-652"  zMapPos="497" blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Produc_parfum"    fullName="Perfume"         imageUVs="520 520 240 240" xMapPos="-660"  zMapPos="80" blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Produc_carton_tonneau"  fullName="Barrel Crate"  imageUVs="520 520 240 240" xMapPos="350"   zMapPos="69"  blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-        <hotspot name="Gare_silo"        fullName="Train Station"         imageUVs="520 520 240 240" xMapPos="-586"   zMapPos="-44"  blinking="false" persistent="false" showName="true"  hidable="true" renderLast="false" category="CATEGORY_DEFAULT"/>
-
-		</hotspots>
-
-    <additionalFiles>
-        <additionalFile filename="$data/shared/materialHolders/tensionBeltMaterialHolder.i3d" />
-        <additionalFile filename="$data/shared/materialHolders/tireTrackMaterialHolder.i3d" />
-        <additionalFile filename="$data/shared/materialHolders/glowEffectMaterialHolder.i3d" />
-        <additionalFile filename="$data/shared/mapTargetMarker.i3d" />
-        <additionalFile filename="$data/particleSystems/particle_materialHolder.i3d" />
-        <additionalFile filename="$data/particleSystems/effect_materialHolder.i3d" />
-        <additionalFile filename="$data/particleSystems/cutterEffect_materialHolder.i3d" />
-        <additionalFile filename="$data/particleSystems/cutterEffectMap01_materialHolder.i3d" />
-        <additionalFile filename="$data/fillPlanes/fillPlane_materialHolder.i3d" />
-		<additionalFile filename="maps/pSystem/particleSystems/particleMap_materialHolder.i3d" />
-        <additionalFile filename="maps/pSystem/particleSystems/effectMap_materialHolder.i3d" />
-        <additionalFile filename="maps/pSystem/particleSystems/cutterEffectMap.i3d" />
-        <additionalFile filename="maps/pSystem/fillPlanes/fillPlane_materialHolder.i3d" />
-    </additionalFiles>
-
-    <tipTriggers>
-<!-- SILO -->
-        <tipTrigger index="FARM_SILO" stationName="station_farmSilo" appearsOnPDA="false" isAreaTrigger="true" isSellingPoint="false" triggerWidth="3" supportsExtension="true" storageRadius="100" >
-            <fillType name="wheat"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="barley"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="rape"       priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="maize"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="sunflower"  priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="soybean"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="oat"        priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="pigFood"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="hops"       priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="millet"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="potato"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="sugarBeet"  priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="straw"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="lavande"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="forage"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="carrot"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="onion"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="sorghum"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />	
-            <fillType name="grass_windrow"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />			
-        </tipTrigger>
-
-		<tipTrigger index="HOF_DUENGERLAGER_TRAILER_IN" stationName="Hoflager_Duenger" appearsOnPDA="false" isAreaTrigger="true" isSellingPoint="false" triggerWidth="3" supportsExtension="false" storageRadius="15" >
-            <fillType name="fertilizer" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-			<fillType name="seeds"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-        </tipTrigger>
-		
-        <tipTrigger index="FARM_SILO2" stationName="station_farmSilo2" appearsOnPDA="false" isAreaTrigger="true" isSellingPoint="false" triggerWidth="3" supportsExtension="true" storageRadius="100" >
-            <fillType name="wheat"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="barley"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="rape"       priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="maize"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="sunflower"  priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="soybean"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="oat"        priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="hops"       priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="forage"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="pigFood"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="millet"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="potato"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="sugarBeet"  priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="straw"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="lavande"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="carrot"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="onion"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="sorghum"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="grass_windrow"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />						
-        </tipTrigger>		
-		
-        <tipTrigger index="FARM_SILO3" stationName="station_farmSilo3" appearsOnPDA="false" isAreaTrigger="true" isSellingPoint="false" triggerWidth="3" supportsExtension="true" storageRadius="100" >
-            <fillType name="wheat"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="barley"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="rape"       priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="maize"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="sunflower"  priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="soybean"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="oat"        priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="forage"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="grass_windrow"   priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="millet"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="potato"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="sugarBeet"  priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="straw"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="hops"       priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="lavande"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="carrot"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="onion"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="sorghum"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="pigFood"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />			
-        </tipTrigger>
-
-<!-- BGA -->
-        <tipTrigger index="BGA_BUNKER" stationName="station_bgaBunkerGCV" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" triggerWidth="2.5" litersForFullPriceDrop="300000" fullPriceRecoverHours="48">
-            <fillType name="silage"       priceScale="1" supportsGreatDemand="false" disablePriceDrop="false" allowTrailers="false" />
-            <fillType name="liquidManure" priceScale="1" supportsGreatDemand="false" disablePriceDrop="false" allowTrailers="true" />
-            <fillType name="manure"       priceScale="1" supportsGreatDemand="false" disablePriceDrop="false" allowTrailers="false" />
-        </tipTrigger>
-
-        <tipTrigger index="BGA_BUNKER_SILO" stationName="station_bgaBunkerSilo" appearsOnPDA="false" isAreaTrigger="true" isSellingPoint="false" triggerWidth="6" >
-            <fillType name="chaff"            priceScale="0" supportsGreatDemand="false" disablePriceDrop="false" />
-            <fillType name="grass_windrow"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="false" />
-            <fillType name="dryGrass_windrow" priceScale="0" supportsGreatDemand="false" disablePriceDrop="false" />
-        </tipTrigger>
-
-<!-- SELLING POINTS -->
-	     <tipTrigger index="MARKET" stationName="market" appearsOnPDA="true" isAreaTrigger="false" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="400000" fullPriceRecoverHours="48">
-                <fillType name="mehl"           priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-                <fillType name="brot"           priceScale="2.3" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-                <fillType name="butter"         priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-                <fillType name="sahne"          priceScale="2.05" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-                <fillType name="quark"          priceScale="2.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-                <fillType name="yogurt"         priceScale="2.3" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-			    <fillType name="huile"          priceScale="3.05" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="fish"           priceScale="3.55" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="apfel"          priceScale="1.85" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="birne"          priceScale="1.85" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="kirsche"        priceScale="1.85" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="pflaume"        priceScale="1.85" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="whisky"         priceScale="3.65" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="cidre"          priceScale="3.25" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="poire"          priceScale="3.35" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="cerise"         priceScale="3.75" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="prune"          priceScale="3.45" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="sugars"         priceScale="2.5" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />				
-				<fillType name="grapejuice"     priceScale="2.3" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="vin"            priceScale="3.15" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="parfum"         priceScale="4.3" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="oeuf"           priceScale="1.95" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="mure"           priceScale="1.35" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="citrouille"     priceScale="1.2" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="champignon"     priceScale="1.35" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="pasteque"       priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="citron"         priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="groseille"      priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="cabbage"        priceScale="1.2" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="beer"           priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="tissu"          priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="oats"           priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />		
-				<fillType name="boxonion"       priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="epeautre"       priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="cornflake"      priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="washedcarrot"   priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="washedPotato"   priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />				
-				<fillType name="steamedPotato"  priceScale="2"   supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="raspberry"      priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="strawberry"     priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="redCabbage"     priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="cauliflower"     priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="lettuce"        priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="tomato"         priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />				
-      </tipTrigger>
-
-        <tipTrigger index="JARDINERIE" stationName="jardinerie" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="100000" fullPriceRecoverHours="48">
-            <fillType name="compost"            priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="liquidManure"       priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="substral"           priceScale="2.6" supportsGreatDemand="true" disablePriceDrop="false" />					
-            <fillType name="manure"             priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="false" />					
-            <fillType name="sapin"              priceScale="4.1" supportsGreatDemand="true" disablePriceDrop="false" />					
-            <fillType name="emptypallet"        priceScale="1.1" supportsGreatDemand="true" disablePriceDrop="false" />					
-            <fillType name="osb"                priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="false" />					
-            <fillType name="papier"             priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />					
-            <fillType name="caisse"             priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="false" />					
-            <fillType name="carton"             priceScale="1.1" supportsGreatDemand="true" disablePriceDrop="false" />						
-            <fillType name="tonneau"            priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="false" />	
-      </tipTrigger>			
-
-		<tipTrigger index="RUNGIS" stationName="rungis" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="20000" fullPriceRecoverHours="24"> 
-                <fillType name="mehl"           priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-                <fillType name="brot"           priceScale="2.1" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-                <fillType name="butter"         priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-                <fillType name="sahne"          priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-                <fillType name="quark"          priceScale="2.7" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-                <fillType name="yogurt"         priceScale="2.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-			    <fillType name="huile"          priceScale="3"   supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="fish"           priceScale="3.1" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="apfel"          priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="birne"          priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="kirsche"        priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="pflaume"        priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="whisky"         priceScale="3.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="cidre"          priceScale="3"   supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="poire"          priceScale="3.1" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="cerise"         priceScale="3.5" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="prune"          priceScale="3.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="sugars"         priceScale="2.6" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />				
-				<fillType name="grapejuice"     priceScale="2.2" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="vin"            priceScale="3.1" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="oeuf"           priceScale="2"   supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="mure"           priceScale="1.45" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="citrouille"     priceScale="1.25" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="champignon"     priceScale="1.25" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="pasteque"       priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="citron"         priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="groseille"      priceScale="1.55" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="cabbage"        priceScale="1.25" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="beer"           priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="milch"          priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />				
-				<fillType name="tissu"          priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="oats"           priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />		
-				<fillType name="boxonion"       priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="epeautre"       priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="cornflake"      priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="washedsugarBeet"   priceScale="2.1" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="raspberry"      priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="strawberry"     priceScale="1.85" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="redCabbage"     priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="cauliflower"     priceScale="1.45" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="lettuce"        priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="tomato"         priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />			
-		</tipTrigger>		
-
-        <tipTrigger index="COPERATIVE" stationName="coperative" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
-            <fillType name="wheat"     priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="barley"    priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="rape"      priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="sunflower" priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="soybean"   priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="maize"     priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="potato"    priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="sugarBeet" priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="oat"       priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="millet"    priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="false" />
-			<fillType name="lavande"   priceScale="2.1" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="carrot"    priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="onion"     priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="sorghum"   priceScale="2" supportsGreatDemand="true" disablePriceDrop="false" />
-			<fillType name="hops"      priceScale="2.2" supportsGreatDemand="true" disablePriceDrop="false" />	
-			<fillType name="grapes"    priceScale="2.3" supportsGreatDemand="true" disablePriceDrop="false" />			
-        </tipTrigger>
-
-        <tipTrigger index="BIO_ENERGY" stationName="bio_energy" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
-            <fillType name="straw"                priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="false" />
-			<fillType name="manure"               priceScale="1.2" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="grass_windrow"        priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="dryGrass_windrow"     priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="false" />		
-        </tipTrigger>
-
-        <tipTrigger index="NETTO" stationName="netto" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="2000000" fullPriceRecoverHours="48">
-                <fillType name="mehl"           priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-                <fillType name="brot"           priceScale="2"   supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-                <fillType name="butter"         priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-                <fillType name="sahne"          priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-                <fillType name="quark"          priceScale="2.6" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-                <fillType name="yogurt"         priceScale="2.5" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-			    <fillType name="huile"          priceScale="3.1" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="fish"           priceScale="2.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="apfel"          priceScale="1.95" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="birne"          priceScale="1.95" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="kirsche"        priceScale="1.95" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="pflaume"        priceScale="1.95" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="whisky"         priceScale="3.7" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="cidre"          priceScale="3.1" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="poire"          priceScale="3.2" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="cerise"         priceScale="3.6" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="prune"          priceScale="3.45" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="sugars"         priceScale="2.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />				
-				<fillType name="grapejuice"     priceScale="2.1" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="vin"            priceScale="3.2" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="parfum"         priceScale="4.35" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="oeuf"           priceScale="2.1" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="mure"           priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="citrouille"     priceScale="1.35" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="champignon"     priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="pasteque"       priceScale="1.45" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="citron"         priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="groseille"      priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="cabbage"        priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="beer"           priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="tissu"          priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="oats"           priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />		
-				<fillType name="boxonion"       priceScale="2"   supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="epeautre"       priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />	
-				<fillType name="cornflake"      priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="washedcarrot"   priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="washedPotato"   priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />				
-				<fillType name="steamedPotato"  priceScale="2.1" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="raspberry"      priceScale="1.75" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="strawberry"     priceScale="1.75" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="redCabbage"     priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="cauliflower"     priceScale="1.45" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="lettuce"        priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
-				<fillType name="tomato"         priceScale="2"   supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />				
-        </tipTrigger>
-
-        <tipTrigger index="FILATURE" stationName="filature" appearsOnPDA="true" isAreaTrigger="false" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="1000000" fullPriceRecoverHours="48">
-            <fillType name="wool" priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="false" />
-        </tipTrigger>
-
-        <tipTrigger index="BOUCHERIE" stationName="boucherie" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" isTrainOnly="false" triggerWidth="3" litersForFullPriceDrop="300000" fullPriceRecoverHours="48">
-            <fillType name="meat"     priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="sausage"    priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="false" />				
-        </tipTrigger>
-
-        <tipTrigger index="SCIERIE" stationName="scierie" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="2000000" fullPriceRecoverHours="48">
-            <fillType name="woodChips" priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
-        </tipTrigger>
-
-        <tipTrigger index="RAILROAD_MILL" stationName="station_railroadMillGCV" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" isTrainOnly="true" triggerWidth="3" litersForFullPriceDrop="300000" fullPriceRecoverHours="48">
-            <fillType name="wheat"     priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="barley"    priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="rape"      priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="sunflower" priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="soybean"   priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="maize"     priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="potato"    priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="sugarBeet" priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="oat"       priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="millet"    priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="false" />
-			<fillType name="lavande"   priceScale="2.1" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="carrot"    priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="onion"     priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="false" />
-            <fillType name="sorghum"   priceScale="2" supportsGreatDemand="true" disablePriceDrop="false" />
-			<fillType name="hops"      priceScale="2.2" supportsGreatDemand="true" disablePriceDrop="false" />	
-			<fillType name="grapes"    priceScale="2.3" supportsGreatDemand="true" disablePriceDrop="false" />					
-        </tipTrigger>		
-
-<!-- TRAIN SILOS -->
-
-        <tipTrigger index="GARE" stationName="gare" appearsOnPDA="false" isAreaTrigger="false" isSellingPoint="false" triggerWidth="3" supportsExtension="false" storageRadius="50" >
-            <fillType name="wheat"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="barley"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="rape"       priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="maize"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="sunflower"  priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="soybean"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="sugarBeet"  priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="potato"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="oat"        priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="millet"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />	
-			<fillType name="compost"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="carrot"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="onion"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />	
-            <fillType name="sorghum"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="forage"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="pigFood"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />	
-            <fillType name="grass_windrow"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />		
-            <fillType name="hops"       priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="lavande"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />			
-        </tipTrigger>
-
-        <tipTrigger index="GARE_1" stationName="gare" appearsOnPDA="false" isAreaTrigger="true" isSellingPoint="false" triggerWidth="3" supportsExtension="false" storageRadius="50" >
-            <fillType name="wheat"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="barley"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="rape"       priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="maize"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="sunflower"  priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="soybean"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="sugarBeet"  priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="potato"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="oat"        priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="millet"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />	
-			<fillType name="compost"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="carrot"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="onion"      priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />	
-            <fillType name="sorghum"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="forage"     priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="pigFood"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />	
-            <fillType name="grass_windrow"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />		
-            <fillType name="hops"       priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
-            <fillType name="lavande"    priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />			
-        </tipTrigger>
-    </tipTriggers>
+  <filename>maps/map01.i3d</filename>
+  <sounds filename="maps/map01_sound.xml" />
+  <ingameMap filename="maps/pda_map_H.png" width="2048" height="2048" />
+  <environment filename="maps/map01_environment.xml" />
+  <culling xzOffset="100" />
+  <hotspots>
+    <hotspot name="Shop" fullName="$l10n_map_shop" imageUVs="520 8 240 240" xMapPos="-19" zMapPos="-62" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_TRIGGERS" />
+    <hotspot name="Cows" fullName="$l10n_animals_cowPasture" imageUVs="520 264 240 240" xMapPos="-520" zMapPos="-556" blinking="false" persistent="false" showName="false" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Sheep" fullName="$l10n_animals_sheepPasture" imageUVs="264 264 240 240" xMapPos="890" zMapPos="-755" blinking="false" persistent="false" showName="false" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Pigs" fullName="$l10n_animals_pigPasture" imageUVs="776 264 240 240" xMapPos="312" zMapPos="446" blinking="false" persistent="false" showName="false" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Chickens" fullName="$l10n_animals_chickenCoop" imageUVs="8 264 240 240" xMapPos="-539" zMapPos="-428" blinking="false" persistent="false" showName="false" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="produc_planche" fullName="Boards" imageUVs="520 520 240 240" xMapPos="-599" zMapPos="884" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Compostmaster" fullName="Compost" imageUVs="520 520 240 240" xMapPos="179" zMapPos="-937" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Rungis" fullName="Rungis" imageUVs="520 520 240 240" xMapPos="812" zMapPos="-6" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Serres" fullName="Greenhouses" imageUVs="520 520 240 240" xMapPos="858" zMapPos="868" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Laveuses" fullName="Washing Machines" imageUVs="520 520 240 240" xMapPos="400" zMapPos="-561" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Usine_tournesol" fullName="Sunflower" imageUVs="520 520 240 240" xMapPos="794" zMapPos="119" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Usine_farine" fullName="Flou" imageUVs="520 520 240 240" xMapPos="967" zMapPos="377" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Cremerie" fullName="Creamery" imageUVs="520 520 240 240" xMapPos="703" zMapPos="-490" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Ferme_1" fullName="Farm" imageUVs="520 520 240 240" xMapPos="-419" zMapPos="-478" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Ferme_2" fullName="Farm" imageUVs="520 520 240 240" xMapPos="904" zMapPos="-938" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Ferme_3" fullName="Farm" imageUVs="520 520 240 240" xMapPos="146" zMapPos="497" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Sojamilk" fullName="Soy Milk" imageUVs="520 520 240 240" xMapPos="480" zMapPos="-818" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Usine_pain" fullName="Bakery" imageUVs="520 520 240 240" xMapPos="732" zMapPos="591" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Abatoir" fullName="Slaughterhouse" imageUVs="520 520 240 240" xMapPos="-669" zMapPos="266" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Verger" fullName="Orchard" imageUVs="520 520 240 240" xMapPos="-147" zMapPos="793" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="produc_tissu" fullName="Fabric" imageUVs="520 520 240 240" xMapPos="-573" zMapPos="-180" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Pressoir" fullName="Press" imageUVs="520 520 240 240" xMapPos="12" zMapPos="-687" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="cereale" fullName="Cereal" imageUVs="520 520 240 240" xMapPos="838" zMapPos="-177" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="brasserie" fullName="Brewery" imageUVs="520 520 240 240" xMapPos="374" zMapPos="-718" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="sucrerie" fullName="Sugar" imageUVs="520 520 240 240" xMapPos="-964" zMapPos="-166" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="fabrif_osb" fullName="OSB" imageUVs="520 520 240 240" xMapPos="-630" zMapPos="713" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Poisonnerie" fullName="Fish Farm" imageUVs="520 520 240 240" xMapPos="320" zMapPos="-297" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Produc_oeuf" fullName="Eggs" imageUVs="520 520 240 240" xMapPos="499" zMapPos="-405" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Mouton_gras" fullName="Sheep Fattening" imageUVs="520 520 240 240" xMapPos="702" zMapPos="-757" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Porc_gras" fullName="Pig Fattening" imageUVs="520 520 240 240" xMapPos="189" zMapPos="408" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Raffinerie" fullName="Refinery" imageUVs="520 520 240 240" xMapPos="439" zMapPos="579" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Produc_copeau" fullName="Wood Chips" imageUVs="520 520 240 240" xMapPos="-230" zMapPos="815" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Produc_palette" fullName="Pallets" imageUVs="520 520 240 240" xMapPos="-307" zMapPos="611" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Produc_papier" fullName="Paper" imageUVs="520 520 240 240" xMapPos="-652" zMapPos="497" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Produc_parfum" fullName="Perfume" imageUVs="520 520 240 240" xMapPos="-660" zMapPos="80" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Produc_carton_tonneau" fullName="Barrel Crate" imageUVs="520 520 240 240" xMapPos="350" zMapPos="69" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+    <hotspot name="Gare_silo" fullName="Train Station" imageUVs="520 520 240 240" xMapPos="-586" zMapPos="-44" blinking="false" persistent="false" showName="true" hidable="true" renderLast="false" category="CATEGORY_DEFAULT" />
+  </hotspots>
+  <additionalFiles>
+    <additionalFile filename="$data/shared/materialHolders/tensionBeltMaterialHolder.i3d" />
+    <additionalFile filename="$data/shared/materialHolders/tireTrackMaterialHolder.i3d" />
+    <additionalFile filename="$data/shared/materialHolders/glowEffectMaterialHolder.i3d" />
+    <additionalFile filename="$data/shared/mapTargetMarker.i3d" />
+    <additionalFile filename="$data/particleSystems/particle_materialHolder.i3d" />
+    <additionalFile filename="$data/particleSystems/effect_materialHolder.i3d" />
+    <additionalFile filename="$data/particleSystems/cutterEffect_materialHolder.i3d" />
+    <additionalFile filename="$data/particleSystems/cutterEffectMap01_materialHolder.i3d" />
+    <additionalFile filename="$data/fillPlanes/fillPlane_materialHolder.i3d" />
+    <additionalFile filename="maps/pSystem/particleSystems/particleMap_materialHolder.i3d" />
+    <additionalFile filename="maps/pSystem/particleSystems/effectMap_materialHolder.i3d" />
+    <additionalFile filename="maps/pSystem/particleSystems/cutterEffectMap.i3d" />
+    <additionalFile filename="maps/pSystem/fillPlanes/fillPlane_materialHolder.i3d" />
+  </additionalFiles>
+  <tipTriggers>
+    <!-- SILO -->
+    <tipTrigger index="FARM_SILO" stationName="station_farmSilo" appearsOnPDA="false" isAreaTrigger="true" isSellingPoint="false" triggerWidth="3" supportsExtension="true" storageRadius="100">
+      <fillType name="wheat" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="barley" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="rape" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="maize" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="sunflower" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="soybean" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="oat" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="pigFood" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="hops" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="millet" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="potato" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="sugarBeet" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="straw" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="lavande" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="forage" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="carrot" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="onion" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="sorghum" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="grass_windrow" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+    </tipTrigger>
+    <tipTrigger index="HOF_DUENGERLAGER_TRAILER_IN" stationName="Hoflager_Duenger" appearsOnPDA="false" isAreaTrigger="true" isSellingPoint="false" triggerWidth="3" supportsExtension="false" storageRadius="15">
+      <fillType name="fertilizer" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="seeds" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+    </tipTrigger>
+    <tipTrigger index="FARM_SILO2" stationName="station_farmSilo2" appearsOnPDA="false" isAreaTrigger="true" isSellingPoint="false" triggerWidth="3" supportsExtension="true" storageRadius="100">
+      <fillType name="wheat" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="barley" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="rape" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="maize" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="sunflower" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="soybean" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="oat" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="hops" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="forage" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="pigFood" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="millet" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="potato" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="sugarBeet" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="straw" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="lavande" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="carrot" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="onion" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="sorghum" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="grass_windrow" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+    </tipTrigger>
+    <tipTrigger index="FARM_SILO3" stationName="station_farmSilo3" appearsOnPDA="false" isAreaTrigger="true" isSellingPoint="false" triggerWidth="3" supportsExtension="true" storageRadius="100">
+      <fillType name="wheat" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="barley" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="rape" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="maize" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="sunflower" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="soybean" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="oat" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="forage" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="grass_windrow" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="millet" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="potato" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="sugarBeet" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="straw" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="hops" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="lavande" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="carrot" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="onion" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="sorghum" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="pigFood" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+    </tipTrigger>
+    <!-- BGA -->
+    <tipTrigger index="BGA_BUNKER" stationName="station_bgaBunkerGCV" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" triggerWidth="2.5" litersForFullPriceDrop="300000" fullPriceRecoverHours="48">
+      <fillType name="silage" priceScale="1" supportsGreatDemand="false" disablePriceDrop="false" allowTrailers="false" />
+      <fillType name="liquidManure" priceScale="1" supportsGreatDemand="false" disablePriceDrop="false" allowTrailers="true" />
+      <fillType name="manure" priceScale="1" supportsGreatDemand="false" disablePriceDrop="false" allowTrailers="false" />
+    </tipTrigger>
+    <tipTrigger index="BGA_BUNKER_SILO" stationName="station_bgaBunkerSilo" appearsOnPDA="false" isAreaTrigger="true" isSellingPoint="false" triggerWidth="6">
+      <fillType name="chaff" priceScale="0" supportsGreatDemand="false" disablePriceDrop="false" />
+      <fillType name="grass_windrow" priceScale="0" supportsGreatDemand="false" disablePriceDrop="false" />
+      <fillType name="dryGrass_windrow" priceScale="0" supportsGreatDemand="false" disablePriceDrop="false" />
+    </tipTrigger>
+    <!-- SELLING POINTS -->
+    <tipTrigger index="MARKET" stationName="market" appearsOnPDA="true" isAreaTrigger="false" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="400000" fullPriceRecoverHours="48">
+      <fillType name="mehl" priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="brot" priceScale="2.3" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="butter" priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="sahne" priceScale="2.05" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="quark" priceScale="2.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="yogurt" priceScale="2.3" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="huile" priceScale="3.05" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="fish" priceScale="3.55" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="apfel" priceScale="1.85" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="birne" priceScale="1.85" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="kirsche" priceScale="1.85" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="pflaume" priceScale="1.85" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="whisky" priceScale="3.65" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="cidre" priceScale="3.25" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="poire" priceScale="3.35" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="cerise" priceScale="3.75" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="prune" priceScale="3.45" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="sugars" priceScale="2.5" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="grapejuice" priceScale="2.3" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="vin" priceScale="3.15" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="parfum" priceScale="4.3" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="oeuf" priceScale="1.95" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="mure" priceScale="1.35" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="citrouille" priceScale="1.2" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="champignon" priceScale="1.35" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="pasteque" priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="citron" priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="groseille" priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="cabbage" priceScale="1.2" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="beer" priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="tissu" priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="oats" priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="boxonion" priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="epeautre" priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="cornflake" priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="washedcarrot" priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="washedPotato" priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="steamedPotato" priceScale="2" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="raspberry" priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="strawberry" priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="redCabbage" priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="cauliflower" priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="lettuce" priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="tomato" priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+    </tipTrigger>
+    <tipTrigger index="JARDINERIE" stationName="jardinerie" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="100000" fullPriceRecoverHours="48">
+      <fillType name="compost" priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="liquidManure" priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="substral" priceScale="2.6" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="manure" priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="sapin" priceScale="4.1" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="emptypallet" priceScale="1.1" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="osb" priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="papier" priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="caisse" priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="carton" priceScale="1.1" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="tonneau" priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="false" />
+    </tipTrigger>
+    <tipTrigger index="RUNGIS" stationName="rungis" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="20000" fullPriceRecoverHours="24">
+      <fillType name="mehl" priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="brot" priceScale="2.1" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="butter" priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="sahne" priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="quark" priceScale="2.7" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="yogurt" priceScale="2.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="huile" priceScale="3" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="fish" priceScale="3.1" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="apfel" priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="birne" priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="kirsche" priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="pflaume" priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="whisky" priceScale="3.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="cidre" priceScale="3" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="poire" priceScale="3.1" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="cerise" priceScale="3.5" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="prune" priceScale="3.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="sugars" priceScale="2.6" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="grapejuice" priceScale="2.2" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="vin" priceScale="3.1" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="oeuf" priceScale="2" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="mure" priceScale="1.45" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="citrouille" priceScale="1.25" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="champignon" priceScale="1.25" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="pasteque" priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="citron" priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="groseille" priceScale="1.55" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="cabbage" priceScale="1.25" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="beer" priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="milch" priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="tissu" priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="oats" priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="boxonion" priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="epeautre" priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="cornflake" priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="washedsugarBeet" priceScale="2.1" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="raspberry" priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="strawberry" priceScale="1.85" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="redCabbage" priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="cauliflower" priceScale="1.45" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="lettuce" priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="tomato" priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+    </tipTrigger>
+    <tipTrigger index="COPERATIVE" stationName="coperative" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
+      <fillType name="wheat" priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="barley" priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="rape" priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="sunflower" priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="soybean" priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="maize" priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="potato" priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="sugarBeet" priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="oat" priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="millet" priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="lavande" priceScale="2.1" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="carrot" priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="onion" priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="sorghum" priceScale="2" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="hops" priceScale="2.2" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="grapes" priceScale="2.3" supportsGreatDemand="true" disablePriceDrop="false" />
+    </tipTrigger>
+    <tipTrigger index="BIO_ENERGY" stationName="bio_energy" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
+      <fillType name="straw" priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="manure" priceScale="1.2" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="grass_windrow" priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="dryGrass_windrow" priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="false" />
+    </tipTrigger>
+    <tipTrigger index="NETTO" stationName="netto" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="2000000" fullPriceRecoverHours="48">
+      <fillType name="mehl" priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="brot" priceScale="2" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="butter" priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="sahne" priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="quark" priceScale="2.6" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="yogurt" priceScale="2.5" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="huile" priceScale="3.1" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="fish" priceScale="2.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="apfel" priceScale="1.95" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="birne" priceScale="1.95" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="kirsche" priceScale="1.95" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="pflaume" priceScale="1.95" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="whisky" priceScale="3.7" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="cidre" priceScale="3.1" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="poire" priceScale="3.2" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="cerise" priceScale="3.6" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="prune" priceScale="3.45" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="sugars" priceScale="2.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="grapejuice" priceScale="2.1" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="vin" priceScale="3.2" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="parfum" priceScale="4.35" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="oeuf" priceScale="2.1" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="mure" priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="citrouille" priceScale="1.35" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="champignon" priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="pasteque" priceScale="1.45" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="citron" priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="groseille" priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="cabbage" priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="beer" priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="tissu" priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="oats" priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="boxonion" priceScale="2" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="epeautre" priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="cornflake" priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="washedcarrot" priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="washedPotato" priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="steamedPotato" priceScale="2.1" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="raspberry" priceScale="1.75" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="strawberry" priceScale="1.75" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="redCabbage" priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="cauliflower" priceScale="1.45" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="lettuce" priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+      <fillType name="tomato" priceScale="2" supportsGreatDemand="true" disablePriceDrop="true" allowTrailers="false" />
+    </tipTrigger>
+    <tipTrigger index="FILATURE" stationName="filature" appearsOnPDA="true" isAreaTrigger="false" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="1000000" fullPriceRecoverHours="48">
+      <fillType name="wool" priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="false" />
+    </tipTrigger>
+    <tipTrigger index="BOUCHERIE" stationName="boucherie" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" isTrainOnly="false" triggerWidth="3" litersForFullPriceDrop="300000" fullPriceRecoverHours="48">
+      <fillType name="meat" priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="sausage" priceScale="1.9" supportsGreatDemand="true" disablePriceDrop="false" />
+    </tipTrigger>
+    <tipTrigger index="SCIERIE" stationName="scierie" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" triggerWidth="3" litersForFullPriceDrop="2000000" fullPriceRecoverHours="48">
+      <fillType name="woodChips" priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+    </tipTrigger>
+    <tipTrigger index="RAILROAD_MILL" stationName="station_railroadMillGCV" appearsOnPDA="true" isAreaTrigger="true" isSellingPoint="true" isTrainOnly="true" triggerWidth="3" litersForFullPriceDrop="300000" fullPriceRecoverHours="48">
+      <fillType name="wheat" priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="barley" priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="rape" priceScale="1.8" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="sunflower" priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="soybean" priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="maize" priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="potato" priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="sugarBeet" priceScale="1.3" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="oat" priceScale="1.7" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="millet" priceScale="1.6" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="lavande" priceScale="2.1" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="carrot" priceScale="1.5" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="onion" priceScale="1.4" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="sorghum" priceScale="2" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="hops" priceScale="2.2" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="grapes" priceScale="2.3" supportsGreatDemand="true" disablePriceDrop="false" />
+    </tipTrigger>
+    <!-- TRAIN SILOS -->
+    <tipTrigger index="GARE" stationName="gare" appearsOnPDA="false" isAreaTrigger="false" isSellingPoint="false" triggerWidth="3" supportsExtension="false" storageRadius="50">
+      <fillType name="wheat" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="barley" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="rape" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="maize" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="sunflower" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="soybean" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="sugarBeet" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="potato" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="oat" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="millet" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="compost" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="carrot" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="onion" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="sorghum" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="forage" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="pigFood" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="grass_windrow" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="hops" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="lavande" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+    </tipTrigger>
+    <tipTrigger index="GARE_1" stationName="gare" appearsOnPDA="false" isAreaTrigger="true" isSellingPoint="false" triggerWidth="3" supportsExtension="false" storageRadius="50">
+      <fillType name="wheat" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="barley" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="rape" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="maize" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="sunflower" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="soybean" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="sugarBeet" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="potato" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="oat" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="millet" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="compost" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="carrot" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="onion" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="sorghum" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="forage" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="pigFood" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="grass_windrow" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="hops" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+      <fillType name="lavande" priceScale="0" supportsGreatDemand="false" disablePriceDrop="true" />
+    </tipTrigger>
+  </tipTriggers>
 </map>
