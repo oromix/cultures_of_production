@@ -587,7 +587,7 @@ ModPack culture_et _production.
         <fillType name="parfum" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
         <fillType name="vin" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
         <fillType name="grapejuice" categoryName="bulk" pricePerLiter="0.8" massPerLiter="0.0005" showOnPriceTable="true" maxPhysicalSurfaceAngle="20" createHeap="false" maxSurfaceAngle="30" collisionScale="1.0" collisionBaseOffset="0.08" minCollisionOffset="0.00" maxCollisionOffset="0.08" fillToGroundScale="1" allowsSmoothing="false" useToSpray="false" sprayerCategoryName="manureSpreader" litersPerSecond="0.006" />		
-
+	<fillType name="wood" useHeap="false" hasParticles="false" hasMaterials="false" fillTypeCategorys="bulk" toCategorys="true" useForSpray="false" massPerLiter="800" litersPerSecond="0.3244" showOnPriceTable="true" pricePerLiter="1"/>
 		</regFillTypes>					
 		
 	<extraSourceFiles>
